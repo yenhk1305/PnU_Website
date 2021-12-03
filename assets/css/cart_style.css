@@ -1,0 +1,248 @@
+﻿.main-container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .back-to-product {
+    font-size: 15px;
+}
+.container .back-to-product a{
+    text-decoration:none;
+}
+    .container .back-to-product a:hover {
+        text-decoration: none;
+        color:  var(--primaryYellow);
+    }
+
+/*Giỏ hàng của tôi*/
+.cart-header {
+    width: 100%;
+    float: left;
+}
+
+    .cart-header h1 {
+        font-weight: bold;
+        font-size: 25px;
+        color:  var(--primaryBlack);
+    }
+
+        .cart-header h1 span {
+            font-size: 14px;
+            font-weight: 400;
+            color: #8d90a6;
+        }
+
+/*khung sản phẩm - thanh thdead*/
+.bg-scroll {
+    border-radius: 20px;
+    background: var(--ink05);
+    padding: 15px 30px;
+    width: 100%
+}
+
+    .bg-scroll .cart-thead {
+        font-weight: bold;
+        font-size: 14px;
+        width: 100%;
+        float: left;
+        display: inline-block;
+        border-bottom: dashed 1px var(--ink03);
+        min-width: 600px
+    }
+
+        .bg-scroll .cart-thead div {
+            float: left;
+            font-weight: 700;
+            color: var(--primaryBlack);
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 0px 10px
+        }
+    /*khung sản phẩm - phần body*/
+    .bg-scroll .cart-body {
+        width: 100%;
+        float: left
+    }
+
+        .bg-scroll .cart-body .item-cart {
+            float: left;
+            border-bottom: dashed 1px var(--ink03);
+            width: 100%;
+            padding: 30px 0px
+        }
+
+            .bg-scroll .cart-body .item-cart div {
+                float: left;
+                vertical-align: top;
+                height: 100px;
+            }
+
+            .bg-scroll .cart-body .item-cart .product-image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                width: 100px;
+                background: var(--primaryWhite);
+            }
+
+            .bg-scroll .cart-body .item-cart .product-name {
+                font-size: 15px;
+                line-height: 25px;
+                color:var(--primaryBlack);
+                height: 50px;
+                font-weight: bold;
+                float: left;
+                width: 100%;
+                overflow: hidden;
+            }
+
+                .bg-scroll .cart-body .item-cart .product-name a {
+                    color: var(--primaryBlack);
+                    text-decoration: none
+                }
+
+            .bg-scroll .cart-body .item-cart .remove-item-cart {
+                color: #030049;
+                display: inline;
+                font-size: 13px;
+                margin-top: 12px;
+                font-weight: 400;
+                float: left;
+                width: 100%;
+                text-decoration: none
+            }
+
+            .bg-scroll .cart-body .item-cart .price {
+                font-weight: bold;
+                font-size: 14px;
+                color: #F34646;
+                line-height: 4.5
+            }
+
+            .bg-scroll .cart-body .item-cart .product-quantity {
+                display: flex;
+                justify-content: center;
+                float: left;
+                border: none;
+                margin-top: 12%;
+                width: 100%;
+            }
+
+                .bg-scroll .cart-body .item-cart .product-quantity .number-sidebar {
+                    border: 1px solid #eaebf3;
+                    height: 30px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: top;
+                    width: 45px;
+                    float: left;
+                    margin: 0 -1px;
+                }
+
+                .bg-scroll .cart-body .item-cart .product-quantity .btn-minus, .btn-plus {
+                    border: 1px solid #eaebf3;
+                    height: 30px;
+                    width: 27px;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: bold;
+                    background:var(--primaryWhite);
+                    padding: 0
+                }
+
+    .bg-scroll .btn-continue {
+        background-color:  var(--primaryYellow);
+        border: none;
+        color: var(--primaryWhite);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        height: 40px;
+        font-weight: bold;
+        margin-left: 0px;
+        font-weight: 700;
+        margin-top: 20px;
+        padding: 0 30px;
+        border: 1px solid transparent
+    }
+
+        .bg-scroll .btn-continue:hover {
+            border: solid 1px var(--primaryBlack);
+            background:  var(--primaryYellow);
+            color:var(--primaryBlack);
+            cursor: pointer;
+            text-decoration: none
+        }
+
+.inner .btn-pay {
+    background-color:  var(--primaryYellow);
+    border: none;
+    color: var(--primaryWhite);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    height: 40px;
+    font-weight: bold;
+    margin-left: 0px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0 30px;
+    border: 1px solid transparent
+}
+
+    .inner .btn-pay:hover {
+        border: solid 1px var(--primaryBlack);
+        background:  var(--primaryYellow);
+        color: var(--primaryBlack);
+        cursor: pointer;
+        text-decoration: none
+    }
+
+.btn-pay {
+    background-color:  var(--primaryYellow);
+    border: none;
+    color: var(--primaryWhite);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    height: 40px;
+    font-weight: bold;
+    margin-left: 0px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 0 20px;
+    border: 1px solid transparent
+}
+
+    .btn-pay:hover {
+        border: solid 1px var(--primaryBlack);
+        background: var(--primaryYellow);
+        color: var(--primaryBlack);
+        cursor: pointer;
+        text-decoration: none
+    }
+
+.table-total {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background: var(--ink05);
+    border-radius: 20px;
+    text-align: center;
+}
+
+    .table-total .wrap-checkprice {
+        border-bottom: 1px dashed var(--ink03);
+        height: 40px;
+    }
+
+        .table-total .wrap-checkprice .totals-price {
+            font-weight: bold;
+            font-size: 20px;
+            float: right;
+            color: #F34646
+        }

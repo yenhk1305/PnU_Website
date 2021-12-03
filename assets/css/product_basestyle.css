@@ -1,0 +1,62 @@
+
+* {
+    box-sizing: inherit;
+}
+.sanpham {
+    width: 1400px;
+    max-width: 100%;
+    text-align: center;
+    margin:0 auto;
+    padding:0 0.5%;
+  
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+.product__content{
+   
+}
+
+.gird {
+   
+  
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+/*test*/
+.grid__column--2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column--10 {
+   
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+.p-grid__row{
+    display: flex;
+  
+}
+.grid__column--2-5 {
+    width: calc(20% - 1.02rem);
+}
+    .grid__column--2-5 + .grid__column--2-5 {
+       margin-left:1.2rem;
+    }
+   

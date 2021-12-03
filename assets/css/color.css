@@ -1,0 +1,25 @@
+﻿:root {
+    /*primary*/
+    --primaryBlack     : #000000;
+    --primaryWhite     : #FFFFFF;
+    --primaryYellow    : #F2CB05;
+
+    /*ink*/
+    --ink01            : #191D21;
+    --ink02            : #666666;
+    --ink03            : #B2B2B2;
+    --ink04            : #E5E5E5;
+    --ink05            : #F2F2F2;
+
+    /*yellow*/
+    --V1               : #F7DC41;
+    --V2               : #FBE767;
+    --V3               : #FDF29A;
+    --V4               : #FEF9CC;
+
+    /*product*/
+    --p-priceColor     : #F34646;
+    --p-cartColor      : #DC8655;
+    --p-btnGreen       : #85BB72;
+    --p-btnBlue        : #2C326D;
+}

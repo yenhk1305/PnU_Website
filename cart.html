@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="vi" class="">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>
+        Giỏ hàng
+        PnU - Little pets for big heart
+    </title>
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./assets/css/cart_style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--thanh điều hướng-->
+    
+    <!--content-->
+    <section class="main-container mt-5 mb-5">
+        <div class="container">
+            <div class="cart-header mb-3">
+                <h1>
+                    GIỎ HÀNG <span>(3 sản phẩm)</span>
+                </h1>
+            </div>
+            <!--danh sách sản phẩm-->
+            <div class="cart-page">
+                <div class="cart row">
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <form method="post">
+                            <div class="bg-scroll">
+                                <div class="cart-thead">
+                                    <div style="width:43%;text-align:left;padding-left: 15px"><span>Sản phẩm</span></div>
+                                    <div style="width:19%"><span>Giá</span></div>
+                                    <div style="width:15%; padding-left: 15px"><span>Số lượng</span></div>
+                                    <div style="width:22%; padding-left: 15px"><span>Thành tiền</span></div>
+                                </div>
+                                <!--sản phẩm 1-->
+                                <div class="cart-body">
+                                    <div class="item-cart productid-sp01">
+                                        <div style="width: 15%">
+                                            <a class="product-image" href="#" title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe"><img width="80" height="80" alt="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" src="./assets/images/Products/sp1.jpg" /></a>
+                                        </div>
+                                        <div style="width: 28%">
+                                            <h3 class="product-name"><a title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" href="#">Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe</a></h3>
+                                            <a class="button remove-item-cart" title="Xóa sản phẩm" data-id="sp01" href="#">
+                                                <i class="fas fa-trash-alt" style="color:black"></i> Xóa sản phẩm
+                                            </a>
+                                        </div>
+                                        <div style="width: 20%; text-align:center">
+                                            <span class="product-price">
+                                                <span class="price">350.000đ</span>
+                                            </span>
+                                        </div>
+                                        <div style="width: 15%; text-align:center">
+                                            <div class="product-quantity">
+                                                <button class="btn-minus" type="button">-</button>
+                                                <input type="text" id="quantity" maxlength="2" min="0" value="2" size="4" class="number-sidebar" />
+                                                <button class="btn-plus" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div style="width: 22%; text-align:center">
+                                            <span class="product-price-total">
+                                                <span class="price">700.000đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--sản phẩm 2-->
+                                <div class="cart-body">
+                                    <div class="item-cart productid-sp03">
+                                        <div style="width: 15%">
+                                            <a class="product-image" href="#" title="Thức ăn cho chó Royal Canin Bulldog Puppy Dry Dog Food"><img width="80" height="80" alt="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" src="./assets/images/Products/sp3.jpg" /></a>
+                                        </div>
+                                        <div style="width: 28%">
+                                            <h3 class="product-name"><a title="Thức ăn cho chó Royal Canin Bulldog Puppy Dry Dog Food" href="#">Thức ăn cho chó Royal Canin Bulldog Puppy Dry Dog Food</a></h3>
+                                            <a class="button remove-item-cart" title="Xóa sản phẩm" data-id="sp03" href="#">
+                                                <i class="fas fa-trash-alt" style="color:black"></i> Xóa sản phẩm
+                                            </a>
+                                        </div>
+                                        <div style="width: 20%; text-align:center">
+                                            <span class="product-price">
+                                                <span class="price">660.000đ</span>
+                                            </span>
+                                        </div>
+                                        <div style="width: 15%; text-align:center">
+                                            <div class="product-quantity">
+                                                <button class="btn-minus" type="button">-</button>
+                                                <input type="text" id="quantity" maxlength="2" min="0" value="1" size="4" class="number-sidebar" />
+                                                <button class="btn-plus" type="button">+</button>
+                                            </div>
+                                        </div>
+                                        <div style="width: 22%; text-align:center">
+                                            <span class="product-price-total">
+                                                <span class="price">660.000đ</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="btn-continue" title="Tiếp tục mua hàng">TIẾP TỤC MUA HÀNG</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <!--Khung tổng cộng-->
+                    <div class="col-lg-3 col-md-3 cold-sm-12 col-xs-12">
+                        <div class="table-total">
+                            <!--<div class="inner">-->
+                            <div class="wrap-checkprice">
+                                <!--<div class="cart-table-total">-->
+                                <span style="font-weight:bold; text-align:left; float: left">Thành tiền:</span>
+                                <span class="totals-price">1.360.000₫</span>
+                                <!--</div>-->
+                            </div>
+                            <div>
+                                <button class="btn-pay" title="Tiến hành thanh toán">TIẾN HÀNH THANH TOÁN</button>
+                            </div>
+                            <!--</div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
