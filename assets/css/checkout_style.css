@@ -1,0 +1,328 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.main-checkout-page {
+    padding: 20px 30px 40px 155px;
+}
+
+.ship-input-infor {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.ship-pay-infor {
+    padding-right: 40px;
+}
+
+.cus-infor {
+    padding-right: 20px
+}
+
+.logo-header {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+.infor-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.5px;
+    font-weight: 700;
+    display: block;
+    line-height: 40px;
+}
+
+.main-checkout-page .checkout-infor input {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    line-height: normal;
+    padding: 12px;
+    transition: 0.2s;
+}
+
+    .main-checkout-page .checkout-infor input:focus {
+        outline-color: orange;
+    }
+
+.main-checkout-page .checkout-infor select {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    line-height: normal;
+    padding: 0 12px;
+    transition: 0.2s;
+}
+
+    .main-checkout-page .checkout-infor select:focus {
+        outline-color: orange;
+    }
+
+.checkout-infor .field {
+    padding: 5.5px 0
+}
+
+.ship-infor .field {
+    padding: 5.5px 0
+}
+
+.pay-infor .field {
+    padding: 5.5px 0
+}
+
+
+.ship-input-infor .text-option {
+    font-size: 15px;
+    float: left;
+    width: 65%;
+}
+
+.ship-input-infor .price {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: right;
+    float: right;
+    width: 35%
+}
+
+.pay-input-infor {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    height: auto;
+    padding: 0 20px;
+}
+
+    .pay-input-infor .text-option {
+        font-size: 14px;
+        display: block;
+        line-height: 40px;
+        text-align: left;
+        border-bottom: 1px solid #f2f2f2
+    }
+
+.aside-checkout {
+    background-color: #030049;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+    .aside-checkout .aside-content {
+        background-color: #030049;
+        list-style-type: none;
+        padding-bottom: 20px;
+        padding-top: 5px;
+        padding-right: 65px;
+        padding-left: 10px
+    }
+
+    .aside-checkout .aside-group {
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        margin-bottom: -1px;
+        background-color: transparent;
+        border: none;
+        clear: both;
+        overflow: hidden;
+    }
+
+    .aside-checkout .aside-content .aside-group.header {
+        font-weight: 700;
+        font-size: 20px
+    }
+
+    .aside-checkout .aside-content .aside-group.divider {
+        border-bottom: 1px solid yellow;
+        margin: 0px 20px;
+        padding: 0px
+    }
+
+    .aside-checkout .aside-content .aside-group .product-name,
+    .aside-checkout .aside-content .aside-group .product-image,
+    .aside-checkout .aside-content .aside-group .product-quantity,
+    .aside-checkout .aside-content .aside-group .tam-tinh,
+    .aside-checkout .aside-content .aside-group .giam-gia,
+    .aside-checkout .aside-content .aside-group .van-chuyen,
+    .aside-checkout .aside-content .aside-group .tong-cong,
+    .aside-checkout .aside-content .aside-group .gio-hang {
+        float: left;
+        text-align: left
+    }
+
+    .aside-checkout .aside-content .aside-group .product-price,
+    .aside-checkout .aside-content .aside-group .gia-tam-tinh,
+    .aside-checkout .aside-content .aside-group .gia-giam-gia,
+    .aside-checkout .aside-content .aside-group .phi-van-chuyen,
+    .aside-checkout .aside-content .aside-group .gia-tong-cong {
+        float: right;
+        text-align: right
+    }
+
+    .aside-checkout .aside-content .aside-group .btn-cart {
+        float: right;
+        border-radius: 5px;
+        background-color: #f2cb05;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        height: 45px;
+        width: 35%;
+        margin-top: 10px;
+        border: 1px solid transparent
+    }
+
+        .aside-checkout .aside-content .aside-group .btn-cart:hover {
+            border: solid 1px black;
+            background: #f2cb05;
+            color: black;
+            cursor: pointer;
+        }
+
+    .aside-checkout .aside-content .aside-group .gio-hang {
+        margin-top: 20px;
+        font-size: 14px;
+        width: 65%;
+        color: #9cb1ff;
+        text-decoration: none
+    }
+
+        .aside-checkout .aside-content .aside-group .gio-hang:hover {
+            color: yellow;
+            text-decoration: none
+        }
+
+    .aside-checkout .aside-content .aside-group .btn-cart:hover, .btn-cart:focus {
+    }
+
+    .aside-checkout .aside-content .aside-group .product-name,
+    .aside-checkout .aside-content .aside-group .product-price,
+    .aside-checkout .aside-content .aside-group .tam-tinh,
+    .aside-checkout .aside-content .aside-group .gia-tam-tinh,
+    .aside-checkout .aside-content .aside-group .giam-gia,
+    .aside-checkout .aside-content .aside-group .gia-giam-gia,
+    .aside-checkout .aside-content .aside-group .van-chuyen,
+    .aside-checkout .aside-content .aside-group .phi-van-chuyen {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400
+    }
+
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: #969696
+    }
+
+    .aside-checkout .aside-content .aside-group .tong-cong {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        font-weight: 700
+    }
+
+    .aside-checkout .aside-content .aside-group .gia-tong-cong {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        color: #9cb1ff;
+        font-weight: 500
+    }
+
+
+    .aside-checkout .aside-content .aside-group .product-name,
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        width: 45%;
+        text-align: left;
+        height: 40px;
+        overflow: hidden
+    }
+
+
+    .aside-checkout .aside-content .aside-group .product-image {
+        width: 25%;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-price {
+        width: 30%;
+        text-align: right
+    }
+
+    .aside-checkout .aside-content .aside-group .input-discount {
+        float: left;
+        width: 65%;
+        font-size: 13px;
+        height: 40px;
+        border-radius: 4px;
+        padding: 10px;
+        transition: 0.2s;
+        border: 1px solid #d2d2d2;
+    }
+
+        .aside-checkout .aside-content .aside-group .input-discount:focus {
+            outline-color: orange;
+        }
+
+    .aside-checkout .aside-content .aside-group .btn-discount {
+        float: right;
+        border-radius: 5px;
+        background-color: #f2cb05;
+        border-color: #f2cb05;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        width: 30%;
+        border: 1px solid transparent
+    }
+
+    .aside-checkout .aside-content .aside-group .btn-discount:hover {
+        border: solid 1px black;
+        background: #f2cb05;
+        color: black;
+        cursor: pointer;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        padding-top: 10px;
+        margin: 0 0 15px
+    }
+
+    .aside-checkout .aside-content .aside-group.product-detail {
+        padding-top: 15px;
+        padding-bottom: 0
+    }
+
+    .aside-checkout .aside-content .aside-group.discount {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .aside-checkout .aside-content .aside-group.wrap-tam-tinh {
+        padding-top: 15px;
+        padding-bottom: 2px
+    }
+
+    .aside-checkout .aside-content .aside-group.wrap-giam-gia {
+        padding-top: 10px;
+        padding-bottom: 2px
+    }
+
+    .aside-checkout .aside-content .aside-group.wrap-van-chuyen {
+        padding-top: 10px;
+        padding-bottom: 15px
+    }
