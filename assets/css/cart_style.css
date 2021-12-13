@@ -18,65 +18,109 @@
     width: 100%;
     float: left;
 }
-
     .cart-header h1 {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 22px;
         color:  var(--primaryBlack);
     }
 
         .cart-header h1 span {
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
             color: #8d90a6;
         }
 
 /*khung sản phẩm - thanh thdead*/
-.bg-scroll {
+.cart-table {
     border-radius: 20px;
     background: var(--ink05);
     padding: 15px 30px;
     width: 100%
 }
 
-    .bg-scroll .cart-thead {
+    .cart-table .cart-thead {
         font-weight: bold;
-        font-size: 14px;
         width: 100%;
-        float: left;
         display: inline-block;
         border-bottom: dashed 1px var(--ink03);
         min-width: 600px
     }
 
-        .bg-scroll .cart-thead div {
+        .cart-table .cart-thead div {
             float: left;
-            font-weight: 700;
             color: var(--primaryBlack);
             text-align: center;
             font-size: 16px;
             padding: 10px 0px 10px
         }
+
+        .cart-table .cart-thead .thead-name {
+            width:40%;
+            text-align:left;
+            padding-left: 15px
+        }
+
+        .cart-table .cart-thead .thead-price {
+            width:19%;
+        }
+
+        .cart-table .cart-thead .thead-qty {
+            width:18%; 
+            padding-left: 15px
+        }
+
+        .cart-table .cart-thead .thead-total {
+            width:22%; 
+            padding-left: 15px
+        }
+
     /*khung sản phẩm - phần body*/
-    .bg-scroll .cart-body {
+    .cart-table .cart-tbody {
         width: 100%;
         float: left
     }
 
-        .bg-scroll .cart-body .item-cart {
+        .cart-table .cart-tbody .item {
             float: left;
             border-bottom: dashed 1px var(--ink03);
             width: 100%;
             padding: 30px 0px
         }
 
-            .bg-scroll .cart-body .item-cart div {
+            .cart-table .cart-tbody .item div {
                 float: left;
                 vertical-align: top;
                 height: 100px;
             }
 
-            .bg-scroll .cart-body .item-cart .product-image {
+            .cart-table .cart-tbody .item .tbody-image {
+                width: 17%
+            }
+
+            .cart-table .cart-tbody .item .tbody-name {
+                width: 25%
+            }
+
+            .cart-table .cart-tbody .item .tbody-price {
+                width: 18%; 
+                text-align:center
+            }
+
+            .cart-table .cart-tbody .item .tbody-quantity {
+                width: 18%; 
+                text-align:center
+            }
+
+            .cart-table .cart-tbody .item .tbody-total {
+                width: 22%; 
+                text-align:center
+            }
+
+            .mobile-tbody-quantity-delete, .mobile-tbody-name-price {
+                display: none;
+            }
+
+            .cart-table .cart-tbody .item .product-image {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -85,7 +129,7 @@
                 background: var(--primaryWhite);
             }
 
-            .bg-scroll .cart-body .item-cart .product-name {
+            .cart-table .cart-tbody .item .product-name {
                 font-size: 15px;
                 line-height: 25px;
                 color:var(--primaryBlack);
@@ -96,12 +140,12 @@
                 overflow: hidden;
             }
 
-                .bg-scroll .cart-body .item-cart .product-name a {
+                .cart-table .cart-tbody .item .product-name a {
                     color: var(--primaryBlack);
                     text-decoration: none
                 }
 
-            .bg-scroll .cart-body .item-cart .remove-item-cart {
+            .cart-table .cart-tbody .item .btn-remove-item-cart {
                 color: #030049;
                 display: inline;
                 font-size: 13px;
@@ -112,14 +156,14 @@
                 text-decoration: none
             }
 
-            .bg-scroll .cart-body .item-cart .price {
+            .cart-table .cart-tbody .item .price {
                 font-weight: bold;
                 font-size: 14px;
                 color: #F34646;
                 line-height: 4.5
             }
 
-            .bg-scroll .cart-body .item-cart .product-quantity {
+            .cart-table .cart-tbody .item .product-quantity {
                 display: flex;
                 justify-content: center;
                 float: left;
@@ -128,7 +172,7 @@
                 width: 100%;
             }
 
-                .bg-scroll .cart-body .item-cart .product-quantity .number-sidebar {
+                .cart-table .cart-tbody .item .product-quantity .number-sidebar {
                     border: 1px solid #eaebf3;
                     height: 30px;
                     font-size: 14px;
@@ -140,7 +184,7 @@
                     margin: 0 -1px;
                 }
 
-                .bg-scroll .cart-body .item-cart .product-quantity .btn-minus, .btn-plus {
+                .cart-table .cart-tbody .item .product-quantity .btn-minus, .btn-plus {
                     border: 1px solid #eaebf3;
                     height: 30px;
                     width: 27px;
@@ -151,24 +195,22 @@
                     padding: 0
                 }
 
-    .bg-scroll .btn-continue {
+    .cart-table .btn-continue {
         background-color:  var(--primaryYellow);
         border: none;
         color: var(--primaryWhite);
-        padding: 15px 32px;
         text-align: center;
         text-decoration: none;
         font-size: 14px;
         height: 40px;
         font-weight: bold;
         margin-left: 0px;
-        font-weight: 700;
         margin-top: 20px;
         padding: 0 30px;
         border: 1px solid transparent
     }
 
-        .bg-scroll .btn-continue:hover {
+        .cart-table .btn-continue:hover {
             border: solid 1px var(--primaryBlack);
             background:  var(--primaryYellow);
             color:var(--primaryBlack);
@@ -176,36 +218,38 @@
             text-decoration: none
         }
 
-.inner .btn-pay {
-    background-color:  var(--primaryYellow);
-    border: none;
-    color: var(--primaryWhite);
-    padding: 15px 32px;
+.table-total {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background: var(--ink05);
+    border-radius: 20px;
     text-align: center;
-    text-decoration: none;
-    font-size: 14px;
-    height: 40px;
-    font-weight: bold;
-    margin-left: 0px;
-    font-weight: 700;
-    margin-top: 20px;
-    padding: 0 30px;
-    border: 1px solid transparent
 }
 
-    .inner .btn-pay:hover {
-        border: solid 1px var(--primaryBlack);
-        background:  var(--primaryYellow);
-        color: var(--primaryBlack);
-        cursor: pointer;
-        text-decoration: none
+    .table-total .checkprice {
+        border-bottom: 1px dashed var(--ink03);
+        height: 40px;
     }
 
-.btn-pay {
+    .table-total .checkprice .totals-header {
+        font-weight:bold;
+        text-align:left;
+        font-size: 16px;
+        float: left
+    }
+
+        .table-total .checkprice .totals-price {
+            font-weight: bold;
+            font-size: 18px;
+            float: right;
+            color: #F34646
+        }
+
+    .table-total .btn-pay {
     background-color:  var(--primaryYellow);
     border: none;
     color: var(--primaryWhite);
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -218,31 +262,10 @@
     border: 1px solid transparent
 }
 
-    .btn-pay:hover {
+        .table-total .btn-pay:hover {
         border: solid 1px var(--primaryBlack);
         background: var(--primaryYellow);
         color: var(--primaryBlack);
         cursor: pointer;
         text-decoration: none
     }
-
-.table-total {
-    float: left;
-    padding: 20px;
-    width: 100%;
-    background: var(--ink05);
-    border-radius: 20px;
-    text-align: center;
-}
-
-    .table-total .wrap-checkprice {
-        border-bottom: 1px dashed var(--ink03);
-        height: 40px;
-    }
-
-        .table-total .wrap-checkprice .totals-price {
-            font-weight: bold;
-            font-size: 20px;
-            float: right;
-            color: #F34646
-        }
