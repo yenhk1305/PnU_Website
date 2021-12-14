@@ -84,13 +84,13 @@
             float: left;
             border-bottom: dashed 1px var(--ink03);
             width: 100%;
-            padding: 30px 0px
+            padding: 10px 0px 30px;
         }
 
             .cart-table .cart-tbody .item div {
                 float: left;
                 vertical-align: top;
-                height: 100px;
+                height: 80px;
             }
 
             .cart-table .cart-tbody .item .tbody-image {
