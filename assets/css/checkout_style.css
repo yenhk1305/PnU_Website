@@ -4,6 +4,7 @@
 
 .main-checkout-page {
     padding: 20px 30px 40px 155px;
+    height: 100vh;
 }
 
 .ship-input-infor {
@@ -153,6 +154,11 @@
         padding: 0px
     }
 
+    .aside-checkout .aside-content .aside-group .product-image img{
+        width: 70px;
+        height: 70px;
+    }
+
     .aside-checkout .aside-content .aside-group .product-name,
     .aside-checkout .aside-content .aside-group .product-image,
     .aside-checkout .aside-content .aside-group .product-quantity,
@@ -174,7 +180,7 @@
         text-align: right
     }
 
-    .aside-checkout .aside-content .aside-group .btn-cart {
+    .aside-checkout .aside-content .aside-group .btn-order {
         float: right;
         border-radius: 5px;
         background-color: #f2cb05;
@@ -187,7 +193,7 @@
         border: 1px solid transparent
     }
 
-        .aside-checkout .aside-content .aside-group .btn-cart:hover {
+        .aside-checkout .aside-content .aside-group .btn-order:hover {
             border: solid 1px black;
             background: #f2cb05;
             color: black;
@@ -224,7 +230,8 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
         font-weight: 600;
-        color: #969696
+        color: #969696;
+        margin: 0;
     }
 
     .aside-checkout .aside-content .aside-group .tong-cong {
@@ -296,7 +303,7 @@
 
     .aside-checkout .aside-content .aside-group .product-quantity {
         padding-top: 10px;
-        margin: 0 0 15px
+        margin: 0;
     }
 
     .aside-checkout .aside-content .aside-group.product-detail {
