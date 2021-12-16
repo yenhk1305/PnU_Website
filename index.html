@@ -1,61 +1,206 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Pet and You - HomePage</title>
-    <link rel="stylesheet" href="./assets/css/home_style.css"/>
+    <meta charset="UTF-8">
+    <script src="assets/script/home.js"></script>
+    <link rel="stylesheet" href="assets/css/home_style.css" type="text/css" />
     <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="stylesheet" href="./assets/css/header-style.css">
+    <title>Document</title>
 </head>
 <body>
-    <!--Image Slider-->
-    <div class="slider">
-        <div class="slides">
-            <!--radio button-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
-
-            <!--slide images-->
-            <div class="slide first">
-                <img src="./assets/images/home_banner_1.png" alt="img" />
+    <nav>
+        <a href="#" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
+        <div class="nav-menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Sản phẩm
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Sản phẩm cho Chó</a>
+                    <a href="#">Sản phẩm cho Mèo</a>
+                    <a href="#">Đồ chơi chó mèo</a>
+                    <a href="#">Thời trang chó mèo</a>
+                </div>
             </div>
-            <div class="slide">
-                <img src="./assets/images/home_banner_2.png" alt="img" />
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Blog
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Blog về Chó</a>
+                    <a href="#">Blog về Mèo</a>
+                </div>
             </div>
-            <div class="slide">
-                <img src="./assets/images/home_banner_3.png" alt="img" />
-            </div>
-            <div class="slide">
-                <img src="./assets/images/home_banner_4.png" alt="img" />
-            </div>
-
-            <!--automatic navigation-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
+            <a href="#">Liên hệ</a>
         </div>
-        <!--manual navigation-->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+        <form>
+            <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
+            <button type="submit" class="search-icon">
+                <img src="./assets/images/search_icon.png" height="20" />
+            </button>
+        </form>
+        <div class="account-cart">
+            <a href="#" class="account-icon"><img src="./assets/images/account_icon.png" height="30" /></a>
+            <a href="#" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /></a>
+        </div>
+    </nav>
+    <div>
+        <div class="slideshow-container" >
+            <div class="mySlides">
+                <img src="assets/images/home/home_banner_1.png" alt="banner"/>
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/home/home_banner_2.png" alt="banner"/>
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/home/home_banner_3.png" alt="banner"/>
+            </div>
+
+            <div class="mySlides">
+                <img src="assets/images/home/home_banner_4.png" alt="banner"/>
+            </div>
+            <a class="prev" onclick="minusSlides()">&#10094;</a>
+            <a class="next" onclick="plusSlides()">&#10095;</a>
+        </div>
+
+        <div class="lstdot">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0
+        showSlides(slideIndex)
+        window.setInterval(plusSlides, 4000)
+    </script>
+
+    <div class="promo">
+        <img src="assets/images/home/promotion.png" alt="promotion" width="100%">
+        <div class="hover-promo">
+            <a href="#" class="text-promo">Xem chi tiết khuyến mãi</a>
         </div>
     </div>
 
-    <script>
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById("radio" + counter).checked = true;
-            counter++;
-            if (counter > 4) {
-                counter = 1;
-            }
-        }, 5000);
-    </script>
+    <div class="home-menu" >
+        
+        <div class="menu-column-gif">
+            <img src="assets/images/home/dropdown_cat.gif" alt="menu" >
+        </div>
+        
+        <div class="menu-column-item">
+            <a href="#"><img src="assets/images/home/menu_cat.png" alt="menu"></a>
+            <p>Thức ăn cho mèo</p>
+            <div class="hover-promo">
+                <a href="#" class="text-promo"> Thêm vào giỏ hàng</a>
+
+            </div>
+        </div>
+        <div class="menu-column-item">
+            <a href="#"><img src="assets/images/home/menu_dog.png" alt="menu">
+            </a>
+            <p>Thức ăn cho chó</p>
+        </div>
+        <div class="menu-column-item">
+            <a href="#"><img src="assets/images/home/menu_ao.png" alt="menu"></a>
+            <p>Thời trang chó mèo</p>
+        </div>
+        <div class="menu-column-item">
+            <a href="#"><img src="assets/images/home/menu_toy.png" alt="menu"></a>
+            <p>Đồ chơi chó mèo</p>
+        </div>
+
+    </div>
+
+    
+
+    <div>
+        
+        <div class="highlight-product-layout" >
+            <div class="highlight-product-icon">
+                <img src="assets/images/home/banner_1.png" alt="noibat">
+                <p> <strong>SẢN PHẨM NỔI BẬT</strong> </p>
+            </div>
+            <div class="p-column-layout">
+                <div class="p-column-item">
+                    <img src="assets/images/home/dog_food_02.png" alt="product">
+                    <p>Hạt thức ăn khô cho chó Poodle trưởng thành</p>
+                    <h4>350.000đ</h4>
+                </div>
+                <div class="p-column-item">
+                    <img src="assets/images/home/dog_food_06.png" alt="product">
+                    <p>Thức ăn cho chó Pedigree trưởng thành vị bò</p>
+                    <h4>355.000đ</h4>
+                </div>
+                <div class="p-column-item">
+                    <img src="assets/images/home/pet_fashion_07.png" alt="product">
+                    <p>Quần áo mùa hè cho chó nhỏ dễ thương</p>
+                    <h4>119.000đ</h4>
+                </div>
+                <div class="p-column-item">
+                    <img src="assets/images/home/pet_fashion_05.png" alt="product">
+                    <p>Áo thun liền quần cho chó mèo</p>
+                    <h4>100.000đ</h4>
+                </div>
+                <div class="p-column-item">
+                    <img src="assets/images/home/pet_toy_02.png" alt="product">
+                    <p>Con gà đồ chơi gào thét</p>
+                    <h4>15.000đ</h4>
+                </div>
+        
+                <div class="p-column-item">
+                    <img src="assets/images/home/pet_toy_08.png" alt="product">
+                    <p>Đồ chơi xương bông có tiếng</p>
+                    <h4>15.000đ</h4>
+                </div>
+
+            </div>
+    
+        </div>
+
+    </div>
+
+    <div class="promo">
+        <img src="assets/images/home/banner_clothes.png" alt="promotion" width="100%">
+        <div class="hover-promo">
+            <a href="#" class="text-promo">Xem tất cả sản phẩm</a>
+        </div>
+    </div>
+
+    <div class="home-blog">
+        <div class="home-blog-item">
+            <img src="assets/images/home/blog_1.png" alt="blog">
+            <div>
+
+            </div>
+        </div>
+        <div class="home-blog-item">
+            <img src="assets/images/home/blog_2.png" alt="blog">
+            <div>
+
+            </div>
+        </div>
+        
+
+
+    </div>
+    <div class="promo">
+        <img src="assets/images/home/banner_blog.png" alt="promotion" width="100%">
+        <div class="hover-promo">
+            <a href="#" class="text-promo">Khám phá ngay</a>
+        </div>
+    </div>
+
+    
+    
+    
 </body>
 </html>
