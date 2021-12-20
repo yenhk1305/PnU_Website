@@ -3,23 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>
+        PnU - Little pets for big heart
+    </title>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/Login.css">
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="stylesheet" href="./assets/css/header-style.css">
     <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section>
+        <div class="header">
+            <nav>
+                <a href="#" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
+                <div class="nav-menu">
+                    <a href="#">Trang chủ</a>
+                    <a href="#">Giới thiệu</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Sản phẩm
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Sản phẩm cho Chó</a>
+                            <a href="#">Sản phẩm cho Mèo</a>
+                            <a href="#">Đồ chơi chó mèo</a>
+                            <a href="#">Thời trang chó mèo</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Blog
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Blog về Chó</a>
+                            <a href="#">Blog về Mèo</a>
+                        </div>
+                    </div>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <form>
+                    <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit" class="search-icon">
+                        <img src="./assets/images/search_icon.png" height="20" />
+                    </button>
+                </form>
+                <div class="account-cart">
+                    <a href="#" class="account-icon"><img src="./assets/images/account_icon.png" height="30" /></a>
+                    <a href="#" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /></a>
+                </div>
+            </nav>
+        </div>       
         <div class="page-title">
-            <h2 style="margin-left:-20px">ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN</h2>
+            <h2 style="margin-left:20px; margin-top: 20px;">ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN</h2>
         </div>
         <!--Phần Nội Dung-->
-        <div class="noi-dung">
-            <div class="text" style="margin-left:10px">
+        <div class="noi-dung" style="">
+            <div class="text" style="margin-left:20px; margin-top:20px;">
                 <h4>Đăng nhập</h4>
-                <p style="margin-top:-5px">Chào mừng bạn đến với PnU, nơi bạn có thể tìm thấy những gì tốt nhất cho thú cưng của mình</p>
+                <p style="margin-top:20px">Chào mừng bạn đến với PnU, nơi bạn có thể tìm thấy những gì tốt nhất cho thú cưng của mình</p>
             </div>
             <table class="tbBang">
                 <tr>
@@ -53,7 +100,7 @@
                     <td style="width:100%;">
                         <!--Phần hình bên phải-->
                         <div class="hinh">
-                            <img src="./assets/images/Login.png" alt="Cửa hàng thú cưng PnU" style="width:700px; height:410px" />
+                            <img src="./assets/images/Login.png" alt="Cửa hàng thú cưng PnU"/>
                         </div>
                     </td>
                 </tr>

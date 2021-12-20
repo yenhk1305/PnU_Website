@@ -8,13 +8,18 @@
 /*Vị trí phần tử của nội dung*/
 section .noi-dung .text h4 {
     font-size: 20px;
+    text-align: left;
 }
 
 section .noi-dung {
-    align-items: center;
-    width: 100%;
+    width: 95%;
     height: 100%;
     border: 2px solid #E5E5E5;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section .noi-dung .form {
