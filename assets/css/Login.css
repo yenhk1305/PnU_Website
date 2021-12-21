@@ -19,7 +19,7 @@ body .page-title h1{
     margin-bottom: 2%;
     margin-top: 2%;
     display: inline-block;
-    letter-spacing: 0px;
+    /* letter-spacing: 1px; */
 }
 section{
     position: relative;
@@ -73,7 +73,7 @@ section{
             margin-bottom: 10px;
             margin-top: 20px;
             display: inline-block;
-            letter-spacing: 0px;
+            /* letter-spacing: 1px; */
         }
 
         section .noi-dung .form h4{
@@ -82,7 +82,7 @@ section{
             font-size: 16px;
             margin-bottom: 20px;
             display: inline-block;
-            letter-spacing: 0px;
+            /* letter-spacing: 1px; */
         }
         section .noi-dung .form .dang-nhap-khac{
             margin-top: 10px;
@@ -93,7 +93,7 @@ section{
             font-weight: 200;
             font-size: 17px;
             text-align: center;
-            letter-spacing: 0px;
+            /* letter-spacing: 1px; */
         }
 
         /*Style ô input*/
@@ -104,16 +104,16 @@ section{
             font-size: 16px;
             margin-bottom: 5px;
             display: inline-block;
-            letter-spacing: 1px;
+            /* letter-spacing: 1px; */
             }
         section .noi-dung .form .input-form input{
             width: 100%;
             /* height: 40%; */
-            padding: 10px 20px;
+            padding: 10px 10px;
             outline: none;
             border: 1px solid var(--ink03);
             font-size: 16px;
-            letter-spacing: 1px;
+            /* letter-spacing: 1px; */
             background: transparent;
             border-radius: 7px;
             margin-bottom: 5px;
@@ -193,7 +193,7 @@ section{
         }
 
 /*Responsive*/
-@media (max-width: 1000px){
+@media (max-width: 1100px){
     section .img-bg{
         position: absolute;
         left: 1.5%;
@@ -213,7 +213,51 @@ section{
         height: 100%;
         padding: 40px;
         background: rgba(255 255 255 / 0.9);
-        margin: 50px;
+        /* margin: 50px; */
+    }
+    section .noi-dung .form h3{
+        color: #000000;
+        text-align: center;
+        /* margin: 0px 0 10px; */
+        font-weight: 500;
+    }
+    section .noi-dung .form h2{
+        color: #000000;
+        text-align: center;
+        /* margin: 0px 0 10px; */
+        margin-top: 0px;
+        font-weight: 500;
+    }
+    section .noi-dung .form h4{
+        color: #000000;
+        text-align: left;
+        /* margin: 10px 0 20px; */
+        font-weight: 500;
+    }
+}
+/*Responsive ngang*/
+@media (max-height: 700px){
+    section .img-bg{
+        position: absolute;
+        left: 1.5%;
+        width: 100%;
+        height: 93%;
+    }
+    section .noi-dung{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .noi-dung .form{
+        width: 100%;
+        height: 100%;
+        /* padding: 40px; */
+        padding:10px 40px;
+        background: rgba(255 255 255 / 0.9);
+        /* margin: 50px; */
     }
     section .noi-dung .form h3{
         color: #000000;
