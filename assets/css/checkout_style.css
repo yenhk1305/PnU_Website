@@ -330,3 +330,311 @@
         padding-top: 10px;
         padding-bottom: 15px
     }
+       
+@media screen and (max-width: 992px) {    
+    .main-checkout-page {
+        padding: 20px 30px;
+        height: auto;
+    }
+
+.ship-pay-infor {
+    padding-right: 12px;
+}
+
+.cus-infor {
+    padding-right: 12px
+}
+
+.logo-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infor-header {
+    font-size: 16.5px;
+    font-weight: 600;
+}
+
+.main-checkout-page .checkout-infor input {
+    height: 35px;
+    font-size: 13px;
+}
+
+.main-checkout-page .checkout-infor select {
+    height: 35px;
+    font-size: 13px;
+}
+
+.ship-input-infor {
+    padding: 10px;
+}
+
+.ship-input-infor .text-option {
+    font-size: 13px;
+    width: 70%;
+}
+
+.ship-input-infor .price {
+    font-size: 13px;
+    font-weight: 600;
+    width: 30%
+}
+
+.pay-input-infor {
+    padding: 0 10px;
+}
+
+    .pay-input-infor .text-option {
+        font-size: 13px;
+        /* width: 100%; */
+    }
+    .aside-checkout .aside-content {
+        padding: 5px 10px 20px
+    }
+
+    .aside-checkout .aside-group {
+        padding: 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group.header {
+        font-weight: 600;
+        font-size: 16.5px
+    }
+
+    .aside-checkout .aside-content .aside-group.divider {
+        margin: 0px 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-image img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .aside-checkout .aside-content .aside-group .btn-order {
+        font-size: 12px;
+        font-weight: 600;
+        width: 38%;
+        height: 30px;
+        margin-top: 0;
+    }
+
+    .aside-checkout .aside-content .aside-group .gio-hang {
+        font-size: 12px;
+        width: 62%;
+        margin-top: 0;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-name,
+    .aside-checkout .aside-content .aside-group .product-price,
+    .aside-checkout .aside-content .aside-group .tam-tinh,
+    .aside-checkout .aside-content .aside-group .gia-tam-tinh,
+    .aside-checkout .aside-content .aside-group .giam-gia,
+    .aside-checkout .aside-content .aside-group .gia-giam-gia,
+    .aside-checkout .aside-content .aside-group .van-chuyen,
+    .aside-checkout .aside-content .aside-group .phi-van-chuyen {
+        font-size: 13px;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .aside-checkout .aside-content .aside-group .tong-cong {
+        font-size: 14px;
+        font-weight: 600
+    }
+
+    .aside-checkout .aside-content .aside-group .gia-tong-cong {
+        font-size: 16px;
+    }
+
+
+    .aside-checkout .aside-content .aside-group .product-name,
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        padding-left: 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group .input-discount {
+        font-size: 12px;
+        height: 30px;
+        padding: 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group .btn-discount {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .aside-checkout .aside-content .aside-group .product-quantity {
+        padding-top: 5px;
+    }
+
+    .aside-checkout .aside-content .aside-group.product-detail {
+        padding-top: 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group.discount {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    .aside-checkout .aside-content .aside-group.wrap-tam-tinh {
+        padding-top: 10px;
+    }
+
+    .aside-checkout .aside-content .aside-group.wrap-van-chuyen {
+        padding-bottom: 10px
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1396px) {    
+    .main-checkout-page {
+        padding: 20px 25px 40px 100px;
+    }
+
+    .logo-header {
+        margin-bottom: 15px;
+        height: 55px;
+    }
+
+    .infor-header {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .ship-pay-infor {
+        padding-right: 30px;
+    }
+        
+    .main-checkout-page .checkout-infor input {
+        height: 35px;
+        font-size: 13px;        
+        padding: 10px;
+    }
+     
+    .main-checkout-page .checkout-infor select {
+        height: 35px;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+    
+    .checkout-infor .field {
+        padding: 7px 0
+    }
+    
+    .ship-infor .field {
+        padding: 7px 0
+    }
+    
+    .pay-infor .field {
+        padding: 7px 0
+    }
+
+    .ship-input-infor {
+        height: 35px;
+        padding: 8px 15px;
+    }
+    
+    .ship-input-infor .text-option {
+        font-size: 13px;
+    }
+    
+    .ship-input-infor .price {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .pay-input-infor {
+        width: 100%;
+        display: inline-block;
+        border: 1px solid #d2d2d2;
+        border-radius: 4px;
+        height: auto;
+        padding: 0 10px;
+    }
+    
+        .pay-input-infor .text-option {
+            font-size: 13px;
+            line-height: 35px;
+        }
+    
+
+        .aside-checkout .aside-content {
+            padding-bottom: 0px;
+            padding-right: 35px;
+            padding-left: 10px
+        }
+    
+        .aside-checkout .aside-group {
+            padding: 10px;
+        }
+    
+        .aside-checkout .aside-content .aside-group.header {
+            font-weight: 600;
+            font-size: 18px
+        }
+    
+        .aside-checkout .aside-content .aside-group.divider {
+            margin: 0px 10px;
+        }
+    
+        .aside-checkout .aside-content .aside-group .btn-order {
+            font-size: 13px;
+            font-weight: 600;
+            height: 40px;
+        }
+    
+        .aside-checkout .aside-content .aside-group .gio-hang {
+            font-size: 13px;
+        }
+    
+        .aside-checkout .aside-content .aside-group .product-name,
+        .aside-checkout .aside-content .aside-group .product-price,
+        .aside-checkout .aside-content .aside-group .tam-tinh,
+        .aside-checkout .aside-content .aside-group .gia-tam-tinh,
+        .aside-checkout .aside-content .aside-group .giam-gia,
+        .aside-checkout .aside-content .aside-group .gia-giam-gia,
+        .aside-checkout .aside-content .aside-group .van-chuyen,
+        .aside-checkout .aside-content .aside-group .phi-van-chuyen {
+            font-size: 13px;
+        }
+    
+
+        .aside-checkout .aside-content .aside-group .tong-cong {
+            font-size: 15px;
+            font-weight: 600
+        }
+    
+        .aside-checkout .aside-content .aside-group .gia-tong-cong {
+            font-size: 18px;
+            font-weight: 500
+        }
+    
+        .aside-checkout .aside-content .aside-group .product-name,
+        .aside-checkout .aside-content .aside-group .product-quantity {
+            padding-left: 10px;
+        }
+
+        .aside-checkout .aside-content .aside-group .product-image img{
+            width: 65px;
+            height: 65px;
+        }
+
+        .aside-checkout .aside-content .aside-group .product-quantity {
+            margin-bottom: 0;
+        }
+    
+        .aside-checkout .aside-content .aside-group .input-discount {
+            font-size: 12px;
+            height: 35px;
+        }
+    
+    
+        .aside-checkout .aside-content .aside-group .btn-discount {
+            font-size: 13px;
+            height: 35px;
+        }
+}

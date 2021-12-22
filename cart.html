@@ -10,29 +10,83 @@
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="./assets/css/cart_style.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/cart_style_responsive.css" />
     <link rel="stylesheet" href="./assets/css/header-style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <!--thanh điều hướng-->
-    
-    <!--content-->
+    <!-----------------------------thanh điều hướng------------------------------>
+    <nav>
+        <a href="#" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
+        <div class="nav-menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Sản phẩm
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Sản phẩm cho Chó</a>
+                    <a href="#">Sản phẩm cho Mèo</a>
+                    <a href="#">Đồ chơi chó mèo</a>
+                    <a href="#">Thời trang chó mèo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Blog
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Blog về Chó</a>
+                    <a href="#">Blog về Mèo</a>
+                </div>
+            </div>
+            <a href="#">Liên hệ</a>
+        </div>
+        <form>
+            <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
+            <button type="submit" class="search-icon">
+                <img src="./assets/images/search_icon.png" height="20" />
+            </button>
+        </form>
+        <div class="account-cart" onclick="showcart()">
+            <a href="#" class="account-icon"><img src="./assets/images/account_icon.png" height="30" /></a>
+            <a href="#" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
+            <div id="showcart" class="showcart">
+                <!-- <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền ($)</th>
+                    </tr>
+                    <tbody id="mycart">
+                    </tbody>
+                </table> -->
+                <!-- <input type="button" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './cart.html'"></input> -->
+            </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-------------------------------------------content------------------------------------>
     <section class="main-container mt-5 mb-5">
         <div class="container">
         <!-- Chữ giỏ hàng -->
             <div class="cart-header mb-3">
                 <h1>
-                    GIỎ HÀNG <span>(3 sản phẩm)</span>
+                    GIỎ HÀNG <span id="totalcount"></span>
                 </h1>
             </div>
-
-            <!--nội dung-->
-            <div>
+            <!--nếu giỏ hàng trống-->
+            <p class="back-to-product" id="emptycart">Không có sản phẩm nào trong giỏ hàng. Quay lại <a title="Tiếp tục mua sắm" href="Trangsp1.html">cửa hàng</a> để tiếp tục mua sắm</p>
+            <!--nếu có sản phẩm trong giỏ hàng-->
+            <div class="cart-page" id="cartpage">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <form method="post">
@@ -46,107 +100,7 @@
                                 </div>
 
                                 <!--danh sách sản phẩm-->
-                                <div class="cart-tbody">
-                                    <!-- sản phẩm 1 -->
-                                    <div class="item productid-sp01">
-                                        <div class="tbody-image">
-                                            <a class="product-image" href="#" title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe"><img width="80" height="80" alt="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" src="./assets/images/Products/sp1.jpg" /></a>
-                                        </div>
-                                        <div class="tbody-name">
-                                            <h3 class="product-name"><a title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" href="#">Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe</a></h3>
-                                            <a class="btn-remove-item-cart" title="Xóa sản phẩm" data-id="sp01" href="#">
-                                                <i class="fas fa-trash-alt" style="color:black"></i> Xóa sản phẩm
-                                            </a>
-                                        </div>
-                                        <div class="tbody-price">
-                                            <span class="product-price">
-                                                <span class="price">350.000đ</span>
-                                            </span>
-                                        </div>
-                                        <div class="tbody-quantity">
-                                            <div class="product-quantity">
-                                                <button class="btn-minus" type="button">-</button>
-                                                <input type="text" id="quantity" maxlength="2" min="0" value="2" size="4" class="number-sidebar" />
-                                                <button class="btn-plus" type="button">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="tbody-total">
-                                            <span class="product-price-total">
-                                                <span class="price">700.000đ</span>
-                                            </span>
-                                        </div>
-
-                                        <!-- thiết kế cho màn hình nhỏ -->
-
-                                        <div class="mobile-tbody-name-price">
-                                            <h3 class="product-name"><a title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" href="#">Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe</a></h3>
-                                            <span class="product-price">
-                                                <span class="price">350.000đ</span>
-                                            </span>
-                                        </div>
-                                        <div class="mobile-tbody-quantity-delete">
-                                            <div class="product-quantity">
-                                                <button class="btn-minus" type="button">-</button>
-                                                <input type="text" id="quantity" maxlength="2" min="0" value="2" size="4" class="number-sidebar" />
-                                                <button class="btn-plus" type="button">+</button>
-                                            </div>
-                                            <a class="btn-remove-item-cart" title="Xóa sản phẩm" data-id="sp01" href="#">
-                                                Xóa
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- sản phẩm 2 -->
-                                    <div class="item productid-sp02">
-                                        <div class="tbody-image">
-                                            <a class="product-image" href="#" title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe"><img width="80" height="80" alt="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" src="./assets/images/Products/sp3.jpg" /></a>
-                                        </div>
-                                        <div class="tbody-name">
-                                            <h3 class="product-name"><a title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" href="#">Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe</a></h3>
-                                            <a class="btn-remove-item-cart" title="Xóa sản phẩm" data-id="sp01" href="#">
-                                                <i class="fas fa-trash-alt" style="color:black"></i> Xóa sản phẩm
-                                            </a>
-                                        </div>
-                                        <div class="tbody-price">
-                                            <span class="product-price">
-                                                <span class="price">350.000đ</span>
-                                            </span>
-                                        </div>
-                                        <div class="tbody-quantity">
-                                            <div class="product-quantity">
-                                                <button class="btn-minus" type="button">-</button>
-                                                <input type="text" id="quantity" maxlength="2" min="0" value="2" size="4" class="number-sidebar" />
-                                                <button class="btn-plus" type="button">+</button>
-                                            </div>
-                                        </div>
-                                        <div class="tbody-total">
-                                            <span class="product-price-total">
-                                                <span class="price">700.000đ</span>
-                                            </span>
-                                        </div>
-
-                                        <!-- thiết kế cho màn hình nhỏ -->
-
-                                        <div class="mobile-tbody-name-price">
-                                            <h3 class="product-name"><a title="Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe" href="#">Thức ăn cho chó Hill’s Science Diet Puppy Healthy Development with Chicken Meal & Barley Recipe</a></h3>
-                                            <span class="product-price">
-                                                <span class="price">350.000đ</span>
-                                            </span>
-                                        </div>
-                                        <div class="mobile-tbody-quantity-delete">
-                                            <div class="product-quantity">
-                                                <button class="btn-minus" type="button">-</button>
-                                                <input type="text" id="quantity" maxlength="2" min="0" value="2" size="4" class="number-sidebar" />
-                                                <button class="btn-plus" type="button">+</button>
-                                            </div>
-                                            <a class="btn-remove-item-cart" title="Xóa sản phẩm" data-id="sp01" href="#">
-                                                Xóa
-                                            </a>
-                                        </div>
-
-                                    </div>
-
+                                <div class="cart-tbody" id="cart-tbody">
 
                                 </div>
                                 <!-- button tiếp tục -->
@@ -160,22 +114,20 @@
                     <!--Khung tổng cộng-->
                     <div class="col-lg-3 col-md-12 cold-sm-12 col-xs-12">
                         <div class="table-total">
-
                             <div class="checkprice">
                                 <span class="totals-header">Thành tiền:</span>
-                                <span class="totals-price">1.360.000₫</span>
+                                <span class="totals-price" id="totalcart">1.360.000₫</span>
                             </div>
-
                             <div>
                                 <input type="button" class="btn-pay" title="Tiến hành thanh toán" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './checkout.html'"></input>
-                            </div>
-                            
+                            </div>                
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
 </body>
+<script src="./assets/script/cart.js"></script>
+<script>displayCart()</script>
 </html>
