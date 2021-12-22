@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+section .noi-dung table .menu-left{
+    width: 35%;
+}
+section .noi-dung table .menu-left .infor{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+section .noi-dung .menu-left .infor .tuy-chon{
+    margin-left: 28%;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li{
+    list-style: none;
+    margin-bottom: 7%;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li ul{
+    display: none;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li:hover ul{
+    display: block;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li ul li{
+    list-style: none;
+    margin-bottom: 3%;
+    margin-left: 10%;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li a{
+    text-decoration: none;
+}
+section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li a img{
+    width: 7%;
+    height: 7%;
+}
+section .noi-dung table .menu-left .tuy-chon li a:hover{
+    color:var(--V1);
+}
+section .noi-dung table .menu-left .infor .account_img table{
+    margin-left: 5%;
+    margin-bottom: 6%;
+}
+section .noi-dung table .menu-left .infor .account_img img{
+    width: 50%;
+    height: 50%;
+    margin-left: 40%;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+section .noi-dung table .menu-left .infor .account_img p img{
+    width: 8%;
+    height: 8%;
+    margin-left: 0%;
+}
+section .noi-dung table .menu-left .infor .account_img p a{
+    text-decoration: none;
+}
+section .noi-dung table .menu-left .infor .account_img p a:hover{
+    color:var(--V1);
+}
+
+section .noi-dung table .form{
+    border: 1px solid var(--ink03);
+    margin-right: 10%;
+}
+
+/* CSS của màn hình thông báo trống */
+section .noi-dung table .thong-bao-trong{
+    border: 1px solid var(--ink03);
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+section .noi-dung table .thong-bao-trong{
+    text-align: center;
+    justify-content: center;
+}
+
+section .noi-dung table .thong-bao-trong p {
+    margin-bottom: 10%;
+}
+
+section .noi-dung table .thong-bao-trong img{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
