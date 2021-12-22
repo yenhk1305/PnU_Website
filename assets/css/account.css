@@ -11,10 +11,11 @@ section .noi-dung table .menu-left{
 }
 section .noi-dung table .menu-left .infor{
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 section .noi-dung .menu-left .infor .tuy-chon{
     margin-left: 28%;
+
 }
 section .noi-dung table .menu-left .tuy-chon .thong-tin-tai-khoan ul li{
     list-style: none;
@@ -66,10 +67,6 @@ section .noi-dung table .menu-left .infor .account_img p a:hover{
     color:var(--V1);
 }
 
-section .noi-dung table .form{
-    border: 1px solid var(--ink03);
-    margin-right: 10%;
-}
 
 /* CSS của màn hình thông báo trống */
 section .noi-dung table .thong-bao-trong{
@@ -94,4 +91,56 @@ section .noi-dung table .thong-bao-trong img{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 2%;
+}
+
+/* CSS của màn hình hồ sơ cá nhân */
+section .noi-dung table .ho-so-ca-nhan{
+        border: 1px solid var(--ink03);
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+}
+
+section .noi-dung table .ho-so-ca-nhan form{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section .noi-dung table .ho-so-ca-nhan form h2{
+    margin-top: 2%;
+}
+section .noi-dung table .ho-so-ca-nhan form p{
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+/* CSS các input của màn hình hồ sơ cá nhân*/
+section .noi-dung table .ho-so-ca-nhan form .input-form input{
+    width: 60%;
+    /* height: 40%; */
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid var(--ink03);
+    font-size: 16px;
+    /* letter-spacing: 1px; */
+    background: transparent;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    }
+
+section .noi-dung table .ho-so-ca-nhan form input[type="submit"]{
+    background: var(--primaryYellow);
+    color: var(--primaryWhite);
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+section .noi-dung table .ho-so-ca-nhan form .input-form input[type="date"]
+{
+    margin-bottom: 3%;
 }
