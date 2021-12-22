@@ -144,3 +144,76 @@ section .noi-dung table .ho-so-ca-nhan form .input-form input[type="date"]
 {
     margin-bottom: 3%;
 }
+
+
+
+/* CSS của màn hình đơn hàng */
+section .noi-dung table .don-hang{
+    border: 1px solid var(--ink03);
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    text-align: center;
+    justify-content: center;
+}
+
+/* định dạng thẻ div chưa các button tab */
+section .noi-dung table .don-hang .tab {
+    overflow: hidden; 
+    border: 1px solid #ccc; 
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+section .noi-dung table .don-hang h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+/* định dạng các button tab */
+section .noi-dung table .don-hang .tab button {
+    background-color: inherit; 
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 25%;
+    height: auto;
+}
+ 
+/* đổi màu khi một button tab được hover */
+section .noi-dung table .don-hang .tab button:hover {
+    background-color: #ddd;
+}
+ 
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+section .noi-dung table .don-hang .tab button.active {
+    background-color: #F7DC41;
+}
+
+ 
+/* định dạng nội dung hiển thị */
+section .noi-dung table .don-hang .tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+section .noi-dung table .don-hang .tabcontent p{
+    margin-bottom: 10%;
+}
+section .noi-dung table .don-hang .tabcontent img {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}

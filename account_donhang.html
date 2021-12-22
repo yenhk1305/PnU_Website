@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>
-       Thông báo
+       Đơn hàng của tôi
     </title>
     <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/account.css">
@@ -62,7 +62,7 @@
             <table>
                 <tr>
                     <td class="menu-left">
-                        <div class="infor">
+                        <div class="infor" style="margin-bottom: 79%;">
                             <div class="account_img">
                                 <table border="0">
                                     <tr>
@@ -86,18 +86,44 @@
                                                 <li><a href="account_doimk.html">Đổi mật khẩu</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="account_donhang.html"><img src="./assets/images/Document.png"/> Thông tin đơn hàng</a></li>
-                                        <li><a href="account_notif_trong.html" style="color:#F7DC41"><img src="./assets/images/Notification.png"/> Thông báo</a></li>
+                                        <li><a href="account_donhang.html" style="color:#F7DC41"><img src="./assets/images/Document.png"/> Thông tin đơn hàng</a></li>
+                                        <li><a href="account_notif_trong.html"><img src="./assets/images/Notification.png"/> Thông báo</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </td>
                     <td>
-                        <div class="thong-bao-trong">
-                            <img src="./assets/images/thongbaotrong.png">
-                            <p>Chưa có thông báo mới</p>               
-                        </div>
+                        <td> 
+                            <div class="don-hang">
+                                <h2>Đơn hàng của tôi</h2>
+                                <div class="tab">
+                                    <button class="tablinks active">Chờ xác nhận</button>
+                                    <button class="tablinks">Đang giao</button>
+                                    <button class="tablinks">Đã giao</button>
+                                    <button class="tablinks">Đã hủy</button>
+                                </div>
+                                <div class="tab-content">
+                                    <div id="cho-xac-nhan" class="tabcontent">
+                                        <img src="./assets/images/donhangtrong.png">
+                                        <p>Không có đơn hàng chờ xác nhận</p> 
+                                    </div>
+                                    <div id="dang-giao" class="tabcontent">
+                                        <img src="./assets/images/donhangtrong.png">
+                                        <p>Không có đơn hàng đang giao</p>
+                                    </div>
+                                    <div id="da-giao" class="tabcontent">
+                                        <img src="./assets/images/donhangtrong.png">
+                                        <p>Không có đơn hàng đã giao</p>
+                                    </div>
+                                    <div id="da-huy" class="tabcontent">
+                                        <img src="./assets/images/donhangtrong.png">
+                                        <p>Không có đơn hàng đã hủy</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </td>
                     </td>
                 </tr>
                  
@@ -108,4 +134,26 @@
     <div class="page-footer">
     </div>
 </body>
+<script type="text/javascript">
+    var buttons = document.getElementsByClassName('tablinks');
+    var contents = document.getElementsByClassName('tabcontent');
+    function showContent(id){
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        var content = document.getElementById(id);
+        content.style.display = 'block';
+    }
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            var id = this.textContent;
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            this.className += " active";
+            showContent(id);
+        });
+    }
+    showContent('cho-xac-nhan');
+</script>
 </html>
