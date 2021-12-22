@@ -8,9 +8,74 @@
     <link rel="stylesheet" href="./assets/css/product_basestyle.css"/>
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="./assets/css/product_mainstyle.css"/>
+    <link rel="stylesheet" href="./assets/css/header-style.css">
 </head>
 <body>
-  
+
+    <!------Tao thêm thanh điều hướng để làm các chức năng cart, có gì nữa Thảo Mai sửa xong thì update lại thanh này------------------->
+
+    <!-------------------------Thanh điều hướng------------------->
+    
+    <nav>
+        <a href="#" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
+        <div class="nav-menu">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Sản phẩm
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Sản phẩm cho Chó</a>
+                    <a href="#">Sản phẩm cho Mèo</a>
+                    <a href="#">Đồ chơi chó mèo</a>
+                    <a href="#">Thời trang chó mèo</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Blog
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Blog về Chó</a>
+                    <a href="#">Blog về Mèo</a>
+                </div>
+            </div>
+            <a href="#">Liên hệ</a>
+        </div>
+        <form>
+            <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
+            <button type="submit" class="search-icon">
+                <img src="./assets/images/search_icon.png" height="20" />
+            </button>
+        </form>
+        <div class="account-cart" onclick="window.location.href = './cart.html'">
+            <a href="#" class="account-icon"><img src="./assets/images/account_icon.png" height="30" /></a>
+            <a href="#" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
+            <div id="showcart" class="showcart">
+                <!-- <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền ($)</th>
+                    </tr>
+                    <tbody id="mycart">
+
+                    </tbody>
+                </table>
+                <input type="button" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './cart.html'"></input> -->
+            </div>
+            </a>
+        </div>
+    </nav>
+
+    <!-------------------------Content------------------->
+        <!------Ngay mấy chỗ class="product-item__action" t có thêm onclick="addtocart(this)"------->
 
     <div class="sanpham">
         <!--Header-->
@@ -119,7 +184,7 @@
                                             <div class="product-item__price">
                                                 <h3 class="product__price--current">394.000 đ</h3>
                                             </div>
-                                            <div class="product-item__action">
+                                            <div class="product-item__action" onclick="addtocart(this)">
                                                 <img src="./assets/images/productPage/ic_cart.png" class="product-item__action--img">
                                             </div>
                                         </div>
@@ -140,7 +205,7 @@
                                             <div class="product-item__price">
                                                 <h3 class="product__price--current">340.000 đ</h3>
                                             </div>
-                                            <div class="product-item__action">
+                                            <div class="product-item__action" onclick="addtocart(this)">
                                                 <img src="./assets/images/productPage/ic_cart.png" class="product-item__action--img">
                                             </div>
                                         </div>
@@ -155,13 +220,13 @@
                                             <img src="./assets/images/productPage/home1_sp3.png" class="product-item__img" />
                                         </div>
                                         <p class="product-item__name">
-                                            Hạt thức ăn khô cho chó Pitbull
+                                            Hạt thức ăn khô cho chó Pitbull 1
                                         </p>
                                         <div class="product-item__inf">
                                             <div class="product-item__price">
                                                 <h3 class="product__price--current">625.000 đ</h3>
                                             </div>
-                                            <div class="product-item__action">
+                                            <div class="product-item__action" onclick="addtocart(this)">
                                                 <img src="./assets/images/productPage/ic_cart.png" class="product-item__action--img">
                                             </div>
                                         </div>
@@ -177,13 +242,13 @@
                                             <img src="./assets/images/productPage/home1_sp4.png" class="product-item__img" />
                                         </div>
                                         <p class="product-item__name">
-                                            Hạt thức ăn khô cho chó Pitbull
+                                            Hạt thức ăn khô cho chó Pitbull 2
                                         </p>
                                         <div class="product-item__inf">
                                             <div class="product-item__price">
-                                                <h3 class="product__price--current">625.000 đ</h3>
+                                                <h3 class="product__price--current">515.000 đ</h3>
                                             </div>
-                                            <div class="product-item__action">
+                                            <div class="product-item__action" onclick="addtocart(this)">
                                                 <img src="./assets/images/productPage/ic_cart.png" class="product-item__action--img">
                                             </div>
                                         </div>
@@ -198,13 +263,13 @@
                                             <img src="./assets/images/productPage/home1_sp3.png" class="product-item__img" />
                                         </div>
                                         <p class="product-item__name">
-                                            Hạt thức ăn khô cho chó Pitbull
+                                            Hạt thức ăn khô cho chó Pitbull 3
                                         </p>
                                         <div class="product-item__inf">
                                             <div class="product-item__price">
-                                                <h3 class="product__price--current">625.000 đ</h3>
+                                                <h3 class="product__price--current">455.000 đ</h3>
                                             </div>
-                                            <div class="product-item__action">
+                                            <div class="product-item__action" onclick="addtocart(this)">
                                                 <img src="./assets/images/productPage/ic_cart.png" class="product-item__action--img">
                                             </div>
                                         </div>
@@ -220,6 +285,7 @@
         </div>
     </div>
     
-   
+
 </body>
+<script src="./assets/script/cart.js"></script>
 </html>
