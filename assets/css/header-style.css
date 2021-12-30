@@ -1,25 +1,24 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
-body {
-    background:var(--primaryWhite);;
-}
-
-nav {
+.nav-header {
     background: var(--primaryYellow);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    padding: 0 100px;
+    padding: 0 100px;    
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-menu {
@@ -31,11 +30,11 @@ nav {
 
     .nav-menu a {
         float: left;
-        font-size: 100%;
+        font-size: 16px;
         font-weight: 600;
         color: black;
         text-align: center;
-        padding: 20px 20px;
+        padding: 25px 25px;
         text-decoration: none;
     }
 
@@ -45,12 +44,12 @@ nav {
 }
 
     .dropdown .dropbtn {
-        font-size: 100%;
+        font-size: 16px;
         font-weight: 600;
         border: none;
         outline: none;
         color: black;
-        padding: 20px 30px;
+        padding: 25px 25px;
         background-color: inherit;
         font-family: inherit;
         margin: 0;
@@ -88,18 +87,18 @@ nav {
     display: block;
 }
 
-nav form {
+.nav-header form {
     display: flex;
-    height: 45px;
+    height: 25px;
     padding: 10px;
     margin: 0 40px 0 0;
     background: var(--primaryWhite);;
     min-width: 25% !important;
-    border-radius: 23px;
+    border-radius: 25px;
     border: 1px solid rgba(155,155,155,0.2);
 }
 
-    nav form .search {
+.nav-header form .search {
         width: 100%;
         height: 100%;
         padding: 0 10px;
@@ -109,7 +108,7 @@ nav form {
         background: none;
     }
 
-    nav form button {
+    .nav-header form button {
         padding: 0 0;
         color:var(--primaryWhite);;
         background: none;
@@ -118,7 +117,7 @@ nav form {
         cursor: pointer;
     }
 
-nav .search-icon {
+    .nav-header .search-icon {
     text-align: center;
     margin: 0 10px 0 10px;
     color:var(--primaryWhite);;
