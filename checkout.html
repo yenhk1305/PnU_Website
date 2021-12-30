@@ -109,7 +109,7 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 aside-checkout">
                     <ul class="aside-content">
-                        <li class="aside-group header">Đơn hàng</li>
+                        <li class="aside-group header">Đơn hàng <span id="totalcount2"></span></li>
                         <li class="aside-group divider"></li>
                         <div id="product-list">
                             
@@ -118,7 +118,7 @@
                         <li class="aside-group divider"></li>
                         <li class="aside-group discount">
                             <input class="input-discount" type="text" placeholder="Nhập mã giảm giá (nếu có)" />
-                            <button class="btn-discount">Áp dụng</button>
+                            <input type="button" value="Áp dụng" class="btn-discount"/>
                         </li>
                         <li class="aside-group divider"></li>
                         <li class="aside-group wrap-tam-tinh">
@@ -140,10 +140,8 @@
                         </li>
                         <li class="aside-group">
                             <span><a href="./cart.html" class="gio-hang" title="Quay về giỏ hàng">< Quay về giỏ hàng</a></span>
-                            <button data-href="#"
-                                    class="btn-order">
-                                ĐẶT HÀNG
-                            </button>
+                            <input type="button" onclick="dathang()"
+                                    class="btn-order" value="ĐẶT HÀNG" />
                         </li>
                     </ul>
                 </div>

@@ -9,17 +9,25 @@
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="./assets/css/product_mainstyle.css"/>
     <link rel="stylesheet" href="./assets/css/header-style.css">
+    <link rel="stylesheet" href="./assets/css/header-style.css">
 </head>
 <body>
 
-    <!------Tao thêm thanh điều hướng để làm các chức năng cart, có gì nữa Thảo Mai sửa xong thì update lại thanh này------------------->
-
     <!-------------------------Thanh điều hướng------------------->
-    
-    <nav>
-        <a href="#" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
+    <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+    <div id="header"></div>
+    <!-- Header-End -->
+
+    <!-- <nav class="nav-header">
+        <a href="index.html" class="logo"><img src="./assets/images/logo.png" height="50" /></a>
         <div class="nav-menu">
-            <a href="#">Trang chủ</a>
+            <a href="index.html">Trang chủ</a>
             <a href="#">Giới thiệu</a>
             <div class="dropdown">
                 <button class="dropbtn">
@@ -34,13 +42,13 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn">
+                <button class="dropbtn" onclick="window.location.href='./blog.html'">
                     Blog
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">Blog về Chó</a>
-                    <a href="#">Blog về Mèo</a>
+                    <a href="blog_dog.html">Blog về Chó</a>
+                    <a href="blog_cat.html">Blog về Mèo</a>
                 </div>
             </div>
             <a href="#">Liên hệ</a>
@@ -53,26 +61,25 @@
         </form>
         <div class="account-cart">
             <a href="#" class="account-icon"><img src="./assets/images/account_icon.png" height="30" /></a>
-            <a href="cart.html" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
-            <div id="showcart" class="showcart">
-                <!-- <table>
-                    <tr>
-                        <th>STT</th>
-                        <th>Hình</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Đơn giá</th>
-                        <th>Số lượng</th>
-                        <th>Thành tiền ($)</th>
-                    </tr>
-                    <tbody id="mycart">
-
-                    </tbody>
-                </table>
-                <input type="button" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './cart.html'"></input> -->
+            <a href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
+                <div id="showcart" class="showcart">
+                    <table>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hình</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tbody id="mycart">
+                        
+                        </tbody>
+                    </table>
+                </div>
+                </a>
             </div>
-            </a>
-        </div>
-    </nav>
+    </nav> -->
 
     <!-------------------------Content------------------->
         <!------Ngay mấy chỗ class="product-item__action" t có thêm onclick="addtocart(this)"------->
