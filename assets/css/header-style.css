@@ -8,9 +8,15 @@
     font-family: 'Montserrat', sans-serif;
 } */
 
+/* body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+} */
 .nav-header {
     background: var(--primaryYellow);
     display: flex;
+    width: 100%;
+    position: fixed;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
