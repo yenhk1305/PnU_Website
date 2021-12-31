@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- ID=[Tên viết tắt]+[STT]. Danh sách tên viết tắt
+  Bán chạy nhất: BS
+
+  Thức ăn: TA
+  Thức ăn cho chó: TAC
+  Thức ăn cho mèo: TAM
+  
+  Vệ sinh: VS
+
+  Thời trang: TT
+-->
+
+
+<PnU>
+<!--Thức ăn-->
+  <TA>
+  <!--Thức ăn chó-->
+    <TAC>
+      <product>
+        <id>TAC01</id>
+        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</name>
+        <price>394000</price>
+        <image>./assets/images/product/dog_food_01.png</image>
+      </product>
+
+      <product>
+        <id>TAC02</id>
+        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Adult</name>
+        <price>340000</price>
+        <image>./assets/images/product/dog_food_02.png</image>
+      </product>
+
+      <product>
+        <id>TAC03</id>
+        <name>Hạt thức ăn khô cho chó trưởng thành</name>
+        <price>785000</price>
+        <image>./assets/images/product/dog_food_03.png</image>
+      </product>
+
+      <product>
+        <id>TAC04</id>
+        <name>Hạt cho chó vị sữa thơm ngon</name>
+        <price>508000</price>
+        <image>./assets/images/product/dog_food_04.png</image>
+      </product>
+
+      <product>
+        <id>TAC05</id>
+        <name>Hạt thức ăn khô cho chó Pitbull</name>
+        <price>625000</price>
+        <image>./assets/images/product/dog_food_05.png</image>
+      </product>
+
+      <product>
+        <id>TAC06</id>
+        <name>Hạt thức ăn khô cho chó trưởng thành 500g</name>
+        <price>315000</price>
+        <image>./assets/images/product/dog_food_06.png</image>
+      </product>
+
+      <product>
+        <id>TAC07</id>
+        <name>Hạt thức ăn khô cho chó PitBbull hạt mềm Zenith</name>
+        <price>309000</price>
+        <image>./assets/images/product/dog_food_07.png</image>
+      </product>
+
+      <product>
+        <id>TAC08</id>
+        <name>Hạt thức cho chó PoodleMKB MEC Wild Taste Nutritiob</name>
+        <price>465000</price>
+        <image>./assets/images/product/dog_food_08.png</image>
+      </product>
+
+      <product>
+        <id>TAC09</id>
+        <name>Xúc Xích Phô Mai Bowwow 240g - Không Hương Liệu</name>
+        <price>70000</price>
+        <image>./assets/images/product/dog_food_09.png</image>
+      </product>
+
+      <product>
+        <id>TAC10</id>
+        <name>Bánh Thưởng Phô Mai Thịt Cừu Bowwow 100g - Thịt Tươi </name>
+        <price>55000</price>
+        <image>./assets/images/product/dog_food_10.png</image>
+      </product>
+      
+    </TAC>
+
+  <!--Thức ăn mèo-->
+    <TAM>
+      <product>
+        <id>TAM01</id>
+        <name>Hạt thức ăn khô cho mèo con Royal Canin Kitten</name>
+        <price>348000</price>
+        <image>./assets/images/product/cat_food_01.png</image>
+      </product>
+
+      <product>
+        <id>TAM02</id>
+        <name>Hạt thức ăn khô cho mèo trưởng thành Royal Canin Renal</name>
+        <price>259000</price>
+        <image>./assets/images/product/cat_food_02.png</image>
+      </product>
+
+      <product>
+        <id>TAM03</id>
+        <name>Thức Ăn Cho Mèo Con Whiskas Vị Cá Biển Và Sữa</name>
+        <price>210000</price>
+        <image>./assets/images/product/cat_food_03.png</image>
+      </product>
+
+      <product>
+        <id>TAM04</id>
+        <name>Thức ăn cho mèo MININO Vị cá Ngừ</name>
+        <price>275000</price>
+        <image>./assets/images/product/cat_food_04.png</image>
+      </product>
+
+      <product>
+        <id>TAM05</id>
+        <name>Thức ăn cho mèo ME-O thơm ngon</name>
+        <price>124000</price>
+        <image>./assets/images/product/cat_food_05.png</image>
+      </product>
+
+      <product>
+        <id>TAM06</id>
+        <name>Thức ăn cho mèo KiteKat Vị cá Thu</name>
+        <price>99000</price>
+        <image>./assets/images/product/cat_food_06.png</image>
+      </product>
+
+      <product>
+        <id>TAM07</id>
+        <name>Hạt thức ăn mèo REFLEX High Quality </name>
+        <price>239000</price>
+        <image>./assets/images/product/cat_food_07.png</image>
+      </product>
+
+      <product>
+        <id>TAM08</id>
+        <name>Hạt thức ăn khô cho mèo Hàn Quốc Cats Rang</name>
+        <price>365000</price>
+        <image>./assets/images/product/cat_food_08.png</image>
+      </product>
+
+      <product>
+        <id>TAM09</id>
+        <name>Pate lon cho mèo Whiskas 400g</name>
+        <price>50000</price>
+        <image>./assets/images/product/cat_food_09.png</image>
+      </product>
+
+      <product>
+        <id>TAM10</id>
+        <name>Sữa tươi cho mèo Gimcat Latte 150g - Bổ sung Canxi, Vitamin</name>
+        <price>75000</price>
+        <image>./assets/images/product/cat_food_10.png</image>
+      </product>
+    </TAM>
+  </TA>
+
+<!--Vệ sinh-->
+  <VS>
+      <product>
+        <id>VSC01</id>
+        <name>Sữa tắm cho chó con Bioline 250ml - Dịu nhẹ cho da nhạy cảm</name>
+        <price>114000</price>
+        <image>./assets/images/product/dog_hygiene_01.png</image>
+      </product>
+
+      <product>
+        <id>VSC02</id>
+        <name>Sữa tắm mượt lông cho chó Enoug SOS 530ml - Cân Bằng PH</name>
+        <price>130000</price>
+        <image>./assets/images/product/dog_hygiene_02.png</image>
+      </product>
+
+      <product>
+        <id>VSC03</id>
+        <name>Bộ bàn chải và kem đánh răng cho chó Bioline 100g - Loại bỏ mảng bám</name>
+        <price>100000</price>
+        <image>./assets/images/product/dog_hygiene_03.png</image>
+      </product>
+
+      <product>
+        <id>VSC04</id>
+        <name>Xịt thơm miệng và khử mùi Bioline 175ml - Chống viêm</name>
+        <price>90000</price>
+        <image>./assets/images/product/dog_hygiene_04.png</image>
+      </product>
+
+      <product>
+        <id>VSM01</id>
+        <name>Sữa tắm cho mèo Bioline 250ml - Dịu nhẹ</name>
+        <price>100000</price>
+        <image>./assets/images/product/cat_hygiene_01.png</image>
+      </product>
+
+      <product>
+        <id>VSM02</id>
+        <name>Sữa tắm cho mèo Enoug SOS 530ml - Bảo vệ da</name>
+        <price>130000</price>
+        <image>./assets/images/product/cat_hygiene_02.png</image>
+      </product>
+
+      <product>
+        <id>VSM03</id>
+        <name>Kem đánh răng cho mèo Bioline 50g - Vị phô mai - Full bàn chải</name>
+        <price>130000</price>
+        <image>./assets/images/product/cat_hygiene_03.png</image>
+      </product>
+
+      <product>
+        <id>VSM04</id>
+        <name>Cát vệ sinh cho mèo cát Nhật thần thánh 10L</name>
+        <price>230000</price>
+        <image>./assets/images/product/cat_hygiene_04.png</image>
+      </product>
+    
+  </VS>
+
+<!--Thời trang-->
+  <TT>
+   <TTC>
+      <product>
+        <id>TTC01</id>
+        <name>Áo thun có tay màu hồng cho chó</name>
+        <price>62000</price>
+        <image>./assets/images/product/pet_fashion_01.png</image>
+      </product>
+
+      <product>
+        <id>TTC02</id>
+        <name>Áo thun hình hoa cúc cho chó</name>
+        <price>105000</price>
+        <image>./assets/images/product/pet_fashion_06.png</image>
+      </product>
+
+      <product>
+        <id>TTC03</id>
+        <name>Áo yếm cho chó con in chữ IloveU</name>
+        <price>130000</price>
+        <image>./assets/images/product/pet_fashion_07.png</image>
+      </product>
+
+      <product>
+        <id>TTC04</id>
+        <name>Mũ ếch dễ thương cho chó</name>
+        <price>50000</price>
+        <image>./assets/images/product/pet_fashion_08.png</image>
+      </product>
+    </TTC>
+
+    <TTM>
+      <product>
+        <id>TTM01</id>
+        <name>Áo yếm buộc nơ dễ thương cho mèo</name>
+        <price>130000</price>
+        <image>./assets/images/product/pet_fashion_02.png</image>
+      </product>
+
+      <product>
+        <id>TTM02</id>
+        <name>Mũ len thời trang dễ thương cho mèo</name>
+        <price>119000</price>
+        <image>./assets/images/product/pet_fashion_03.png</image>
+      </product>
+
+      <product>
+        <id>TTM03</id>
+        <name>Thời trang cho mèo - bộ quần áo nhện Halloween</name>
+        <price>130000</price>
+        <image>./assets/images/product/pet_fashion_04.png</image>
+      </product>
+
+      <product>
+        <id>TTM04</id>
+        <name>Áo thun liền quần khủng long cho mèo</name>
+        <price>100000</price>
+        <image>./assets/images/product/pet_fashion_05.png</image>
+      </product>
+    </TTM>
+  </TT>  
+
+<!--Đồ chơi-->
+  <DC>
+    <DCC>
+      <product>
+        <id>DCC01</id>
+        <name>Đồ chơi bóng mặt chó 3 màu</name>
+        <price>25000</price>
+        <image>./assets/images/product/pet_toy_01.png</image>
+      </product>
+
+      <product>
+        <id>DCC02</id>
+        <name>Con gà đồ chơi cho chó phát ra tiếng</name>
+        <price>20000</price>
+        <image>./assets/images/product/pet_toy_02.png</image>
+      </product>
+
+      <product>
+        <id>DDC03</id>
+        <name>Đồ chơi xương nhựa gặm làm sạch răng cho chó</name>
+        <price>20000</price>
+        <image>./assets/images/product/pet_toy_03.png</image>
+      </product>
+
+      <product>
+        <id>DDC04</id>
+        <name>Đồ chơi cao su cho Squeaky Dog</name>
+        <price>55000</price>
+        <image>./assets/images/product/pet_toy_04.png</image>
+      </product>
+    </DCC>
+
+    <DCM>
+      <product>
+        <id>DCM01</id>
+        <name>Đồ chơi cho mèo hình cá chim</name>
+        <price>25000</price>
+        <image>./assets/images/product/pet_toy_05.png</image>
+      </product>
+
+      <product>
+        <id>DCM02</id>
+        <name>Bóng lồng chuột cho mèo</name>
+        <price>25000</price>
+        <image>./assets/images/product/pet_toy_06.png</image>
+      </product>
+
+      <product>
+        <id>DCM03</id>
+        <name>Đồ chơi cao su hình xương cá cho mèo</name>
+        <price>22000</price>
+        <image>./assets/images/product/pet_toy_07.png</image>
+      </product>
+
+      <product>
+        <id>DCM04</id>
+        <name>Đồ chơi đùi gà bông cho mèo</name>
+        <price>20000</price>
+        <image>./assets/images/product/pet_toy_08.png</image>
+      </product>
+    </DCM>
+  </DC>    
+</PnU>
+
