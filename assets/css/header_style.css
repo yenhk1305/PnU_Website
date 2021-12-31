@@ -1,0 +1,147 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+body{    
+    margin: 0;    
+}
+
+header{    
+    top: 0;
+    position: fixed;
+    width: 100%;    
+    background: var(--primaryYellow);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 100px;
+    display: flex;
+    outline: none;    
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header .logo img{
+    width: 2.3rem;
+}
+
+header ul{    
+    list-style: none;
+    margin: 0;
+}
+
+header li{    
+    background: var(--primaryYellow);
+    color: var(--primaryBlack);
+    display: block;
+    float: left; 
+    padding: 1rem; 
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+header li a{
+    color: var(--primaryBlack);
+}
+
+header li:hover, li:focus-within{
+    background: var(--V2);
+    cursor: pointer;
+}
+
+header li:focus-within a {
+    outline: none;
+}
+
+/* Dropdown Menu */
+header ul li ul{
+    background: var(--primaryBlack);
+    visibility: hidden;
+    opacity: 0;
+    /* min-width: auto; */
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    padding: 0;
+    left: 0;
+    display: none;    
+}
+
+header ul li:hover > ul,
+header ul li:focus-within > ul,
+header ul li ul:hover, ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+header ul li ul li {
+    background: var(--primaryBlack);
+    color: var(--primaryWhite);
+    clear: both;
+    width: 80%;
+}
+
+header ul li ul li a{    
+    color: var(--primaryWhite);
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;    
+}
+
+header ul li ul li:hover a {
+    color: var(--primaryBlack);
+}
+
+header ul li a img{
+    height: 0.35rem;
+}
+
+header .account-cart img {
+    height: 1.5rem;        
+}
+header .cart-icon{
+    margin-left: 1rem;
+}
+
+/* Thanh tìm kiếm */
+header form {
+    display: flex;
+    height: 1rem;
+    padding: 10px;
+    margin: 0 40px 0 0;
+    background: var(--primaryWhite);;
+    min-width: 25% !important;
+    border-radius: 25px;
+    border: 1px solid rgba(155,155,155,0.2);
+}
+
+header form .search {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px;
+        color:var(--primaryWhite);;
+        font-size: 17px;
+        border: none;
+        background: none;
+    }
+
+    header form button {
+        padding: 0 0;
+        color:var(--primaryWhite);;
+        background: none;
+        border: none;
+        border-radius: 23px;
+        cursor: pointer;
+    }
+
+    header form .search-icon {
+    text-align: center;
+    margin: 0 10px 0 10px;
+    color:var(--primaryWhite);;
+    cursor: pointer;
+}
