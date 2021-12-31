@@ -4,7 +4,7 @@
 
 .main-container {
     font-family: 'Montserrat', sans-serif;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .container .back-to-product {
@@ -507,6 +507,7 @@
             .cart-table .cart-tbody .item .mobile-tbody-quantity-delete .product-quantity {
                 margin-top: 0;
                 margin-left: 25px;
+                margin-top: 18px;
                 height: 40px;
             }
 
@@ -581,6 +582,7 @@
             .cart-table .cart-tbody .item .product-name {
                 font-size: 13px;
                 margin-left: 10px;
+                margin-bottom: 0px;
             }
             .cart-table .cart-tbody .item .btn-remove-item-cart {
                 font-size: 11px;
@@ -644,6 +646,7 @@
         }
         .cart-table .cart-tbody .item .product-name {
             font-size: 13px;
+            margin-bottom: 0PX;
         }
         .cart-table .cart-tbody .item .btn-remove-item-cart {
             font-size: 11px;

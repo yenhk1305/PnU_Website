@@ -145,3 +145,86 @@ header form .search {
     color:var(--primaryWhite);;
     cursor: pointer;
 }
+
+/* Table showcart */
+.cart-icon {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f1f1f1;
+}
+
+th {
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+.showcart {
+    width: 50%;
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 65px;
+    background-image: linear-gradient(#f1f1f1, #f1f1f1);
+    padding: 10px;
+    display: none;
+}
+
+.showcart img {
+    width: 30%;
+    height: 30%;
+}
+
+.showcart span {
+    font-weight: bold;
+    font-size: 2vw;
+    color: yellow;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+table th:nth-child(1) {
+    width: 5%;
+    padding: 20px;
+    background-color: #CCC;
+}
+
+table th:nth-child(2) {
+    width: 25%;
+    background-color: #CCC;
+}
+
+table th:nth-child(3) {
+    width: 30%;
+    background-color: #CCC;
+}
+
+table th:nth-child(4) {
+    width: 30%;
+    background-color: #CCC;
+}
+
+table th:nth-child(5) {
+    width: 5%;
+    background-color: #CCC;
+}
+
+table th:nth-child(6) {
+    width: 35%;
+    background-color: #CCC;
+}
+
+table td {
+    padding: 10px 20px;
+    border: 1px #CCC solid;
+}
