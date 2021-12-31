@@ -9,12 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="./assets/css/product_style.css"/>
-    <title>Trang sản phẩm</title>
+    <title>Trang sản phẩm 1</title>
     <script src="./assets/script/xml_product_parser.js"></script>
+     <!-- Header-Start -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script>
+         $(function(){
+             $("#header").load("header.html");
+         });
+     </script>
 </head>
 <body onload="loadingProductPage1()">
     <div class="product__container">
-
+           
+            <div id="header"></div>
+            <!-- Header-End -->
 
         <div class="grid">
 
@@ -354,8 +363,8 @@
                                 <span class="product-item__price-current">450.000 đ</span>
                             </div>
                             <div class="product-item__action">
-                                <span class="product-item__add-cart">
-                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                <span class="product-item__add-cart" >
+                                    <i class= "product-item__cart-icon fas fa-shopping-cart"></i> 
                                 </span>
                                 <div class="product-item_rating">
                                     <span class="score-rating">4.1 </span>

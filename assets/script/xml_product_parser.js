@@ -4,6 +4,7 @@ var data = [], xmlObject,xmlDoc;
 
   
 function loadingProductPage1() {
+    
     var xmlObject = new XMLHttpRequest();
     xmlObject.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -24,11 +25,13 @@ function loadingProductPage1() {
 
         lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
         
-        // Trộn mảng để hiện ngẫu nhiên
+        // Trộn mảng để thể hiện ngẫu nhiên
         const lstproductShuffled = Array.prototype.slice.call(lstproduct).sort( function () {
-            return Math.random() > 0.5 ? 1 : -1 
+            return 0.5 - Math.random();
         } );
  
+        var btnCart=document.getElementsByClassName("product-item__add-cart");
+        btnCart.setAttribute("onclick","addtocart(this)");
 
         var flag= document.getElementById("page2");
 
