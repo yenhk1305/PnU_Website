@@ -30,19 +30,21 @@ function loadingProductPage1() {
             return 0.5 - Math.random();
         } );
  
-        var btnCart=document.getElementsByClassName("product-item__add-cart");
-        btnCart.setAttribute("onclick","addtocart(this)");
+        
 
         var flag= document.getElementById("page2");
 
+        var btnCart=document.getElementsByClassName("product-item__add-cart");
         nameArray = document.getElementsByClassName("product-item__name");
         priceArray = document.getElementsByClassName("product-item__price-current");
         imgArray = document.getElementsByClassName("product-item__img");
         
         if (flag==null){
-            
+          
+           
             for (i = 0; i < 20; i++) {
-        
+
+                btnCart[i].setAttribute("onclick","addtocart(this)");
                 product =   lstproductShuffled[i];
                 name =product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
                 nameArray [i].innerText = name;          
