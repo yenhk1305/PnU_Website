@@ -9,29 +9,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="./assets/css/product_style.css"/>
-    <link rel="stylesheet" href="./assets/css/header_style.css"/>
+    <link rel="stylesheet" href="/assets/css/header_style.css">
+    <script src="./assets/script/cart.js"></script>
     <title>Trang sản phẩm 1</title>
     <script src="./assets/script/xml_product_parser.js"></script>
 
 </head>
 <body onload="loadingProductPage1()">
+
+    <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+    <span id="header"></span>    
+    <!-- Header-End -->
     
-    <header>
-        <a href="index.html" class="logo"><img src="./assets/images/logo.png"></a>
-        <nav class="nav-menu">
+    <!-- <header id="top-header">
+        <a href="index.html" class="logo"><img class="pnu-logo" src="./assets/images/logo.png"></a>
+        <nav class="nav-top-header">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="#AboutUs">Giới thiệu</a></li>
-                <li><a href="#Products" class="dropdown">Sản phẩm <img src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-content">
+                <li class="dropdown-product" ><a href="#Products">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="dropdown-product-content">
                         <li><a href="#1">Sản phẩm cho Chó</a></li>
                         <li><a href="#2">Sản phẩm cho Mèo</a></li>
                         <li><a href="#3">Đồ chơi Chó Mèo</a></li>
                         <li><a href="#4">Thời trang Chó Mèo</a></li>
                     </ul>
                 </li>
-                <li><a href="blog.html" class="dropdown">Blog <img src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-content">
+                <li class="dropdown-blog"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="dropdown-blog-content">
                         <li><a href="#1b">Blog về Chó</a></li>
                         <li><a href="#2b">Blog về Mèo</a></li>                            
                     </ul>
@@ -39,15 +50,17 @@
                 <li><a href="#Contact">Liên hệ</a></li>
             </ul>
         </nav>
-        <form>
-            <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
-            <button type="submit" class="search-icon">
+        <form class="search-from">
+            <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
+            <button class="search-icon" type="submit">
                 <img src="./assets/images/search_icon.png" height="20" />
             </button>
         </form>
         <div class="account-cart">
-            <a href="#" class="account-icon"><img src="./assets/images/account_icon.png"></a>
-            <a href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
+            <a  class="account-icon" href="#"><img src="./assets/images/account_icon.png"></a>
+            <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
+                <img src="./assets/images/cart_icon.png" height="30" />
+                <span id="countsp">0</span>
                 <div id="showcart" class="showcart">
                     <table>
                         <tr>
@@ -58,14 +71,12 @@
                             <th>Số lượng</th>
                             <th>Thành tiền</th>
                         </tr>
-                        <tbody id="mycart">
-                        
-                        </tbody>
+                        <tbody id="mycart"></tbody>
                     </table>
                 </div>
-                </a>
+            </a>
         </div>                
-    </header>
+    </header> -->
     
     <div class="product__container">
         <div class="grid">

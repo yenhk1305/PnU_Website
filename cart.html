@@ -18,22 +18,22 @@
 </head>
 <body>
     <!-----------------------------thanh điều hướng------------------------------>
-    <header>
-        <a href="index.html" class="logo"><img src="./assets/images/logo.png"></a>
-        <nav class="nav-menu">
+    <header id="top-header">
+        <a href="index.html" class="logo"><img class="pnu-logo" src="./assets/images/logo.png"></a>
+        <nav class="nav-top-header">
             <ul>
                 <li><a href="index.html">Trang chủ</a></li>
                 <li><a href="#AboutUs">Giới thiệu</a></li>
-                <li><a href="#Products" class="dropdown">Sản phẩm <img src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-content">
+                <li class="dropdown-product" ><a href="#Products">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="dropdown-product-content">
                         <li><a href="#1">Sản phẩm cho Chó</a></li>
                         <li><a href="#2">Sản phẩm cho Mèo</a></li>
                         <li><a href="#3">Đồ chơi Chó Mèo</a></li>
                         <li><a href="#4">Thời trang Chó Mèo</a></li>
                     </ul>
                 </li>
-                <li><a href="blog.html" class="dropdown">Blog <img src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-content">
+                <li class="dropdown-blog"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="dropdown-blog-content">
                         <li><a href="#1b">Blog về Chó</a></li>
                         <li><a href="#2b">Blog về Mèo</a></li>                            
                     </ul>
@@ -41,15 +41,17 @@
                 <li><a href="#Contact">Liên hệ</a></li>
             </ul>
         </nav>
-        <form>
-            <input type="search" class="search" placeholder="Tìm kiếm sản phẩm..." />
-            <button type="submit" class="search-icon">
+        <form class="search-from">
+            <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
+            <button class="search-icon" type="submit">
                 <img src="./assets/images/search_icon.png" height="20" />
             </button>
         </form>
         <div class="account-cart">
-            <a href="#" class="account-icon"><img src="./assets/images/account_icon.png"></a>
-            <a href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" class="cart-icon"><img src="./assets/images/cart_icon.png" height="30" /><span id="countsp">(0)</span>
+            <a  class="account-icon" href="#"><img src="./assets/images/account_icon.png"></a>
+            <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
+                <img src="./assets/images/cart_icon.png" height="30" />
+                <span id="countsp">0</span>
                 <div id="showcart" class="showcart">
                     <table>
                         <tr>
@@ -60,12 +62,10 @@
                             <th>Số lượng</th>
                             <th>Thành tiền</th>
                         </tr>
-                        <tbody id="mycart">
-                        
-                        </tbody>
+                        <tbody id="mycart"></tbody>
                     </table>
                 </div>
-                </a>
+            </a>
         </div>                
     </header>
 
@@ -80,61 +80,61 @@
     <!-- Header-End -->
 
     <!-------------------------------------------content------------------------------------>
-    <main style="margin-top: 150px;">
+    <main style="margin-top: 100px;">
 
-    <section class="main-container mb-5">
-        <div class="container">
-        <!-- Chữ giỏ hàng -->
-            <div class="cart-header mb-3">
-                <h1>
-                    GIỎ HÀNG <span id="totalcount"></span>
-                </h1>
-            </div>
-            <!--nếu giỏ hàng trống-->
-            <p class="back-to-product" id="emptycart">Không có sản phẩm nào trong giỏ hàng. Quay lại <a title="Tiếp tục mua sắm" href="product_page1.html">cửa hàng</a> để tiếp tục mua sắm</p>
-            <!--nếu có sản phẩm trong giỏ hàng-->
-            <div class="cart-page" id="cartpage">
-                <div class="row">
-                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <form method="post">
-                            <!-- Bảng sản phẩm + button tiếp tục -->
-                            <div class="cart-table">
-                                <div class="cart-thead">
-                                    <div class="thead-name"><span>Sản phẩm</span></div>
-                                    <div class="thead-price"><span>Giá</span></div>
-                                    <div class="thead-qty"><span>Số lượng</span></div>
-                                    <div class="thead-total"><span>Thành tiền</span></div>
+        <section class="main-container mb-5">
+            <div class="container">
+            <!-- Chữ giỏ hàng -->
+                <div class="cart-header mb-3">
+                    <h1>
+                        GIỎ HÀNG <span id="totalcount"></span>
+                    </h1>
+                </div>
+                <!--nếu giỏ hàng trống-->
+                <p class="back-to-product" id="emptycart">Không có sản phẩm nào trong giỏ hàng. Quay lại <a title="Tiếp tục mua sắm" href="product_page1.html">cửa hàng</a> để tiếp tục mua sắm</p>
+                <!--nếu có sản phẩm trong giỏ hàng-->
+                <div class="cart-page" id="cartpage">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                            <form method="post">
+                                <!-- Bảng sản phẩm + button tiếp tục -->
+                                <div class="cart-table">
+                                    <div class="cart-thead">
+                                        <div class="thead-name"><span>Sản phẩm</span></div>
+                                        <div class="thead-price"><span>Giá</span></div>
+                                        <div class="thead-qty"><span>Số lượng</span></div>
+                                        <div class="thead-total"><span>Thành tiền</span></div>
+                                    </div>
+
+                                    <!--danh sách sản phẩm-->
+                                    <div class="cart-tbody" id="cart-tbody">
+
+                                    </div>
+                                    <!-- button tiếp tục -->
+                                    <div>
+                                        <input type="button" class="btn-continue" title="Tiếp tục mua hàng" value="TIẾP TỤC MUA HÀNG" onclick="parent.location='./product_page1.html'"/>
+                                    </div>
                                 </div>
+                            </form>
+                        </div>
 
-                                <!--danh sách sản phẩm-->
-                                <div class="cart-tbody" id="cart-tbody">
-
+                        <!--Khung tổng cộng-->
+                        <div class="col-lg-3 col-md-12 cold-sm-12 col-xs-12">
+                            <div class="table-total">
+                                <div class="checkprice">
+                                    <span class="totals-header">Thành tiền:</span>
+                                    <span class="totals-price" id="totalcart">1.360.000₫</span>
                                 </div>
-                                <!-- button tiếp tục -->
                                 <div>
-                                    <input type="button" class="btn-continue" title="Tiếp tục mua hàng" value="TIẾP TỤC MUA HÀNG" onclick="parent.location='./product_page1.html'"/>
-                                </div>
+                                    <input type="button" class="btn-pay" title="Tiến hành thanh toán" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './checkout.html'"></input>
+                                </div>                
                             </div>
-                        </form>
-                    </div>
-
-                    <!--Khung tổng cộng-->
-                    <div class="col-lg-3 col-md-12 cold-sm-12 col-xs-12">
-                        <div class="table-total">
-                            <div class="checkprice">
-                                <span class="totals-header">Thành tiền:</span>
-                                <span class="totals-price" id="totalcart">1.360.000₫</span>
-                            </div>
-                            <div>
-                                <input type="button" class="btn-pay" title="Tiến hành thanh toán" value="TIẾN HÀNH THANH TOÁN" onclick="window.location.href = './checkout.html'"></input>
-                            </div>                
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 </body>
 <script src="./assets/script/cart.js"></script>
 <script>displayCart()</script>
