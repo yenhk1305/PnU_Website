@@ -24,7 +24,6 @@ var shoppingCart = (function() {
   if (localStorage.getItem("shoppingCart") != null) {
     loadCart();
   }
-  
 
   // =============================
   // Public methods and propeties
@@ -218,6 +217,7 @@ function displayCart(){
               '</div>'
           document.getElementById("cart-tbody").innerHTML = ttgh;
           document.getElementById("totalcart").innerHTML = shoppingCart.totalCart() + " đ";
+          document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
           showTotalCount();
       } 
   }  
@@ -253,16 +253,7 @@ var giohang = shoppingCart.listCart();
 
 //Total Items in cart
 function showTotalCount(){
-if (window.location.pathname == "/cart.html"){
   document.getElementById("countsp").innerHTML = shoppingCart.totalCount();
-  document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-}
-else if (window.location.pathname == "/checkout.html"){
-  document.getElementById("totalcount2").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-}
-else {
-  document.getElementById("countsp").innerHTML = shoppingCart.totalCount();
-}
 }
 
 // Delete Item in cart
@@ -322,6 +313,7 @@ for (i = 0; i < giohang.length; i++ ){
     '<span class="product-quantity">Số lượng: '+ giohang[i].count +'</span>'+
   '</li>'   
   document.getElementById("product-list").innerHTML = ttgh;
+  document.getElementById("totalcount2").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
   document.getElementById("tamtinh").innerHTML = shoppingCart.totalCart() + " đ";
   var phiship = 35000;
   document.getElementById("tongcong").innerHTML = shoppingCart.totalCart() + phiship + " đ";
@@ -353,5 +345,3 @@ function dathang(){
   window.location.href = "./index.html";
 }
 }
-
-showTotalCount()

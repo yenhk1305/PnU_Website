@@ -33,6 +33,7 @@ function loadingProductOnPage(numberPage) {
 
     for (i = 0+20*numberPage; i < 20*(numberPage+1); i++) {
 
+        btnCart[i].setAttribute("onclick","addtocart(this)");
         product =   lstproductShuffled[i];
         name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
         price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
