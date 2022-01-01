@@ -75,9 +75,10 @@ body{
 }
 
 .nav-top-header ul li ul li {        
-    /* clear: both; */
+    clear: both;
     width: 100%;    
-    /* min-width: 100%; */    
+    /* min-width: 100%;*/    
+    
 }
 
 .nav-top-header ul li ul li a{    
@@ -86,6 +87,7 @@ body{
     white-space: nowrap;
     display: block;
     width: 100%;
+    padding: 0;
 }
 
 .nav-top-header ul li:hover > ul,
@@ -93,11 +95,13 @@ body{
 .nav-top-header ul li ul:hover, ul li ul:focus {
     visibility: visible;
     opacity: 1;
-    display: block;    
+    display: block;   
+     overflow: hidden;
 }
 
 .nav-top-header ul li ul li:hover a {
     color: var(--primaryBlack);
+    
 }
 
 .dropdown-icon {
