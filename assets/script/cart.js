@@ -1,7 +1,5 @@
 var shoppingCart = (function() {
-  // =============================
   // Private methods and propeties
-  // =============================
   cart = [];
   
   // Constructor
@@ -25,7 +23,6 @@ var shoppingCart = (function() {
     loadCart();
   }
 
-  // =============================
   // Public methods and propeties
   // =============================
   // Create object
@@ -135,10 +132,8 @@ var shoppingCart = (function() {
   }
   return obj;
 })();
-// *****************************************
-// Events
-// ***************************************** 
 
+// Events
 // Add item to cart
 function addtocart(x){
   var boxsp = x.parentElement.parentElement.children;
@@ -187,7 +182,7 @@ function displayCart(){
                   '<div class="tbody-quantity">'+
                       '<div class="product-quantity">'+
                           '<input value="-" class="btn-minus" onclick="minusItem(this)" type="button"/>'+
-                          '<input type="text" onchange="changeQtyItem(this)" id="quantity" maxlength="2" min="0" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
+                          '<input type="text" onchange="changeQtyItem(this)" id="quantity" maxlength="3" min="0" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
                           '<input value="+" class="btn-minus" onclick="plusItem(this)" type="button"/>'+
                       '</div>'+
                   '</div>'+
@@ -206,9 +201,9 @@ function displayCart(){
                   '</div>'+
                   '<div class="mobile-tbody-quantity-delete">'+
                       '<div class="product-quantity">'+
-                          '<button class="btn-minus" onclick="minusItemMobile(this)" type="button">-</button>'+
-                          '<input type="text" id="quantity" maxlength="2" min="1" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
-                          '<button class="btn-plus" onclick="plusItemMobile(this)" type="button">+</button>'+
+                          '<input class="btn-minus" onclick="minusItemMobile(this)" value="-" type="button"/>'+
+                          '<input type="text" onchange="changeQtyItemMobile(this)" id="quantity" maxlength="3" min="1" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
+                          '<input class="btn-plus" onclick="plusItemMobile(this)"  value="+" type="button"/>'+
                       '</div>'+
                       '<a class="btn-remove-item-cart" onclick="deleteItemMobile(this)" title="Xóa sản phẩm" href="#">'+
                           'Xóa'+
@@ -256,6 +251,8 @@ function showTotalCount(){
   document.getElementById("countsp").innerHTML = shoppingCart.totalCount();
 }
 
+//--------sự kiện cho màn hình lớn-------------
+
 // Delete Item in cart
 function deleteItem(x){
   var boxsp = x.parentElement.children;
@@ -297,6 +294,51 @@ function changeQtyItem(x){
   displayCart();
 }
 
+//--------sự kiện cho màn hình di động-------------
+
+// Delete Item in cart
+function deleteItemMobile(x){
+  var boxsp = x.parentElement.parentElement.children;
+  var name = boxsp[5].children[0].children[0].innerHTML;
+  shoppingCart.removeItemFromCartAll(name);
+  if (cart == null || cart == 0){
+      document.getElementById("countsp").innerHTML = 0;
+      document.getElementById("totalcount").innerHTML = "(0 sản phẩm)";
+  }
+  displayCart();
+}
+
+// +1 Item 
+function plusItemMobile(x) {
+  var boxsp = x.parentElement.parentElement.parentElement.children;
+  var name = boxsp[5].children[0].children[0].innerHTML;
+  shoppingCart.increaseItemFromCart(name);
+  displayCart();
+}
+
+// -1 Item
+function minusItemMobile(x) {
+  var boxsp = x.parentElement.parentElement.parentElement.children;
+  var name = boxsp[5].children[0].children[0].innerHTML;
+  shoppingCart.removeItemFromCart(name);
+  if (cart == null || cart == 0){
+      document.getElementById("countsp").innerHTML = 0;
+      document.getElementById("totalcount").innerHTML = "(0 sản phẩm)";
+  }
+  displayCart();
+}
+
+// Change quantity by Input
+function changeQtyItemMobile(x){
+  var boxsp = x.parentElement.parentElement.parentElement.children;
+  var name = boxsp[5].children[0].children[0].innerHTML;
+  var count = parseInt(x.value);
+  shoppingCart.setCountForItem(name,count);
+  displayCart();
+}
+
+
+
 // Show list Item from cart in Checkout screen
 function displayCheckout(){
 var giohang = shoppingCart.listCart();
@@ -337,11 +379,8 @@ function dathang(){
   datashoppingfinal.push(datainfo)
   
   localStorage.setItem('lstdathangfinal', JSON.stringify(datashoppingfinal))
-
   alert('Đặt hàng thành công')
-  
   shoppingCart.clearCart();
-
   window.location.href = "./index.html";
 }
 }
