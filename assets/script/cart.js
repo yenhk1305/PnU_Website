@@ -228,22 +228,33 @@ document.getElementById("showcart").style.display ="none";
 }
 
 function displayInShowCart(){
-var giohang = shoppingCart.listCart();
-    var ttgh = "";
+  var giohang = shoppingCart.listCart();
+  var ttgh = "";
+  if (giohang == null || giohang.length == 0){
+    ttgh = '<span class="mycartEmpty">Không có sản phẩm trong giỏ hàng</span>'
+  }
+  else {
     var tong = 0;
-    for (i = 0; i < giohang.length; i++ ){
-        var tt = parseFloat(giohang[i].price*giohang[i].count);
-        tong += tt;
-        ttgh += '<tr>' +
-        '<td>'+(i+1)+'</td>' +
-        '<td><img src="'+giohang[i].thumb+'" /></td>' +
-        '<td>'+giohang[i].name+'</td>' +
-        '<td>'+giohang[i].price+'</td>' +
-        '<td>'+giohang[i].count+'</td>' +
-        '<td>'+tt+'</td>' +
-    '</tr>'
-        document.getElementById("mycart").innerHTML = ttgh;
-    } 
+  for (i = 0; i < giohang.length; i++ ){
+    var tt = parseFloat(giohang[i].price*giohang[i].count);
+    tong += tt;
+    ttgh += '<tr>'+
+      '<td rowspan="2" class="mycartImage">'+
+          '<img src="'+giohang[i].thumb+'">'+
+      '</td>'+
+      '<td class="mycartName">'+giohang[i].name+'</td>'+
+      '<td class="mycartQty">'+giohang[i].count+'</td>'+
+      '</tr>'+
+      '<tr>'+
+        '<td colspan="2" class="mycartPrice">'+giohang[i].price+'</td>'+
+      '</tr>'
+    }
+    ttgh+='<tr>'+
+        '<td colspan="2" class="mycartTotalLabel">Thành tiền:</td>'+
+       '<td class="mycartTotal">'+tong+'</td>'+
+     '</tr>'
+  }
+  document.getElementById("mycart").innerHTML = ttgh;
 }
 
 //Total Items in cart

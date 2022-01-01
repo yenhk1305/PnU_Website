@@ -108,9 +108,14 @@ body{
     height: 0.45em;
 }
 
-#top-header .account-cart img {
+#top-header .account-cart .account-icon img {
     height: 1.5em;        
 }
+
+#top-header .account-cart .cart-icon img {
+    height: 1.5em;        
+}
+
 #top-header .cart-icon{
     margin-left: 1em;
 }
@@ -141,15 +146,6 @@ body{
     } 
 
 /* Table showcart */
-.cart-icon {
-    text-decoration: none;
-}
-
-/* .cart-icon img { 
-    padding: 15px 26px;
-    position: relative;    
-} */
-
 #countsp {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -163,83 +159,83 @@ body{
     right: 88px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #f1f1f1;
+#top-header .cart-icon {
+    text-decoration: none;
+}
+
+#top-header .showcart .mycartEmpty {
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-th {
+    font-weight: 100;
     color: black;
-    background-color: #f1f1f1;
-    padding: 10px;
 }
 
-th,
-td {
-    text-align: center;
+#top-header .showcart td {
+    border: none;
+    font-family: 'Montserrat', sans-serif;    
+    /* padding: 0px 8px; */
 }
 
-.showcart {
-    width: 50%;
+#top-header .showcart {
+    width: 22%;
     position: fixed;
+    border-collapse: collapse;
     border-radius: 10px;
-    right: 20px;
-    top: 65px;
-    background-image: linear-gradient(#f1f1f1, #f1f1f1);
+    right: 80px;
+    top: 60px;
+    background-image: linear-gradient(white, white);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     padding: 10px;
     display: none;
+    border: none;
 }
 
-.showcart img {
-    width: 30%;
-    height: 30%;
+#top-header .showcart .mycartImage img {
+    width: 100%;
+    height: 100%;
 }
 
-.showcart span {
-    font-weight: bold;
-    font-size: 2vw;
-    color: yellow;
-    height: 40px;
-    line-height: 40px;
-}
-
-
-table th:nth-child(1) {
-    width: 5%;
-    padding: 20px;
-    background-color: #CCC;
-}
-
-table th:nth-child(2) {
+#top-header .showcart .mycartImage {
     width: 25%;
-    background-color: #CCC;
+    padding: 8px 0px;
 }
 
-table th:nth-child(3) {
-    width: 30%;
-    background-color: #CCC;
+#top-header .showcart .mycartName {
+    font-size: 14px;
+    width: 65%;
+    color: black;
+    font-weight: 100;
+    padding: 8px 0px 0px 10px;
 }
 
-table th:nth-child(4) {
-    width: 30%;
-    background-color: #CCC;
+#top-header .showcart .mycartQty {
+    width: 10%;
+    text-align: center;
+    color: var(--ink03);
+    font-weight: 100;
+    font-size: 14px;
+    padding: 8px 0px 0px;
 }
 
-table th:nth-child(5) {
-    width: 5%;
-    background-color: #CCC;
+#top-header .showcart .mycartPrice {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--p-btnBlue);
+    padding: 0px 0px 8px 10px;
 }
 
-table th:nth-child(6) {
-    width: 35%;
-    background-color: #CCC;
+#top-header .showcart .mycartTotalLabel {
+    font-weight: 600;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+    color: var(--p-priceColor)
 }
 
-table td {
-    padding: 10px 20px;
-    border: 1px #CCC solid;
+#top-header .showcart .mycartTotal {
+    text-align: right;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px;
+    color: var(--p-priceColor)
 }
