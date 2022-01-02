@@ -79,7 +79,7 @@
                                             <span>Giao hàng tận nơi</span>
                                         </div>
                                         <div class="price">
-                                            <span>35.000đ</span>
+                                            <span>35,000 đ</span>
                                         </div>
                                     </div>
                                 </div>
@@ -89,15 +89,15 @@
                                 <div class="field">
                                     <div class="pay-input-infor">
                                         <div class="text-option" title="Là phương thức thanh toán bằng tiền mặt trực tiếp khi nhận hàng">
-                                            <input type="radio" checked="checked" name="thanhtoan" value="cod" />
+                                            <input type="radio" id="rdCOD" checked="checked" name="thanhtoan" value="COD" />
                                             <label>Thanh toán trực tiếp khi giao hàng</label>
                                         </div>
                                         <div class="text-option" title="Phương thức thanh toán sử dụng các loại thẻ quốc tế như Visa, Master, JCB,… hoặc các loại thẻ thanh toán nội địa (ATM)">
-                                            <input type="radio" name="thanhtoan" value="debitcard" />
+                                            <input type="radio" id="rdATM" name="thanhtoan" value="ATM" />
                                             <label>Thanh toán bằng thẻ quốc tế và nội địa (ATM) </label>
                                         </div>
                                         <div class="text-option" title="Phương thức dành cho khách hàng có tài khoản và lựa chọn thanh toán qua ví điện tử MoMo">
-                                            <input type="radio" name="thanhtoan" value="momo" />
+                                            <input type="radio" id="rdMOMO" name="thanhtoan" value="MOMO" />
                                             <label>Thanh toán bằng ví MoMo</label>
                                         </div>
                                     </div>
@@ -127,11 +127,11 @@
                         </li>
                         <li class="aside-group wrap-giam-gia">
                             <span class="giam-gia">Giảm</span>
-                            <span class="gia-giam-gia">- 0 đ</span>
+                            <span class="gia-giam-gia" id="giamgia">- 0 đ</span>
                         </li>
                         <li class="aside-group wrap-van-chuyen">
                             <span class="van-chuyen">Phí vận chuyển</span>
-                            <span class="phi-van-chuyen">35000 đ</span>
+                            <span class="phi-van-chuyen" id="phiship">35000 đ</span>
                         </li>
                         <li class="aside-group divider"></li>
                         <li class="aside-group">

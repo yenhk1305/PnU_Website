@@ -1,6 +1,7 @@
 var shoppingCart = (function() {
   // Private methods and propeties
   cart = [];
+  datashoppingfinal = [];
   
   // Constructor
   function Item(thumb, name, price, count) {
@@ -138,7 +139,7 @@ var shoppingCart = (function() {
 function addtocart(x){
   var boxsp = x.parentElement.parentElement.children;
   var hinh = boxsp[0].children[0].src;
-  var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(".",""));
+  var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(",",""));
   var tensp = boxsp[1].innerText;
   var soluong = 1;
   console.log(tensp)
@@ -175,7 +176,7 @@ function displayCart(){
                   '</div>'+
                   '<div class="tbody-price">'+
                       '<span class="product-price">'+
-                          '<span class="price">'+ giohang[i].price +' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(giohang[i].price) +' đ</span>'+
                       '</span>'+
                   '</div>'+
   
@@ -189,14 +190,14 @@ function displayCart(){
   
                   '<div class="tbody-total">'+
                       '<span class="product-price-total">'+
-                          '<span class="price">'+tt+' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(tt) +' đ</span>'+
                       '</span>'+
                   '</div>'+
                                       
                   '<div class="mobile-tbody-name-price">'+
                       '<h3 class="product-name"><a title="" href="#">'+ giohang[i].name +'</a></h3>'+
                       '<span class="product-price">'+
-                          '<span class="price">'+ giohang[i].price +' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(giohang[i].price) +' đ</span>'+
                       '</span>'+
                   '</div>'+
                   '<div class="mobile-tbody-quantity-delete">'+
@@ -211,7 +212,7 @@ function displayCart(){
                   '</div>'+
               '</div>'
           document.getElementById("cart-tbody").innerHTML = ttgh;
-          document.getElementById("totalcart").innerHTML = shoppingCart.totalCart() + " đ";
+          document.getElementById("totalcart").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart()) + " đ";
           document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
           showTotalCount();
       } 
@@ -246,12 +247,12 @@ function displayInShowCart(){
       '<td class="mycartQty">'+giohang[i].count+'</td>'+
       '</tr>'+
       '<tr>'+
-        '<td colspan="2" class="mycartPrice">'+giohang[i].price+'</td>'+
+        '<td colspan="2" class="mycartPrice">'+ Intl.NumberFormat().format(giohang[i].price) + " đ" +'</td>'+
       '</tr>'
     }
     ttgh+='<tr>'+
         '<td colspan="2" class="mycartTotalLabel">Thành tiền:</td>'+
-       '<td class="mycartTotal">'+tong+'</td>'+
+       '<td class="mycartTotal">'+Intl.NumberFormat().format(tong) + " đ"+'</td>'+
      '</tr>'
   }
   document.getElementById("mycart").innerHTML = ttgh;
@@ -362,18 +363,41 @@ for (i = 0; i < giohang.length; i++ ){
   '<li class="aside-group product-detail">'+
     '<span class="product-image"><img src="'+ giohang[i].thumb +'" /></span>'+
     '<span class="product-name">'+ giohang[i].name +'</span>'+
-    '<span class="product-price">'+ giohang[i].price +' đ</span>'+
+    '<span class="product-price">'+ Intl.NumberFormat().format(giohang[i].price) +' đ</span>'+
     '<span class="product-quantity">Số lượng: '+ giohang[i].count +'</span>'+
   '</li>'   
   document.getElementById("product-list").innerHTML = ttgh;
   document.getElementById("totalcount2").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-  document.getElementById("tamtinh").innerHTML = shoppingCart.totalCart() + " đ";
-  var phiship = 35000;
-  document.getElementById("tongcong").innerHTML = shoppingCart.totalCart() + phiship + " đ";
+  document.getElementById("tamtinh").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart()) + " đ";
+  var phishiptext = document.getElementById("phiship");
+  var phiship;
+  if (shoppingCart.totalCart() >= 500000){
+    phishiptext.innerHTML = "0 đ";
+    phiship = 0;
+  }
+  else {
+    phishiptext.innerHTML = "35,000 đ";
+    phiship = 35000;
+  }
+  var giamgiatext = document.getElementById("giamgia");
+  var giamgia = shoppingCart.totalCart() * (30/100);
+  if (giamgia >= 50000){
+    giamgiatext.innerHTML = "- 50,000 đ";
+    giamgia = 50000;
+  }
+  else {
+    giamgiatext.innerHTML = "- " + giamgia + " đ";
+    giamgia = giamgia;
+  }
+
+  document.getElementById("tongcong").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart() + phiship - giamgia) + " đ";
 }  
 }
 
 function dathang(){
+  if (localStorage.getItem("lstdathangfinal") != null) {
+    datashoppingfinal = JSON.parse(localStorage.getItem('lstdathangfinal'));
+  }
   if (edtHoten.value == "" || edtSdt.value == "" ||
   edtDiachi.value == "" || cboTinhthanh.value == "" 
   || cboQuanhuyen.value == "" || cboPhuongxa.value == "") {
@@ -382,11 +406,17 @@ function dathang(){
   var datainfo = []
   datainfo.push(edtHoten.value)
   datainfo.push(edtSdt.value)
-  datainfo.push(edtDiachi.value)
-  datainfo.push(cboTinhthanh.value)
-  datainfo.push(cboQuanhuyen.value)
-  datainfo.push(cboPhuongxa.value)
-  var datashoppingfinal = cart;
+  datainfo.push(edtDiachi.value + ", " + cboPhuongxa.value + ", " + cboQuanhuyen.value + ", " + cboTinhthanh.value)
+  // datainfo.push(cboTinhthanh.value)
+  // datainfo.push(cboQuanhuyen.value)
+  // datainfo.push(cboPhuongxa.value)
+  if (document.getElementById("rdCOD").checked == true)
+    datainfo.push(rdCOD.value);
+  else if (document.getElementById("rdATM").checked == true)
+    datainfo.push(rdATM.value);
+  else if (document.getElementById("rdMOMO").checked == true)
+    datainfo.push(rdMOMO.value);
+  datainfo.push(document.getElementById("tongcong").innerHTML)
   datashoppingfinal.push(datainfo)
   
   localStorage.setItem('lstdathangfinal', JSON.stringify(datashoppingfinal))
