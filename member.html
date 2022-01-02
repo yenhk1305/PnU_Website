@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>
+           Chi tiết đăng ký
+        </title>
+        <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/member.css">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="stylesheet" href="./assets/css/header_style.css">
+        <link rel="stylesheet" href="/assets/css/footer_style.css">
+        <script src="./assets/script/cart.js"></script>
+        <script src=".//assets/script/member.js"></script>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body onload="loadingregister(),loadingshopping()" style="margin:0">
+   <!-- Header-Start -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $(function(){
+           $("#header").load("header.html");
+       });
+   </script>
+   <span id="header"></span>
+   <!-- Header-End -->
+    <form name="frm" style="margin-top: 70px; margin-bottom: 60px;">
+        <div  align="center">
+            <h2>ĐĂNG KÝ THẺ THÀNH VIÊN</h2>
+            <table width="600px" cellpadding="6">
+                <tr>
+                    <td>
+                        <label for="msthe">Mã số thẻ </label><b style="color:red">(*)</b><br/>
+                        <input type="text" id="msthe" name="msthe"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">Họ và tên </label><b style="color:red">(*)</b><br/>
+                        <input type="text" id="name" name="name" />
+                    </td>
+                    <td>
+                        <label for="phone">Số điện thoại </label><b style="color:red">(*)</b><br/>
+                        <input type="tel" id="phone" name="phone" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Ngày sinh </label><b style="color:red">(*)</b><br />
+                        <select id="ngay" class="ngaysinh">
+                        </select>
+                        <select id="thang" class="ngaysinh">
+                        </select>
+                        <select id="nam" class="ngaysinh">
+                        </select>
+                    </td>
+                    <td>
+                        <label for="email">Email</label><b style="color:red">(*)</b><br />
+                        <input type="email" id="email" name="email" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size: 22px;">
+                        <strong>Địa chỉ liên hệ</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">Tỉnh/Thành phố </label><b style="color:red">(*)</b><br />
+                        <select id="city" onchange="chonquan(this.value)">
+                            <option selected="selected">Chọn tỉnh</option>"+
+                            <option value="1">Hồ Chí Minh</option>"+
+                            <option value="71">Thái Nguyên</option>"+
+                            <option value="78">Hải Phòng</option>"+
+                            <option value="81">Bắc Giang</option>"+
+                            <option value="84">Vĩnh Phúc</option>"+
+                            <option value="90">Thanh Hóa</option>"+
+                            <option value="92">Hà Tĩnh</option>"+
+                            <option value="97">Quảng Nam</option>"+
+                            <option value="100">Phú Yên</option>"+
+                            <option value="101">Khánh Hoà</option>"+
+                            <option value="104">Gia Lai</option>"+
+                            <option value="112">Tây Ninh</option>"+
+                            <option value="113">Đồng Nai</option>"+
+                            <option value="115">Long An</option>"+
+                            <option value="117">An Giang</option>"+
+                            <option value="119">Tiền Giang</option>"+
+                            <option value="120">Bến Tre</option>"+
+                            <option value="121">Vĩnh Long</option>"+
+                            <option value="122">Trà Vinh</option>"+
+                            <option value="123">Cần Thơ</option>"+
+                            <option value="124">Sóc Trăng</option>"+
+                            <option value="125">Kiên Giang</option>"+
+                            <option value="126">Bạc Liêu</option>"+
+                            <option value="127">Cà Mau</option>"+
+                            <option value="128">Quảng Bình</option>"+
+                            <option value="129">Bắc Ninh</option>"+
+                            <option value="130">Bình Dương</option>"+
+                            <option value="131">Bình Định</option>"+
+                            <option value="132">Đà Nẵng</option>"+
+                            <option value="133">Đồng Tháp</option>"+
+                            <option value="135">Hưng Yên</option>"+
+                            <option value="136">Kon Tum</option>"+
+                            <option value="137">Nam Định</option>"+
+                            <option value="138">Ninh Bình</option>"+
+                            <option value="139">Phú Thọ</option>"+
+                            <option value="140">Quảng Ninh</option>"+
+                            <option value="141">Thái Bình</option>"+
+                            <option value="142">Đắk Lắk</option>"+
+                            <option value="143">Hậu Giang</option>"+
+                            <option value="144">Hải Dương</option>"+
+                            <option value="145">Lạng Sơn</option>"+
+                            <option value="146">Lào Cai</option>"+
+                            <option value="147">Yên Bái</option>"+
+                            <option value="148">Tuyên Quang</option>"+
+                            <option value="149">Hà Giang</option>"+
+                            <option value="150">Cao Bằng</option>"+
+                            <option value="151">Điện Biên</option>"+
+                            <option value="152">Sơn La</option>"+
+                            <option value="153">Hòa Bình</option>"+
+                            <option value="154">Lai Châu</option>"+
+                            <option value="155">Hà Nam</option>"+
+                            <option value="156">Nghệ An</option>"+
+                            <option value="157">Ninh Thuận</option>"+
+                            <option value="158">Bình Thuận</option>"+
+                            <option value="159">Lâm Đồng</option>"+
+                            <option value="160">Đắk Nông</option>"+
+                            <option value="161">Quảng Ngãi</option>"+
+                            <option value="162">Quảng Trị</option>"+
+                            <option value="163">Thừa Thiên - Huế</option>"+
+                            <option value="164">Bà Rịa - Vũng Tàu</option>"+
+                            <option value="165">Bắc Kạn</option>"+
+                            <option value="166">Bình Phước</option>"+
+                            <option value="167">Hà Nội</option>"+
+                        </select>
+                    </td>
+                    <td>
+                        <label for="district">Quận/Huyện</label><b style="color:red">(*)</b><br />
+                        <select id="district">
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Mật khẩu </label><b style="color:red">(*)</b><br />
+                        <input type="password" id="pass" name="pass" />
+                    </td>
+                    <td>
+                        <label for="reenter">Nhập lại mật khẩu </label><b style="color:red">(*)</b><br />
+                        <input type="password" id="reenter" name="reenter" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="font-size:15px; text-align: justify;">* Khi Đăng ký Thành viên, bạn đã đồng ý với những <span><a href="#">Điều khoản sử dụng & Chính sách bảo mật</a></span> và tất cả các Điều khoản được kết hợp bằng việc tham chiếu của PnU.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"  style="font-size:15px;">
+                        <input type="checkbox" id="dongynhanthu" name="dongynhanthu" />
+                        <label for="dongynhanthu">Đồng ý nhận email quảng cáo từ chúng tôi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="button" value="Đăng ký thành viên" class="button" onclick="xuLy()" /> &nbsp;&nbsp;
+                        <input type="reset" value="Nhập lại" class="button"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
+    <!-- Footer-End -->
+</body>
+</html>

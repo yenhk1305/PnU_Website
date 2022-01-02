@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>
+           Đăng ký thẻ thành viên
+        </title>
+        <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/register.css">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="stylesheet" href="./assets/css/header_style.css">
+        <link rel="stylesheet" href="/assets/css/footer_style.css">
+        <script src=".//assets/script/member.js"></script>
+        <script src="./assets/script/cart.js"></script>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body onload="loadingregister(),loadingshopping()" style="margin:0">
+    <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+    <span id="header"></span>
+    <!-- Header-End -->
+    <div align="center" id="all">
+        <div>
+            <h2 align="center">Thông tin chương trình thẻ thành viên</h2>
+            <h3>Định nghĩa và quy định về thẻ</h3>
+            <p style="text-align: justify;"  align="center" >
+                - Bằng việc đăng ký và sử dụng thẻ, bạn được xem như đã đọc, hiểu rõ và chấp nhận các <span><a href="#">Điều khoản sử dụng & Chính sách bảo mật</a></span> của PnU.
+                <br />
+                - Vui lòng xuất trình thẻ trước khi giao dịch để được bảo đảm quyền lợi tối đa. Chúng tôi sẽ không giải quyết nếu hoá đơn đã được in ra trước khi xuất trình thẻ thành viên hoặc bạn quên mang thẻ theo.
+                <br />
+                - Thẻ thành viên PnU chỉ dành cho chủ sở hữu được ghi nhận khi đăng ký trên hệ thống, không được chuyển nhượng dưới mọi hình thức. Nếu phát hiện ra bất kì dấu hiệu vi phạm, chúng tôi sẽ tiến hành khoá thẻ vì mục đích bảo mật mà không cần báo trước.
+                <br />
+                - Khi bị mất thẻ hoặc thất lạc, bạn phải liên lạc ngay đến số hotline (0123) 456 777 trong giờ hành chính từ (8h-17h) thứ 2 - thứ 7 (trừ ngày CN và các dịp lễ - Tết). Ngoài giờ hành chính, KH truy cập website để được hỗ trợ khoá thẻ sớm nhất có thể. Chúng tôi sẽ không giải quyết bất kì khiếu nại về việc thẻ bị sử dụng khi quý khách chưa báo về hệ thống.
+            </p>
+            <hr />
+            <h3>Hạng thẻ thành viên PnU:</h3>
+            <p align="justify">
+                <img src="./assets/images/logo.png" height="200" width="200" align="left" class="imgcontent" />
+                
+                <strong>Với hoá đơn từ 300,000đ:</strong> khách hàng nhận ngay thẻ thành viên PnU.
+                <br />
+                <strong>Hạng thẻ VIP:</strong>
+                <br />
+                - Với hoá đơn từ 2,000,000đ: khách hàng nhận ngay thẻ VIP.
+                <br />
+                - Khách hàng là Thành viên PnU tích luỹ đến 2,000,000đ: đổi sang thẻ VIP.
+                <br />
+                <strong>Hạng thẻ Diamond:</strong>
+                <br />
+                - Với hoá đơn tích luỹ từ 5,000,000đ: khách hàng nhận ngay thẻ Diamond.
+                <br />
+                -  Khách hàng là Thành viên VIP tích luỹ đến 5,000,000đ: đổi sang thẻ Diamond.
+            </p>
+        </div>
+        <span align="center" class="register" style="margin-bottom: 50px;"><a href="member.html">Đăng ký ngay</a></span>
+    </div>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
+    <!-- Footer-End -->
+</body>
+</html>
