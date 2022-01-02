@@ -19,21 +19,26 @@
 <body>
     <!-----------------------------thanh điều hướng------------------------------>
     <header id="top-header">
-        <a href="index.html" class="logo"><img class="pnu-logo" src="./assets/images/logo.png"></a>
+        <!-- Menu thu gọn -->
+        <img class="menu_icon" src="./assets/images/menu_icon.png" style="height: 1.2em; cursor: pointer;">            
+        <div class="logo">
+            <a href="index.html"><img class="pnu-logo" src="./assets/images/logo.png"></a>
+        </div>
+        <!-- Start - Thanh điều hướng -->
         <nav class="nav-top-header">
-            <ul>
+            <ul class="nav-list">
                 <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="#AboutUs">Giới thiệu</a></li>
-                <li class="dropdown-product" ><a href="#Products">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-product-content">
+                <li><a href="aboutus.html">Giới thiệu</a></li>
+                <li><a href="product_page1.html">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="nav-item-dropdown">
                         <li><a href="#1">Sản phẩm cho Chó</a></li>
                         <li><a href="#2">Sản phẩm cho Mèo</a></li>
                         <li><a href="#3">Đồ chơi Chó Mèo</a></li>
                         <li><a href="#4">Thời trang Chó Mèo</a></li>
                     </ul>
                 </li>
-                <li class="dropdown-blog"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="dropdown-blog-content">
+                <li><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="nav-item-dropdown">
                         <li><a href="#1b">Blog về Chó</a></li>
                         <li><a href="#2b">Blog về Mèo</a></li>                            
                     </ul>
@@ -41,26 +46,31 @@
                 <li><a href="#Contact">Liên hệ</a></li>
             </ul>
         </nav>
-        <form class="search-from">
-            <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
-            <button class="search-icon" type="submit">
-                <img src="./assets/images/search_icon.png" height="20" />
-            </button>
-        </form>
+        <!-- End - Thanh điều hướng -->
+        <!-- Start - Thanh tìm kiếm -->
+        <div class="search-bar-container">
+            <form class="search-from">
+                <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
+                <button class="search-icon" type="submit">
+                    <img src="./assets/images/search_icon.png" height="20" />
+                </button>
+            </form>
+        </div>            
+        <!-- End - Thanh tìm kiếm -->
+        <!-- Start - Tài khoản & Giỏ hàng -->
         <div class="account-cart">
-            <a  class="account-icon" href="#"><img src="./assets/images/account_icon.png"></a>
+            <a class="account-icon" href="#" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
             <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
-                <img src="./assets/images/cart_icon.png" height="30" />
+                <img src="./assets/images/cart_icon.png" style="height: 1.5em;"/>
                 <span id="countsp">0</span>
                 <div id="showcart" class="showcart">
                     <table>
-                        <tbody id="mycart">
-                        
-                        </tbody>
+                        <tbody id="mycart"></tbody>
                     </table>
                 </div>
             </a>
-        </div>                
+        </div>
+        <!-- End - Tài khoản & Giỏ hàng -->                
     </header>
 
     <!-- Header-Start -->

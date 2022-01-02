@@ -22,13 +22,13 @@ body{
 }
 
 .pnu-logo{
-    width: 2.5em;
+    height: 2.5em;
 }
 
 .nav-top-header {
     font-family: 'Montserrat', sans-serif;    
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 600;        
 }
 
 .nav-list {    
@@ -110,12 +110,10 @@ body{
 /* Thanh tìm kiếm */
 .search-from {    
     display: flex;    
-    padding: 0.3em;
-    /* margin: 0; */
+    padding: 0.3em;    
     background: var(--primaryWhite);;
     min-width: 25% !important;
-    border-radius: 3em; 
-    
+    border-radius: 3em;    
 }
 
 .search-from .search {
@@ -146,24 +144,24 @@ body{
     right: 88px;
 }
 
-.top-header .cart-icon {
+#top-header .cart-icon {
     text-decoration: none;
 }
 
-.top-header .showcart .mycartEmpty {
+#top-header .showcart .mycartEmpty {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: black;
 }
 
-.top-header .showcart td {
+#top-header .showcart td {
     border: none;
     font-family: 'Montserrat', sans-serif;    
     /* padding: 0px 8px; */
 }
 
-.top-header .showcart {
+#top-header .showcart {
     width: 22%;
     position: fixed;
     border-collapse: collapse;
@@ -177,17 +175,17 @@ body{
     border: none;
 }
 
-.top-header .showcart .mycartImage img {
+#top-header .showcart .mycartImage img {
     width: 100%;
     height: 100%;
 }
 
-.top-header .showcart .mycartImage {
+#top-header .showcart .mycartImage {
     width: 25%;
     padding: 8px 0px;
 }
 
-.top-header .showcart .mycartName {
+#top-header .showcart .mycartName {
     font-size: 14px;
     width: 65%;
     color: black;
@@ -195,7 +193,7 @@ body{
     padding: 8px 0px 0px 10px;
 }
 
-.top-header .showcart .mycartQty {
+#top-header .showcart .mycartQty {
     width: 10%;
     text-align: center;
     color: var(--ink03);
@@ -204,14 +202,14 @@ body{
     padding: 8px 0px 0px;
 }
 
-.top-header .showcart .mycartPrice {
+#top-header .showcart .mycartPrice {
     font-size: 14px;
     font-weight: 600;
     color: var(--p-btnBlue);
     padding: 0px 0px 8px 10px;
 }
 
-.top-header .showcart .mycartTotalLabel {
+#top-header .showcart .mycartTotalLabel {
     font-weight: 600;
     text-align: left;
     font-size: 14px;
@@ -219,7 +217,7 @@ body{
     color: var(--p-priceColor)
 }
 
-.top-header .showcart .mycartTotal {
+#top-header .showcart .mycartTotal {
     text-align: right;
     font-weight: 600;
     font-size: 14px;
@@ -230,4 +228,8 @@ body{
 /* RESPONSIVE */
 .menu_icon {
     display: none;
+}
+
+@media screen and (max-width: 1235px) {
+    
 }
