@@ -31,12 +31,12 @@ body{
     font-weight: 600;
 }
 
-.nav-top-header ul{    
+.nav-list {    
     list-style: none;
     margin: 0;
 }
 
-.nav-top-header ul li{  
+.nav-list li {  
     color: var(--primaryBlack);
     display: block;
     float: left; 
@@ -46,22 +46,22 @@ body{
     transition-duration: 0.5s;
 }
 
-.nav-top-header ul li a{
+.nav-list li a {
     text-decoration: none;
     color: var(--primaryBlack);
 }
 
-.nav-top-header ul li:hover, ul li:focus-within{
+.nav-list li:hover, li:focus-within{
     background: var(--V2);
     cursor: pointer;
 }
 
-.nav-top-header ul li:focus-within a {
+.nav-list li:focus-within a {
     outline: none;
 }
 
 /* Dropdown Menu */
-.nav-top-header ul li ul{
+.nav-item-dropdown {
     background: var(--primaryBlack);
     visibility: hidden;
     opacity: 0;
@@ -74,14 +74,14 @@ body{
     display: none;    
 }
 
-.nav-top-header ul li ul li {        
+.nav-item-dropdown li {        
     clear: both;
     width: 100%;    
     /* min-width: 100%;*/    
     
 }
 
-.nav-top-header ul li ul li a{    
+.nav-item-dropdown li a {    
     color: var(--primaryWhite);    
     font-weight: 500;
     white-space: nowrap;
@@ -90,34 +90,21 @@ body{
     padding: 0;
 }
 
-.nav-top-header ul li:hover > ul,
-.nav-top-header ul li:focus-within > ul,
-.nav-top-header ul li ul:hover, ul li ul:focus {
+.nav-list li:hover > ul,
+.nav-list li:focus-within > ul,
+.nav-item-dropdown:hover, .nav-item-dropdown:focus {
     visibility: visible;
     opacity: 1;
     display: block;   
-     overflow: hidden;
+    overflow: hidden;
 }
 
-.nav-top-header ul li ul li:hover a {
-    color: var(--primaryBlack);
-    
+.nav-item-dropdown li:hover a {
+    color: var(--primaryBlack);    
 }
 
 .dropdown-icon {
     height: 0.45em;
-}
-
-#top-header .account-cart .account-icon img {
-    height: 1.5em;        
-}
-
-#top-header .account-cart .cart-icon img {
-    height: 1.5em;        
-}
-
-#top-header .cart-icon{
-    margin-left: 1em;
 }
 
 /* Thanh tìm kiếm */
@@ -159,24 +146,24 @@ body{
     right: 88px;
 }
 
-#top-header .cart-icon {
+.top-header .cart-icon {
     text-decoration: none;
 }
 
-#top-header .showcart .mycartEmpty {
+.top-header .showcart .mycartEmpty {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: black;
 }
 
-#top-header .showcart td {
+.top-header .showcart td {
     border: none;
     font-family: 'Montserrat', sans-serif;    
     /* padding: 0px 8px; */
 }
 
-#top-header .showcart {
+.top-header .showcart {
     width: 22%;
     position: fixed;
     border-collapse: collapse;
@@ -190,17 +177,17 @@ body{
     border: none;
 }
 
-#top-header .showcart .mycartImage img {
+.top-header .showcart .mycartImage img {
     width: 100%;
     height: 100%;
 }
 
-#top-header .showcart .mycartImage {
+.top-header .showcart .mycartImage {
     width: 25%;
     padding: 8px 0px;
 }
 
-#top-header .showcart .mycartName {
+.top-header .showcart .mycartName {
     font-size: 14px;
     width: 65%;
     color: black;
@@ -208,7 +195,7 @@ body{
     padding: 8px 0px 0px 10px;
 }
 
-#top-header .showcart .mycartQty {
+.top-header .showcart .mycartQty {
     width: 10%;
     text-align: center;
     color: var(--ink03);
@@ -217,14 +204,14 @@ body{
     padding: 8px 0px 0px;
 }
 
-#top-header .showcart .mycartPrice {
+.top-header .showcart .mycartPrice {
     font-size: 14px;
     font-weight: 600;
     color: var(--p-btnBlue);
     padding: 0px 0px 8px 10px;
 }
 
-#top-header .showcart .mycartTotalLabel {
+.top-header .showcart .mycartTotalLabel {
     font-weight: 600;
     text-align: left;
     font-size: 14px;
@@ -232,10 +219,15 @@ body{
     color: var(--p-priceColor)
 }
 
-#top-header .showcart .mycartTotal {
+.top-header .showcart .mycartTotal {
     text-align: right;
     font-weight: 600;
     font-size: 14px;
     padding: 8px;
     color: var(--p-priceColor)
+}
+
+/* RESPONSIVE */
+.menu_icon {
+    display: none;
 }
