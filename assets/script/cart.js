@@ -139,10 +139,14 @@ var shoppingCart = (function() {
 function addtocart(x){
   var boxsp = x.parentElement.parentElement.children;
   var hinh = boxsp[0].children[0].src;
-  var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(",",""));
+  var flag = boxsp[2].children[0].classList.contains("product-item__price-old");
+  if (flag == true)
+    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ","").replace(",",""));
+  else
+    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(",",""));
   var tensp = boxsp[1].innerText;
   var soluong = 1;
-  console.log(tensp)
+  console.log(flag)
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()

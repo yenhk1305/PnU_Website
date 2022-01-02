@@ -900,9 +900,9 @@ function displayCheckout(){
       }
       var giamgiatext = document.getElementById("giamgia");
       var giamgia = shoppingCart.totalCart() * (30/100);
-      if (giamgia >= 50000){
-        giamgiatext.innerHTML = "- 50,000 đ";
-        giamgia = 50000;
+      if (giamgia >= 40000){
+        giamgiatext.innerHTML = "- 40,000 đ";
+        giamgia = 40000;
       }
       else {
         giamgiatext.innerHTML = "- " + giamgia + " đ";
