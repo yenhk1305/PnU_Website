@@ -18,10 +18,23 @@ body {
     background-color:  var(--primaryYellow);
     border: none;
     font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif; 
 }
     .register:hover {
+        background-color: var(--primaryYellow);
+    }
+
+.login {
+    display:inline-block;
+    padding: 10px;
+    width: 220px;
+    color: var(--primaryWhite);
+    background-color:  var(--primaryYellow);
+    border: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif; 
+}
+    .login:hover {
         background-color: var(--primaryYellow);
     }
 #all p a{
@@ -41,6 +54,10 @@ body {
 }
 
 .register a {
+    text-decoration: none;
+    color: white;
+}
+.login a {
     text-decoration: none;
     color: white;
 }

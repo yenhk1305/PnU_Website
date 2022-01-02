@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>
+           Đăng nhập thẻ thành viên
+        </title>
+        <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/login.css">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="stylesheet" href="./assets/css/header_style.css">
+        <link rel="stylesheet" href="/assets/css/footer_style.css">
+        <script src="./assets/script/cart.js"></script>
+        <script src=".//assets/script/login.js"></script>
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body onload="loadingregister(),loadingshopping()" style="margin:0">
+   <!-- Header-Start -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $(function(){
+           $("#header").load("header.html");
+       });
+   </script>
+   <span id="header"></span>
+   <!-- Header-End -->
+   <section  style="margin-top: 6%; margin-bottom: 6%">
+    <!--Bắt Đầu Phần Nội Dung-->
+    <div class="noi-dung">
+        <div class="form">
+            <h2><strong>ĐĂNG NHẬP THẺ THÀNH VIÊN</strong></h2>
+            <form action="" name="form">
+                <div class="input-form">
+                    <label for="msthe">Mã số thẻ</label><b style="color:red"> (*)</b><br/>
+                    <input type="text" id="msthe" name="msthe"/>
+                </div>
+                <div class="input-form">
+                    <label for="pass">Mật khẩu</label><b style="color:red"> (*)</b><br />
+                    <input type="password" id="pass" name="pass" />
+                </div>
+                <div class="hien-mat-khau">
+                    <label><input type="checkbox" name=""> Hiện mật khẩu</label>
+                </div>
+                <div class="input-form">
+                    <input type="button" class="button" value="Đăng Nhập" onclick="xuLy()">
+                </div>
+            </form>               
+        </div>
+    </div>
+    <!--Kết Thúc Phần Nội Dung-->
+    <!--Bắt Đầu Phần Hình Ảnh-->
+    <div class="img-bg">
+        <img src="./assets/images/login.png" alt="Hình Ảnh Minh Họa">
+    </div>
+    <!--Kết Thúc Phần Hình Ảnh-->
+</section>
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
+    <!-- Footer-End -->
+</body>
+</html>

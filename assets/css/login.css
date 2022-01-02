@@ -1,0 +1,199 @@
+/*Thiết lập vị trí, độ rộng, chiều cao của hình ảnh và nội dung*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 90%;
+    height: 75vh;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0.1px solid #a3b1b8;
+}
+    section .img-bg{
+        position: relative;
+        width: 50%;
+        height: 85%;
+        left: -2%;
+        top: 2%;
+    }
+        section .img-bg img{
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            right: 2%;
+            left: 2%; 
+            width: 93%;
+            height: 100%;
+            object-fit: cover;
+        }
+    /*thiết lập vị trí của form nằm chính giữa trong phần nội dung và trang trí lại tiêu đề h2*/
+    section .noi-dung{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+        section .noi-dung .form{
+            width: 80%;
+            height: 97%;
+        }
+
+        section .noi-dung .form h2{
+            color: var(--primaryBlack);
+            font-weight: 500;
+            font-size: 25px;
+            /* text-transform: uppercase; */
+            margin-bottom: 20px;
+            margin-top: 20px;
+            display: inline-block;
+            /* letter-spacing: 1px; */
+        }
+
+        /*Style ô input*/
+        section .noi-dung .form .input-form{
+            margin-bottom: 20px;
+        }
+        section .noi-dung .form .input-form label{
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: inline-block;
+            /* letter-spacing: 1px; */
+            }
+        section .noi-dung .form .input-form input{
+            width: 100%;
+            /* height: 40%; */
+            padding: 10px 10px;
+            outline: none;
+            border: 1px solid var(--ink03);
+            font-size: 16px;
+            /* letter-spacing: 1px; */
+            background: transparent;
+            border-radius: 7px;
+            margin-bottom: 5px;
+            }
+        section .noi-dung .form .input-form .button{
+            background-color:  var(--primaryYellow);
+            border: none;
+            color: var(--primaryWhite);
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            height: 45px;
+            width: 100%;
+            /* font-weight: bold; */
+            margin-left: 0px;
+            margin-top: 10px;
+            padding: 0 30px;
+            border: 1px solid transparent;
+            font-family: 'Montserrat', sans-serif;
+        }
+                section .noi-dung .form .input-form .button:hover{
+                    border: solid 1px var(--primaryBlack);
+                    background:  var(--primaryYellow);
+                    color:var(--primaryBlack);
+                    cursor: pointer;
+                    text-decoration: none
+                }
+        section .noi-dung .form .tuy-chon{
+            display: inline-block;
+        }
+        section .noi-dung .form .hien-mat-khau{
+            margin-bottom: 10px;
+        }
+
+/*Responsive*/
+@media (max-width: 900px){
+    section .img-bg{
+        position: absolute;
+        left: 1.5%;
+        width: 100%;
+        height: 93%;
+    }
+    section .noi-dung{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .noi-dung .form{
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        background: rgba(255 255 255 / 0.9);
+        /* margin: 50px; */
+    }
+    section .noi-dung .form h3{
+        color: #000000;
+        text-align: center;
+        /* margin: 0px 0 10px; */
+        font-weight: 500;
+    }
+    section .noi-dung .form h2{
+        color: #000000;
+        text-align: center;
+        /* margin: 0px 0 10px; */
+        margin-top: 0px;
+        font-weight: 500;
+    }
+    section .noi-dung .form h4{
+        color: #000000;
+        text-align: left;
+        /* margin: 10px 0 20px; */
+        font-weight: 500;
+    }
+}
+/*Responsive ngang*/
+@media (max-height: 650px){
+    section .img-bg{
+        position: absolute;
+        left: 1.5%;
+        width: 100%;
+        height: 93%;
+    }
+    section .noi-dung{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .noi-dung .form{
+        width: 100%;
+        height: 100%;
+        /* padding: 40px; */
+        padding:10px 40px;
+        background: rgba(255 255 255 / 0.9);
+        /* margin: 50px; */
+    }
+    section .noi-dung .form h3{
+        color: #000000;
+        text-align: center;
+        margin: 0px 0 10px;
+        font-weight: 500;
+    }
+    section .noi-dung .form h2{
+        color: #000000;
+        text-align: center;
+        margin: 0px 0 10px;
+        font-weight: 500;
+    }
+    section .noi-dung .form h4{
+        color: #000000;
+        text-align: left;
+        margin: 10px 0 20px;
+        font-weight: 500;
+    }
+}

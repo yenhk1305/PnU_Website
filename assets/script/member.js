@@ -41,11 +41,10 @@ function chonquan(v) {
                 "<option>Quận Tân Bình</option>" +
                 "<option>Quận Bình Thạnh</option>" +
                 "<option>Quận Phú Nhuận</option>" +
-                "<option>Quận Thủ Đức</option>" +
                 "<option>Quận Tân Phú</option>" +
                 "<option>Quận Bình Tân</option>" +
-                "<option>Huyện Bình Chánh</option>"
-
+                "<option>Huyện Bình Chánh</option>" +
+                "<option>Thành phố Thủ Đức</option>"
             break;
         case 71:
             selectquan.innerHTML =
@@ -191,8 +190,14 @@ function chonquan(v) {
 
             break;
         case 101:
-            selectquan.innerHTML = "<option>Thành phố Nha Trang</option>"
-
+            selectquan.innerHTML = "<option>Thành phố Nha Trang</option>" +
+            "<option>Thành phố Cam Ranh</option>" +
+            "<option>Huyện Cam Ranh</option>" +
+            "<option>Huyện Vạn Ninh</option>" +
+            "<option>Thị xã Ninh Hòa</option>" +
+            "<option>Huyện Khánh Vĩnh</option>" +
+            "<option>Huyện Diên Khánh</option>" +
+            "<option>Huyện Trường Sa</option>"
             break;
         case 104:
             selectquan.innerHTML =
@@ -229,8 +234,14 @@ function chonquan(v) {
 
             break;
         case 113:
-            selectquan.innerHTML = "<option>Thành phố Biên Hoà</option>"
-
+            selectquan.innerHTML = "<option>Thành phố Biên Hoà</option>" +
+            "<option>Thành phố Long Khánh</option>" +
+            "<option>Huyện Tân Phú</option>" +
+            "<option>Huyện Vĩnh Cửu</option>" +
+            "<option>Huyện Thống Nhất</option>" +
+            "<option>Huyện Cẩm Mỹ</option>" +
+            "<option>Huyện Long Thành</option>"
+        
             break;
         case 115:
             selectquan.innerHTML = "<option>Huyện Cần Giuộc</option>" +
@@ -890,16 +901,14 @@ function chonquan(v) {
                 "<option>Quận Hà Đông</option>" +
                 "<option>Quận Nam Từ Liêm</option>" 
             break;
-
     }
-
 }
 function xuLy() {
     if (frm.name.value == "" || frm.msthe.value == "" || frm.email.value == ""
         || frm.phone.value == "" || frm.pass.value == "" || frm.reenter.value == "") {
-        alert("Vui lòng nhập đầy đủ thông tin")
+        alert("Vui lòng nhập đầy đủ thông tin.")
     } else {
-        alert("Chúc mừng bạn đã đăng ký thành công")
+        alert("Chúc mừng bạn đã đăng ký thành công.")
         window.location.href = "index.html"
     }
 }
