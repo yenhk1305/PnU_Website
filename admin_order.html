@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <script src="./assets/script/admin.js"></script>
+    <script src="./assets/script/checkout.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
@@ -19,11 +20,11 @@
             <h2>Pet and You</h2>
         </div>
         <div class="items">
-            <li><i class="fas fa-chart-line"></i><a href="#">Tổng quan</a></li>
+            <li><i class="fas fa-chart-line"></i><a href="admin.html">Dashboard</a></li>
             <li style="border-left: 4px solid #fff" ><i class="fas fa-shopping-cart"></i><a href="#">Đơn hàng</a></li>
             <li><i class="fas fa-tags"></i></i><a href="#">Sản phẩm</a></li>
             <li><i class="fas fa-shipping-fast"></i><a href="#">Vận chuyển</a></li>
-            <li><i class="fas fa-shipping-fast"></i><a href="#">Khách hàng</a></li>
+            <li><i class="fas fa-universal-access"></i></i><a href="#">Khách hàng</a></li>
             <li><i class="fas fa-percent"></i><a href="#">Khuyến mãi</a></li>
             <li><i class="fas fa-clipboard-list"></i><a href="#">Báo cáo</a></li>
             <li><i class="fas fa-cog"></i><a href="#">Cấu hình</a></li>
@@ -56,64 +57,18 @@
             <table width="100%">
                 <thead>
                     <tr>
-                        <td>Name</td>
-                        <td>Title</td>
-                        <td>Status</td>
-                        <td>Roles</td>
-                        <td></td>
+                        <td>STT</td>
+                        <td>Họ tên</td>
+                        <td>Địa chỉ</td>
+                        <td>Phương thức thanh toán</td>
+                        <td>Tổng số sản phẩm</td>
+                        <td>Thành tiền</td>
                     </tr>
                 </thead>
-                <tbody id="studentinfo"></tbody>
+                <tbody id="orderinfo">
+                </tbody>
             </table>
 
-            <script>
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "./data/information.xml", true);
-                var html = "";
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState == 4 && xhr.status == 200) {
-                        loadData();
-                    } else {
-                        html += "Không lấy được dữ liệu";
-                    }
-                    document.getElementById("studentinfo").innerHTML = html;
-                }
-                xhr.send();
-        
-                function loadData(){
-                    var xmlDoc = xhr.responseXML;
-                    html = "";
-                    var x = xmlDoc.getElementsByTagName("sinhvien");
-                    for (i = 0; i<x.length;i++){
-                        html += '<tr>'+
-                        '<td class="people">'+
-                            '<img src="'+x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+'" alt="">'+
-                            '<div class="people-de">'+
-                                '<h5>'+x[i].getElementsByTagName("hoTen")[0].childNodes[0].nodeValue+'</h5>'+
-                                '<p>'+x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+'</p>'+
-                            '</div>'+
-                        '</td>'+
-
-                        '<td class="people-des">'+
-                            '<h5>'+x[i].getElementsByTagName("mssv")[0].childNodes[0].nodeValue+'</h5>'+
-                            '<p>'+x[i].getElementsByTagName("nhom")[0].childNodes[0].nodeValue+'</p>'+
-                        '</td>'+
-
-                        '<td class="active">'+
-                            '<p>'+x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue+'</p>'+
-                        '</td>'+
-
-                        '<td class="role">'+
-                            '<p>'+x[i].getElementsByTagName("roles")[0].childNodes[0].nodeValue+'</p>'+
-                        '</td>'+
-
-                        '<td class="edit">'+
-                            '<a href="#">Edit</a>'+
-                        '</td>'+
-                    '</tr>'
-                    }
-                }
-            </script>
        </div>
 
     </section>
@@ -123,7 +78,7 @@
         $('#menu-btn').click(function(){
             $('#menu').toggleClass("active");
         })
-    </script>
-    
+    </script>   
 </body>
+<script>displayOrder()</script>
 </html>

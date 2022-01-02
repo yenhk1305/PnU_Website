@@ -18,11 +18,10 @@ function chonquan(v) {
                 "<option>Quận Tân Bình</option>" +
                 "<option>Quận Bình Thạnh</option>" +
                 "<option>Quận Phú Nhuận</option>" +
-                "<option>Quận Thủ Đức</option>" +
                 "<option>Quận Tân Phú</option>" +
                 "<option>Quận Bình Tân</option>" +
-                "<option>Huyện Bình Chánh</option>"
-
+                "<option>Huyện Bình Chánh</option>" +
+                "<option>Thành phố Thủ Đức</option>"
             break;
         case 71:
             selectquan.innerHTML =
@@ -168,8 +167,14 @@ function chonquan(v) {
 
             break;
         case 101:
-            selectquan.innerHTML = "<option>Thành phố Nha Trang</option>"
-
+            selectquan.innerHTML = "<option>Thành phố Nha Trang</option>" +
+            "<option>Thành phố Cam Ranh</option>" +
+            "<option>Huyện Cam Ranh</option>" +
+            "<option>Huyện Vạn Ninh</option>" +
+            "<option>Thị xã Ninh Hòa</option>" +
+            "<option>Huyện Khánh Vĩnh</option>" +
+            "<option>Huyện Diên Khánh</option>" +
+            "<option>Huyện Trường Sa</option>"
             break;
         case 104:
             selectquan.innerHTML =
@@ -206,8 +211,14 @@ function chonquan(v) {
 
             break;
         case 113:
-            selectquan.innerHTML = "<option>Thành phố Biên Hoà</option>"
-
+            selectquan.innerHTML = "<option>Thành phố Biên Hoà</option>" +
+            "<option>Thành phố Long Khánh</option>" +
+            "<option>Huyện Tân Phú</option>" +
+            "<option>Huyện Vĩnh Cửu</option>" +
+            "<option>Huyện Thống Nhất</option>" +
+            "<option>Huyện Cẩm Mỹ</option>" +
+            "<option>Huyện Long Thành</option>"
+        
             break;
         case 115:
             selectquan.innerHTML = "<option>Huyện Cần Giuộc</option>" +
@@ -870,6 +881,63 @@ function chonquan(v) {
     }
 }
 
+var orderHistory = (function() {
+    // Private methods and propeties
+    order = [];
+    
+ // Constructor
+ function Item(name, phone, address, count, payment, total) {
+    this.name = name;
+    this.phone = phone;
+    this.address = address;
+    this.count = count;
+    this.payment = payment;
+    this.total = total;
+  }
+  
+  // Save cart
+  function saveOrder() {
+    localStorage.setItem('orderHistory', JSON.stringify(order));
+  }
+  
+    // Load cart
+    function loadOrder() {
+      order = JSON.parse(localStorage.getItem('orderHistory'));
+    }
+    if (localStorage.getItem("orderHistory") != null) {
+      loadOrder();
+    }
+
+  // Public methods and propeties
+  // =============================
+  // Create object
+  var obj = {};
+  
+  // Add to cart
+  obj.addOrderToList = function(name, phone, address, count, payment, total) {
+    var item = new Item(name, phone, address, count, payment, total);
+    order.push(item);
+    saveOrder();
+  }
+
+    // List cart
+    obj.listOrder = function() {
+      var orderCopy = [];
+      for(i in order) {
+        item = order[i];
+        itemCopy = {};
+        for(p in item) {
+          itemCopy[p] = item[p];
+  
+        }
+        orderCopy.push(itemCopy)
+      }
+      return orderCopy;
+    }
+    return obj;
+  })();
+
+datashoppingfinal = [];
 // Show list Item from cart in Checkout screen
 function displayCheckout(){
     var giohang = shoppingCart.listCart();
@@ -905,45 +973,44 @@ function displayCheckout(){
         giamgia = 40000;
       }
       else {
-        giamgiatext.innerHTML = "- " + giamgia + " đ";
+        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia) + " đ";
         giamgia = giamgia;
       }
     
       document.getElementById("tongcong").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart() + phiship - giamgia) + " đ";
     }  
-    }
+}
     
     function dathang(){
-      if (localStorage.getItem("lstdathangfinal") != null) {
-        datashoppingfinal = JSON.parse(localStorage.getItem('lstdathangfinal'));
+      if (localStorage.getItem("orderHistory") != null) {
+        order = JSON.parse(localStorage.getItem('orderHistory'));
       }
       if (edtHoten.value == "" || edtSdt.value == "" ||
       edtDiachi.value == "" || cboTinhthanh.value == "" 
       || cboQuanhuyen.value == "") {
       alert("Vui lòng nhập đầy đủ thông tin bạn nhé!")
     } else {
-      var datainfo = []
-      datainfo.push(edtHoten.value)
-      datainfo.push(edtSdt.value)
 
       var x = document.getElementById("cboTinhthanh");
       var tinhthanh = x.options[x.selectedIndex].text;
       var y = document.getElementById("cboQuanhuyen");
-      var quanhuyen = y.options[x.selectedIndex].text;
+      var quanhuyen = y.options[y.selectedIndex].text;
       console.log(tinhthanh);
-
-      datainfo.push(edtDiachi.value + ", " + quanhuyen + ", " + tinhthanh)
+      var diachi = edtDiachi.value + ", " + quanhuyen + ", " + tinhthanh;
 
       if (document.getElementById("rdCOD").checked == true)
-        datainfo.push(rdCOD.value);
+        payment = rdCOD.value
       else if (document.getElementById("rdATM").checked == true)
-        datainfo.push(rdATM.value);
+        payment = rdATM.value
       else if (document.getElementById("rdMOMO").checked == true)
-        datainfo.push(rdMOMO.value);
-      datainfo.push(document.getElementById("tongcong").innerHTML)
-      datashoppingfinal.push(datainfo)
+        payment = rdMOMO.value
+      var phiship = parseFloat(document.getElementById("phiship").innerHTML.replace(" đ","").replace(",",""))
+      var giamgia = parseFloat(document.getElementById("giamgia").innerHTML.replace(" đ","").replace(",","").replace("- ",""))
+      var total = shoppingCart.totalCart() + phiship - giamgia;
+      console.log(phiship)
+      console.log(giamgia)
+      orderHistory.addOrderToList(edtHoten.value, edtSdt.value, diachi, shoppingCart.totalCount(), payment, total)
       
-      localStorage.setItem('lstdathangfinal', JSON.stringify(datashoppingfinal))
       alert('Đặt hàng thành công')
       shoppingCart.clearCart();
       window.location.href = "./index.html";

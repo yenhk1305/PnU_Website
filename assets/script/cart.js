@@ -1,7 +1,6 @@
 var shoppingCart = (function() {
   // Private methods and propeties
   cart = [];
-  datashoppingfinal = [];
   
   // Constructor
   function Item(thumb, name, price, count) {
@@ -155,6 +154,7 @@ function addtocart(x){
 // Display list cart in cart screen
 function displayCart(){
   var giohang = shoppingCart.listCart();
+  console.log(giohang)
   if (giohang == null || giohang.length == 0){
       document.getElementById("cartpage").style.display ="none";
       document.getElementById("emptycart").style.display ="block";
