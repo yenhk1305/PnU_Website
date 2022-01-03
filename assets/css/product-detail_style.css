@@ -47,7 +47,7 @@ html {
 }
 
 .grid__column-2 {
-    width: 20%;
+    width: 16.6667%;
     padding-left: 6px;
     padding-right: 6px;
 }
@@ -401,6 +401,7 @@ html {
 }
 
 .similar-product__label--1 {
+        
         font-weight: 500;
         color: rgb(56, 55, 55);
        
