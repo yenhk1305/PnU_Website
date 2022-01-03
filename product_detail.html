@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="stylesheet" href="./assets/css/product-detail_style.css"/>
+    <title>Document</title>
+    <script src="./assets/script/product-detail.js"></script>
+</head>
+<body>
+    <div class="page-container">
+        <div class="grid wide">
+            <!-- part 1: Image+Info -->
+            <div class="grid__row">
+
+                <!-- Image start-->
+                <div class="grid__column-5--5">
+                    <div class="p-detail__image">
+                        <div class="full_image_box">
+                            <img src="./assets/images/product/cat_food_01.png" alt="" class="full-img"  id="mainImg">
+                        </div>    
+                        <div class="small-img__group">                  
+                                <div class="small-img__col-3" >
+                                    <img src="./assets/images/product/cat_food_01.png" alt="" class="small-img">
+                                </div>
+                                <div class="small-img__col-3" >
+                                    <img src="./assets/images/product/cat_food_02.png" alt="" class="small-img">
+                                </div>
+                                <div class="small-img__col-3" >
+                                    <img src="./assets/images/product/cat_food_03.png" alt="" class="small-img">
+                                </div>              
+                        </div>
+                    </div>
+                </div>
+                <!-- Image end -->
+
+                <!-- Info start -->
+                <div class="grid__column-6--5">
+                    <div class="p-detail__info">
+                        <!-- name -->
+                        <h1 class="detail-info__name">Hạt thức ăn khô cho mèo con Royal Canin Kitten
+                            Hạt thức ăn khô cho mèo con Royal Canin Kitten
+                        </h1>
+                        <!-- price -->
+                        <div class="detail-info__price">
+                            <span class="info__price-old">450.000 đ</span>
+                            <span class="info__price-current">450.000 đ</span>
+                        </div>
+                        <!-- action -->
+                        <div class="detail-info__action">
+                            <!-- select quantity -->
+                            <div class="action__select-quantity">
+                                <p class="select-quantity__label">Số lượng: </p>
+                                <div class="select-quantity__wrapper">
+                                    <button id="btnSubs" class="select-quantity__btn" onClick="selectQuantity()">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" class="select-quantity__edt" value="1">
+                                    <button id="btnPlus" class="select-quantity__btn" onClick="selectQuantity()">
+                                        <i class="fas fa-plus select-quantity__btn-icon"></i>
+                                    </button>
+                                </div>
+                            </div>
+                          
+                        </div>
+                           <!-- nav page -->
+                           <div class="action__nav-page">
+                            <button id="btnAddCart" class="action__add-cart" onClick="addtocart(this)">
+                                THÊM GIỎ HÀNG
+                            </button>
+                            <button id="btnBuyNow" class="action__buy-now" onClick="addtocart(this)">
+                                <a href="" class="buy-now__link">MUA NGAY</a>
+                            </button>
+                           
+                        </div>
+                    </div>
+                </div>
+                 <!-- Info end -->
+            </div>
+
+            <!-- part 2+3: Description+Similar-Product -->
+            <div class="grid__row">
+
+               <div class="grid__column-12">
+                    <!-- part2 mô tả -->
+                    <div class="p-detail__description">
+                        <!-- Tab items -->
+                        <div class="p-description__tabs">
+                            <div class="tab-item active">
+                                Mô tả sản phẩm
+                            </div>
+                            <div class="tab-item">
+                                Hướng dẫn bảo quản
+                            </div>
+                            <div class="tab-line"></div>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div class="p-description__tab-content">
+                            <div class="tab-pane active">
+
+                            <p  class="tab-pane__text">
+                                Sau giai đoạn sơ sinh, cai sữa chó con cần một lượng khẩu phần ăn khá khắt khe. Bởi giai đoạn này dạ dày của Poodle vẫn còn khá yếu. Chúng không hấp thu được những chất quá nhiều dinh dưỡng, hoặc các loại thức ăn quá cứng. Sản phẩm Thức Ăn Khô Cho Chó Poodle Con - Royal Canin Poodle Puppy là sản phẩm dành cho giống chó Poodle từ 2 – 10 tháng tuổi.
+                            <br>
+                                <b>Chi tiết sản phẩm</b>
+                                <br>
+                                Xuất xứ: Pháp
+                                <br>
+                                Trọng lượng: 500gr, 1.5kg
+                                <br>
+                                Thành phần
+                                <br>
+                                Bắp, mỡ gà, gluten lúa mì, bột gluten bắp, lúa mì, hương vị tự nhiên, dầu cá. Aluminat silic natri, dầu thực vật, dầu ăn khô, monocalcium phosphate, canxi Carbonat. Canxi sulfat, DL-methionine, clorua kali, vỏ hạt psyllium, muối, fructooligosaccharides, tripolyphosphate natri. Menhydrolyzed, vitamin [DL-alpha tocopherol acetate (nguồn vitamin E),...
+                                <br>
+                                <b>
+                                Công dụng
+                                </b>
+                                <br>
+                                Thức ăn khô cho chó Royal Canin Poodle Puppy giúp duy trì sức khoẻ của chó Poodle sau cai sữa, hỗ trợ năng lượng phát triển cho cún.
+                                <br>
+                                Hình dạng hạt độc quyền, với hạt mềm, giúp chó dễ dàng nhai.
+                                <br>
+                                Với các dưỡng chất dễ tiêu hóa, thức ăn hạt còn hỗ trợ tiêu hóa khỏe mạnh.
+                                <br>
+                                Hỗ trợ sức khỏe tăng cường hệ thống miễn dịch.
+                                <br>
+                                100% dinh dưỡng cân bằng.
+                                <br>
+                                100% đảm bảo an toàn.
+                            </p>
+                            </div>
+
+                            <div class="tab-pane">
+                            <p class="tab-pane__text">
+                                <b>Ngay sau khi mua</b>
+                                <br>
+                                Bạn nên chiết một lượng vừa phải từ bao lớn sang bao nhỏ. Dùng bao nhỏ để lấy thức ăn cho thú cưng ăn hằng ngày. Khi nào bọc nhỏ hết thì lại tiếp tục đổ từ bọc lớn sang. 
+                                <br>
+                                <b> Đối với bao thức ăn lớn</b>
+                                <br>
+                                Bạn nên chú ý giữ thật kín bao bì. Chỉ lấy ra khi cần chiết sang bịch nhỏ. Sau đó, bạn nên cất gọn vào một góc tủ, góc nhà hoặc chỗ nào  khô ráo và thoáng mát cũng như không có ánh nắng trực tiếp chiếu vào.
+                                <br>
+                                <b> Đặc biệt, nơi bảo quản nên ở trên cao và kín</b>
+                                <br>
+                                Có như vậy, các loại chuột gián sẽ không có cơ hội “trèo vào” tủ hay đục khoét để ăn mất phần thức ăn của thú cưng nhà bạn. 
+                                <br>
+                                <b> Rửa hộp sạch sẽ trước khi đựng đồ ăn mới</b>
+                                <br>
+                                Giữ cho hộp đựng thức ăn sạch sẽ là cách tốt nhất để tăng thời gian bảo quản thức ăn cho chó mèo. Bạn cần lưu ý luôn rửa sạch hộp giữa các lần đổ đầy. Bởi các loại dầu mỡ từ hạt có xu hướng ôi thiu và dính vào thành hộp, nếu bạn không rửa mà đổ ngay thức ăn mới vào thì có thể có dầu ôi dính lại từ đợt thức ăn trước, khiến thức ăn dễ bị hỏng.
+                                <br>
+                                <b> Không trộn hạt cũ và hạt mới</b>
+                                <br>
+                                Thực phẩm cũ có thể phát sinh một số vi khuẩn hoặc vi trùng, hoặc dầu mỡ cũ chuẩn bị ôi thiu… và nếu bạn thêm nó vào túi thức ăn mới thì sẽ làm hỏng hỏng thực phẩm mới.
+                            </p>
+                            </div>                      
+                        </div>
+
+                    
+                    </div>
+                    <!-- part3 sản phẩm tương tự-->   
+                    <div class="p-detail__similar-product">
+                            <div class="similar-product__label-row grid__row">
+                                    <h1 class="similar-product__label--1">
+                                        Sản phẩm tương tự
+                                    </h1>
+                                    <h2 class="similar-product__label--2">
+                                    Xem thêm
+                                    </h2>
+                                
+                            </div>
+                            <div class="similar-product__line"></div>
+                            <div class="product__row grid__row">
+                                <!--SP1-->
+                                <div class="grid__column-2">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__picture">
+                                                <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                                        </div>
+                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                        <div class="product-item__price">
+                                                <span class="product-item__price-current">450.000 đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                                    <span class="score-rating">4.1 </span>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                        </div>   
+                                        </div>                                  
+                                    </a>
+                                </div>
+
+                                <!--SP2-->
+                                <div class="grid__column-2">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__picture">
+                                                <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                                        </div>
+                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                        <div class="product-item__price">
+                                                <span class="product-item__price-current">450.000 đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                                    <span class="score-rating">4.1 </span>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                        </div>   
+                                        </div>                                  
+                                    </a>
+                                </div>
+
+                                <!--SP3-->
+                                <div class="grid__column-2">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__picture">
+                                                <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                                        </div>
+                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                        <div class="product-item__price">
+                                                <span class="product-item__price-current">450.000 đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                                    <span class="score-rating">4.1 </span>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                        </div>   
+                                        </div>                                  
+                                    </a>
+                                </div>
+
+                                <!--SP4-->
+                                <div class="grid__column-2">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__picture">
+                                                <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                                        </div>
+                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                        <div class="product-item__price">
+                                                <span class="product-item__price-current">450.000 đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                                    <span class="score-rating">4.1 </span>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                        </div>   
+                                        </div>                                  
+                                    </a>
+                                </div>
+
+                                <!--SP5-->
+                                <div class="grid__column-2">
+                                    <a class="product-item" href="#">
+                                        <div class="product-item__picture">
+                                                <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                                        </div>
+                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                        <div class="product-item__price">
+                                                <span class="product-item__price-current">450.000 đ</span>
+                                        </div>
+                                        <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                                    <span class="score-rating">4.1 </span>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                        </div>   
+                                        </div>                                  
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   <script>
+
+    //  Chọn ảnh xem chế độ full
+        var mainImg= document.getElementById('mainImg');
+        var smallImg=document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function() {
+            mainImg.src=smallImg[0].src;
+        }
+
+        smallImg[1].onclick = function() {
+            mainImg.src=smallImg[1].src;
+        }
+
+        smallImg[2].onclick = function() {
+            mainImg.src=smallImg[2].src;
+        }
+
+            const $ = document.querySelector.bind(document);
+            const $$ = document.querySelectorAll.bind(document);
+
+            const tabs = $$(".tab-item");
+            const panes = $$(".tab-pane");
+
+            const tabActive = $(".tab-item.active");
+            const line = $(".p-description__tabs .tab-line");
+
+            line.style.left = tabActive.offsetLeft + "px";
+            line.style.width = tabActive.offsetWidth + "px";
+
+            tabs.forEach((tab, index) => {
+            const pane = panes[index];
+
+            tab.onclick = function () {
+                $(".tab-item.active").classList.remove("active");
+                $(".tab-pane.active").classList.remove("active");
+
+                line.style.left = this.offsetLeft + "px";
+                line.style.width = this.offsetWidth + "px";
+
+                this.classList.add("active");
+                pane.classList.add("active");
+            };
+            });
+   </script>
+</body>
+</html>
