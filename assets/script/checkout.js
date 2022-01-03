@@ -967,10 +967,10 @@ function displayCheckout(){
         phiship = 35000;
       }
       var giamgiatext = document.getElementById("giamgia");
-      var giamgia = shoppingCart.totalCart() * (30/100);
-      if (giamgia >= 40000){
-        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(40000) + " đ";
-        giamgia = 40000;
+      var giamgia = shoppingCart.totalCart() * (20/100);
+      if (giamgia >= 50000){
+        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(50000) + " đ";
+        giamgia = 50000;
       }
       else {
         giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia.toFixed(2)) + " đ";

@@ -159,6 +159,7 @@
                 font-weight: 400;
                 float: left;
                 width: 100%;
+                cursor: pointer;
                 text-decoration: none
             }
 

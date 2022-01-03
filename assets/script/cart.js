@@ -154,8 +154,6 @@ function addtocart(x){
 
 // Add item to cart (màn hình chi tiết sản phẩm)
 function addtocart2(){
-  // var boxsp = x.parentElement.parentElement.parentElement.children;
-  // var hinh = boxsp[0].children[0].src;
   var boxsp = document.getElementById("p-detail__info").children;
   var hinh = boxsp[0].children[0].src;
   var tensp = boxsp[1].innerText;
@@ -169,6 +167,12 @@ function addtocart2(){
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()
+}
+
+// Add item and checkout (thêm sp và mua ngay)
+function addandcheckout(){
+  addtocart2();
+  window.location.href = "./checkout.html";
 }
 
 // Display list cart in cart screen
