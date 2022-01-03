@@ -12,6 +12,16 @@
     <script src="./assets/script/product-detail.js"></script>
 </head>
 <body>
+    <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+    <span id="header"></span>
+    <!-- Header-End -->
+
     <div class="page-container">
         <div class="grid wide">
             <!-- part 1: Image+Info -->
@@ -304,8 +314,8 @@
                                     </a>
                                 </div>
 
-                                    <!--SP5-->
-                                    <div class="grid__column-2">
+                                <!--SP6-->
+                                <div class="grid__column-2">
                                         <a class="product-item" href="#">
                                             <div class="product-item__picture">
                                                     <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
@@ -328,7 +338,7 @@
                                             </div>   
                                             </div>                                  
                                         </a>
-                                    </div>
+                                </div>
                             </div>
 
                     </div>
@@ -337,7 +347,17 @@
             </div>
         </div>
     </div>
+
+     <!-- Footer -->
+    <span id="footer"></span>
+    <!-- Footer-End -->
+    
    <script>
+
+    // Footer
+        $(function(){
+            $("#footer").load("footer.html");
+        });
 
     //  Chọn ảnh xem chế độ full
         var mainImg= document.getElementById('mainImg');
@@ -355,32 +375,34 @@
             mainImg.src=smallImg[2].src;
         }
 
-            const $ = document.querySelector.bind(document);
-            const $$ = document.querySelectorAll.bind(document);
+    //Đổi tab
+        const $$ = document.querySelector.bind(document);
+        const $$$ = document.querySelectorAll.bind(document);
 
-            const tabs = $$(".tab-item");
-            const panes = $$(".tab-pane");
+        const tabs = $$$(".tab-item");
+        const panes = $$$(".tab-pane");
 
-            const tabActive = $(".tab-item.active");
-            const line = $(".p-description__tabs .tab-line");
+        const tabActive = $$(".tab-item.active");
+        const line = $$(".p-description__tabs .tab-line");
 
-            line.style.left = tabActive.offsetLeft + "px";
-            line.style.width = tabActive.offsetWidth + "px";
+        line.style.left = tabActive.offsetLeft + "px";
+        line.style.width = tabActive.offsetWidth + "px";
 
-            tabs.forEach((tab, index) => {
-            const pane = panes[index];
+        tabs.forEach((tab, index) => {
+        const pane = panes[index];
 
-            tab.onclick = function () {
-                $(".tab-item.active").classList.remove("active");
-                $(".tab-pane.active").classList.remove("active");
+        tab.onclick = function () {
+            $$(".tab-item.active").classList.remove("active");
+                $$(".tab-pane.active").classList.remove("active");
 
-                line.style.left = this.offsetLeft + "px";
-                line.style.width = this.offsetWidth + "px";
+            line.style.left = this.offsetLeft + "px";
+            line.style.width = this.offsetWidth + "px";
 
-                this.classList.add("active");
-                pane.classList.add("active");
-            };
-            });
+            this.classList.add("active");
+            pane.classList.add("active");
+        };
+        });    
+
    </script>
 </body>
 </html>
