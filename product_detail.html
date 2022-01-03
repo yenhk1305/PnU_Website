@@ -50,7 +50,11 @@
 
                 <!-- Info start -->
                 <div class="grid__column-6--5">
-                    <div class="p-detail__info">
+                    <div class="p-detail__info" id="p-detail__info">
+                        <!-- img -->
+                        <div style="display: none;">
+                            <img src="./assets/images/product/cat_food_01.png">
+                        </div>
                         <!-- name -->
                         <h1 class="detail-info__name">Hạt thức ăn khô cho mèo con Royal Canin Kitten
                             Hạt thức ăn khô cho mèo con Royal Canin Kitten
@@ -58,7 +62,7 @@
                         <!-- price -->
                         <div class="detail-info__price">
                             <span class="info__price-old">450.000 đ</span>
-                            <span class="info__price-current">450.000 đ</span>
+                            <span class="info__price-current">410.000 đ</span>
                         </div>
                         <!-- action -->
                         <div class="detail-info__action">
@@ -69,7 +73,7 @@
                                     <button id="btnSubs" class="select-quantity__btn" onClick="selectQuantity()">
                                         <i class="fas fa-minus"></i>
                                     </button>
-                                    <input type="text" class="select-quantity__edt" value="1">
+                                    <input type="text" class="select-quantity__edt" id="select-quantity__edt" value="1">
                                     <button id="btnPlus" class="select-quantity__btn" onClick="selectQuantity()">
                                         <i class="fas fa-plus select-quantity__btn-icon"></i>
                                     </button>
@@ -79,13 +83,12 @@
                         </div>
                            <!-- nav page -->
                            <div class="action__nav-page">
-                            <button id="btnAddCart" class="action__add-cart" onClick="addtocart2(this)">
-                                THÊM GIỎ HÀNG
-                            </button>
-                            <button id="btnBuyNow" class="action__buy-now" onClick="addandcheckout(this)">
-                                <a href="" class="buy-now__link">MUA NGAY</a>
-                            </button>
-                           
+                                <button id="btnAddCart" class="action__add-cart" onClick="addtocart2(this)">
+                                    THÊM GIỎ HÀNG
+                                </button>
+                                <button id="btnBuyNow" class="action__buy-now" onClick="addandcheckout(this)">
+                                    <a href="" class="buy-now__link">MUA NGAY</a>
+                                </button> 
                         </div>
                     </div>
                 </div>

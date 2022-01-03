@@ -32,7 +32,7 @@ var shoppingCart = (function() {
   obj.addItemToCart = function(thumb, name, price, count) {
     for(var item in cart) {
       if(cart[item].name === name) {
-        cart[item].count ++;
+        cart[item].count = cart[item].count + count;
         saveCart();
         return;
       }
@@ -41,6 +41,7 @@ var shoppingCart = (function() {
     cart.push(item);
     saveCart();
   }
+
   // Set count from item
   obj.setCountForItem = function(name, count) {
     for(var i in cart) {
@@ -134,7 +135,7 @@ var shoppingCart = (function() {
 })();
 
 // Events
-// Add item to cart
+// Add item to cart (màn hình sản phẩm chung & sp tương tự)
 function addtocart(x){
   var boxsp = x.parentElement.parentElement.children;
   var hinh = boxsp[0].children[0].src;
@@ -146,6 +147,25 @@ function addtocart(x){
   var tensp = boxsp[1].innerText;
   var soluong = 1;
   console.log(gia)
+  shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
+  alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
+  showTotalCount()
+}
+
+// Add item to cart (màn hình chi tiết sản phẩm)
+function addtocart2(){
+  // var boxsp = x.parentElement.parentElement.parentElement.children;
+  // var hinh = boxsp[0].children[0].src;
+  var boxsp = document.getElementById("p-detail__info").children;
+  var hinh = boxsp[0].children[0].src;
+  var tensp = boxsp[1].innerText;
+  var flag = boxsp[2].children[0].classList.contains("info__price-old");
+  if (flag == true)
+    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ",""))*1000;
+  else
+    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ",""))*1000;
+  var soluong = parseInt(document.getElementById("select-quantity__edt").value);
+  console.log(soluong)
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()
@@ -222,6 +242,7 @@ function displayCart(){
   }  
 }
 
+//Show cart nhỏ trên header khi mouseover
 function showCart(){
   if (window.innerWidth >= 1200) {
     document.getElementById("showcart").style.display ="block";
@@ -229,10 +250,12 @@ function showCart(){
   }
 }
 
+//Ẩn cart nhỏ trên header khi mouseout
 function hideCart(){
 document.getElementById("showcart").style.display ="none";
 }
 
+//Hiện ds sản phẩm trong giỏ hàng trên Header cart
 function displayInShowCart(){
   var giohang = shoppingCart.listCart();
   var ttgh = "";
