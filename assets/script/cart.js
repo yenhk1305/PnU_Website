@@ -353,3 +353,4 @@ function changeQtyItemMobile(x){
   shoppingCart.setCountForItem(name,count);
   displayCart();
 }
+showTotalCount()
