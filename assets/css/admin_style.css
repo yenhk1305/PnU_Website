@@ -229,6 +229,11 @@ tbody tr td {
     color:tomato
 }
 
+.board .price p {
+    text-align: right;
+    padding-right: 40px;
+}
+
 @media (max-width: 769px) {
     #menu {
         width: 250px;

@@ -223,8 +223,10 @@ function displayCart(){
 }
 
 function showCart(){
-document.getElementById("showcart").style.display ="block";
-displayInShowCart()
+  if (window.innerWidth >= 1200) {
+    document.getElementById("showcart").style.display ="block";
+    displayInShowCart()
+  }
 }
 
 function hideCart(){
