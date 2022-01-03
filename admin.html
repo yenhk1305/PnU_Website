@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/admin_style.css">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="./assets/script/admin.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body onload="loginadmin()">
+
+    <section id="menu">
+        <div class="logo">
+            <img src="./assets/images/Logo-Slogan_03.png" alt="">
+            <h2>Pet and You</h2>
+        </div>
+        <div class="items">
+            <li style="border-left: 4px solid #fff" ><i class="fas fa-chart-line"></i><a href="admin.html">Dashboard</a></li>
+            <li><i class="fas fa-shopping-cart"></i><a href="admin_order.html">Đơn hàng</a></li>
+            <li><i class="fas fa-tags"></i></i><a href="#">Sản phẩm</a></li>
+            <li><i class="fas fa-shipping-fast"></i><a href="#">Vận chuyển</a></li>
+            <li><i class="fas fa-universal-access"></i><a href="#">Khách hàng</a></li>
+            <li><i class="fas fa-percent"></i><a href="#">Khuyến mãi</a></li>
+            <li><i class="fas fa-clipboard-list"></i><a href="#">Báo cáo</a></li>
+            <li><i class="fas fa-cog"></i><a href="#">Cấu hình</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <img src="/assets/images/nguoi1.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Dashboard
+        </h3>
+
+       <div class="board">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Title</td>
+                        <td>Status</td>
+                        <td>Roles</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="studentinfo"></tbody>
+            </table>
+
+            <script>
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "./data/information.xml", true);
+                var html = "";
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        loadData();
+                    } else {
+                        html += "Không lấy được dữ liệu";
+                    }
+                    document.getElementById("studentinfo").innerHTML = html;
+                }
+                xhr.send();
+        
+                function loadData(){
+                    var xmlDoc = xhr.responseXML;
+                    html = "";
+                    var x = xmlDoc.getElementsByTagName("sinhvien");
+                    for (i = 0; i<x.length;i++){
+                        html += '<tr>'+
+                        '<td class="people">'+
+                            '<img src="'+x[i].getElementsByTagName("image")[0].childNodes[0].nodeValue+'" alt="">'+
+                            '<div class="people-de">'+
+                                '<h5>'+x[i].getElementsByTagName("hoTen")[0].childNodes[0].nodeValue+'</h5>'+
+                                '<p>'+x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue+'</p>'+
+                            '</div>'+
+                        '</td>'+
+
+                        '<td class="people-des">'+
+                            '<h5>'+x[i].getElementsByTagName("mssv")[0].childNodes[0].nodeValue+'</h5>'+
+                            '<p>'+x[i].getElementsByTagName("nhom")[0].childNodes[0].nodeValue+'</p>'+
+                        '</td>'+
+
+                        '<td class="active">'+
+                            '<p>'+x[i].getElementsByTagName("status")[0].childNodes[0].nodeValue+'</p>'+
+                        '</td>'+
+
+                        '<td class="role">'+
+                            '<p>'+x[i].getElementsByTagName("roles")[0].childNodes[0].nodeValue+'</p>'+
+                        '</td>'+
+
+                        '<td class="edit">'+
+                            '<a href="#">Edit</a>'+
+                        '</td>'+
+                    '</tr>'
+                    }
+                }
+            </script>
+       </div>
+
+       <div class="board-product">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td colspan="2">Sản phẩm bán chạy</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="product">
+                        <img src="./assets/images/product/dog_food_01.png" alt="">
+                        <h5>Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                    </td>
+                    <td class="price">
+                        <p>394000</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product">
+                        <img src="./assets/images/product/cat_food_07.png" alt="">
+                        <h5>Hạt thức ăn mèo REFLEX High Quality</h5>
+                    </td>
+                    <td class="price">
+                        <p>239000</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="product">
+                        <img src="./assets/images/product/pet_fashion_05.png" alt="">
+                        <h5>Áo thun liền quần khủng long cho mèo</h5>
+                    </td>
+                    <td class="price">
+                        <p>100000</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       </div>
+    </section>
+
+    <!-- Bấm vào menu-btn thì hiện menu -->
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+    </script>
+    
+</body>
+</html>

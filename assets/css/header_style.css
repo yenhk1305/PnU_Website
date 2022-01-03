@@ -181,29 +181,29 @@ body{
 }
 
 #top-header .showcart .mycartImage {
-    width: 25%;
+    width: 23%;
     padding: 8px 0px;
 }
 
 #top-header .showcart .mycartName {
-    font-size: 14px;
-    width: 65%;
+    font-size: 13px;
+    width: 45%;
     color: black;
     font-weight: 100;
     padding: 8px 0px 0px 10px;
 }
 
 #top-header .showcart .mycartQty {
-    width: 10%;
+    width: 32%;
     text-align: center;
     color: var(--ink03);
     font-weight: 100;
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px 0px 0px;
 }
 
 #top-header .showcart .mycartPrice {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--p-btnBlue);
     padding: 0px 0px 8px 10px;
@@ -212,7 +212,7 @@ body{
 #top-header .showcart .mycartTotalLabel {
     font-weight: 600;
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px;
     color: var(--p-priceColor)
 }
@@ -220,7 +220,7 @@ body{
 #top-header .showcart .mycartTotal {
     text-align: right;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     padding: 8px;
     color: var(--p-priceColor)
 }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main p {
+    text-align: justify;
+    display: inline-block;
+    width: 50%;
+}
+
+table input[type=text], input[type=email], input[type=tel], input[type=password], select:not(.ngaysinh) {
+    border: solid 1px;
+    padding: 5px;
+    height: 25px;
+    width: 300px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+table a{
+    /* text-decoration: none; */
+    color: black;
+}
+table a:hover{
+    /* text-decoration: none; */
+    color: var(--primaryYellow);
+}
+#city, #district {
+    height: 35px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.ngaysinh {
+    border: solid 0.5px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+.button {
+    /* cursor: pointer;
+    background: #000000;
+    color:white;
+    font-size:19px;
+    height: 50px;
+    width: 230px;
+    border-radius: 10px;
+    margin-top: 20px; */
+    background-color:  var(--primaryYellow);
+    border: none;
+    color: var(--primaryWhite);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    height: 45px;
+    width: 220px;
+    /* font-weight: bold; */
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+    .button:hover {
+        border: solid 1px var(--primaryBlack);
+        background:  var(--primaryYellow);
+        color:var(--primaryBlack);
+        cursor: pointer;
+        text-decoration: none
+    }

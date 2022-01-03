@@ -138,10 +138,14 @@ var shoppingCart = (function() {
 function addtocart(x){
   var boxsp = x.parentElement.parentElement.children;
   var hinh = boxsp[0].children[0].src;
-  var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(".",""));
+  var flag = boxsp[2].children[0].classList.contains("product-item__price-old");
+  if (flag == true)
+    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ",""))*1000;
+  else
+    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ",""))*1000;
   var tensp = boxsp[1].innerText;
   var soluong = 1;
-  console.log(tensp)
+  console.log(gia)
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()
@@ -175,7 +179,7 @@ function displayCart(){
                   '</div>'+
                   '<div class="tbody-price">'+
                       '<span class="product-price">'+
-                          '<span class="price">'+ giohang[i].price +' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(giohang[i].price) +' đ</span>'+
                       '</span>'+
                   '</div>'+
   
@@ -189,14 +193,14 @@ function displayCart(){
   
                   '<div class="tbody-total">'+
                       '<span class="product-price-total">'+
-                          '<span class="price">'+tt+' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(tt) +' đ</span>'+
                       '</span>'+
                   '</div>'+
                                       
                   '<div class="mobile-tbody-name-price">'+
                       '<h3 class="product-name"><a title="" href="#">'+ giohang[i].name +'</a></h3>'+
                       '<span class="product-price">'+
-                          '<span class="price">'+ giohang[i].price +' đ</span>'+
+                          '<span class="price">'+ Intl.NumberFormat().format(giohang[i].price) +' đ</span>'+
                       '</span>'+
                   '</div>'+
                   '<div class="mobile-tbody-quantity-delete">'+
@@ -211,7 +215,7 @@ function displayCart(){
                   '</div>'+
               '</div>'
           document.getElementById("cart-tbody").innerHTML = ttgh;
-          document.getElementById("totalcart").innerHTML = shoppingCart.totalCart() + " đ";
+          document.getElementById("totalcart").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart()) + " đ";
           document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
           showTotalCount();
       } 
@@ -219,8 +223,10 @@ function displayCart(){
 }
 
 function showCart(){
-document.getElementById("showcart").style.display ="block";
-displayInShowCart()
+  if (window.innerWidth >= 1200) {
+    document.getElementById("showcart").style.display ="block";
+    displayInShowCart()
+  }
 }
 
 function hideCart(){
@@ -246,12 +252,12 @@ function displayInShowCart(){
       '<td class="mycartQty">'+giohang[i].count+'</td>'+
       '</tr>'+
       '<tr>'+
-        '<td colspan="2" class="mycartPrice">'+giohang[i].price+'</td>'+
+        '<td colspan="2" class="mycartPrice">'+ Intl.NumberFormat().format(giohang[i].price) + " đ" +'</td>'+
       '</tr>'
     }
     ttgh+='<tr>'+
         '<td colspan="2" class="mycartTotalLabel">Thành tiền:</td>'+
-       '<td class="mycartTotal">'+tong+'</td>'+
+       '<td class="mycartTotal">'+Intl.NumberFormat().format(tong) + " đ"+'</td>'+
      '</tr>'
   }
   document.getElementById("mycart").innerHTML = ttgh;
@@ -346,52 +352,4 @@ function changeQtyItemMobile(x){
   var count = parseInt(x.value);
   shoppingCart.setCountForItem(name,count);
   displayCart();
-}
-
-
-
-// Show list Item from cart in Checkout screen
-function displayCheckout(){
-var giohang = shoppingCart.listCart();
-var ttgh = "";
-var tong = 0;
-for (i = 0; i < giohang.length; i++ ){
-  var tt = parseFloat(giohang[i].price*giohang[i].count);
-  tong += tt;
-  ttgh += 
-  '<li class="aside-group product-detail">'+
-    '<span class="product-image"><img src="'+ giohang[i].thumb +'" /></span>'+
-    '<span class="product-name">'+ giohang[i].name +'</span>'+
-    '<span class="product-price">'+ giohang[i].price +' đ</span>'+
-    '<span class="product-quantity">Số lượng: '+ giohang[i].count +'</span>'+
-  '</li>'   
-  document.getElementById("product-list").innerHTML = ttgh;
-  document.getElementById("totalcount2").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-  document.getElementById("tamtinh").innerHTML = shoppingCart.totalCart() + " đ";
-  var phiship = 35000;
-  document.getElementById("tongcong").innerHTML = shoppingCart.totalCart() + phiship + " đ";
-}  
-}
-
-function dathang(){
-  if (edtHoten.value == "" || edtSdt.value == "" ||
-  edtDiachi.value == "" || cboTinhthanh.value == "" 
-  || cboQuanhuyen.value == "" || cboPhuongxa.value == "") {
-  alert("Vui lòng nhập đầy đủ thông tin bạn nhé!")
-} else {
-  var datainfo = []
-  datainfo.push(edtHoten.value)
-  datainfo.push(edtSdt.value)
-  datainfo.push(edtDiachi.value)
-  datainfo.push(cboTinhthanh.value)
-  datainfo.push(cboQuanhuyen.value)
-  datainfo.push(cboPhuongxa.value)
-  var datashoppingfinal = cart;
-  datashoppingfinal.push(datainfo)
-  
-  localStorage.setItem('lstdathangfinal', JSON.stringify(datashoppingfinal))
-  alert('Đặt hàng thành công')
-  shoppingCart.clearCart();
-  window.location.href = "./index.html";
-}
 }

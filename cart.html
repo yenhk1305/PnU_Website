@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/cart_style.css" />
     <link rel="stylesheet" href="./assets/css/header_style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/assets/css/footer_style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css" />
 
 </head>
@@ -59,7 +60,7 @@
         <!-- End - Thanh tìm kiếm -->
         <!-- Start - Tài khoản & Giỏ hàng -->
         <div class="account-cart">
-            <a class="account-icon" href="#" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
+            <a class="account-icon" href="register.html" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
             <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
                 <img src="./assets/images/cart_icon.png" style="height: 1.5em;"/>
                 <span id="countsp">0</span>
@@ -84,9 +85,9 @@
     <!-- Header-End -->
 
     <!-------------------------------------------content------------------------------------>
-    <main style="margin-top: 100px;">
+    <main style="margin-top: 100px; margin-bottom: 45px;">
 
-        <section class="main-container mb-5">
+        <section class="main-container">
             <div class="container">
             <!-- Chữ giỏ hàng -->
                 <div class="cart-header mb-3">
@@ -139,6 +140,70 @@
             </div>
         </section>
     </main>
+
+    <footer>            
+        <!-- Về PnU - Chính sách - Hướng dẫn -->
+        <div class="container-about-policy-guideline">
+            <div class="about-us">
+                <div class="footer-title">Về PnU</div>
+                <ul class="about-us-content">
+                    <li><a href="aboutus.html">Giới thiệu về PnU Petcare</a></li> 
+                </ul>
+            </div>
+            <div class="policy">
+                <div class="footer-title">Chính sách</div>
+                <ul class="policy-content">
+                    <li><a href="#">Chính sách thanh toán</a></li> 
+                    <li><a href="#">Chính sách giao hàng</a></li> 
+                    <li><a href="#">Chính sách bảo mật</a></li> 
+                </ul>
+            </div>
+            <div class="guideline">
+                <div class="footer-title">Hướng dẫn</div>
+                <ul class="guideline-content">
+                    <li><a href="#">Hướng dẫn đặt hàng</a></li> 
+                    <li><a href="#">Hướng dẫn thanh toán</a></li>
+                    <li><a href="#">Hướng dẫn đổi trả</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class="container-contact-social">
+            <div class="contact-info">
+                <div class="footer-title">Liên hệ với chúng tôi</div>
+                <ul>
+                    <li>
+                        <div class="hotline">
+                            <img src="./assets/images/contact_icon.png">
+                            <ul>
+                                <li>Hotline</li>
+                                <li style="font-weight: 600;">0123 456 777</li>
+                            </ul>
+                        </div>                            
+                    </li>
+                    <li>
+                        <div class="email">
+                            <img src="./assets/images/mail_icon.png">
+                            <ul>
+                                <li>Email</li>
+                                <li style="font-weight: 600;">cskh@pnu.com</li>
+                            </ul>
+                        </div>                            
+                    </li>
+                </ul>
+            </div>
+            <div class="social-connect">
+                <div class="footer-title">Liên hệ với chúng tôi</div>
+                <ul>
+                    <li>
+                        <div>
+                            <a href="https://www.facebook.com/pnu.petandyou" style="margin-right: 10px;"><img src="./assets/images/facebook_icon.png"></a>
+                            <a href="https://www.facebook.com/pnu.petandyou"><img src="./assets/images/instagram_icon.png"></a>                                
+                        </div>
+                    </li>
+                </ul>                    
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./assets/script/cart.js"></script>
 <script>displayCart()</script>

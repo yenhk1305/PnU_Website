@@ -1,4 +1,4 @@
-﻿/*Thiết lập vị trí, độ rộng, chiều cao của hình ảnh và nội dung*/
+/*Thiết lập vị trí, độ rộng, chiều cao của hình ảnh và nội dung*/
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
@@ -8,19 +8,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-body .page-title{
-    margin-left: 5%;
-}
-body .page-title h1{
-    color: var(--primaryBlack);
-    font-weight: 500;
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    display: inline-block;
-    /* letter-spacing: 1px; */
-}
+
 section{
     position: relative;
     width: 90%;
@@ -29,11 +17,6 @@ section{
     margin-left: 5%;
     margin-right: 5%;
     border: 0.1px solid #a3b1b8;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
-               0 2px 2px rgba(0,0,0,0.12),
-               0 2px 2px rgba(0,0,0,0.12),
-              0 8px 8px rgba(0,0,0,0.12),
-              0 8px 8px rgba(0,0,0,0.12);
 }
     section .img-bg{
         position: relative;
@@ -70,29 +53,9 @@ section{
             font-weight: 500;
             font-size: 25px;
             /* text-transform: uppercase; */
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             margin-top: 20px;
             display: inline-block;
-            /* letter-spacing: 1px; */
-        }
-
-        section .noi-dung .form h4{
-            color: var(--primaryBlack);
-            font-weight: 500;
-            font-size: 16px;
-            margin-bottom: 20px;
-            display: inline-block;
-            /* letter-spacing: 1px; */
-        }
-        section .noi-dung .form .dang-nhap-khac{
-            margin-top: 10px;
-        }
-
-        section .noi-dung .form .dang-nhap-khac h3{
-            color: var(--primaryBlack);
-            font-weight: 200;
-            font-size: 17px;
-            text-align: center;
             /* letter-spacing: 1px; */
         }
 
@@ -100,9 +63,9 @@ section{
         section .noi-dung .form .input-form{
             margin-bottom: 20px;
         }
-        section .noi-dung .form .input-form span{
+        section .noi-dung .form .input-form label{
             font-size: 16px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
             display: inline-block;
             /* letter-spacing: 1px; */
             }
@@ -118,82 +81,38 @@ section{
             border-radius: 7px;
             margin-bottom: 5px;
             }
-        section .noi-dung .form .input-form input[type="submit"]{
-            background: var(--primaryYellow);
-            color: var(--primaryWhite);
-            text-transform: uppercase;
-            outline: none;
+        section .noi-dung .form .input-form .button{
+            background-color:  var(--primaryYellow);
             border: none;
-            font-weight: 500;
-            font-size: 17px;
-            cursor: pointer;
-            /* box-shadow: 0 1px 1px rgba(0,0,0,0.12),
-                    0 2px 2px rgba(0,0,0,0.12),
-                    0 4px 4px rgba(0,0,0,0.12),
-                    0 8px 8px rgba(0,0,0,0.12),
-                    0 16px 16px rgba(0,0,0,0.12); */
+            color: var(--primaryWhite);
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            height: 45px;
+            width: 100%;
+            /* font-weight: bold; */
+            margin-left: 0px;
+            margin-top: 10px;
+            padding: 0 30px;
+            border: 1px solid transparent;
+            font-family: 'Montserrat', sans-serif;
         }
-        /* section .noi-dung .form .input-form input[type="submit"]:hover{
-            background: #dd710d;
-        } */
+                section .noi-dung .form .input-form .button:hover{
+                    border: solid 1px var(--primaryBlack);
+                    background:  var(--primaryYellow);
+                    color:var(--primaryBlack);
+                    cursor: pointer;
+                    text-decoration: none
+                }
         section .noi-dung .form .tuy-chon{
             display: inline-block;
         }
-
-        /* section .noi-dung .form .tuy-chon .quen-mat-khau{
-            margin-bottom: 10px;
-            font-size: 14px;
-        } */
         section .noi-dung .form .hien-mat-khau{
-            margin-bottom: 20px;
-        }
-
-        section .noi-dung .form .input-form p{
-            /* Bạn chưa có tài khoản */
-            /* color: #607d8b; */
-            text-align: center;
-        }
-        section .noi-dung .form .input-form p a{
-            color: #F2CB05;
-        }
-
-        /*Style icon*/
-        section .noi-dung .form h3{
-            color: #607d8b;
-            text-align: center;
-            margin: 20px 0 10px;
-            font-weight: 500;
-        }
-        section .noi-dung .form .icon-dang-nhap{
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-bottom: 10px;
-        }
-        section .noi-dung .form .icon-dang-nhap li{
-            list-style: none;
-            cursor: pointer;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        section .noi-dung .form .icon-dang-nhap li:nth-child(1){
-            color: #3b5999;
-        }
-        section .noi-dung .form .icon-dang-nhap li:nth-child(2){
-            color: #dd4b39;
-        }
-        section .noi-dung .form .icon-dang-nhap li:nth-child(3){
-            color: #55acee;
-        }
-        section .noi-dung .form .icon-dang-nhap li i{
-            font-size: 24px;
         }
 
 /*Responsive*/
-@media (max-width: 1100px){
+@media (max-width: 900px){
     section .img-bg{
         position: absolute;
         left: 1.5%;
@@ -236,7 +155,7 @@ section{
     }
 }
 /*Responsive ngang*/
-@media (max-height: 700px){
+@media (max-height: 650px){
     section .img-bg{
         position: absolute;
         left: 1.5%;
