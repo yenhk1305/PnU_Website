@@ -963,20 +963,20 @@ function displayCheckout(){
         phiship = 0;
       }
       else {
-        phishiptext.innerHTML = "35,000 đ";
+        phishiptext.innerHTML = Intl.NumberFormat().format(35000) + " đ";
         phiship = 35000;
       }
       var giamgiatext = document.getElementById("giamgia");
       var giamgia = shoppingCart.totalCart() * (30/100);
       if (giamgia >= 40000){
-        giamgiatext.innerHTML = "- 40,000 đ";
+        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(40000) + " đ";
         giamgia = 40000;
       }
       else {
-        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia) + " đ";
+        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia.toFixed(2)) + " đ";
         giamgia = giamgia;
       }
-    
+
       document.getElementById("tongcong").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart() + phiship - giamgia) + " đ";
     }  
 }
@@ -1004,11 +1004,9 @@ function displayCheckout(){
         payment = rdATM.value
       else if (document.getElementById("rdMOMO").checked == true)
         payment = rdMOMO.value
-      var phiship = parseFloat(document.getElementById("phiship").innerHTML.replace(" đ","").replace(",",""))
-      var giamgia = parseFloat(document.getElementById("giamgia").innerHTML.replace(" đ","").replace(",","").replace("- ",""))
+      var phiship = parseFloat(document.getElementById("phiship").innerHTML.replace(" đ",""))*1000
+      var giamgia = parseFloat(document.getElementById("giamgia").innerHTML.replace(" đ","").replace("- ",""))*1000
       var total = shoppingCart.totalCart() + phiship - giamgia;
-      console.log(phiship)
-      console.log(giamgia)
       orderHistory.addOrderToList(edtHoten.value, edtSdt.value, diachi, shoppingCart.totalCount(), payment, total)
       
       alert('Đặt hàng thành công')

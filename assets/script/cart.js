@@ -140,12 +140,12 @@ function addtocart(x){
   var hinh = boxsp[0].children[0].src;
   var flag = boxsp[2].children[0].classList.contains("product-item__price-old");
   if (flag == true)
-    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ","").replace(",",""));
+    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ",""))*1000;
   else
-    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(",",""));
+    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ",""))*1000;
   var tensp = boxsp[1].innerText;
   var soluong = 1;
-  console.log(flag)
+  console.log(gia)
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()
@@ -154,7 +154,6 @@ function addtocart(x){
 // Display list cart in cart screen
 function displayCart(){
   var giohang = shoppingCart.listCart();
-  console.log(giohang)
   if (giohang == null || giohang.length == 0){
       document.getElementById("cartpage").style.display ="none";
       document.getElementById("emptycart").style.display ="block";
