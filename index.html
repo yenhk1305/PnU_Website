@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./assets/script/xml_product_parser.js"></script>
     <script src="assets/script/home.js"></script>
     <link rel="stylesheet" href="assets/css/home_style.css" type="text/css" />
@@ -14,19 +15,18 @@
     <title>PnU - Trang chủ</title>
 
     
-
-    
 </head>
 <body onload="loadingHotProduct()">
-    <!-- Header-Start -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            $("#header").load("header.html");
-        });
-    </script>
-    <span id="header"></span>
-    <!-- Header-End -->
+     <!-- Header-Start -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- <script>
+           $(function(){
+               $("#header").load("header.html");
+           });
+       </script>
+     <span id="header"></span> -->
+     <!-- Header-End -->
+
 
     <main style="margin-top: 50px;">
         <div>
@@ -56,7 +56,7 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-        </div>
+        </div> 
         <script>
             var slideIndex = 0
             showSlides(slideIndex)
@@ -64,7 +64,26 @@
         </script>
     
         <div class="promo">
-            <img src="assets/images/home/promotion.png" alt="promotion" width="100%">
+
+            <div style="display: flex; height: 150px; padding: 40px; color: white;">
+                <div style="display: flex;">
+                    <img src="assets/images/home/icon1.png" alt="freeship" width="40px" height="40px" >
+                </div>
+                <div>
+                    <h2>GIAO HÀNG TOÀN QUỐC</h2>
+                    <p style="margin-left: 40px; font-size: 20px;">Freeship cho đơn hàng chỉ từ <font style="color: var(--primaryYellow); font-weight: bold; font-size: 30px;">500.000đ</font></p>
+                    <p style="margin-left: 40px;">*Giao hàng trong ngày đối với đơn hàng tại TPHCM</p>
+                </div>
+                <div class="promo-second">
+                    <p style="margin-left: 50px; font-size: 25px;">
+                        GIẢM GIÁ LÊN TỚI
+                        <font style="color: var(--primaryYellow); font-weight: bold; font-size: 32px;">30%</font>
+                        NHÂN DỊP CUỐI NĂM
+                    </p>
+                    
+
+                </div>
+            </div>
             <div class="hover-promo">
                 <a href="#" class="text-promo">Xem chi tiết khuyến mãi</a>
             </div>
@@ -250,7 +269,20 @@
         </div>
     
         <div class="promo">
-            <img src="assets/images/home/banner_clothes.png" alt="promotion" width="100%">
+            <div style="background-color: #8F4149" class="promo-layout">
+                <div class="promo-decor">
+                    <img src="assets/images/home/promo1_1.png"  alt="promo">
+                </div>
+                <div class="promo-decor">
+                    <img src="assets/images/home/promo1_2.png"  alt="promo">
+                </div>
+                <div class="promo-content">
+                    <img src="assets/images/home/promo1_3.png"  alt="promo">
+                </div>
+                
+                
+
+            </div>
             <div class="hover-promo">
                 <a href="#" class="text-promo">Xem tất cả sản phẩm</a>
             </div>
@@ -274,7 +306,22 @@
     
         </div>
         <div class="promo">
-            <img src="assets/images/home/banner_blog.png" alt="promotion" width="100%">
+            <div class="promo-layout">
+                
+                <div class="promo-decor"  >
+                    <img src="assets/images/home/promo2_1.png"  alt="promo">
+                </div>
+                <div class="promo-content">
+                    <img src="assets/images/home/promo2_2.png"   alt="promo">
+                </div>
+                <div class="promo-decor" >
+                    <img src="assets/images/home/promo2_1.png" alt="promo">
+
+                </div>
+            
+               
+
+            </div>
             <div class="hover-promo">
                 <a href="#" class="text-promo">Khám phá ngay</a>
             </div>

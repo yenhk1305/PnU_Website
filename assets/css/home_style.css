@@ -1,9 +1,8 @@
 body{
     /* background-color: #f0f2f5; */
-    background-color: #ffffff;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   margin: 0;
-   justify-content: center;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     background-color: white;
 }
 h2{
@@ -68,10 +67,31 @@ h2{
     }
 
 /* PROMOTION BANNER */
+
 .promo{
     background-color: #000000;
     position: relative;
 }
+    .promo-layout{
+        width: 100%;
+        height: 300px;
+        background-color: #573B36;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
+    .promo-decor img{
+        width: 300px;
+        align-items: center;
+        
+    }
+    .promo-content img{
+        align-items: center;
+    }
+
     .promo img{
         opacity: 1;
         display: block;
@@ -278,7 +298,8 @@ h2{
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 309px){
+
+@media screen and (max-width: 589px){
     .lstdot{
         margin-top: -10pxpx;
         margin-bottom: 0px;
@@ -287,20 +308,34 @@ h2{
         height: 10px;
         width: 10px;
     }
-    .menu-column-gif{
+    .promo{
+        width: 100%;
+        display: flex;
+        
+    }
+    .promo-layout{
+        height: 200px;
+    }
+    .promo-decor{
         display: none;
     }
+    
+    
+    .menu-column-gif{
+       display: none;
+    }
     .menu-column-item a img{
-        width:100%;
+        width:90%;
     }
 
     .menu-column-item{
         margin-top: 20px;
-        margin-bottom: 20px;
-        width: 20%;
+        margin-bottom: 10px;
+        width: 18%;
+        
     }
     .menu-column-item p{
-        display: none;
+        font-size: 11px;
     }
     .highlight-product-icon{
         display: none;
@@ -308,88 +343,41 @@ h2{
     .p-column-layout{
         width: 100%;
         justify-content: center;
-        margin: 10px;
-
-    }
-    .hotproduct-price-cart h4{
-        width: 65%;
-    }
-    .hotproduct-price-cart span{
-        width: 25%;
-    }
-    .product-item__add-cart {
-        font-size: 1.4rem;
-        margin-top: 5px;
-        
-    }
-    .p-column-item{
-        width: 32%;
-        margin: 20px 30px;
-    }
-    
-    
-    .p-column-item p{
-        font-size: 13px;
-    }
-    .p-column-item h4{
-        font-size: 17px;
-        margin-top: -5px;
-    }
-    
-
-}
-@media only screen and (min-width: 310px) and (max-width: 589px){
-    .menu-column-gif{
-        display: none;
-    }
-    .menu-column-item a img{
-        width:100%;
-    }
-
-    .menu-column-item{
-        margin-top: 20px;
+        margin: 0;
         margin-bottom: 20px;
-        width: 20%;
-    }
-    .menu-column-item p{
-        display: none;
-    }
-    .highlight-product-icon{
-        display: none;
-    }
-    .p-column-layout{
-        width: 100%;
-        justify-content: center;
-        margin: 10px;
 
     }
     .hotproduct-price-cart h4{
         width: 65%;
     }
     .hotproduct-price-cart span{
-        width: 25%;
+        width: 35%;
     }
     .product-item__add-cart {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin-top: 5px;
         
     }
     .p-column-item{
-        width: 40%;
-        margin: 20px 20px;
+        width: 45%;
+        margin: 5px;
+        
     }
     
     
     .p-column-item p{
-        font-size: 13px;
+        font-size: 11px;
     }
     .p-column-item h4{
-        font-size: 17px;
+        font-size: 13px;
         margin-top: -5px;
     }
 
 }
 @media only screen and (min-width: 590px) and (max-width: 767px){
+    .promo-layout{
+        height: 200px;
+    }
     .menu-column-gif{
         display: none;
     }
@@ -441,6 +429,9 @@ h2{
 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .promo-layout{
+        height: 220px;
+    }
     .menu-column-gif{
         width: 25%;
         margin-top: 20px;
@@ -477,6 +468,9 @@ h2{
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .promo-layout{
+        height: 260px;
+    }
     
     .menu-column-gif{
         width: 25%;
