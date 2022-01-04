@@ -165,6 +165,7 @@ h2{
 }
 .product-item{
     text-decoration: none;
+    color: black;
 }
 .product-item:visited{
     color: black;
@@ -197,6 +198,7 @@ h2{
     flex-wrap: wrap;
     width: 75%;
     justify-content: center;
+    text-align: left;
    
 }
 .p-column-item{
@@ -229,6 +231,7 @@ h2{
 .p-column-item img{
     width:100%;
     border-radius: 20px 20px 0 0;
+    background-color: white;
 }
 .p-column-item h4{
     color: red;

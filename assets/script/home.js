@@ -68,7 +68,7 @@ function loadingHotProduct() {
         
             price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
             
-            priceArray [i].innerText = price/1000 + ".000đ";   
+            priceArray [i].innerText = price/1000 +",000 đ";   
             
             srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
             imgArray [i].src = srcImg;   

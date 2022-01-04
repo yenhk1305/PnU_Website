@@ -2,7 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .contact-banner{
+            margin-top: 10px;
+            text-align: center;
+            
+        }
+
+        .contact-banner img{
+            box-shadow: 0px 0px 5px 0px grey;
+            margin-top: 70px;
+            border-radius: 40px; 
+            margin-bottom: 20px;
+        }
+
+        .contact-content{
+            display: flex;
+            width: 100%;
+            margin: 40px;
+            line-height: 40px;
+
+        }
+        .contact-layout{
+            width: 50%;
+            text-align: left;
+        }
+
+        .contact-layout2{
+            width: 50%;
+            text-align: center;
+        }
+        .contact-layout2 a{
+            margin: 40px;
+        }
+        .contact-info{
+            font-size: 18px;
+        }
+        .f-social-icon{
+            width: 25px;
+            height: 40px;
+        }
+        .i-social-icon{
+            width: 39px;
+            height: 40px;
+        }
+    </style>
     
 </head>
 <body>
@@ -15,11 +66,41 @@
     </script>
     <span id="header"></span>
     <!-- Header-End -->
-    <div style="text-align: center;">
+    <div class="contact-banner">
         <img src="assets/images/home/call.png" alt="aboutus" width="97%" style="margin-top: 70px; border-radius: 40px; margin-bottom: 20px;">
         
     </div>
 
+    <div class="contact-content">
+        <div class="contact-layout">
+            <h2>THÔNG TIN LIÊN HỆ</h2>
+            <table class="contact-info">
+                <tr>
+                    <th>Hotline: </th>
+                    <td>0123456777</td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td>cskh@pnu.com</td>
+                </tr>
+                <tr>
+                    <th>Địa chỉ:</th>
+                    <td>11 Đoàn Kết, phường Linh Trung, quận Thủ Đức, TPHCM</td>
+                </tr>
+            </table>
+            
+        </div>
+    
+        <div class="contact-layout2">
+            <h2>FIND US ON SOCIAL MEDIA</h2>
+            <a href="https://www.facebook.com/pnu.petandyou" style="margin-right: 10px;"><img class="f-social-icon"  src="./assets/images/facebook_icon.png"></a>
+            <a href="https://www.facebook.com/pnu.petandyou"><img class="i-social-icon"  src="./assets/images/instagram_icon.png"></a>                
+        </div>
+    
+
+    </div>
+
+    
     <!-- Footer-Start -->    
     <script>
         $(function(){

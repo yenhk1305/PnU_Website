@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <script src="assets/script/aboutus.js"></script>
+    <link rel="stylesheet" href="assets/css/aboutus_style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <title>PnU - About Us</title>
+    
+
     
 </head>
-<body>
+<body onload="loadingMember()">
     <!-- Header-Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -16,8 +22,271 @@
     <span id="header"></span>
     <!-- Header-End -->
 
-    <div style="text-align: center;">
-        <img src="assets/images/home/aboutus.png" alt="aboutus" width="97%" style="margin-top: 70px; border-radius: 40px; margin-bottom: 20px;">
+    <div class="aboutus-banner">
+        <img src="assets/images/home/aboutus.png" alt="aboutus" width="97%" >
+    </div>
+
+    <div class="aboutus-content">
+        <h2>VỀ PET AND YOU</h2>
+        <h3>TẦM NHÌN</h3>
+        <p>
+            PnU sẽ là người bạn đồng hành thân thiết của thú cưng và những người yêu thú cưng. Chúng tôi mong muốn cung cấp những sản phẩm tốt nhất cho thú cưng của bạn.
+        </p>
+        <p>
+            PnU sẽ mở rộng sản xuất, nhập khẩu những sản phẩm tốt nhất dành cho thú cưng, đáp ứng kịp thời mọi nhu cầu của bạn, tạo nên một cộng đồng gắn kết những người yêu thú cưng cùng nhau, chia sẻ kiến thức, cùng nhau phát triển.
+        </p>
+
+        <h3>SỨ MỆNH</h3>
+        <p>PnU ra đời để có thể gắn kết mọi người, đem đến những sản phẩm tiện ích, tốt nhất cho thú cưng của bạn, đáp ứng mọi nhu cầu của thú cưng, giá cả bình ổn, hợp lý nhất thị trường.
+        </p>
+
+        <h3>MỤC TIÊU</h3>
+        <p>Cung cấp các sản phẩm từ A-Z cho thú cưng yêu quý của bạn.</p>
+        <p>Chúng tôi hiện kinh doanh các mặt hàng sau:</p>
+        <ul class="product-list">
+            <li>Sản phẩm cho chó</li>
+            <li>Sản phẩm cho mèo</li>
+            <li>Đồ chơi chó mèo</li>
+            <li>Thời trang chó mèo</li>
+        </ul>
+
+    </div>
+
+    <div>
+        <div style="text-align: center;">
+            <h2>THÔNG TIN THÀNH VIÊN NHÓM THỰC HIỆN</h2>
+        </div>
+        <div class="group4-layout">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/images/home/banner_1.png" alt="Avatar" class="member-image">
+                    <h2 class="member-name"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <h3 class="member-id"></h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="member-name1"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <table align="center"  class="member-layout">
+                        <tr>
+                            <th>Mã số sinh viên: </th>
+                            <td class="member-id1"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Cung hoàng đạo: </td>
+                            <td class="member-zodiac"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Ngày sinh: </td>
+                            <td class="member-birth"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Đến từ: </td>
+                            <td class="member-home"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Màu yêu thích: </td>
+                            <td class="member-color"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Sở thích </td>
+                            <td class="member-hobbies"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Phụ trách: </td>
+                            <td class="member-tasks"></td>
+                        </tr>
+                    </table> 
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/images/home/banner_1.png" alt="Avatar" class="member-image">
+                    <h2 class="member-name"></h2>
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <h3 class="member-id"></h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="member-name1"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <table align="center"  class="member-layout">
+                        <tr>
+                            <th>Mã số sinh viên: </th>
+                            <td class="member-id1"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Cung hoàng đạo: </td>
+                            <td class="member-zodiac"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Ngày sinh: </td>
+                            <td class="member-birth"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Đến từ: </td>
+                            <td class="member-home"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Màu yêu thích: </td>
+                            <td class="member-color"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Sở thích </td>
+                            <td class="member-hobbies"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Phụ trách: </td>
+                            <td class="member-tasks"></td>
+                        </tr>
+                    </table> 
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/images/home/banner_1.png" alt="Avatar" class="member-image">
+                    <h2 class="member-name"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <h3 class="member-id"></h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="member-name1"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <table align="center"  class="member-layout">
+                        <tr>
+                            <th>Mã số sinh viên: </th>
+                            <td class="member-id1"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Cung hoàng đạo: </td>
+                            <td class="member-zodiac"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Ngày sinh: </td>
+                            <td class="member-birth"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Đến từ: </td>
+                            <td class="member-home"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Màu yêu thích: </td>
+                            <td class="member-color"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Sở thích </td>
+                            <td class="member-hobbies"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Phụ trách: </td>
+                            <td class="member-tasks"></td>
+                        </tr>
+                    </table> 
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/images/home/banner_1.png" alt="Avatar" class="member-image">
+                    <h2 class="member-name"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <h3 class="member-id"></h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="member-name1"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <table align="center"  class="member-layout">
+                        <tr>
+                            <th>Mã số sinh viên: </th>
+                            <td class="member-id1"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Cung hoàng đạo: </td>
+                            <td class="member-zodiac"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Ngày sinh: </td>
+                            <td class="member-birth"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Đến từ: </td>
+                            <td class="member-home"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Màu yêu thích: </td>
+                            <td class="member-color"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Sở thích </td>
+                            <td class="member-hobbies"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Phụ trách: </td>
+                            <td class="member-tasks"></td>
+                        </tr>
+                    </table> 
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="assets/images/home/banner_1.png" alt="Avatar" class="member-image">
+                    <h2 class="member-name"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <h3 class="member-id"></h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2 class="member-name1"></h2> 
+                    <p>Sinh viên năm 3 TMĐT</p>
+                    <table align="center"  class="member-layout">
+                        <tr>
+                            <th>Mã số sinh viên: </th>
+                            <td class="member-id1"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Cung hoàng đạo: </td>
+                            <td class="member-zodiac"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Ngày sinh: </td>
+                            <td class="member-birth"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Đến từ: </td>
+                            <td class="member-home"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Màu yêu thích: </td>
+                            <td class="member-color"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Sở thích </td>
+                            <td class="member-hobbies"></td>
+                        </tr>
+                        <tr>
+                            <td class="member-infor">Phụ trách: </td>
+                            <td class="member-tasks"></td>
+                        </tr>
+                    </table> 
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
     </div>
 
     <!-- Footer-Start -->    

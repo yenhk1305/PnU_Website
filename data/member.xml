@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Nhom4>
+    <member>
+        <mssv>K194111541</mssv>
+        <ten>Lưu Nguyễn Huỳnh Lê</ten>
+        <image>./assets/images/aboutus/member_hle.png</image>
+        <soThich>Nghe nhạc, xem phim, ngủ</soThich>
+        <cungHoangDao>Cự Giải</cungHoangDao>
+        <nhiemVu>Giỏ hàng - Thanh toán - Admin</nhiemVu>
+        <mauYeuThich>Xanh lá</mauYeuThich>
+        <ngaySinh>30/06/2001</ngaySinh>
+        <queQuan>An Giang</queQuan>
+    </member>
+    <member>
+        <mssv>K194111548</mssv>
+        <ten>Hồ Kim Ngân - Leader</ten>
+        <image>./assets/images/aboutus/member_ngan.png</image>
+        <soThich>Xem phim, lướt Facebook, chơi cầu lông</soThich>
+        <cungHoangDao>Bạch Dương</cungHoangDao>
+        <nhiemVu>Trang chủ - Giới thiệu - Liên hệ - Khuyến mãi</nhiemVu>
+        <mauYeuThich>Vàng</mauYeuThich>
+        <ngaySinh>26/03/2001</ngaySinh>
+        <queQuan>Thành phố Hồ Chí Minh</queQuan>
+
+    </member>
+    <member>
+        <mssv>K194111570</mssv>
+        <ten>Nguyễn Mai Phương Thảo</ten>
+        <image>./assets/images/aboutus/member_pthao.png</image>
+        <soThich>Xem phim, nghe nhạc, chơi game</soThich>
+        <cungHoangDao>Song Tử</cungHoangDao>
+        <nhiemVu>Header - Footer - Blog - Chính sách - Hướng dẫn</nhiemVu>
+        <mauYeuThich>Đen</mauYeuThich>
+        <ngaySinh>14/06/2001</ngaySinh>
+        <queQuan>Bà Rịa Vũng Tàu</queQuan>
+    </member>
+    <member>
+        <mssv>K194111571</mssv>
+        <ten>Trần Thị Mỹ Thảo</ten>
+        <image>./assets/images/aboutus/member_mthao.png</image>
+        <soThich>Xem phim, nghe nhạc</soThich>
+        <cungHoangDao>Sư Tử</cungHoangDao>
+        <nhiemVu>Đăng nhập - Đăng kí - Tài khoản - Đưa lên host - Thẻ thành viên</nhiemVu>
+        <mauYeuThich>Xanh mint</mauYeuThich>
+        <ngaySinh>22/08/2001</ngaySinh>
+        <queQuan>Sóc Trăng</queQuan>
+    </member>
+    <member>
+        <mssv>K194111594</mssv>
+        <ten>Hoàng Kim Yến</ten>
+        <image>./assets/images/aboutus/member_yen.png</image>
+        <soThich>Ngủ, đọc truyện</soThich>
+        <cungHoangDao>Kim Ngưu</cungHoangDao>
+        <nhiemVu>Trang sản phẩm</nhiemVu>
+        <mauYeuThich>Trắng</mauYeuThich>
+        <ngaySinh>13/05/2001</ngaySinh>
+        <queQuan>Bạc Liêu</queQuan>
+    </member>
+
+</Nhom4>
