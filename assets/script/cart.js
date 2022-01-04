@@ -210,7 +210,7 @@ function displayCart(){
                   '<div class="tbody-quantity">'+
                       '<div class="product-quantity">'+
                           '<input value="-" class="btn-minus" onclick="minusItem(this)" type="button"/>'+
-                          '<input type="text" onchange="changeQtyItem(this)" id="quantity" maxlength="3" min="0" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
+                          '<input type="text" onchange="changeQtyItem(this)" id="quantity" maxlength="3" min="1" value="'+ giohang[i].count +'" size="4" class="number-sidebar" />'+
                           '<input value="+" class="btn-minus" onclick="plusItem(this)" type="button"/>'+
                       '</div>'+
                   '</div>'+
@@ -334,6 +334,11 @@ function changeQtyItem(x){
   var boxsp = x.parentElement.parentElement.parentElement.children;
   var name = boxsp[1].children[0].children[0].innerHTML;
   var count = parseInt(x.value);
+  if (count == 0){
+    shoppingCart.removeItemFromCartAll(name);
+    document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
+    showTotalCount();
+  }
   shoppingCart.setCountForItem(name,count);
   displayCart();
 }
