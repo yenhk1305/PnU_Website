@@ -141,9 +141,9 @@ function addtocart(x){
   var hinh = boxsp[0].children[0].src;
   var flag = boxsp[2].children[0].classList.contains("product-item__price-old");
   if (flag == true)
-    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ",""))*1000;
+    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ","").replace(/[,.]/g,''))
   else
-    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ",""))*1000;
+    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(/[,.]/g,''))
   var tensp = boxsp[1].innerText;
   var soluong = 1;
   console.log(gia)

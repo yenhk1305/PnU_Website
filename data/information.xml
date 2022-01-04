@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <sinhviens>
     <sinhvien>
-        <image>./assets/images/product/dog_food_01.png</image>
+        <image>./assets/images/aboutus/member_ngan.png</image>
         <mssv>K194111548</mssv>
         <hoTen>Hồ Kim Ngân</hoTen>
         <email>nganhk19411@st.uel.edu.vn</email>
@@ -10,7 +10,7 @@
         <roles>Nhóm trưởng</roles>
     </sinhvien>
     <sinhvien>
-        <image>./assets/images/product/dog_food_02.png</image>
+        <image>./assets/images/aboutus/member_hle.png</image>
         <mssv>K194111541</mssv>
         <hoTen>Lưu Nguyễn Huỳnh Lê</hoTen>
         <email>lelnh19411@st.uel.edu.vn</email>
@@ -19,7 +19,7 @@
         <roles>Thành viên</roles>
     </sinhvien>
     <sinhvien>
-        <image>./assets/images/product/dog_food_03.png</image>
+        <image>./assets/images/aboutus/member_pthao.png</image>
         <mssv>K194111570</mssv>
         <hoTen>Nguyễn Mai Phương Thảo</hoTen>
         <email>thaonmp19411@st.uel.edu.vn</email>
@@ -28,7 +28,7 @@
         <roles>Thành viên</roles>
     </sinhvien>
     <sinhvien>
-        <image>./assets/images/product/dog_food_04.png</image>
+        <image>./assets/images/aboutus/member_mthao.png</image>
         <mssv>K194111571</mssv>
         <hoTen>Trần Thị Mỹ Thảo</hoTen>
         <email>thaottm19411@st.uel.edu.vn</email>
@@ -37,7 +37,7 @@
         <roles>Thành viên</roles>
     </sinhvien>
     <sinhvien>
-        <image>./assets/images/product/dog_food_05.png</image>
+        <image>./assets/images/aboutus/member_yen.png</image>
         <mssv>K194111594</mssv>
         <hoTen>Hoàng Kim Yến</hoTen>
         <email>yenhk19411@st.uel.edu.vn</email>
