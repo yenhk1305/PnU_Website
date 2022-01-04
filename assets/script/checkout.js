@@ -938,6 +938,14 @@ var orderHistory = (function() {
   })();
 
 datashoppingfinal = [];
+
+var phishiptext = document.getElementById("phiship");
+var phiship = 35000;
+phishiptext.innerHTML = Intl.NumberFormat().format(phiship) + " đ";
+var giamgiatext = document.getElementById("giamgia");
+var giamgia = 0;
+giamgiatext.innerHTML = "- " + giamgia + " đ"
+
 // Show list Item from cart in Checkout screen
 function displayCheckout(){
     var giohang = shoppingCart.listCart();
@@ -956,27 +964,6 @@ function displayCheckout(){
       document.getElementById("product-list").innerHTML = ttgh;
       document.getElementById("totalcount2").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
       document.getElementById("tamtinh").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart()) + " đ";
-      var phishiptext = document.getElementById("phiship");
-      var phiship;
-      if (shoppingCart.totalCart() >= 500000){
-        phishiptext.innerHTML = "0 đ";
-        phiship = 0;
-      }
-      else {
-        phishiptext.innerHTML = Intl.NumberFormat().format(35000) + " đ";
-        phiship = 35000;
-      }
-      var giamgiatext = document.getElementById("giamgia");
-      var giamgia = shoppingCart.totalCart() * (20/100);
-      if (giamgia >= 50000){
-        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(50000) + " đ";
-        giamgia = 50000;
-      }
-      else {
-        giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia.toFixed(2)) + " đ";
-        giamgia = giamgia;
-      }
-
       document.getElementById("tongcong").innerHTML = Intl.NumberFormat().format(shoppingCart.totalCart() + phiship - giamgia) + " đ";
     }  
 }
@@ -995,7 +982,6 @@ function displayCheckout(){
       var tinhthanh = x.options[x.selectedIndex].text;
       var y = document.getElementById("cboQuanhuyen");
       var quanhuyen = y.options[y.selectedIndex].text;
-      console.log(tinhthanh);
       var diachi = edtDiachi.value + ", " + quanhuyen + ", " + tinhthanh;
 
       if (document.getElementById("rdCOD").checked == true)
@@ -1004,8 +990,9 @@ function displayCheckout(){
         payment = rdATM.value
       else if (document.getElementById("rdMOMO").checked == true)
         payment = rdMOMO.value
-      var phiship = parseFloat(document.getElementById("phiship").innerHTML.replace(" đ",""))*1000
-      var giamgia = parseFloat(document.getElementById("giamgia").innerHTML.replace(" đ","").replace("- ",""))*1000
+      var phiship = parseFloat(document.getElementById("phiship").innerHTML.replace(" đ","").replace(/[,.]/g,''))
+      var giamgia = parseFloat(document.getElementById("giamgia").innerHTML.replace(" đ","").replace("- ","").replace(/[,.]/g,''))
+    
       var total = shoppingCart.totalCart() + phiship - giamgia;
       orderHistory.addOrderToList(edtHoten.value, edtSdt.value, diachi, shoppingCart.totalCount(), payment, total)
       
@@ -1013,4 +1000,32 @@ function displayCheckout(){
       shoppingCart.clearCart();
       window.location.href = "./index.html";
     }
+}
+
+//Kiểm tra mã giảm giá
+function checkdiscount() {
+    var code = document.getElementById("discountcode").value;
+        if (code === "lovepnulovepet"){
+            alert("Áp dụng mã giảm giá thành công")
+            phishiptext.innerHTML = "0 đ";
+            phiship = 0;
+            giamgia = shoppingCart.totalCart() * (20/100);
+            if (giamgia >= 50000){
+                giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(50000) + " đ";
+                giamgia = 50000;
+            }
+            else {
+                giamgiatext.innerHTML = "- " + Intl.NumberFormat().format(giamgia.toFixed(2)) + " đ";
+                giamgia = giamgia;
+            }
+        }
+        else {
+            alert("Mã giảm giá không tồn tại")
+            phiship = 35000;
+            phishiptext.innerHTML = Intl.NumberFormat().format(phiship) + " đ";
+            giamgia = 0;
+            giamgiatext.innerHTML = "- " + 0 + " đ"
+        }
+        displayCheckout();
+    console.log(code);
 }
