@@ -1,8 +1,4 @@
-﻿/* * {
-    margin: 0px;
-} */
-
-.main-container {
+﻿.main-container {
     font-family: 'Montserrat', sans-serif;
     /* padding-top: 100px; */
 }
@@ -12,10 +8,12 @@
 }
 .container .back-to-product a{
     text-decoration:none;
+    font-weight: 500;
+    color: var(--p-btnBlue)
 }
     .container .back-to-product a:hover {
         text-decoration: none;
-        color:  var(--primaryYellow);
+        color:  var(--V1);
     }
 
 /*Giỏ hàng của tôi*/
@@ -553,6 +551,7 @@
     height: 30px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
     /* .main-container {background: red}     */
     .cart-header h1 {

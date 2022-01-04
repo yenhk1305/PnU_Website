@@ -895,12 +895,12 @@ var orderHistory = (function() {
     this.total = total;
   }
   
-  // Save cart
+  // Save order
   function saveOrder() {
     localStorage.setItem('orderHistory', JSON.stringify(order));
   }
   
-    // Load cart
+    // Load order
     function loadOrder() {
       order = JSON.parse(localStorage.getItem('orderHistory'));
     }
@@ -913,14 +913,14 @@ var orderHistory = (function() {
   // Create object
   var obj = {};
   
-  // Add to cart
+  // Add to order list
   obj.addOrderToList = function(name, phone, address, count, payment, total) {
     var item = new Item(name, phone, address, count, payment, total);
     order.push(item);
     saveOrder();
   }
 
-    // List cart
+    // List order
     obj.listOrder = function() {
       var orderCopy = [];
       for(i in order) {

@@ -9,8 +9,7 @@ function loginadmin() {
     }
 }
 
-
-
+//Hiện ds order đã thực hiện
 function displayOrder(){
     var donhang = orderHistory.listOrder();
     console.log(donhang)

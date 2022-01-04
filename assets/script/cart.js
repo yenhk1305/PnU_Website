@@ -382,6 +382,11 @@ function changeQtyItemMobile(x){
   var boxsp = x.parentElement.parentElement.parentElement.children;
   var name = boxsp[5].children[0].children[0].innerHTML;
   var count = parseInt(x.value);
+  if (count == 0){
+    shoppingCart.removeItemFromCartAll(name);
+    document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
+    showTotalCount();
+  }
   shoppingCart.setCountForItem(name,count);
   displayCart();
 }
