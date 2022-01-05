@@ -6,8 +6,7 @@
         <link rel="stylesheet" href="./assets/css/color.css"/>
         <link rel="stylesheet" href="./assets/css/blog_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">        
-        
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     </head>
     <body>
         <div id="fb-root"></div>
@@ -24,149 +23,59 @@
 
         <main>
             <!-- Main content -->
-
             <!-- SlideShow - start -->
-            <div id="mySlider"></div>
-            <div id="sliderNav">
-                <div id="sliderPrev" onclick="prevSlide();">&#10094;</div>
-                <div id="sliderNext" onclick="nextSlide();">&#10095;</div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_01.png" style="width:100%">  
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_02.png" style="width:100%">  
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_03.png" style="width:100%">  
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="dot-container" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              
             </div>
             <script>
-                // Mỗi slide sẽ có một chỉ số của riêng nó, để đơn giản chúng ta sẽ gán chỉ số mảng cho các slide
-                var slideIndex = 0;
-                // Cho ta biết chúng ta đang ở slide nào
-                var currentSlideIndex = 0;
-                // Mảng lưu các slide của chúng ta
-                var slideArray = [];
+                var slideIndex = 1;
+                showSlides(slideIndex);
                 
-                // Hàm này sẽ giúp chúng ta tạo ra các đối tượng slide
-                // bao gồm: tiêu đề, mô tả, ảnh, đường dẫn khi nhấp vào button trên slide, 
-                // và id của mỗi slide
-                function Slide(title, subtitle, background, link) {
-                this.title = title;
-                this.subtitle = subtitle;
-                this.background = background;
-                this.link = link;
-                // we need an id to target later using getElementById
-                this.id = "slide" + slideIndex;
-                // Add one to the index for the next slide number
-                slideIndex++;
-                // Add this Slide to our array
-                slideArray.push(this);
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
                 }
                 
-                
-                // Tạo các đối tượng slide, bạn có thể tạo nhiều hơn
-                
-                var walkingDead = new Slide(
-                "The Walking Dead",
-                "A show about fighting zombies",
-                "https://acollectivemind.files.wordpress.com/2013/12/season-4-complete-cast-poster-the-walking-dead-the-walking-dead-35777405-2528-670.png",
-                "http://www.amc.com/shows/the-walking-dead"
-                );
-                
-                var bigBang = new Slide(
-                "The Big Bang Theory",
-                "A show about Sheldon",
-                "https://www.denofgeek.com/wp-content/uploads/2019/02/tbbt_12-15.jpg",
-                "http://www.cbs.com/shows/big_bang_theory/"
-                );
-                
-                var LastMan = new Slide(
-                "The Last Man on Earth",
-                "A show about loneliness",
-                "https://www.wired.com/wp-content/uploads/2015/02/LMOE-AliveInTuscon_scene44_0028_hires2.jpg",
-                "http://www.fox.com/the-last-man-on-earth"
-                );
-                
-                // Từ mảng slide đã tạo, ta tiến hành đưa nó vào source HTML
-                function buildSlider() {
-                // A variable to hold all our HTML
-                var myHTML;
-                
-                // Go through the Array and add the code to our HTML
-                for (var i = 0; i < slideArray.length; i++) {
-                    myHTML +=
-                    "<div id='" +
-                    slideArray[i].id +
-                    "' class='singleSlide' style='background-image:url(" +
-                    slideArray[i].background +
-                    ");'>" +
-                    "<div class='slideOverlay'>" +
-                    "<h1>" +
-                    slideArray[i].title +
-                    "</h1>" +
-                    "<h4>" +
-                    slideArray[i].subtitle +
-                    "</h4>" +
-                    "<a href='" +
-                    slideArray[i].link +
-                    "' target='_blank'>Open Link</a>" +
-                    "</div>" +
-                    "</div>";
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
                 }
                 
-                // Đưa HTML chúng ta vừa tạo vào id #mySlider
-                document.getElementById("mySlider").innerHTML = myHTML;
-                
-                // Đồng thời hiển thị slide đầu tiên
-                document.getElementById("slide" + currentSlideIndex).style.left = 0;
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
                 }
-                
-                // Gọi hàm thực thi
-                buildSlider();
-
-                // Xử lý bấm nút chuyển slide trước đó
-                function prevSlide() {
-                // Tìm slide trước đó
-                var nextSlideIndex;
-                // Nếu chỉ số slide là 0, về slide cuối
-                if (currentSlideIndex === 0) {
-                    nextSlideIndex = slideArray.length - 1;
-                } else {
-                    // Nếu không thì giảm chỉ số đi 1
-                    nextSlideIndex = currentSlideIndex - 1;
-                }
-                
-                // Ẩn slide hiện tại, hiện slide "currentSlideIndex"
-                document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
-                document.getElementById("slide" + currentSlideIndex).style.left = 0;
-                
-                // Thêm class để chuyển slide có animation đã định nghĩa ở bước 3
-                    document
-                    .getElementById("slide" + nextSlideIndex)
-                    .setAttribute("class", "singleSlide slideInLeft");
-                document
-                    .getElementById("slide" + currentSlideIndex)
-                    .setAttribute("class", "singleSlide slideOutRight");
-                
-                // Cập nhật giá trị slide hiện tại
-                currentSlideIndex = nextSlideIndex;
-                }
-                
-                // Xử lý bấm nút chuyển slide tiếp theo
-                // Cách xử lý tương tự như prevSlide đã trình bày ở trên
-                function nextSlide() {
-                var nextSlideIndex;
-                if (currentSlideIndex === slideArray.length - 1) {
-                    nextSlideIndex = 0;
-                } else {
-                    nextSlideIndex = currentSlideIndex + 1;
-                }
-                
-                document.getElementById("slide" + nextSlideIndex).style.left = "100%";
-                document.getElementById("slide" + currentSlideIndex).style.left = 0;
-                
-                document
-                    .getElementById("slide" + nextSlideIndex)
-                    .setAttribute("class", "singleSlide slideInRight");
-                document
-                    .getElementById("slide" + currentSlideIndex)
-                    .setAttribute("class", "singleSlide slideOutLeft");
-                
-                currentSlideIndex = nextSlideIndex;
-                }
-            </script>
+                </script>
             
             <!-- SlideShow - end -->
 
@@ -175,7 +84,7 @@
                     <!-- BÀI VIẾT MỚI NHẤT -->
                     <h2>BÀI VIẾT MỚI NHẤT</h2>
                     <div class="row">
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd01_01.png">
                             <div class="type-date">
                                 <div>
@@ -190,7 +99,7 @@
                             <h5>Chó Poodle - Thông tin nguồn gốc, đặc điểm, phân loại chó Poodle</h5>
                             <p>Một trong những giống chó phổ biến, thời trang và được yêu thích nhất, Poodle có ba kích cỡ...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc01_01.png">
                             <div class="type-date">
                                 <div>
@@ -205,7 +114,7 @@
                             <h5>Học tối giản từ những chú mèo</h5>
                             <p>Những bài học tối giản mà tôi đã học được từ những chú mèo là gì? Tôi mới biết đến khái niệm “Tối giản” khoảng nửa năm trở lại đây...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc02_01.png">
                             <div class="type-date">
                                 <div>
@@ -224,10 +133,10 @@
                     <!-- BLOG VỀ CHÓ -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-right: 20px;">
                         <h2>BLOG VỀ CHÓ</h2>
-                        <span style="color: var(--p-btnMore);">XEM TẤT CẢ &#10095;</span>
+                        <span style="color: var(--p-btnMore); cursor: pointer;" onclick="window.location.href='blog_dog.html'">XEM TẤT CẢ &#10095;</span>
                     </div>                
                     <div class="row">                    
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd01_01.png">
                             <div class="type-date">
                                 <div>
@@ -242,7 +151,7 @@
                             <h5>Chó Poodle - Thông tin nguồn gốc, đặc điểm, phân loại chó Poodle</h5>
                             <p>Một trong những giống chó phổ biến, thời trang và được yêu thích nhất, Poodle có ba kích cỡ...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd02_01.png">
                             <div class="type-date">
                                 <div>
@@ -257,7 +166,7 @@
                             <h5>Top 6 giống chó Nhật Bản mệnh danh Quốc Khuyển của đất nước Mặt trời</h5>
                             <p>6 giống chó Nhật Bản dưới đây chính là những biểu tượng đẹp nhất...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd03_01.png">
                             <div class="type-date">
                                 <div>
@@ -274,7 +183,7 @@
                         </div>                    
                     </div>
                     <div class="row">
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd04_01.png">
                             <div class="type-date">
                                 <div>
@@ -289,7 +198,7 @@
                             <h5>Giống chó Akita - "Quốc khuyển" của đất nước Nhật Bản</h5>
                             <p>Giống chó Akita là một giống chó quý, được mệnh danh là Quốc khuyển của Nhật Bản...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd05_01.png">
                             <div class="type-date">
                                 <div>
@@ -304,7 +213,7 @@
                             <h5>Thức ăn cho chó Poodle Royal Canin</h5>
                             <p>Thức ăn cho chó Poodle hiện ở nước ta có khá nhiều loại, tuy nhiên nếu nói về chất lượng tốt...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_dog/bd06_01.png">
                             <div class="type-date">
                                 <div>
@@ -323,10 +232,10 @@
                     <!-- BLOG VỀ MÈO -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-right: 20px;">
                         <h2>BLOG VỀ MÈO</h2>
-                        <span style="color: var(--p-btnMore);">XEM TẤT CẢ &#10095;</span>
+                        <span style="color: var(--p-btnMore); cursor: pointer;" onclick="window.location.href='blog_cat.html'">XEM TẤT CẢ &#10095;</span>
                     </div>                
                     <div class="row">
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc01_01.png">
                             <div class="type-date">
                                 <div>
@@ -341,7 +250,7 @@
                             <h5>Học tối giản từ những chú mèo</h5>
                             <p>Những bài học tối giản mà tôi đã học được từ những chú mèo là gì? Tôi mới biết đến khái niệm “Tối giản” khoảng nửa năm trở lại đây...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc02_01.png">
                             <div class="type-date">
                                 <div>
@@ -356,7 +265,7 @@
                             <h5>Giới thiệu về mèo Himalaya</h5>
                             <p>Mèo Himalaya là giống mèo đẹp, lai giữa mèo Ba Tư và Mèo Thái. Bộ lông dài, đôi mắt xanh cùng chiếc mũi tẹt sẫm màu khiến chúng...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc03_01.png">
                             <div class="type-date">
                                 <div>
@@ -373,7 +282,7 @@
                         </div>                    
                     </div>
                     <div class="row">
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc04_01.png">
                             <div class="type-date">
                                 <div>
@@ -388,7 +297,7 @@
                             <h5>Giống mèo Sphynx không lông kỳ lạ - Mèo Nhân sư Ai Cập</h5>
                             <p>Giống mèo Sphynx hay còn gọi là Mèo Nhân Sư Ai Cập được biết tới là loài mèo hiếm trên thế giới...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc05_01.png">
                             <div class="type-date">
                                 <div>
@@ -403,7 +312,7 @@
                             <h5>Mèo Munchkin chân ngắn - Giống mèo lùn nhất thế giới</h5>
                             <p>Mèo Munchkin chân ngắn là một trong giống mèo dễ thương nhất thế giới, có nguồn gốc...</p>                                                
                         </div>
-                        <div class="column">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
                             <img class="thumbnail" src="./assets/images/blog/blog_cat/bc06_01.png">
                             <div class="type-date">
                                 <div>

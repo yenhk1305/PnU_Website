@@ -6,115 +6,10 @@
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 0 100px;
     font-size: 16px;    
 }
-
-#mySlider {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 300px;
-  }
-   
-  .singleSlide {
-    background-size: cover;
-    height: 300px;
-    position: absolute;
-    left: 100%;
-    width: 100%;
-    top: 0px;
-  }
-   
-  .slideOverlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
-  }
-   
-  #sliderNav {
-    position: relative;
-    top: -175px;
-  }
-   
-  #sliderNav:hover {
-    cursor: pointer;
-  }
-   
-  #sliderPrev {
-    position: relative;
-    float: left;
-    left: 50px;
-  }
-   
-  #sliderNext {
-    position: relative;
-    float: right;
-    right: 50px;
-  }
-   
-  #sliderNext img,
-  #sliderPrev img {
-    width: 32px;
-  }
-   
-  @-webkit-keyframes slideIn {
-    100% {
-      left: 0;
-    }
-  }
-   
-  @keyframes slideIn {
-    100% {
-      left: 0;
-    }
-  }
-   
-  .slideInRight {
-    left: -100%;
-    -webkit-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards;
-  }
-   
-  .slideInLeft {
-    left: 100%;
-    -webkit-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards;
-  }
-   
-  @-webkit-keyframes slideOutLeft {
-    100% {
-      left: -100%;
-    }
-  }
-   
-  @keyframes slideOutLeft {
-    100% {
-      left: -100%;
-    }
-  }
-   
-  .slideOutLeft {
-    -webkit-animation: slideOutLeft 1s forwards;
-    animation: slideOutLeft 1s forwards;
-  }
-   
-  @-webkit-keyframes slideOutRight {
-    100% {
-      left: 100%;
-    }
-  }
-   
-  @keyframes slideOutRight {
-    100% {
-      left: 100%;
-    }
-  }
-   
-  .slideOutRight {
-    -webkit-animation: slideOutRight 1s forwards;
-    animation: slideOutRight 1s forwards;
-  }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -213,3 +108,93 @@ main {
     .post-title:hover {
         color: var(--primaryYellow);
     }
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot-container {
+  position: absolute;
+  width: 100%;
+  margin-top: -30px;
+  align-items: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {  
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
