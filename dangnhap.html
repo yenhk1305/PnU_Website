@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-           Đăng nhập thẻ thành viên
+           PnU - Đăng nhập thẻ thành viên
         </title>
         <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="./assets/css/login.css">
@@ -20,68 +20,13 @@
     </head>
 <body onload="loadingregister(),loadingshopping()" style="margin:0">
    <!-- Header-Start -->
-   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script>
        $(function(){
            $("#header").load("header.html");
        });
    </script>
-   <span id="header"></span> -->
-    <header id="top-header">
-        <!-- Menu thu gọn -->
-        <img class="menu_icon" src="./assets/images/menu_icon.png" style="height: 1.2em; cursor: pointer;">            
-        <div class="logo">
-            <a href="index.html"><img class="pnu-logo" src="./assets/images/logo.png"></a>
-        </div>
-        <!-- Start - Thanh điều hướng -->
-        <nav class="nav-top-header">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a href="index.html">Trang chủ</a></li>
-                <li class="nav-list-item"><a href="aboutus.html">Giới thiệu</a></li>
-                <li class="nav-list-item"><a href="product_page1.html">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="nav-item-dropdown">
-                        <li><a href="#1">Sản phẩm cho Chó</a></li>
-                        <li><a href="#2">Sản phẩm cho Mèo</a></li>
-                        <li><a href="#3">Đồ chơi Chó Mèo</a></li>
-                        <li><a href="#4">Thời trang Chó Mèo</a></li>
-                    </ul>
-                </li>
-                <li class="nav-list-item"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                    <ul class="nav-item-dropdown">
-                        <li><a href="blog_dog.html">Blog về Chó</a></li>
-                        <li><a href="blog_cat.html">Blog về Mèo</a></li>                            
-                    </ul>
-                </li>
-                <li class="nav-list-item"><a href="contact.html">Liên hệ</a></li>
-            </ul>
-        </nav>
-        <!-- End - Thanh điều hướng -->
-        <!-- Start - Thanh tìm kiếm -->
-        <div class="search-bar-container">
-            <form class="search-from">
-                <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
-                <button class="search-icon" type="submit">
-                    <img src="./assets/images/search_icon.png" height="20" />
-                </button>
-            </form>
-        </div>            
-        <!-- End - Thanh tìm kiếm -->
-        <!-- Start - Tài khoản & Giỏ hàng -->
-        <div class="account-cart">
-            <a class="account-icon" href="register.html" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
-            <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
-                <img src="./assets/images/cart_icon.png" style="height: 1.5em;"/>
-                <span id="countsp">0</span>
-                <div id="showcart" class="showcart">
-                    <table>
-                        <tbody id="mycart"></tbody>
-                    </table>
-                </div>
-            </a>
-        </div>
-        <!-- End - Tài khoản & Giỏ hàng -->                
-    </header>
-   <!-- Header-End -->
+   <span id="header"></span>
 
     <!-- Breadcrumb - Start -->
     <div style="margin-top: 51px; display: flex; padding: 0 100px; height: 45px; background: var(--primaryBlack); align-items: center; font-family: 'Montserrat', sans-serif; font-size: 14px;">
@@ -97,7 +42,7 @@
     </div>
     <!-- Breadcrumb - End -->
 
-   <section  style="margin-top: 7.5%; margin-bottom: 6%">
+   <section  style="margin-top: 3%; margin-bottom: 5%">
     <!--Bắt Đầu Phần Nội Dung-->
     <div class="noi-dung">
         <div class="form">
@@ -128,75 +73,15 @@
     </div>
     <!--Kết Thúc Phần Hình Ảnh-->
 </section>
-    <!-- <script>
+    <!-- Footer-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script>
         $(function(){
             $("#footer").load("footer.html");
         });
     </script>
-    <span id="footer"></span> -->
-    <footer>            
-        <!-- Về PnU - Chính sách - Hướng dẫn -->
-        <div class="container-about-policy-guideline">
-            <div class="about-us">
-                <div class="footer-title">Về PnU</div>
-                <ul class="about-us-content">
-                    <li><a href="aboutus.html">Giới thiệu về PnU Petcare</a></li> 
-                </ul>
-            </div>
-            <div class="policy">
-                <div class="footer-title">Chính sách</div>
-                <ul class="policy-content">
-                    <li><a href="#">Chính sách thanh toán</a></li> 
-                    <li><a href="#">Chính sách giao hàng</a></li> 
-                    <li><a href="#">Chính sách bảo mật</a></li> 
-                </ul>
-            </div>
-            <div class="guideline">
-                <div class="footer-title">Hướng dẫn</div>
-                <ul class="guideline-content">
-                    <li><a href="#">Hướng dẫn đặt hàng</a></li> 
-                    <li><a href="#">Hướng dẫn thanh toán</a></li>
-                    <li><a href="#">Hướng dẫn đổi trả</a></li> 
-                </ul>
-            </div>
-        </div>
-        <div class="container-contact-social">
-            <div class="contact-info">
-                <div class="footer-title">Liên hệ với chúng tôi</div>
-                <ul>
-                    <li>
-                        <div class="hotline">
-                            <img src="./assets/images/contact_icon.png">
-                            <ul>
-                                <li>Hotline</li>
-                                <li style="font-weight: 600;">0123 456 777</li>
-                            </ul>
-                        </div>                            
-                    </li>
-                    <li>
-                        <div class="email">
-                            <img src="./assets/images/mail_icon.png">
-                            <ul>
-                                <li>Email</li>
-                                <li style="font-weight: 600;">cskh@pnu.com</li>
-                            </ul>
-                        </div>                            
-                    </li>
-                </ul>
-            </div>
-            <div class="social-connect">
-                <div class="footer-title">Liên hệ với chúng tôi</div>
-                <ul>
-                    <li>
-                        <div>
-                            <a href="https://www.facebook.com/pnu.petandyou" style="margin-right: 10px;"><img src="./assets/images/facebook_icon.png"></a>
-                            <a href="https://www.facebook.com/pnu.petandyou"><img src="./assets/images/instagram_icon.png"></a>                                
-                        </div>
-                    </li>
-                </ul>                    
-            </div>
-        </div>
-    </footer>
+    <span id="footer"></span>
     <!-- Footer-End -->
+    
 </body>
 </html>

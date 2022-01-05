@@ -197,3 +197,33 @@ to {opacity: 1}
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
 }
+
+/* Pagination */
+.pagination {
+    width: 100%;
+    float: left;
+    margin: 40px 0;
+    text-align: center; 
+}
+
+.pagination a {
+    font-weight: bold;
+    background: var(--primaryWhite);
+    padding: 10px 16px;
+    margin: 1px;
+    text-decoration: none;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--primaryYellow);
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background: var(--primaryYellow);
+    transition-duration: 0.3s;
+}
+
+.active-page {
+    background: var(--primaryYellow) !important;
+    transition-duration: 0.3s;
+}

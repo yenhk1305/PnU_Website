@@ -97,16 +97,20 @@ html {
 
 .small-img {
     width: 100%;
+    height: 100%;
 }
 .full-img {
-    width: 100%;
+    margin: 0.2% 0;
+    text-align: center;
+    width: 99.6%;
+    height: 99.6%;
 }
 /* Info */
 .p-detail__info {
     padding-left: 1.2rem;
 }
 .detail-info__name {
-        font-size: 3.2rem;
+        font-size: 3.1rem;
         font-weight: 500;
         color: rgb(22, 20, 20);
         line-height: 4.5rem;
@@ -124,20 +128,20 @@ html {
 .detail-info__price {
    
     display: flex;
-    margin: 4.2rem 0 4.2rem 0;
+    margin: 4.4rem 0 4.4rem 0;
     align-items: baseline;
     flex-wrap: wrap;
 
 }
 
 .info__price-old {
-    font-size: 2.7rem;
+    font-size: 3rem;
     color:var( --ink02 );
     text-decoration: line-through;
 }
 
 .info__price-current {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     color:var( --p-priceColor);
     padding-left: 2.4rem;
     font-weight: 700;
@@ -184,27 +188,27 @@ html {
 }
 .action__nav-page {
     display: flex;
-    margin: 4.2rem 0 4.2rem 0;
+    margin: 4.4rem 0 4.2rem 0;
    
   
 }
 
 .action__add-cart {
     background-color: var( --p-btnBlue   );
-    padding: 1.5rem 3.6rem;
+    padding: 1.7rem 3.6rem;
     color:white;
     cursor:pointer;
     border: none;
     margin-right: 4.2rem;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .action__buy-now {
     background-color: var( --p-btnGreen   );
-    padding: 1.5rem 4.2rem;
+    padding: 1.7rem 4.4rem;
     border: none;
     color:white;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 }
 
 .buy-now__link{

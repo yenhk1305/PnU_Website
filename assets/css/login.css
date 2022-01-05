@@ -116,3 +116,27 @@ section{
         section .noi-dung .form .hien-mat-khau{
             margin-bottom: 10px;
         }
+/*Responsive*/
+@media only screen and (max-width: 739px) {
+    section .img-bg{
+        position: absolute;
+        left: 1.5%;
+        width: 100%;
+        height: 93%;
+    }
+    section .noi-dung{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    section .noi-dung .form{
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        background: rgba(255 255 255 / 0.9);
+        /* margin: 50px; */
+    }
+}

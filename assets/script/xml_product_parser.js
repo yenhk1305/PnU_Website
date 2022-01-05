@@ -59,7 +59,7 @@ for (i = 0+20*n; i < 20*(n+1); i++) {
     nameArray [index_h].innerText = name;                   
     priceArray [index_h].innerText = Intl.NumberFormat().format(price) + " đ";      
     imgArray [index_h].src = srcImg;   
-    btnCart[index_h].setAttribute("onclick","addtocart(this)");
+
 }
 
 }
