@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;    
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin-top: 100px;
+    padding: 0 100px;
+    font-size: 16px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.left-column {
+    float: left;
+    width: 75%;        
+}
+/* Right column */
+.right-column {
+    float: left;
+    width: 25%;
+}
+
+.post-container {
+    margin-right: 20px;
+}
+
+.post-container h2 {
+    font-weight: bold;
+}
+
+.post-container p {
+    margin: 16px 0;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.type-date {
+    display: flex;
+    justify-content: center;    
+}
+
+.type-date div {
+    margin-right: 10px;
+}
+
+.type-date img {
+    height: 16px;
+    margin-right: 5px;
+}
+
+
+/* Bài viết mới nhất */
+.post-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+    .lColumn {
+        float: left;
+        width: 40%;
+        margin-right: 10px;
+    }
+        .lColumn img {
+            width: 100%;
+        }
+    .rColumn {
+        float: left;
+        width: 60%;        
+        font-size: 14px;
+    }
+        .post-title {
+            font-weight: bold;                       
+        }   
+        .post-type-date {
+            display: flex;
+            font-size: 12px;
+            margin-top: 5px;       
+        }            
+            .post-type-date img {
+                height: 11px;
+                margin-right: 3px;
+            }
+.post-content:hover {
+    cursor: pointer;
+}
+    .post-title:hover {
+        color: var(--primaryYellow);
+    }

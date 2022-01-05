@@ -1,7 +1,215 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;    
     font-family: 'Montserrat', sans-serif;
 }
+
+main {
+    margin-top: 100px;
+    padding: 0 100px;
+    font-size: 16px;    
+}
+
+#mySlider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+   
+  .singleSlide {
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0px;
+  }
+   
+  .slideOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+  }
+   
+  #sliderNav {
+    position: relative;
+    top: -175px;
+  }
+   
+  #sliderNav:hover {
+    cursor: pointer;
+  }
+   
+  #sliderPrev {
+    position: relative;
+    float: left;
+    left: 50px;
+  }
+   
+  #sliderNext {
+    position: relative;
+    float: right;
+    right: 50px;
+  }
+   
+  #sliderNext img,
+  #sliderPrev img {
+    width: 32px;
+  }
+   
+  @-webkit-keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+   
+  @keyframes slideIn {
+    100% {
+      left: 0;
+    }
+  }
+   
+  .slideInRight {
+    left: -100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+  }
+   
+  .slideInLeft {
+    left: 100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+  }
+   
+  @-webkit-keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+   
+  @keyframes slideOutLeft {
+    100% {
+      left: -100%;
+    }
+  }
+   
+  .slideOutLeft {
+    -webkit-animation: slideOutLeft 1s forwards;
+    animation: slideOutLeft 1s forwards;
+  }
+   
+  @-webkit-keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
+   
+  @keyframes slideOutRight {
+    100% {
+      left: 100%;
+    }
+  }
+   
+  .slideOutRight {
+    -webkit-animation: slideOutRight 1s forwards;
+    animation: slideOutRight 1s forwards;
+  }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.left-column {
+    float: left;
+    width: 75%;    
+}
+/* Right column */
+.right-column {
+    float: left;
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 16px;
+}
+  
+.column {
+    flex: 50%;
+    margin-right: 20px;
+}
+
+.column h5 {
+    text-align: center;
+    padding: 0 5px;
+    font-weight: bold;        
+}
+
+.type-date {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.type-date img {
+    height: 13px;
+    margin-left: 10px;
+}
+
+.type-date span {
+    font-size: 13px;
+    color: var(--ink02);
+}
+
+.column:hover {    
+    cursor: pointer;
+}
+
+.column:hover .thumbnail {
+    box-shadow: 0 4px 8px 0 var(--ink02), 0 6px 20px 0 var(--ink02);    
+}
+
+.column:hover h5 {
+    color: var(--primaryYellow);
+}
+
+
+/* Bài viết mới nhất */
+.post-content {
+    display: flex;
+    margin-bottom: 10px;
+}
+    .lColumn {
+        float: left;
+        width: 40%;
+        margin-right: 10px;
+    }
+        .lColumn img {
+            width: 100%;
+        }
+    .rColumn {
+        float: left;
+        width: 60%;        
+        font-size: 14px;
+    }
+        .post-title {
+            font-weight: bold;                       
+        }   
+        .post-type-date {
+            display: flex;
+            font-size: 12px;
+            margin-top: 5px;       
+        }            
+            .post-type-date img {
+                height: 11px;
+                margin-right: 3px;
+            }
+.post-content:hover {
+    cursor: pointer;
+}
+    .post-title:hover {
+        color: var(--primaryYellow);
+    }
