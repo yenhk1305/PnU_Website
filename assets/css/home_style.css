@@ -436,23 +436,28 @@ h2{
     }
 
     .feedback{
-        height: 1000px;
+        height: 980px;
         padding: 10px;
+        align-items: center;
         
     }
     
     
     .feedback-item{
-        height: 300px;
-        width: 200px;
+        height: 200px;
+        width: 100%;
         margin-left: 10;
         margin-right: 10;
-        display: block;
         border-radius: 20px;
+        margin-top: 10;
+        margin-bottom: 10;
+        align-items: center;
 
     }
     .feedback-customer img{
-        width: 100px;
+        width: 50px;
+        vertical-align: top;
+        margin: 10px;
 
     }
     .feedback-content h3{

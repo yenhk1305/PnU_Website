@@ -68,7 +68,7 @@ function loadingHotProduct() {
         linkArray = document.getElementsByClassName("product-item");
 
         for (i = 0; i < 8; i++) {
-            btnCart[i].setAttribute("onclick","addtocart(this)");
+            //btnCart[i].setAttribute("onclick","addtocart(this)");
             product =   lstproductShuffled[i];
 
             name =product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
