@@ -1,5 +1,5 @@
 var shoppingCart = (function() {
-  // Private methods and propeties
+  // Private methods and properties
   cart = [];
   
   // Constructor
@@ -23,7 +23,7 @@ var shoppingCart = (function() {
     loadCart();
   }
 
-  // Public methods and propeties
+  // Public methods and properties
   // =============================
   // Create object
   var obj = {};
@@ -135,35 +135,13 @@ var shoppingCart = (function() {
 })();
 
 // Events
-// Add item to cart (màn hình sản phẩm chung & sp tương tự)
-function addtocart(x){
-  var boxsp = x.parentElement.parentElement.children;
-  var hinh = boxsp[0].children[0].src;
-  var flag = boxsp[2].children[0].classList.contains("product-item__price-old");
-  if (flag == true)
-    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ","").replace(/[,.]/g,''))
-  else
-    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(/[,.]/g,''))
-  var tensp = boxsp[1].innerText;
-  var soluong = 1;
-  console.log(gia)
-  shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
-  alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
-  showTotalCount()
-}
 
-// Add item to cart (màn hình chi tiết sản phẩm)
-function addtocart2(){
-  var boxsp = document.getElementById("p-detail__info").children;
-  var hinh = boxsp[0].children[0].src;
-  var tensp = boxsp[1].innerText;
-  var flag = boxsp[2].children[0].classList.contains("info__price-old");
-  if (flag == true)
-    var gia = parseFloat(boxsp[2].children[1].innerHTML.replace(" đ","").replace(/[,.]/g,''))
-  else
-    var gia = parseFloat(boxsp[2].children[0].innerHTML.replace(" đ","").replace(/[,.]/g,''))
+// Add item to cart
+function addtocart(){
+  var hinh = document.getElementById("mainImg").src;
+  var tensp = document.getElementById("infoName").innerText;
+  var gia = parseFloat(document.getElementById("infoPrice").innerText.replace(" đ","").replace(/[,.]/g,''));
   var soluong = parseInt(document.getElementById("select-quantity__edt").value);
-  console.log(gia)
   shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
   alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
   showTotalCount()
@@ -171,7 +149,7 @@ function addtocart2(){
 
 // Add item and checkout (thêm sp và mua ngay)
 function addandcheckout(){
-  addtocart2();
+  addtocart();
   window.location.href = "./checkout.html";
 }
 
