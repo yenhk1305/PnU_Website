@@ -142,15 +142,31 @@ function addtocart(){
   var tensp = document.getElementById("infoName").innerText;
   var gia = parseFloat(document.getElementById("infoPrice").innerText.replace(" đ","").replace(/[,.]/g,''));
   var soluong = parseInt(document.getElementById("select-quantity__edt").value);
-  shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
-  alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
-  showTotalCount()
+  if (isNaN(soluong) || soluong == 0){
+    alert("Vui lòng nhập số")
+  }
+  else {
+    shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
+    alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
+    showTotalCount()
+  }
 }
 
 // Add item and checkout (thêm sp và mua ngay)
 function addandcheckout(){
-  addtocart();
-  window.location.href = "./checkout.html";
+  var hinh = document.getElementById("mainImg").src;
+  var tensp = document.getElementById("infoName").innerText;
+  var gia = parseFloat(document.getElementById("infoPrice").innerText.replace(" đ","").replace(/[,.]/g,''));
+  var soluong = parseInt(document.getElementById("select-quantity__edt").value);
+  if (isNaN(soluong) || soluong == 0){
+    alert("Vui lòng nhập số")
+  }
+  else {
+    shoppingCart.addItemToCart(hinh, tensp, gia, soluong);
+    alert("Bạn đã thêm thành công sản phẩm: " + tensp + " vào giỏ hàng");
+    showTotalCount()
+    window.location.href = "./checkout.html";
+  }
 }
 
 // Display list cart in cart screen
