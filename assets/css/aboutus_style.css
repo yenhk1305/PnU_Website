@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     
   }
+  
   .aboutus-banner{
     margin-top: 10px;
     text-align: center;
@@ -37,6 +38,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
   }
   
   .flip-card {
@@ -113,5 +115,126 @@ body {
   }
   .member-layout tr td{
     width: 10%;
+  }
+
+  /* RESPONSIVE */
+  @media screen and (max-width: 589px){
+    .aboutus-content h2{
+      font-size: 18px;
+
+    }
+    .flip-card {
+      background-color: transparent;
+      width: 70%;
+      height: 400px;
+      perspective: 1000px;
+      border-radius: 40px;
+      margin: 10px;
+    }
+    .flip-card-front h2{
+      font-size: 18px;
+    }
+    .flip-card-front p{
+      font-size: 18px;
+    }
+    .flip-card-back{
+      line-height: 18px;
+    }
+    .flip-card-back h2{
+      font-size: 18px;
+    }
+    .member-infor{
+      font-size:15px;
+    }
+    .member-layout tr td{
+      font-size: 16px;
+
+    }
+    .member-layout tr th{
+      font-size: 16px;
+
+    }
+
+  }
+  @media only screen and (min-width: 590px) and (max-width: 767px){
+    .flip-card {
+      background-color: transparent;
+      width: 40%;
+      height: 400px;
+      perspective: 1000px;
+      border-radius: 40px;
+      margin: 10px;
+    }
+    .flip-card-front h2{
+      font-size: 18px;
+    }
+    .flip-card-front p{
+      font-size: 18px;
+    }
+    .flip-card-back{
+      line-height: 16px;
+    }
+    .flip-card-back h2{
+      font-size: 18px;
+    }
+    .member-infor{
+      font-size:15px;
+    }
+    .member-layout tr td{
+      font-size: 14px;
+
+    }
+    .member-layout tr th{
+      font-size: 14px;
+
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    .flip-card {
+      background-color: transparent;
+      width: 40%;
+      height: 400px;
+      perspective: 1000px;
+      border-radius: 40px;
+      margin: 10px;
+    }
+    .flip-card-front h2{
+      font-size: 20px;
+    }
+    .flip-card-back{
+      line-height: 18px;
+    }
+    .flip-card-back h2{
+      font-size: 20px;
+    }
+    .member-infor{
+      font-size:15px;
+    }
+
+
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+    .flip-card {
+      background-color: transparent;
+      width: 30%;
+      height: 400px;
+      perspective: 1000px;
+      border-radius: 40px;
+      margin: 10px;
+    }
+    .flip-card-front h2{
+      font-size: 20px;
+    }
+    .flip-card-back{
+      line-height: 16px;
+    }
+    .flip-card-back h2{
+      font-size: 20px;
+    }
+    .member-infor{
+      font-size:15px;
+    }
+
   }
 
