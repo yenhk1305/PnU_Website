@@ -71,6 +71,15 @@ h2{
 .promo{
     background-color: #000000;
     position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.promo-event{
+    display: flex;
+    width: 50%;
+}
+.promo-event img{
+    width: 100%;
 }
     .promo-layout{
         width: 100%;
@@ -308,18 +317,39 @@ h2{
         height: 10px;
         width: 10px;
     }
+
+    .text-promo{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .home-blog :last-child{
+        display: none;
+        padding: 20px;
+    }
+    .home-blog-item{
+        width: 100%;
+        margin: 20px;
+
+    }
     .promo{
         width: 100%;
         display: flex;
         
     }
+    .promo-event{
+        display: block;
+        width: 100%;
+    }
+    .promo-event :last-child{
+        display: none;
+    }
+    
     .promo-layout{
         height: 200px;
     }
     .promo-decor{
         display: none;
     }
-    
     
     .menu-column-gif{
        display: none;
@@ -378,6 +408,14 @@ h2{
     .promo-layout{
         height: 200px;
     }
+    .promo-event{
+        display: block;
+        width: 100%;
+    }
+    .promo-event :last-child{
+        display: none;
+    }
+    
     .menu-column-gif{
         display: none;
     }
@@ -432,6 +470,7 @@ h2{
     .promo-layout{
         height: 220px;
     }
+    
     .menu-column-gif{
         width: 25%;
         margin-top: 20px;
