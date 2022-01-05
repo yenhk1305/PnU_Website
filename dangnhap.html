@@ -27,61 +27,76 @@
        });
    </script>
    <span id="header"></span> -->
-   <header id="top-header">
-    <!-- Menu thu gọn -->
-    <img class="menu_icon" src="./assets/images/menu_icon.png" style="height: 1.2em; cursor: pointer;">            
-    <div class="logo">
-        <a href="index.html"><img class="pnu-logo" src="./assets/images/logo.png"></a>
-    </div>
-    <!-- Start - Thanh điều hướng -->
-    <nav class="nav-top-header">
-        <ul class="nav-list">
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="aboutus.html">Giới thiệu</a></li>
-            <li><a href="product_page1.html">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                <ul class="nav-item-dropdown">
-                    <li><a href="#1">Sản phẩm cho Chó</a></li>
-                    <li><a href="#2">Sản phẩm cho Mèo</a></li>
-                    <li><a href="#3">Đồ chơi Chó Mèo</a></li>
-                    <li><a href="#4">Thời trang Chó Mèo</a></li>
-                </ul>
-            </li>
-            <li><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
-                <ul class="nav-item-dropdown">
-                    <li><a href="#1b">Blog về Chó</a></li>
-                    <li><a href="#2b">Blog về Mèo</a></li>                            
-                </ul>
-            </li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-    </nav>
-    <!-- End - Thanh điều hướng -->
-    <!-- Start - Thanh tìm kiếm -->
-    <div class="search-bar-container">
-        <form class="search-from">
-            <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
-            <button class="search-icon" type="submit">
-                <img src="./assets/images/search_icon.png" height="20" />
-            </button>
-        </form>
-    </div>            
-    <!-- End - Thanh tìm kiếm -->
-    <!-- Start - Tài khoản & Giỏ hàng -->
-    <div class="account-cart">
-        <a class="account-icon" href="register.html" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
-        <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
-            <img src="./assets/images/cart_icon.png" style="height: 1.5em;"/>
-            <span id="countsp">0</span>
-            <div id="showcart" class="showcart">
-                <table>
-                    <tbody id="mycart"></tbody>
-                </table>
-            </div>
-        </a>
-    </div>
-    <!-- End - Tài khoản & Giỏ hàng -->                
-</header>
+    <header id="top-header">
+        <!-- Menu thu gọn -->
+        <img class="menu_icon" src="./assets/images/menu_icon.png" style="height: 1.2em; cursor: pointer;">            
+        <div class="logo">
+            <a href="index.html"><img class="pnu-logo" src="./assets/images/logo.png"></a>
+        </div>
+        <!-- Start - Thanh điều hướng -->
+        <nav class="nav-top-header">
+            <ul class="nav-list">
+                <li class="nav-list-item"><a href="index.html">Trang chủ</a></li>
+                <li class="nav-list-item"><a href="aboutus.html">Giới thiệu</a></li>
+                <li class="nav-list-item"><a href="product_page1.html">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="nav-item-dropdown">
+                        <li><a href="#1">Sản phẩm cho Chó</a></li>
+                        <li><a href="#2">Sản phẩm cho Mèo</a></li>
+                        <li><a href="#3">Đồ chơi Chó Mèo</a></li>
+                        <li><a href="#4">Thời trang Chó Mèo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <ul class="nav-item-dropdown">
+                        <li><a href="blog_dog.html">Blog về Chó</a></li>
+                        <li><a href="blog_cat.html">Blog về Mèo</a></li>                            
+                    </ul>
+                </li>
+                <li class="nav-list-item"><a href="contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <!-- End - Thanh điều hướng -->
+        <!-- Start - Thanh tìm kiếm -->
+        <div class="search-bar-container">
+            <form class="search-from">
+                <input class="search" type="search" placeholder="Tìm kiếm sản phẩm..." />
+                <button class="search-icon" type="submit">
+                    <img src="./assets/images/search_icon.png" height="20" />
+                </button>
+            </form>
+        </div>            
+        <!-- End - Thanh tìm kiếm -->
+        <!-- Start - Tài khoản & Giỏ hàng -->
+        <div class="account-cart">
+            <a class="account-icon" href="register.html" style="margin-right: 0.5em ;"><img src="./assets/images/account_icon.png" style="height: 1.5em;"></a>
+            <a class="cart-icon" href="cart.html" onmouseover = "showCart()" onmouseout = "hideCart()" >
+                <img src="./assets/images/cart_icon.png" style="height: 1.5em;"/>
+                <span id="countsp">0</span>
+                <div id="showcart" class="showcart">
+                    <table>
+                        <tbody id="mycart"></tbody>
+                    </table>
+                </div>
+            </a>
+        </div>
+        <!-- End - Tài khoản & Giỏ hàng -->                
+    </header>
    <!-- Header-End -->
+
+    <!-- Breadcrumb - Start -->
+    <div style="margin-top: 51px; display: flex; padding: 0 100px; height: 45px; background: var(--primaryBlack); align-items: center; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+        <div style="margin-right: 5px;">
+            <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='index.html'">Trang chủ</span>
+            <span style="color: var(--primaryWhite);">&#10095;</span>
+        </div>
+        <div style="margin-right: 5px;">
+            <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='register.html'">Tài khoản</span>
+            <span style="color: var(--primaryWhite);">&#10095;</span>
+        </div>            
+        <span style="color: var(--primaryYellow); font-weight: bold;">Đăng nhập</span>
+    </div>
+    <!-- Breadcrumb - End -->
+
    <section  style="margin-top: 7.5%; margin-bottom: 6%">
     <!--Bắt Đầu Phần Nội Dung-->
     <div class="noi-dung">
