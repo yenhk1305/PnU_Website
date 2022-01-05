@@ -306,6 +306,38 @@ h2{
     width: 100%;
 }
 
+
+/* FEEDBACK */
+
+.feedback{
+    background-color: var(--primaryYellow);
+    height: 500px;
+    padding:40px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedback-item{
+    display: flex;
+    width: 45%;
+    height: 220px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 20px;
+}
+.feedback-customer img{
+    width: 220px;
+    border-radius: 50px ;
+}
+.feedback-content p{
+    margin: 15px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 13px;
+
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 589px){
@@ -403,6 +435,33 @@ h2{
         margin-top: -5px;
     }
 
+    .feedback{
+        height: 1000px;
+        padding: 10px;
+        
+    }
+    
+    
+    .feedback-item{
+        height: 300px;
+        width: 200px;
+        margin-left: 10;
+        margin-right: 10;
+        display: block;
+        border-radius: 20px;
+
+    }
+    .feedback-customer img{
+        width: 100px;
+
+    }
+    .feedback-content h3{
+        font-size: 14px;
+    }
+    .feedback-content p{
+        font-size: 12px;
+    }
+
 }
 @media only screen and (min-width: 590px) and (max-width: 767px){
     .promo-layout{
@@ -462,6 +521,24 @@ h2{
         font-size: 17px;
         margin-top: -5px;
     }
+    .feedback{
+        height: 850px;
+    }
+    .feedback-item{
+        height: 180px;
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    .feedback-customer img{
+        width: 180px;
+
+    }
+    .feedback-content h3{
+        font-size: 16px;
+    }
+
 
 
 
@@ -504,6 +581,21 @@ h2{
         font-size: 20px;
         margin-top: -5px;
     }
+    .feedback{
+        height: 850px;
+    }
+    .feedback-item{
+        height: 180px;
+        width: 60%;
+
+    }
+    .feedback-customer img{
+        width: 180px;
+
+    }
+    .feedback-content h3{
+        font-size: 16px;
+    }
 
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px){
@@ -542,6 +634,20 @@ h2{
     .p-column-item h4{
         font-size: 22px;
         margin-top: -5px;
+    }
+    .feedback{
+        height: 420px;
+    }
+    .feedback-item{
+        height: 180px;
+
+    }
+    .feedback-customer img{
+        width: 180px;
+
+    }
+    .feedback-content h3{
+        font-size: 16px;
     }
 
 }

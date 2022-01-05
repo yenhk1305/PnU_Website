@@ -24,7 +24,12 @@ function showSlides(n) {
     slides[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
 }
-
+function getID(id){
+    if (typeof(Storage) !== "undefined") {
+        // Lưu trữ
+        localStorage.idP = id;
+    }
+}
 var data = [], xmlObject,xmlDoc;
 
   
