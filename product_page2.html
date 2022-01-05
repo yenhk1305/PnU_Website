@@ -17,198 +17,167 @@
   
 </head>
 <body onload="loadingProductPage2()">
-
-    <!-- Header-Start -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script>
-             $(function(){
-                 $("#header").load("header.html");
-             });
-        </script>
-       <span id="header"></span>
+      <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+          $(function(){
+              $("#header").load("header.html");
+          });
+      </script>
+    <span id="header"></span>
     <!-- Header-End -->
-
-    <!-- Breadcrumb - Start -->
-    <div style="margin-top: 51px; display: flex; padding: 0 100px; height: 45px; background: var(--primaryBlack); align-items: center; font-family: 'Montserrat', sans-serif; font-size: 14px;">
-        <div style="margin-right: 5px;">
-            <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='index.html'">Trang chủ</span>
-            <span style="color: var(--primaryWhite);">&#10095;</span>
-        </div>            
-        <span style="color: var(--primaryYellow); font-weight: bold;">Sản phẩm</span>
-    </div>
-    <!-- Breadcrumb - End -->
+        <!-- Breadcrumb - Start -->
+        <div style="margin-top: 51px; display: flex; padding: 0 100px; height: 45px; background: var(--primaryBlack); align-items: center; font-family: 'Montserrat', sans-serif; font-size: 14px;">
+            <div style="margin-right: 5px;">
+                <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='index.html'">Trang chủ</span>
+                <span style="color: var(--primaryWhite);">&#10095;</span>
+            </div>            
+            <span style="color: var(--primaryYellow); font-weight: bold;">Sản phẩm</span>
+        </div>
+        <!-- Breadcrumb - End -->
 
     <!-- Page Container -->
-        <div class="product__container">
-            <div class="grid wide">
-                <ul class="mobile__sort-bar">
-                    <li class="sort-bar__item">
-                        <a href="#" class="sort-bar__link">Bán chạy</a>
-                    </li>
-                    <li class="sort-bar__item">
-                        <a href="#" class="sort-bar__link">Mới nhất</a>
-                    </li>
-                    <li class="sort-bar__item">
-                        <a href="#" class="sort-bar__link">Giá thấp</a>
-                    </li>
-                    <li class="sort-bar__item">
-                        <a href="#" class="sort-bar__link">Giá cao</a>
-                    </li>
-                </ul>
-                <!--Banner-->
-                <div class="banner">
-                    <img class="banner__img" src="./assets/images/product-banner.png" />
-                </div>
-                <!-- Page-content -->
-                <div class="grid__row product__content">
-                <!-- danh mục -->
-                    <div class="grid__column-2 m-0">
-                        <nav class="category">
-                            <h3 class="category__heading">
-                                Danh mục
-                            </h3>
-                            <ul class="category-list">
-                                <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Sản phẩm</a>
-                                </li>
-                            
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Sản phẩm cho chó</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Sản phẩm cho mèo</a>
-                                </li>
-                            </ul>
-                            <ul class="category-list">
-                                <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Tuỳ chọn</a>
-                                </li>
-                            
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Thức ăn chó mèo</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Vệ sinh chó mèo</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Thời trang chó mèo</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Đồ chơi chó mèo</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <nav class="mobile-category">
-                        <ul class="mobile-category__list">
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Sản phẩm <br> cho chó</a>
+    <div class="product__container">
+        <div class="grid wide">
+            <ul class="mobile__sort-bar">
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Bán chạy</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Mới nhất</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Giá thấp</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Giá cao</a>
+                </li>
+            </ul>
+            <!--Banner-->
+            <div class="banner">
+                <img class="banner__img" src="./assets/images/product-banner.png" />
+            </div>
+            <!-- Page-main-content -->
+            <div class="grid__row product__content">
+               <!-- danh mục -->
+                <div class="grid__column-2 m-0">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            Danh mục
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Sản phẩm</a>
                             </li>
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Sản phẩm <br> cho mèo</a>
+                        
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Sản phẩm cho chó</a>
                             </li>
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Thức ăn <br> chó mèo</a>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Sản phẩm cho mèo</a>
                             </li>
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Vệ sinh <br> chó mèo</a>
+                        </ul>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Tuỳ chọn</a>
                             </li>
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Đồ chơi <br> chó mèo</a>
+                        
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Thức ăn chó mèo</a>
                             </li>
-
-                            <li class="mobile-category__item">
-                                <a href="" class="mobile-category__link">Thời trang <br> chó mèo</a>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Vệ sinh chó mèo</a>
                             </li>
-
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Thời trang chó mèo</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Đồ chơi chó mèo</a>
+                            </li>
                         </ul>
                     </nav>
-                <!-- bộ lọc + sản phẩm + phân trang -->
-                <div class="grid__column-10">
-                    <!-- filter -->
-                    <div class="filter">
-                            <!-- paginate -->
-                            <div class="page-filter">
-                                <span class="page-filter__number">
-                                    <span class="page-filter__number--lable">Trang </span>
-                                    <span class="pagefilter__number--current">1 &nbsp </span>
-                                    <span class="page-filter__number--total">2  &nbsp 3........20</span>
-                                </span>                           
-                                <a href="" class="page-filter__btn">
-                                        <img src="./assets/images/ic_page.png"/>
-                                </a>
+                </div>
+                <nav class="mobile-category">
+                    <ul class="mobile-category__list">
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Sản phẩm <br> cho chó</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Sản phẩm <br> cho mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Thức ăn <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Vệ sinh <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Đồ chơi <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="" class="mobile-category__link">Thời trang <br> chó mèo</a>
+                        </li>
+
+                    </ul>
+                </nav>
+               <!-- bộ lọc + sản phẩm + phân trang -->
+               <div class="grid__column-10">
+                   <!-- filter -->
+                   <div class="filter">
+                        <!-- paginate -->
+                        <div class="page-filter">
+                            <span class="page-filter__number">
+                                <span class="page-filter__number--lable">Trang </span>
+                                <span class="pagefilter__number--current">1 &nbsp </span>
+                                <span class="page-filter__number--total">2  &nbsp 3........20</span>
+                            </span>                           
+                            <a href="" class="page-filter__btn">
+                                    <img src="./assets/images/ic_page.png"/>
+                            </a>
+                        </div>
+                        <!--product arrange -->
+                        <div class="product-filter">
+                            <span class="product-filter__label">Sắp xếp</span>
+                            <div class="product-filter__select">
+                                <span class="product-filter__select--label">Mặc định</span>
+                                <i class="product-filter__select--icon fas fa-chevron-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Bán chạy</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Mới nhất</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link" onclick="sortDes()">Giá thấp</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá cao</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <!--product arrange -->
-                            <div class="product-filter">
-                                <span class="product-filter__label">Sắp xếp</span>
-                                <div class="product-filter__select">
-                                    <span class="product-filter__select--label">Mặc định</span>
-                                    <i class="product-filter__select--icon fas fa-chevron-down"></i>
-                                    <ul class="select-input__list">
-                                        <li class="select-input__item">
-                                            <a href="#" class="select-input__link">Bán chạy</a>
-                                        </li>
-                                        <li class="select-input__item">
-                                            <a href="#" class="select-input__link">Mới nhất</a>
-                                        </li>
-                                        <li class="select-input__item">
-                                            <a href="#" class="select-input__link" onclick="sortDes()">Giá thấp</a>
-                                        </li>
-                                        <li class="select-input__item">
-                                            <a href="#" class="select-input__link">Giá cao</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                    </div>
+                        </div>
+                   </div>
                     <!-- product -->
-                    <div class="product ">
-                        <div class="grid__row">
+                   <div class="product ">
+                       <div class="grid__row">
 
-                                <!--SP1-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-
-                                <!-- SP2 -->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
+                            <!--SP1-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
                                 <a class="product-item" href="#">
                                     <div class="product-item__picture">
-                                        <img src="./assets/images/product/dog_food_02.png" alt="" class="product-item__img">
+                                        <img src="" alt="" class="product-item__img">
                                     </div>
-                                    <h5 class="product-item__name  ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                    <h5 class="product-item__name "></h5>
                                     <div class="product-item__price">
-                                        <span class="product-item__price-old">500.000 đ</span>
-                                        <span class="product-item__price-current">450.000 đ</span>
+                                        <span class="product-item__price-current"></span>
                                     </div>
                                     <div class="product-item__action">
                                         <span class="product-item__add-cart">
@@ -223,61 +192,21 @@
                                             <i class="fas fa-star"></i>
                                         </div>
                                     </div>
-                                    
-                                
-                                    <!-- <div class="product-item__favourite">
-                                        <i class="fas fa-check"></i>
-                                        <span>
-                                            Yêu thích
-                                        </span>
-                                    
-                                    </div> -->
-                                    <div class="product-item__sale-off">
-                                        <span class="product-item_sale-off-percent">10%</span>
-                                        <span class="product-item_sale-off-label">Giảm</span>
-                                    </div>
-                                    
+                                                                   
                                 </a>
-                                </div>
+                            </div>
 
-                                <!--SP3-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_03.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-                            
-                                <!--SP4-->
-                                <div class="grid__column-2-4 ">
+                            <!-- SP2 -->
+                            <div class="grid__column-2-4 ">
                                 <!-- product-item -->
-                            <a class="product-item" href="#">
+                              <a class="product-item" href="#">
                                 <div class="product-item__picture">
-                                    <img src="./assets/images/product/dog_food_04.png" alt="" class="product-item__img">
+                                    <img src="" alt="" class="product-item__img">
                                 </div>
-                                <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                <h5 class="product-item__name  "></h5>
                                 <div class="product-item__price">
-                                    <span class="product-item__price-current">450.000 đ</span>
+                                    <span class="product-item__price-old">500.000 đ</span>
+                                    <span class="product-item__price-current"></span>
                                 </div>
                                 <div class="product-item__action">
                                     <span class="product-item__add-cart">
@@ -291,365 +220,314 @@
                                         <i class="product-item__star--gold fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                </div>                                                                                                       
-                            </a>
-                                </div>   
-
-                                <!--SP5-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name  name__Row-2">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
                                 </div>
-
-                                <!--SP6-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-
-                                <!--SP7-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                <a class="product-item" href="#">
-                                    <div class="product-item__picture">
-                                        <img src="./assets/images/product/dog_food_02.png" alt="" class="product-item__img">
-                                    </div>
-                                    <h5 class="product-item__name  name__Row-2">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                    <div class="product-item__price">
-                                    
-                                        <span class="product-item__price-current">450.000 đ</span>
-                                    </div>
-                                    <div class="product-item__action">
-                                        <span class="product-item__add-cart">
-                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                        </span>
-                                        <div class="product-item_rating">
-                                            <span class="score-rating">4.1 </span>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                </div>
-
-                                <!--SP8-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_03.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-                            
-                                <!--SP9-->
-                                <div class="grid__column-2-4 ">
-                                <!-- product-item -->
-                            <a class="product-item" href="#">
-                                <div class="product-item__picture">
-                                    <img src="./assets/images/product/dog_food_04.png" alt="" class="product-item__img">
-                                </div>
-                                <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                <div class="product-item__price">
-                                    <span class="product-item__price-current">450.000 đ</span>
-                                </div>
-                                <div class="product-item__action">
-                                    <span class="product-item__add-cart" >
-                                        <i class= "product-item__cart-icon fas fa-shopping-cart"></i> 
+                                
+                               
+                                <!-- <div class="product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>
+                                        Yêu thích
                                     </span>
-                                    <div class="product-item_rating">
-                                        <span class="score-rating">4.1 </span>
-                                        <i class="product-item__star--gold fas fa-star"></i>
-                                        <i class="product-item__star--gold fas fa-star"></i>
-                                        <i class="product-item__star--gold fas fa-star"></i>
-                                        <i class="product-item__star--gold fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>                                                                                                       
+                                   
+                                </div> -->
+                                <div class="product-item__sale-off">
+                                    <span class="product-item_sale-off-percent">10%</span>
+                                    <span class="product-item_sale-off-label">Giảm</span>
+                                </div>
+                                
                             </a>
-                                </div>  
+                            </div>
 
-                                <!--SP10-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-
-                                <!--SP11-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-
-                                <!--SP12-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                <a class="product-item" href="#">
-                                    <div class="product-item__picture">
-                                        <img src="./assets/images/product/dog_food_02.png" alt="" class="product-item__img">
-                                    </div>
-                                    <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                    <div class="product-item__price">
-                                
-                                    <span class="product-item__price-current">500.000 đ</span>
-                                
-                                    </div>
-                                    <div class="product-item__action">
-                                        <span class="product-item__add-cart">
-                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                        </span>
-                                        <div class="product-item_rating">
-                                            <span class="score-rating">4.1 </span>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                    
-                                </a>
-                                </div>
-
-                                <!--SP13-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_03.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-                            
-                                <!--SP14-->
-                                <div class="grid__column-2-4 ">
+                            <!--SP3-->
+                            <div class="grid__column-2-4 ">
                                 <!-- product-item -->
                                 <a class="product-item" href="#">
                                     <div class="product-item__picture">
-                                        <img src="./assets/images/product/dog_food_04.png" alt="" class="product-item__img">
-                                    </div>
-                                    <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                    <div class="product-item__price">
-                                        <span class="product-item__price-current">450.000 đ</span>
-                                    </div>
-                                    <div class="product-item__action">
-                                        <span class="product-item__add-cart">
-                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                        </span>
-                                        <div class="product-item_rating">
-                                            <span class="score-rating">4.1 </span>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="product-item__star--gold fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>  
-                                    <div class="product-item__favourite">
-                                        <i class="fas fa-check"></i>
-                                        <span>
-                                            Yêu thích
-                                        </span>  
-                                    </div>                                                                                                             
-                                </a>
-                                </div>                 
-                                <!--SP15-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-
-                                <!--SP16-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-old">500.000 đ</span>
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__sale-off">
-                                            <span class="product-item_sale-off-percent">10%</span>
-                                            <span class="product-item_sale-off-label">Giảm</span>
-                                        </div>                              
-                                    </a>
-                                </div>
-
-                                <!--SP17-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                <a class="product-item" href="#">
-                                    <div class="product-item__picture">
-                                        <img src="./assets/images/product/dog_food_02.png" alt="" class="product-item__img">
+                                        <img src="" alt="" class="product-item__img">
                                     </div>
                                     <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
                                     <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+                          
+                            <!--SP4-->
+                            <div class="grid__column-2-4 ">
+                            <!-- product-item -->
+                          <a class="product-item" href="#">
+                            <div class="product-item__picture">
+                                <img src="" alt="" class="product-item__img">
+                            </div>
+                            <h5 class="product-item__name "></h5>
+                            <div class="product-item__price">
+                                <span class="product-item__price-current"></span>
+                            </div>
+                            <div class="product-item__action">
+                                <span class="product-item__add-cart">
+                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                </span>
+                                <div class="product-item_rating">
+                                    <span class="score-rating">4.1 </span>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>                                                                                                       
+                        </a>
+                            </div>   
+
+                            <!--SP5-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name  name__Row-2"></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+
+                            <!--SP6-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name "></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+
+                            <!--SP7-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                              <a class="product-item" href="#">
+                                <div class="product-item__picture">
+                                    <img src="" alt="" class="product-item__img">
+                                </div>
+                                <h5 class="product-item__name  name__Row-2"></h5>
+                                <div class="product-item__price">
+                                  
+                                    <span class="product-item__price-current"></span>
+                                </div>
+                                <div class="product-item__action">
+                                    <span class="product-item__add-cart">
+                                        <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                    </span>
+                                    <div class="product-item_rating">
+                                        <span class="score-rating">4.1 </span>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            </div>
+
+                            <!--SP8-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name "></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+                          
+                            <!--SP9-->
+                            <div class="grid__column-2-4 ">
+                            <!-- product-item -->
+                          <a class="product-item" href="#">
+                            <div class="product-item__picture">
+                                <img src="" alt="" class="product-item__img">
+                            </div>
+                            <h5 class="product-item__name "></h5>
+                            <div class="product-item__price">
+                                <span class="product-item__price-current"></span>
+                            </div>
+                            <div class="product-item__action">
+                                <span class="product-item__add-cart" >
+                                    <i class= "product-item__cart-icon fas fa-shopping-cart"></i> 
+                                </span>
+                                <div class="product-item_rating">
+                                    <span class="score-rating">4.1 </span>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>                                                                                                       
+                        </a>
+                            </div>  
+
+                            <!--SP10-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name "></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+
+                            <!--SP11-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name "></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+
+                            <!--SP12-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                              <a class="product-item" href="#">
+                                <div class="product-item__picture">
+                                    <img src="" alt="" class="product-item__img">
+                                </div>
+                                <h5 class="product-item__name"></h5>
+                                <div class="product-item__price">
+                            
+                                <span class="product-item__price-current"></span>
+                              
+                                </div>
+                                <div class="product-item__action">
+                                    <span class="product-item__add-cart">
+                                        <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                    </span>
+                                    <div class="product-item_rating">
+                                        <span class="score-rating">4.1 </span>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                            </div>
+
+                            <!--SP13-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                    <div class="product-item__price">
                                         <span class="product-item__price-current">450.000 đ</span>
                                     </div>
                                     <div class="product-item__action">
@@ -664,48 +542,21 @@
                                             <i class="product-item__star--gold fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                         </div>
-                                    </div>                               
+                                    </div>
+                                                                   
                                 </a>
-                                </div>
-
-                                <!--SP18-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_03.png" alt="" class="product-item__img">
-                                        </div>
-                                        <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
-                                </div>
-                            
-                                <!--SP19-->
-                                <div class="grid__column-2-4 ">
-                                <!-- product-item -->
+                            </div>
+                          
+                            <!--SP14-->
+                            <div class="grid__column-2-4 ">
+                            <!-- product-item -->
                             <a class="product-item" href="#">
                                 <div class="product-item__picture">
-                                    <img src="./assets/images/product/dog_food_04.png" alt="" class="product-item__img">
+                                    <img src="" alt="" class="product-item__img">
                                 </div>
-                                <h5 class="product-item__name ">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                <h5 class="product-item__name"></h5>
                                 <div class="product-item__price">
-                                    <span class="product-item__price-current">450.000 đ</span>
+                                    <span class="product-item__price-current"></span>
                                 </div>
                                 <div class="product-item__action">
                                     <span class="product-item__add-cart">
@@ -719,93 +570,239 @@
                                         <i class="product-item__star--gold fas fa-star"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                </div>                                                                                                        
-                            </a>
-                                </div>         
+                                </div>  
+                                <div class="product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>
+                                        Yêu thích
+                                    </span>  
+                                </div>                                                                                                             
+                             </a>
+                            </div>                 
+                            <!--SP15-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name"></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
 
-                                <!--SP20-->
-                                <div class="grid__column-2-4 ">
-                                    <!-- product-item -->
-                                    <a class="product-item" href="#">
-                                        <div class="product-item__picture">
-                                            <img src="./assets/images/product/dog_food_01.png" alt="" class="product-item__img">
+                            <!--SP16-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name"></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-old">500.000 đ</span>
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
-                                        <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
-                                        <div class="product-item__price">
-                                            <span class="product-item__price-current">450.000 đ</span>
-                                        </div>
-                                        <div class="product-item__action">
-                                            <span class="product-item__add-cart">
-                                                <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
-                                            </span>
-                                            <div class="product-item_rating">
-                                                <span class="score-rating">4.1 </span>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="product-item__star--gold fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                                                    
-                                    </a>
+                                    </div>
+                                    <div class="product-item__sale-off">
+                                        <span class="product-item_sale-off-percent">10%</span>
+                                        <span class="product-item_sale-off-label">Giảm</span>
+                                    </div>                              
+                                </a>
+                            </div>
+
+                            <!--SP17-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                              <a class="product-item" href="#">
+                                <div class="product-item__picture">
+                                    <img src="" alt="" class="product-item__img">
                                 </div>
-                            
-                            </div>     
-                        </div>        
-                    <!-- pagination-->
-                    <div class="product__pagination">
-                        <ul class="pagination">
-                            <li class="pagination-item ">
-                                <a href="#" class="pagination-item__link">
-                                <i class="pagination-item__icon fas fa-chevron-left"></i>
-                                </a>
-                                
-                            </li>
-    
-                            <li class="pagination-item pagination-item--active">
-                            <a href="#" class="pagination-item__link">1</a>
-                            </li>
-    
-                            <li class="pagination-item">
-                                <a href="product_page2.html" class="pagination-item__link">2</a>
-                            </li>
-    
-                            <li class="pagination-item  ">
-                            <p class="pagination-item__space">
-                                .........
-                            </p>
-                            </li>
-    
-                            <li class="pagination-item">
-                                <a href="#" class="pagination-item__link">20</a>
-                            </li>
-    
-                            <li class="pagination-item">
-                                <a href="product_page2.html" class="pagination-item__link">
-                                    <i class="pagination-item__icon fas fa-chevron-right"></i>
-                                </a>
-                                
-                            </li>
-    
-                        </ul>
-                    </div>
-                
+                                <h5 class="product-item__name "></h5>
+                                <div class="product-item__price">
+                                    <span class="product-item__price-current"></span>
+                                </div>
+                                <div class="product-item__action">
+                                    <span class="product-item__add-cart">
+                                        <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                    </span>
+                                    <div class="product-item_rating">
+                                        <span class="score-rating">4.1 </span>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="product-item__star--gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>                               
+                            </a>
+                            </div>
 
-                </div>
-                </div>
-            </div>     
-        </div>   
+                            <!--SP18-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name"></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+                          
+                            <!--SP19-->
+                            <div class="grid__column-2-4 ">
+                            <!-- product-item -->
+                          <a class="product-item" href="#">
+                            <div class="product-item__picture">
+                                <img src="" alt="" class="product-item__img">
+                            </div>
+                            <h5 class="product-item__name "></h5>
+                            <div class="product-item__price">
+                                <span class="product-item__price-current"></span>
+                            </div>
+                            <div class="product-item__action">
+                                <span class="product-item__add-cart">
+                                    <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                </span>
+                                <div class="product-item_rating">
+                                    <span class="score-rating">4.1 </span>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="product-item__star--gold fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>                                                                                                        
+                        </a>
+                            </div>         
+
+                            <!--SP20-->
+                            <div class="grid__column-2-4 ">
+                                <!-- product-item -->
+                                <a class="product-item" href="#">
+                                    <div class="product-item__picture">
+                                        <img src="" alt="" class="product-item__img">
+                                    </div>
+                                    <h5 class="product-item__name"></h5>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-current"></span>
+                                    </div>
+                                    <div class="product-item__action">
+                                        <span class="product-item__add-cart">
+                                            <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
+                                        </span>
+                                        <div class="product-item_rating">
+                                            <span class="score-rating">4.1 </span>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                                                   
+                                </a>
+                            </div>
+                          
+                        </div>     
+                    </div>        
+                   <!-- pagination-->
+                   <div class="product__pagination">
+                    <ul class="pagination">
+                        <li class="pagination-item ">
+                            <a href="#" class="pagination-item__link">
+                             <i class="pagination-item__icon fas fa-chevron-left"></i>
+                            </a>
+                            
+                        </li>
+ 
+                        <li class="pagination-item pagination-item--active">
+                         <a href="#" class="pagination-item__link">1</a>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="product_page2.html" class="pagination-item__link">2</a>
+                         </li>
+ 
+                         <li class="pagination-item  ">
+                           <p class="pagination-item__space">
+                             .........
+                           </p>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="#" class="pagination-item__link">20</a>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="product_page2.html" class="pagination-item__link">
+                                 <i class="pagination-item__icon fas fa-chevron-right"></i>
+                             </a>
+                            
+                         </li>
+ 
+                    </ul>
+                   </div>
+               
+
+               </div>
+            </div>
+        </div>     
+    </div>   
 
     <!-- Footer-Start -->    
-        <script>
-            $(function(){
-                $("#footer").load("footer.html");
-            });
-        </script>
-        <span id="footer"></span>
+      <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
     <!-- Footer-End -->
 </body>
-
 <script src="./assets/script/cart.js"></script>
 </html>

@@ -1,106 +1,82 @@
 
 var data = [], xmlObject,xmlDoc;
 
-    if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp = new XMLHttpRequest();
-    }
-    else {// code for IE6, IE5
-    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.open("GET","../data/product.xml" , false);
-    xmlhttp.send();
-    xmlDoc = xmlhttp.responseXML;
+if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+xmlhttp = new XMLHttpRequest();
+}
+else {// code for IE6, IE5
+xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
 
-    // số sản phẩm trên một trang
-    var  slsp=20;
-    var  name,price, srcImg;
-    var nameArray, priceArray, imgArray;
-    var btnCart=document.getElementsByClassName("product-item__add-cart");
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        xmlDoc = xmlhttp.responseXML;
+    }
+};
+xmlhttp.open("GET","../data/product.xml" , true);
+xmlhttp.send();
 
-    nameArray = document.getElementsByClassName("product-item__name");
-    priceArray = document.getElementsByClassName("product-item__price-current");
-    imgArray = document.getElementsByClassName("product-item__img");
+
+
+// số sản phẩm trên một trang
+var  slsp=20;
+var  name,price, srcImg,id;
+var nameArray, priceArray, imgArray,linkArray;
+var btnCart=document.getElementsByClassName("product-item__add-cart");
+
+nameArray = document.getElementsByClassName("product-item__name");
+priceArray = document.getElementsByClassName("product-item__price-current");
+imgArray = document.getElementsByClassName("product-item__img");
+linkArray = document.getElementsByClassName("product-item");
+
 
 function loadingProductOnPage(numberPage) {
 
-    var n=numberPage;
-     
-    var lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
+var n=numberPage;
+ 
+var lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
 
-       // Sắp xếp mảng để thể hiện ngẫu nhiên
-    var   lstproductShuffled = Array.prototype.slice.call(lstproduct).sort( function () {
-        return 0;
-    } );
+   // Sắp xếp mảng để thể hiện ngẫu nhiên
+var   lstproductShuffled = Array.prototype.slice.call(lstproduct).sort( function () {
+    return 0;
+} );
 
+var index_h;
+//vi tri trong page html
 
-    for (i = 0+20*n; i < 20*(n+1); i++) {
-        product =   lstproductShuffled[i];
-        name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-        price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
-        srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
-        
-        nameArray [i-slsp*n].innerText = name;                   
-        priceArray [i-slsp*n].innerText = Intl.NumberFormat().format(price) + " đ";      
-        imgArray [i-slsp*n].src = srcImg;   
-        btnCart[i-slsp*n].setAttribute("onclick","addtocart(this)");
-    }
-  
+for (i = 0+20*n; i < 20*(n+1); i++) {
+    product =   lstproductShuffled[i];
+    name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+    price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+    srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
+    id= product.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+    index_h=i-slsp*n;
+
+    linkArray[index_h].href="./product_detail.html"
+    linkArray[index_h].id=id;
+    linkArray[index_h].setAttribute("onclick","getID(this.id)");
+
+    nameArray [index_h].innerText = name;                   
+    priceArray [index_h].innerText = Intl.NumberFormat().format(price) + " đ";      
+    imgArray [index_h].src = srcImg;   
+    btnCart[index_h].setAttribute("onclick","addtocart(this)");
 }
 
+}
+function getID(id){
+if (typeof(Storage) !== "undefined") {
+    // Lưu trữ
+    localStorage.idP = id;
+}
+}
+
+
+
 function loadingProductPage1() {
-    loadingProductOnPage(0);
+loadingProductOnPage(0);
 }
 
 function loadingProductPage2() {
-    loadingProductOnPage(1);
+loadingProductOnPage(1);
 }
 
-function parseXml(xml, arrayTags) {
-    let dom = null;
-    if (window.DOMParser) dom = (new DOMParser()).parseFromString(xml, "text/xml");
-    else if (window.ActiveXObject) {
-        dom = new ActiveXObject('Microsoft.XMLDOM');
-        dom.async = false;
-        if (!dom.loadXML(xml)) throw dom.parseError.reason + " " + dom.parseError.srcText;
-    }
-    else throw new Error("cannot parse xml string!");
-
-    function parseNode(xmlNode, result) {
-        if (xmlNode.nodeName == "#text") {
-            let v = xmlNode.nodeValue;
-            if (v.trim()) result['#text'] = v;
-            return;
-        }
-
-        let jsonNode = {},
-            existing = result[xmlNode.nodeName];
-        if (existing) {
-            if (!Array.isArray(existing)) result[xmlNode.nodeName] = [existing, jsonNode];
-            else result[xmlNode.nodeName].push(jsonNode);
-        }
-        else {
-            if (arrayTags && arrayTags.indexOf(xmlNode.nodeName) != -1) result[xmlNode.nodeName] = [jsonNode];
-            else result[xmlNode.nodeName] = jsonNode;
-        }
-
-        if (xmlNode.attributes) for (let attribute of xmlNode.attributes) jsonNode[attribute.nodeName] = attribute.nodeValue;
-
-        for (let node of xmlNode.childNodes) parseNode(node, jsonNode);
-    }
-
-    let result = {};
-    for (let node of dom.childNodes) parseNode(node, result);
-
-    return result;
-}
-
-
-function sortDes(){
-    const obj = parser.toJson(xmlDoc, { object: true });
-    var product = obj[0].root[0].product[0].nodeValue;
-
-
-    nameArray [i-slsp*numberPage].innerText = name;                   
-        priceArray [i-slsp*numberPage].innerText = price;      
-        imgArray [i-slsp*numberPage].src = srcImg;   
-}

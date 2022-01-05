@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ID=[Tên viết tắt]+[STT]. Danh sách tên viết tắt
+  Bán chạy nhất: BS
+
+  Thức ăn: TA
+  Thức ăn cho chó: TAC
+  Thức ăn cho mèo: TAM
+  
+  Vệ sinh: VS
+
+  Thời trang: TT
+-->
+
+
+<PnU>
+<!--Thức ăn-->
+  <TA>
+  <!--Thức ăn chó-->
+    <TAC>
+      <productDetail>
+        <id>TAC01</id>
+        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</name>
+        <price>394000</price>
+        <imageFirst>./assets/images/product/dog_food_01.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01_small-1.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-2.png</imageThird>
+        <description>  
+        Sau giai đoạn sơ sinh, cai sữa chó con cần một lượng khẩu phần ăn khá khắt khe.
+        Bởi giai đoạn này dạ dày của Poodle vẫn còn khá yếu. 
+        Chúng không hấp thu được những chất quá nhiều dinh dưỡng, hoặc các loại thức ăn quá cứng. Sản phẩm Thức Ăn Khô Cho Chó Poodle Con - Royal Canin Poodle Puppy là sản phẩm dành cho giống chó Poodle từ 2 - 10 tháng tuổi.&lt;br&gt;
+        &lt;b&gt; Chi tiết sản phẩm  &lt;/b&gt;&lt;br&gt;
+        Xuất xứ: Pháp&lt;br&gt;
+        Trọng lượng: 500gr, 1.5kg&lt;br&gt;
+        Thành phần&lt;br&gt;
+        Bắp, mỡ gà, gluten lúa mì, bột gluten bắp, lúa mì, hương vị tự nhiên, dầu cá. Aluminat silic natri, dầu thực vật, dầu ăn khô, monocalcium phosphate, canxi Carbonat. Canxi sulfat, DL-methionine, clorua kali, vỏ hạt psyllium, muối, fructooligosaccharides, tripolyphosphate natri. Menhydrolyzed, vitamin [DL-alpha tocopherol acetate (nguồn vitamin E),....&lt;br&gt;
+        &lt;b&gt;Công dụng&lt;/b&gt;
+        &lt;br&gt;
+        Thức ăn khô cho chó Royal Canin Poodle Puppy giúp duy trì sức khoẻ của chó Poodle sau cai sữa, hỗ trợ năng lượng phát triển cho cún.&lt;br&gt;
+        Hình dạng hạt độc quyền, với hạt mềm, giúp chó dễ dàng nhai.&lt;br&gt;
+        Với các dưỡng chất dễ tiêu hóa, thức ăn hạt còn hỗ trợ tiêu hóa khỏe mạnh.&lt;br&gt;
+        Hỗ trợ sức khỏe tăng cường hệ thống miễn dịch.&lt;br&gt;
+        100% dinh dưỡng cân bằng.&lt;br&gt;
+        100% đảm bảo an toàn.&lt;br&gt;                       
+        </description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC02</id>
+        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Adult</name>
+        <price>340000</price>
+        <imageFirst>./assets/images/product/dog_food_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_02_small-1.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_02_small-2.png</imageThird>
+        <description>
+        ROYAL CANIN POODLE ADULT là sản phẩm dành cho giống chó Poodle trên 10 tháng tuổi.
+       Những bé Poodle trưởng thành trên 10 tháng tuổi cần một nguồn dinh dưỡng đặc thù hơn để có thể khỏe mạnh. Hạt khô cho chó Poodle trưởng thành Royal Canin Poodle Adult với công thức dinh dưỡng phù hợp sẽ là một sự lựa chọn tuyệt vời cho những chú chó Poodle lớn!       
+        Vì Poodle có mõm dài, thẳng và xương hàm nhỏ nên hình dáng hạt dành riêng cho giống chó này được thiết kế thích hợp để chúng dễ dàng nhai hơn.
+        &lt;br&gt;      &lt;b&gt;Công dụng&lt;/b&gt;&lt;br&gt; 
+        &lt;b&gt;Thiết kế hạt đặc biệt: bảo vệ răng&lt;/b&gt;&lt;br&gt;       
+        Hình dáng hạt được thiết kế độc quyền qua nhiều nghiên cứu nhằm thích nghi với chiếc hàm nhỏ của Poodle, kích thích chúng nhai một cách dễ dàng. Ngoài ra, nhờ vào công thức đặc biệt giúp giảm thiểu quá trình hình thành cao răng nhờ vào tác dụng lọc thải Canxi.&lt;br&gt;     
+         &lt;b&gt;Bộ lông khỏe mạnh&lt;/b&gt;&lt;br&gt;       
+        Da và lông phản ánh tình trạng sức khoẻ của chó, chính vì vậy mà thức ăn thích hợp rất quan trọng trong việc duy trì làn da và bộ lông khỏe mạn. ROYAL CANIN POODLE JUNIOR chứa các chất dinh dưỡng giúp duy trì bộ lông của Poodle trở nên mượt mà với Axit béo Omega-3 (EPA va DHA). Ngoài ra, protein có trong hạt giúp hỗ trợ tăng trưởng lông cho Poodle.&lt;br&gt;     
+         &lt;b&gt;Tăng cường hệ miễn dịch&lt;/b&gt;&lt;br&gt;      
+        Poodle được biết đến với tuổi thọ dài. POODLE ADULT giúp hỗ trợ Poodle hệ miễn dịch ngay cả khi chúng trưởng thành, với việc chọn lọc các chất dinh dưỡng để duy trì sức khỏe và sức sống.
+        &lt;br&gt;  &lt;b&gt;Tăng cường sức khẻo cơ bắp&lt;/b&gt;&lt;br&gt;      
+        Công thức này giúp duy trì hệ cơ của Poodle với hàm lượng protein thích hợp.
+        </description>     
+      </productDetail>
+
+      <productDetail>
+        <id>TAC03</id>
+        <name>Thức ăn hạt khô SmartHeart vị thịt bò nướng dành cho chó trưởng thành 400g</name>
+        <price>785000</price>
+        <imageFirst>./assets/images/product/dog_food_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_03_small-1.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_03_small-2.png</imageThird>
+        <description>
+         Thức ăn cho chó trưởng thành SMARTHEART có thành phần dinh dưỡng tốt. Thức ăn SmartHeart bổ sung từ Dầu cá biển nguồn DHA, Axit béo Omega - 3 và Lecithin, giàu Colin. Sản phẩm giúp tăng cường sự phát triển chức năng não và hệ thần kinh, tăng cường sức khỏe tim mạch.
+         &lt;br&gt;      &lt;b&gt;Chi tiết sản phẩm&lt;/b&gt;&lt;br&gt; 
+         Khối lượng:1.5kg, 3 kg&lt;br&gt; 
+         Với túi 3kg bạn có thể dùng trong thời gian dài hơn. Tiết kiệm hơn. Còn với túi 1.5kg bạn sẽ tiện lợi hơn nếu có việc đi xa nhé!!
+         &lt;br&gt; Với thú cưng dưới 1 năm tuổi, nguồn dinh dưỡng luôn cần chú ý để cho sự phát triển toàn diện sau này. Do đó, bạn cần đặc biệt chú ý tới thành phần dinh dưỡngvà lựa chọn những loại thức ăn an toàn, đạt chuẩn để chúng phát triển tốt nhất. Và thương hiệu SmartHeart là sự lựa chọn tuyệt vời cho bạn.
+         &lt;br&gt; Thức ăn cho chó trưởng thành SMARTHEART 3Kg dành cho chó trưởng thành phát triển nhằm đáp ứng hoặc vượt qua các tiêu chuẩn dinh dưỡng thức ăn cho chó AAFCO để duy trì cho chó trưởng thành đước thiết lập bởi hiệp hội thức ăn chăn nuôi Hoa Kì.
+         &lt;br&gt; Chó trưởng thành cần nguồn dinh dưỡng cân bằng và đầy đủ để có sức khỏe tốt, vóc dáng đẹp. Thức ăn SmartHeart cho chó trưởng thành đáp ứng đầy đủ nhu cầu dinh dưỡng, bổ sung dầu cá và lecithin, giàu cholin giúp tăng cường sự phát triển chức năng não và hệ thần kinh, tăng cường chức năng tim mạch.
+         &lt;br&gt;  &lt;b&gt;Công Dụng &lt;/b&gt;
+         &lt;br&gt; Thức Ăn Khô Cho Chó SmartHeart Adult Roast Beef Flavor chứa DHA (từ dầu cá) và Colin (từ celithin). Giúp tăng cường sự phát triển trí não và chức năng Hệ thần kinh.
+         &lt;br&gt; Axit béo Omega3 từ dầu cá cho tim mạch khỏe mạnh.
+         &lt;br&gt; Vitamin E và Selenium giúp tăng cường hệ thống miễn dịch.
+         &lt;br&gt; Giúp tim mạch khỏe mạnh: Axit béo Omega-3 từ dầu cá cho tim mạch khỏe mạnh.
+         &lt;br&gt; Tăng cường hệ thống miễn dịch, hệ tiêu hóa khỏe mạnh: Vitamin E và Selenium giúp tăng cường hệ thống miễn dịch.
+         &lt;br&gt; Da và lông khỏe mạnh: Axit béo Omega 3 va 6 cân bằng và đảm bảo cho da khỏe và lông óng mượt.
+         &lt;br&gt; Xương và răng khỏe mạnh: Canxi và Phốt pho cho xương hông chắc và răng khỏe mạnh.
+        </description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC04</id>
+        <name>Hạt cho chó vị sữa thơm ngon Pet Classic</name>
+        <price>508000</price>
+        <imageFirst>./assets/images/product/dog_food_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>   
+      </productDetail>
+
+      <productDetail>
+        <id>TAC05</id>
+        <name>Hạt thức ăn khô cho chó Pitbull</name>
+        <price>625000</price>
+        <imageFirst>./assets/images/product/dog_food_05.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC06</id>
+        <name>Hạt thức ăn khô cho chó trưởng thành 500g</name>
+        <price>315000</price>
+        <imageFirst>./assets/images/product/dog_food_06.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC07</id>
+        <name>Hạt thức ăn khô cho chó PitBbull hạt mềm Zenith</name>
+        <price>309000</price>
+        <imageFirst>./assets/images/product/dog_food_07.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC08</id>
+        <name>Hạt thức cho chó PoodleMKB MEC Wild Taste Nutritiob</name>
+        <price>465000</price>
+        <imageFirst>./assets/images/product/dog_food_08.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC09</id>
+        <name>Xúc Xích Phô Mai Bowwow 240g - Không Hương Liệu</name>
+        <price>70000</price>
+        <imageFirst>./assets/images/product/dog_food_09.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAC10</id>
+        <name>Bánh Thưởng Phô Mai Thịt Cừu Bowwow 100g - Thịt Tươi </name>
+        <price>55000</price>
+        <imageFirst>./assets/images/product/dog_food_10.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>    
+      </productDetail>
+      
+    </TAC>
+
+  <!--Thức ăn mèo-->
+    <TAM>
+
+      <productDetail>
+        <id>TAM01</id>
+        <name>Hạt thức ăn khô cho mèo con Royal Canin Kitten</name>
+        <price>259000</price>
+        <imageFirst>./assets/images/product/cat_food_01.png</imageFirst>
+        <imageSecond>./assets/images/product/cat_food_01_small-1.png</imageSecond>
+        <imageThird>./assets/images/product/cat_food_01_small-2.png</imageThird> 
+        <description>
+        </description>
+      </productDetail>
+
+      <productDetail>
+        <id>TAM02</id>
+        <name>Hạt thức ăn khô cho mèo trưởng thành Royal Canin Renal</name>
+        <price>259000</price>
+        <imageFirst>./assets/images/product/cat_food_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>
+      </productDetail>
+
+      <productDetail>
+        <id>TAM03</id>
+        <name>Thức Ăn Cho Mèo Con Whiskas Vị Cá Biển Và Sữa</name>
+        <price>210000</price>
+        <imageFirst>./assets/images/product/cat_food_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>
+      </productDetail>
+
+      <productDetail>
+        <id>TAM04</id>
+        <name>Thức ăn cho mèo MININO Vị cá Ngừ</name>
+        <price>275000</price>
+        <imageFirst>./assets/images/product/cat_food_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>     
+      </productDetail>
+
+      <productDetail>
+        <id>TAM05</id>
+        <name>Thức ăn cho mèo ME-O thơm ngon</name>
+        <price>124000</price>
+        <imageFirst>./assets/images/product/cat_food_05.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>TAM06</id>
+        <name>Thức ăn cho mèo KiteKat Vị cá Thu</name>
+        <price>99000</price>
+        <imageFirst>./assets/images/product/cat_food_06.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TAM07</id>
+        <name>Hạt thức ăn mèo REFLEX High Quality </name>
+        <price>239000</price>
+        <imageFirst>./assets/images/product/cat_food_07.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>   
+      </productDetail>
+
+      <productDetail>
+        <id>TAM08</id>
+        <name>Hạt thức ăn khô cho mèo Hàn Quốc Cats Rang</name>
+        <price>365000</price>
+        <imageFirst>./assets/images/product/cat_food_08.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TAM09</id>
+        <name>Pate lon cho mèo Whiskas 400g</name>
+        <price>50000</price>
+        <imageFirst>./assets/images/product/cat_food_09.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond> 
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>     
+      </productDetail>
+
+      <productDetail>
+        <id>TAM10</id>
+        <name>Sữa tươi cho mèo Gimcat Latte 150g - Bổ sung Canxi, Vitamin</name>
+        <price>75000</price>
+        <imageFirst>./assets/images/product/cat_food_10.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond> 
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>    
+      </productDetail>
+    </TAM>
+  </TA>
+
+<!--Vệ sinh-->
+  <VS>
+      <productDetail>
+        <id>VSC01</id>
+        <name>Sữa tắm cho chó con Bioline 250ml - Dịu nhẹ cho da nhạy cảm</name>
+        <price>114000</price>
+        <imageFirst>./assets/images/product/dog_hygiene_01.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>VSC02</id>
+        <name>Sữa tắm mượt lông cho chó Enoug SOS 530ml - Cân Bằng PH</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/dog_hygiene_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>    
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>VSC03</id>
+        <name>Bộ bàn chải và kem đánh răng cho chó Bioline 100g - Loại bỏ mảng bám</name>
+        <price>100000</price>
+        <imageFirst>./assets/images/product/dog_hygiene_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>
+        <description></description> 
+      </productDetail>
+
+      <productDetail>
+        <id>VSC04</id>
+        <name>Xịt thơm miệng và khử mùi Bioline 175ml - Chống viêm</name>
+        <price>90000</price>
+        <imageFirst>./assets/images/product/dog_hygiene_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>   
+      </productDetail>
+
+      <productDetail>
+        <id>VSM01</id>
+        <name>Sữa tắm cho mèo Bioline 250ml - Dịu nhẹ</name>
+        <price>100000</price>
+        <imageFirst>./assets/images/product/cat_hygiene_01.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>VSM02</id>
+        <name>Sữa tắm cho mèo Enoug SOS 530ml - Bảo vệ da</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/cat_hygiene_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>VSM03</id>
+        <name>Kem đánh răng cho mèo Bioline 50g - Vị phô mai - Full bàn chải</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/cat_hygiene_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>      
+      </productDetail>
+
+      <productDetail>
+        <id>VSM04</id>
+        <name>Cát vệ sinh cho mèo cát Nhật thần thánh 10L</name>
+        <price>230000</price>
+        <imageFirst>./assets/images/product/cat_hygiene_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
+        <description></description>   
+      </productDetail>
+    
+  </VS>
+
+<!--Thời trang-->
+  <TT>
+   <TTC>
+      <productDetail>
+        <id>TTC01</id>
+        <name>Áo thun có tay màu hồng cho chó</name>
+        <price>62000</price>
+        <imageFirst>./assets/images/product/pet_fashion_01.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TTC02</id>
+        <name>Áo thun hình hoa cúc cho chó</name>
+        <price>105000</price>
+        <imageFirst>./assets/images/product/pet_fashion_06.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond> 
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>      
+      </productDetail>
+
+      <productDetail>
+        <id>TTC03</id>
+        <name>Áo yếm cho chó con in chữ IloveU</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/pet_fashion_07.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>   
+      </productDetail>
+
+      <productDetail>
+        <id>TTC04</id>
+        <name>Mũ ếch dễ thương cho chó</name>
+        <price>50000</price>
+        <imageFirst>./assets/images/product/pet_fashion_08.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+    </TTC>
+
+    <TTM>
+      <productDetail>
+        <id>TTM01</id>
+        <name>Áo yếm buộc nơ dễ thương cho mèo</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/pet_fashion_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TTM02</id>
+        <name>Mũ len thời trang dễ thương cho mèo</name>
+        <price>119000</price>
+        <imageFirst>./assets/images/product/pet_fashion_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TTM03</id>
+        <name>Thời trang cho mèo - bộ quần áo nhện Halloween</name>
+        <price>130000</price>
+        <imageFirst>./assets/images/product/pet_fashion_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>TTM04</id>
+        <name>Áo thun liền quần khủng long cho mèo</name>
+        <price>100000</price>
+        <imageFirst>./assets/images/product/pet_fashion_05.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+    </TTM>
+  </TT>  
+
+<!--Đồ chơi-->
+  <DC>
+    <DCC>
+      <productDetail>
+        <id>DCC01</id>
+        <name>Đồ chơi bóng mặt chó 3 màu</name>
+        <price>25000</price>
+        <imageFirst>./assets/images/product/pet_toy_01.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>DCC02</id>
+        <name>Con gà đồ chơi cho chó phát ra tiếng</name>
+        <price>20000</price>
+        <imageFirst>./assets/images/product/pet_toy_02.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>    
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>DDC03</id>
+        <name>Đồ chơi xương nhựa gặm làm sạch răng cho chó</name>
+        <price>20000</price>
+        <imageFirst>./assets/images/product/pet_toy_03.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>  
+      </productDetail>
+
+      <productDetail>
+        <id>DDC04</id>
+        <name>Đồ chơi cao su cho Squeaky Dog</name>
+        <price>55000</price>
+        <imageFirst>./assets/images/product/pet_toy_04.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>     
+      </productDetail>
+    </DCC>
+
+    <DCM>
+      <productDetail>
+        <id>DCM01</id>
+        <name>Đồ chơi cho mèo hình cá chim</name>
+        <price>25000</price>
+        <imageFirst>./assets/images/product/pet_toy_05.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>DCM02</id>
+        <name>Bóng lồng chuột cho mèo</name>
+        <price>25000</price>
+        <imageFirst>./assets/images/product/pet_toy_06.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird> 
+        <description></description>        
+      </productDetail>
+
+      <productDetail>
+        <id>DCM03</id>
+        <name>Đồ chơi cao su hình xương cá cho mèo</name>
+        <price>22000</price>
+        <imageFirst>./assets/images/product/pet_toy_07.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>    
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
+        <description></description>    
+      </productDetail>
+
+      <productDetail>
+        <id>DCM04</id>
+        <name>Đồ chơi đùi gà bông cho mèo</name>
+        <price>20000</price>
+        <imageFirst>./assets/images/product/pet_toy_08.png</imageFirst>
+        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
+        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>    
+        <description></description>     
+      </productDetail>
+    </DCM>
+  </DC>    
+</PnU>
+

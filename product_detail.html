@@ -8,16 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <link rel="stylesheet" href="./assets/css/product-detail_style.css"/>
-    <title>Document</title>
     <script src="./assets/script/product-detail.js"></script>
+    <title>Document</title>
 </head>
-<body>
+<body onload="loadingProductDetailPage()" >
     <!-- Header-Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function(){
             $("#header").load("header.html");
         });
+    
     </script>
     <span id="header"></span>
     <!-- Header-End -->
@@ -31,17 +32,17 @@
                 <div class="grid__column-5--5">
                     <div class="p-detail__image">
                         <div class="full_image_box">
-                            <img src="./assets/images/product/cat_food_01.png" alt="" class="full-img"  id="mainImg">
+                            <img src="" alt="" class="full-img"  id="mainImg">
                         </div>    
                         <div class="small-img__group">                  
                                 <div class="small-img__col-3" >
-                                    <img src="./assets/images/product/cat_food_01.png" alt="" class="small-img">
+                                    <img src="" alt="" class="small-img"  id="small-img1">
                                 </div>
                                 <div class="small-img__col-3" >
-                                    <img src="./assets/images/product/cat_food_02.png" alt="" class="small-img">
+                                    <img src="" alt="" class="small-img" id="small-img2">
                                 </div>
                                 <div class="small-img__col-3" >
-                                    <img src="./assets/images/product/cat_food_03.png" alt="" class="small-img">
+                                    <img src="" alt="" class="small-img" id="small-img3">
                                 </div>              
                         </div>
                     </div>
@@ -53,16 +54,15 @@
                     <div class="p-detail__info" id="p-detail__info">
                         <!-- img -->
                         <div style="display: none;">
-                            <img src="./assets/images/product/cat_food_01.png">
+                            <img src="./assets/images/product/cat_food_01_small-1.png">
                         </div>
                         <!-- name -->
-                        <h1 class="detail-info__name">Hạt thức ăn khô cho mèo con Royal Canin Kitten
-                            Hạt thức ăn khô cho mèo con Royal Canin Kitten
+                        <h1 class="detail-info__name"  id="infoName">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy
                         </h1>
                         <!-- price -->
                         <div class="detail-info__price">
-                            <span class="info__price-old">450.000 đ</span>
-                            <span class="info__price-current">410.000 đ</span>
+                            <span class="info__price-old">550.000 đ</span>
+                            <span class="info__price-current" id="infoPrice">450.000 đ</span>
                         </div>
                         <!-- action -->
                         <div class="detail-info__action">
@@ -70,11 +70,11 @@
                             <div class="action__select-quantity">
                                 <p class="select-quantity__label">Số lượng: </p>
                                 <div class="select-quantity__wrapper">
-                                    <button id="btnSubs" class="select-quantity__btn" onClick="selectQuantity()">
+                                    <button id="btnSubs" class="select-quantity__btn" >
                                         <i class="fas fa-minus"></i>
                                     </button>
                                     <input type="text" class="select-quantity__edt" id="select-quantity__edt" value="1">
-                                    <button id="btnPlus" class="select-quantity__btn" onClick="selectQuantity()">
+                                    <button id="btnPlus" class="select-quantity__btn" >
                                         <i class="fas fa-plus select-quantity__btn-icon"></i>
                                     </button>
                                 </div>
@@ -117,34 +117,7 @@
                         <div class="p-description__tab-content">
                             <div class="tab-pane active">
 
-                            <p  class="tab-pane__text">
-                                Sau giai đoạn sơ sinh, cai sữa chó con cần một lượng khẩu phần ăn khá khắt khe. Bởi giai đoạn này dạ dày của Poodle vẫn còn khá yếu. Chúng không hấp thu được những chất quá nhiều dinh dưỡng, hoặc các loại thức ăn quá cứng. Sản phẩm Thức Ăn Khô Cho Chó Poodle Con - Royal Canin Poodle Puppy là sản phẩm dành cho giống chó Poodle từ 2 – 10 tháng tuổi.
-                            <br>
-                                <b>Chi tiết sản phẩm</b>
-                                <br>
-                                Xuất xứ: Pháp
-                                <br>
-                                Trọng lượng: 500gr, 1.5kg
-                                <br>
-                                Thành phần
-                                <br>
-                                Bắp, mỡ gà, gluten lúa mì, bột gluten bắp, lúa mì, hương vị tự nhiên, dầu cá. Aluminat silic natri, dầu thực vật, dầu ăn khô, monocalcium phosphate, canxi Carbonat. Canxi sulfat, DL-methionine, clorua kali, vỏ hạt psyllium, muối, fructooligosaccharides, tripolyphosphate natri. Menhydrolyzed, vitamin [DL-alpha tocopherol acetate (nguồn vitamin E),...
-                                <br>
-                                <b>
-                                Công dụng
-                                </b>
-                                <br>
-                                Thức ăn khô cho chó Royal Canin Poodle Puppy giúp duy trì sức khoẻ của chó Poodle sau cai sữa, hỗ trợ năng lượng phát triển cho cún.
-                                <br>
-                                Hình dạng hạt độc quyền, với hạt mềm, giúp chó dễ dàng nhai.
-                                <br>
-                                Với các dưỡng chất dễ tiêu hóa, thức ăn hạt còn hỗ trợ tiêu hóa khỏe mạnh.
-                                <br>
-                                Hỗ trợ sức khỏe tăng cường hệ thống miễn dịch.
-                                <br>
-                                100% dinh dưỡng cân bằng.
-                                <br>
-                                100% đảm bảo an toàn.
+                            <p  class="tab-pane__text" id="description">
                             </p>
                             </div>
 
@@ -188,7 +161,7 @@
                             </div>
                             <div class="similar-product__line"></div>
                             <div class="product__row grid__row">
-                                <!--SP1-->
+                                       <!--SP1-->
                                 <div class="grid__column-2">
                                     <a class="product-item" href="#">
                                         <div class="product-item__picture">
@@ -199,7 +172,7 @@
                                                 <span class="product-item__price-current">450.000 đ</span>
                                         </div>
                                         <div class="product-item__action">
-                                        <span class="product-item__add-cart" onclick="addtocart(this)">
+                                        <span class="product-item__add-cart">
                                                     <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                         </span>
                                         <div class="product-item_rating">
@@ -225,7 +198,7 @@
                                                 <span class="product-item__price-current">450.000 đ</span>
                                         </div>
                                         <div class="product-item__action">
-                                        <span class="product-item__add-cart" onclick="addtocart(this)">
+                                        <span class="product-item__add-cart">
                                                     <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                         </span>
                                         <div class="product-item_rating">
@@ -251,7 +224,7 @@
                                                 <span class="product-item__price-current">450.000 đ</span>
                                         </div>
                                         <div class="product-item__action">
-                                        <span class="product-item__add-cart" onclick="addtocart(this)">
+                                        <span class="product-item__add-cart">
                                                     <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                         </span>
                                         <div class="product-item_rating">
@@ -277,7 +250,7 @@
                                                 <span class="product-item__price-current">450.000 đ</span>
                                         </div>
                                         <div class="product-item__action">
-                                        <span class="product-item__add-cart" onclick="addtocart(this)"> 
+                                        <span class="product-item__add-cart">
                                                     <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                         </span>
                                         <div class="product-item_rating">
@@ -303,7 +276,7 @@
                                                 <span class="product-item__price-current">450.000 đ</span>
                                         </div>
                                         <div class="product-item__action">
-                                        <span class="product-item__add-cart" onclick="addtocart(this)">
+                                        <span class="product-item__add-cart">
                                                     <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                         </span>
                                         <div class="product-item_rating">
@@ -329,7 +302,7 @@
                                                     <span class="product-item__price-current">450.000 đ</span>
                                             </div>
                                             <div class="product-item__action">
-                                            <span class="product-item__add-cart" onclick="addtocart(this)">
+                                            <span class="product-item__add-cart">
                                                         <i class="product-item__cart-icon fas fa-shopping-cart"></i> 
                                             </span>
                                             <div class="product-item_rating">
@@ -343,11 +316,9 @@
                                             </div>                                  
                                         </a>
                                 </div>
-                            </div>
-
-                    </div>
+                             </div>
                 </div>
-
+            </div>
             </div>
         </div>
     </div>
@@ -357,6 +328,33 @@
     <!-- Footer-End -->
     
    <script>
+         
+        
+    //Tăng giảm quantity
+        var btnSubs= document.getElementById("btnSubs");
+        var btnPlus=  document.getElementById("btnPlus");
+     
+        var  strValue = document.getElementById("select-quantity__edt").value;
+        var  quantity = parseInt(strValue);
+        btnSubs.onclick = function () {
+
+            quantity= quantity-1;
+          
+            document.getElementById("select-quantity__edt").value=quantity;
+         
+            return quantity;
+          
+        };
+
+        btnPlus.onclick = function () {
+            quantity= quantity+1;
+            document.getElementById("select-quantity__edt").value=quantity;
+            return quantity;
+          
+        };
+       
+     
+
 
     // Footer
         $(function(){
@@ -378,6 +376,8 @@
         smallImg[2].onclick = function() {
             mainImg.src=smallImg[2].src;
         }
+
+
 
     //Đổi tab
         const $$ = document.querySelector.bind(document);
@@ -407,7 +407,10 @@
         };
         });    
 
+
+  
    </script>
 </body>
 <script src="./assets/script/cart.js"></script>
+
 </html>
