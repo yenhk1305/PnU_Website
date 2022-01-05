@@ -19,7 +19,7 @@
     <TAC>
       <productDetail>
         <id>TAC01</id>
-        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</name>
+        <name>Hạt thức ăn khô cho chó con Royal Canin Poodle Puppy</name>
         <price>394000</price>
         <imageFirst>./assets/images/product/dog_food_01.png</imageFirst>
         <imageSecond>./assets/images/product/dog_food_01_small-1.png</imageSecond>
@@ -46,7 +46,7 @@
 
       <productDetail>
         <id>TAC02</id>
-        <name>Hạt thức ăn khô cho chó Royal Canin Poodle Adult</name>
+        <name>Hạt thức ăn khô cho chó trưởng thành Royal Canin Poodle Adult</name>
         <price>340000</price>
         <imageFirst>./assets/images/product/dog_food_02.png</imageFirst>
         <imageSecond>./assets/images/product/dog_food_02_small-1.png</imageSecond>

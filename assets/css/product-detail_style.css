@@ -106,11 +106,11 @@ html {
     padding-left: 1.2rem;
 }
 .detail-info__name {
-        font-size: 2.7rem;
-        font-weight: 400;
+        font-size: 3.2rem;
+        font-weight: 500;
         color: rgb(22, 20, 20);
-        line-height: 4rem;
-        height: 8rem;
+        line-height: 4.5rem;
+        height: 9rem;
         margin: 0;
         overflow: hidden;
         display: block;
@@ -150,10 +150,10 @@ html {
 }
 
 .select-quantity__label {
-    font-size: 1.9rem;
+    font-size: 2rem;
     line-height: 2.5rem;
     height: 2.5rem;
-    font-weight: 600;
+    font-weight: 500;
     margin:0;
 }
 
@@ -191,7 +191,7 @@ html {
 
 .action__add-cart {
     background-color: var( --p-btnBlue   );
-    padding: 1.3rem 3.6rem;
+    padding: 1.5rem 3.6rem;
     color:white;
     cursor:pointer;
     border: none;
@@ -201,8 +201,9 @@ html {
 
 .action__buy-now {
     background-color: var( --p-btnGreen   );
-    padding: 1.3rem 4rem;
+    padding: 1.5rem 4.2rem;
     border: none;
+    color:white;
     font-size: 1.6rem;
 }
 
@@ -216,7 +217,7 @@ html {
 
 /* Part2--description*/
 .p-detail__description {
-  margin-top: 6rem;
+  margin-top: 7.2rem;
 }
 .p-description__tabs {
   display: flex;
@@ -276,7 +277,7 @@ html {
 }
 
 .p-detail__similar-product {
-    margin-top: 2.4rem;
+    margin-top: 3.6rem;
 }
 
 .product__row {
