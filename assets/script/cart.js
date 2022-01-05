@@ -312,13 +312,18 @@ function changeQtyItem(x){
   var boxsp = x.parentElement.parentElement.parentElement.children;
   var name = boxsp[1].children[0].children[0].innerHTML;
   var count = parseInt(x.value);
-  if (count == 0){
-    shoppingCart.removeItemFromCartAll(name);
-    document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-    showTotalCount();
+  if (isNaN(count)){
+    alert("Vui lòng nhập số");
+  } 
+  else {
+    if (count == 0){
+      shoppingCart.removeItemFromCartAll(name);
+      document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
+      showTotalCount();
+    }
+    shoppingCart.setCountForItem(name,count);
+    displayCart();
   }
-  shoppingCart.setCountForItem(name,count);
-  displayCart();
 }
 
 //--------sự kiện cho màn hình di động-------------
@@ -360,12 +365,17 @@ function changeQtyItemMobile(x){
   var boxsp = x.parentElement.parentElement.parentElement.children;
   var name = boxsp[5].children[0].children[0].innerHTML;
   var count = parseInt(x.value);
-  if (count == 0){
-    shoppingCart.removeItemFromCartAll(name);
-    document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
-    showTotalCount();
+  if (isNaN(count)){
+    alert("Vui lòng nhập số");
+  } 
+  else {
+    if (count == 0){
+      shoppingCart.removeItemFromCartAll(name);
+      document.getElementById("totalcount").innerHTML = "(" + shoppingCart.totalCount() + " sản phẩm)";
+      showTotalCount();
+    }
+    shoppingCart.setCountForItem(name,count);
+    displayCart();
   }
-  shoppingCart.setCountForItem(name,count);
-  displayCart();
 }
 showTotalCount()
