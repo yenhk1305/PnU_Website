@@ -45,8 +45,9 @@ function loadingHotProduct() {
         xmlDoc = xml.responseXML;
 
         var lstproduct,product;
-        var  name,price, srcImg;
-        var nameArray, priceArray, imgArray;
+        var  name,price, srcImg,id;
+        var nameArray, priceArray, imgArray,linkArray;
+
 
         lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
         
@@ -59,18 +60,29 @@ function loadingHotProduct() {
         nameArray = document.getElementsByClassName("hotproduct-name");
         priceArray = document.getElementsByClassName("hotproduct-price");
         imgArray = document.getElementsByClassName("hotproduct-img");
-     
+        linkArray = document.getElementsByClassName("product-item");
+
         for (i = 0; i < 8; i++) {
             btnCart[i].setAttribute("onclick","addtocart(this)");
             product =   lstproductShuffled[i];
+
             name =product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+            srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
+            id= product.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+
+            linkArray[i].href="./product_detail.html";
+            linkArray[i].id=id;
+            linkArray[i].setAttribute("onclick","getID(this.id)");
+
+
             nameArray [i].innerText = name;          
         
-            price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+            
             
             priceArray [i].innerText = price/1000 +",000 đ";   
             
-            srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
+            
             imgArray [i].src = srcImg;   
         }
     
