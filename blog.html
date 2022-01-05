@@ -5,9 +5,12 @@
         <title>PnU - Blog dành cho thú cưng</title>     
         <link rel="stylesheet" href="./assets/css/color.css"/>
         <link rel="stylesheet" href="./assets/css/blog_style.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
     </head>
-    <body>     
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="G4UBFKC1"></script>     
         <!-- Header-Start -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
@@ -17,7 +20,336 @@
         </script>
         <div id="header"></div>
         <!-- Header-End -->
-        <div>hi</div>
-        
+
+        <main>
+            <!-- Main content -->
+            <!-- SlideShow - start -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_01.png" style="width:100%">  
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_02.png" style="width:100%">  
+                </div>
+            
+                <div class="mySlides fade">    
+                    <img src="./assets/images/blog/slider/slide_03.png" style="width:100%">  
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="dot-container" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              
+            </div>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+            
+            <!-- SlideShow - end -->
+
+            <div>
+                <div class="left-column">
+                    <!-- BÀI VIẾT MỚI NHẤT -->
+                    <h2>BÀI VIẾT MỚI NHẤT</h2>
+                    <div class="row">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd01_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ ba, 04/01/2022</span>
+                                </div>
+                            </div>
+                            <h5>Chó Poodle - Thông tin nguồn gốc, đặc điểm, phân loại chó Poodle</h5>
+                            <p>Một trong những giống chó phổ biến, thời trang và được yêu thích nhất, Poodle có ba kích cỡ...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc01_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Chủ nhật, 02/01/2022</span>
+                                </div>
+                            </div>
+                            <h5>Học tối giản từ những chú mèo</h5>
+                            <p>Những bài học tối giản mà tôi đã học được từ những chú mèo là gì? Tôi mới biết đến khái niệm “Tối giản” khoảng nửa năm trở lại đây...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc02_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ bảy, 01/01/2022</span>
+                                </div>
+                            </div>
+                            <h5>Giới thiệu về mèo Himalaya</h5>
+                            <p>Mèo Himalaya là giống mèo đẹp, lai giữa mèo Ba Tư và Mèo Thái. Bộ lông dài, đôi mắt xanh cùng chiếc mũi tẹt sẫm màu khiến chúng...</p>                                                
+                        </div>                    
+                    </div>
+                    <!-- BLOG VỀ CHÓ -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-right: 20px;">
+                        <h2>BLOG VỀ CHÓ</h2>
+                        <span style="color: var(--p-btnMore); cursor: pointer;" onclick="window.location.href='blog_dog.html'">XEM TẤT CẢ &#10095;</span>
+                    </div>                
+                    <div class="row">                    
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd01_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Chủ nhật, 06/11/2021</span>
+                                </div>
+                            </div>
+                            <h5>Chó Poodle - Thông tin nguồn gốc, đặc điểm, phân loại chó Poodle</h5>
+                            <p>Một trong những giống chó phổ biến, thời trang và được yêu thích nhất, Poodle có ba kích cỡ...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd02_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ tư, 29/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Top 6 giống chó Nhật Bản mệnh danh Quốc Khuyển của đất nước Mặt trời</h5>
+                            <p>6 giống chó Nhật Bản dưới đây chính là những biểu tượng đẹp nhất...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd03_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ ba, 28/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Giải thích Chó bị rụng lông nhiều khi mang thai?</h5>
+                            <p>Mang thai là quá trình đầy gian nan, có nhiều chú chó trong quá trình mang thai...</p>                                                
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd04_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Chủ nhật, 26/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Giống chó Akita - "Quốc khuyển" của đất nước Nhật Bản</h5>
+                            <p>Giống chó Akita là một giống chó quý, được mệnh danh là Quốc khuyển của Nhật Bản...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd05_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ bảy, 25/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Thức ăn cho chó Poodle Royal Canin</h5>
+                            <p>Thức ăn cho chó Poodle hiện ở nước ta có khá nhiều loại, tuy nhiên nếu nói về chất lượng tốt...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_dog/bd06_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ năm, 23/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Chế độ dinh dưỡng cho Corgi chuẩn khoa học</h5>
+                            <p>Nhiều người cho rằng những thực phẩm tốt cho sức khỏe của con người thì loài chó cũng...</p>                                                
+                        </div>                    
+                    </div>
+                    <!-- BLOG VỀ MÈO -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-right: 20px;">
+                        <h2>BLOG VỀ MÈO</h2>
+                        <span style="color: var(--p-btnMore); cursor: pointer;" onclick="window.location.href='blog_cat.html'">XEM TẤT CẢ &#10095;</span>
+                    </div>                
+                    <div class="row">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc01_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Chủ nhật, 02/01/2022</span>
+                                </div>
+                            </div>
+                            <h5>Học tối giản từ những chú mèo</h5>
+                            <p>Những bài học tối giản mà tôi đã học được từ những chú mèo là gì? Tôi mới biết đến khái niệm “Tối giản” khoảng nửa năm trở lại đây...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc02_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ bảy, 01/01/2022</span>
+                                </div>
+                            </div>
+                            <h5>Giới thiệu về mèo Himalaya</h5>
+                            <p>Mèo Himalaya là giống mèo đẹp, lai giữa mèo Ba Tư và Mèo Thái. Bộ lông dài, đôi mắt xanh cùng chiếc mũi tẹt sẫm màu khiến chúng...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc03_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ sáu, 31/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Tắm cho mèo bằng sữa tắm người được không?</h5>
+                            <p>Một ngày nọ bạn thấy chú mèo của mình quá bẩn và muốn tắm cho chúng. Nhưng lại...</p>                                                
+                        </div>                    
+                    </div>
+                    <div class="row">
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc04_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ tư, 29/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Giống mèo Sphynx không lông kỳ lạ - Mèo Nhân sư Ai Cập</h5>
+                            <p>Giống mèo Sphynx hay còn gọi là Mèo Nhân Sư Ai Cập được biết tới là loài mèo hiếm trên thế giới...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc05_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_cat.png">
+                                    <span>Mèo</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ ba, 28/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Mèo Munchkin chân ngắn - Giống mèo lùn nhất thế giới</h5>
+                            <p>Mèo Munchkin chân ngắn là một trong giống mèo dễ thương nhất thế giới, có nguồn gốc...</p>                                                
+                        </div>
+                        <div class="column" onclick="window.location.href='blog_post.html'">
+                            <img class="thumbnail" src="./assets/images/blog/blog_cat/bc06_01.png">
+                            <div class="type-date">
+                                <div>
+                                    <img src="./assets/images/blog/icon_dog.png">
+                                    <span>Chó</span>
+                                </div>
+                                <div>
+                                    <img src="./assets/images/blog/icon_date.png">
+                                    <span>Thứ tư, 22/12/2021</span>
+                                </div>
+                            </div>
+                            <h5>Mèo tam thể là mèo gì? Mèo tam thể đực tại sao lại hiếm?</h5>
+                            <p>Mèo tam thể không phải là một nòi mèo. Tam thể để chỉ các cá thể có bộ lông mèo có...</p>                                                
+                        </div>                    
+                    </div>                
+                </div>
+                </div>            
+                <!-- Fanpage & Featured Posts -->
+                <div class="right-column">
+                    <div class="fanpage-content">
+                        <h2>Fanpage</h2>
+                        <div class="fb-page" data-href="https://www.facebook.com/pnu.petandyou" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/pnu.petandyou" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/pnu.petandyou">PnU - Pet And You</a>
+                            </blockquote>
+                        </div>
+                    </div>                
+                </div>
+            </div>            
+        </main>
+        <!-- Footer-Start -->    
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+        <span id="footer"></span>
+        <!-- Footer-End -->       
     </body>
 </html>

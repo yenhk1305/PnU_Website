@@ -40,11 +40,11 @@
                 </li>
                 <li><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
                     <ul class="nav-item-dropdown">
-                        <li><a href="#1b">Blog về Chó</a></li>
-                        <li><a href="#2b">Blog về Mèo</a></li>                            
+                        <li><a href="blog_dog.html">Blog về Chó</a></li>
+                        <li><a href="blog_cat.html">Blog về Mèo</a></li>                            
                     </ul>
                 </li>
-                <li><a href="#Contact">Liên hệ</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
             </ul>
         </nav>
         <!-- End - Thanh điều hướng -->
@@ -74,7 +74,7 @@
         <!-- End - Tài khoản & Giỏ hàng -->                
     </header>
     <!-------------------------------------------content------------------------------------>
-    <main style="margin-top: 100px; margin-bottom: 45px;">
+    <main style="margin-top: 75px; margin-bottom: 30px; min-height: calc(70vh - 40px);">
 
         <section class="main-container">
             <div class="container">
@@ -130,69 +130,16 @@
         </section>
     </main>
 
-    <footer>            
-        <!-- Về PnU - Chính sách - Hướng dẫn -->
-        <div class="container-about-policy-guideline">
-            <div class="about-us">
-                <div class="footer-title">Về PnU</div>
-                <ul class="about-us-content">
-                    <li><a href="aboutus.html">Giới thiệu về PnU Petcare</a></li> 
-                </ul>
-            </div>
-            <div class="policy">
-                <div class="footer-title">Chính sách</div>
-                <ul class="policy-content">
-                    <li><a href="#">Chính sách thanh toán</a></li> 
-                    <li><a href="#">Chính sách giao hàng</a></li> 
-                    <li><a href="#">Chính sách bảo mật</a></li> 
-                </ul>
-            </div>
-            <div class="guideline">
-                <div class="footer-title">Hướng dẫn</div>
-                <ul class="guideline-content">
-                    <li><a href="#">Hướng dẫn đặt hàng</a></li> 
-                    <li><a href="#">Hướng dẫn thanh toán</a></li>
-                    <li><a href="#">Hướng dẫn đổi trả</a></li> 
-                </ul>
-            </div>
-        </div>
-        <div class="container-contact-social">
-            <div class="contact-info">
-                <div class="footer-title">Liên hệ với chúng tôi</div>
-                <ul>
-                    <li>
-                        <div class="hotline">
-                            <img src="./assets/images/contact_icon.png">
-                            <ul>
-                                <li>Hotline</li>
-                                <li style="font-weight: 600;">0123 456 777</li>
-                            </ul>
-                        </div>                            
-                    </li>
-                    <li>
-                        <div class="email">
-                            <img src="./assets/images/mail_icon.png">
-                            <ul>
-                                <li>Email</li>
-                                <li style="font-weight: 600;">cskh@pnu.com</li>
-                            </ul>
-                        </div>                            
-                    </li>
-                </ul>
-            </div>
-            <div class="social-connect">
-                <div class="footer-title">Liên hệ với chúng tôi</div>
-                <ul>
-                    <li>
-                        <div>
-                            <a href="https://www.facebook.com/pnu.petandyou" style="margin-right: 10px;"><img src="./assets/images/facebook_icon.png"></a>
-                            <a href="https://www.facebook.com/pnu.petandyou"><img src="./assets/images/instagram_icon.png"></a>                                
-                        </div>
-                    </li>
-                </ul>                    
-            </div>
-        </div>
-    </footer>
+    <!-- Footer-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
+    <!-- Footer-End -->
+    
 </body>
 <script src="./assets/script/cart.js"></script>
 <script>displayCart()</script>

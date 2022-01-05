@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 body{    
-    margin: 0;    
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
 }
 
 footer {
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
+    margin-top: auto;    
     width: 100%;
     height: auto;
+}
+
+.footer-container {    
     padding: 0 100px;    
     display: flex;
     flex-wrap: wrap;
@@ -19,22 +22,21 @@ footer {
     color: var(--primaryWhite);    
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-size: 500;
 }
 
 .container-about-policy-guideline {
     display: flex;
     width: auto;
-    padding: 1.5rem 0;    
+    padding-top: 1.5em;        
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
     box-sizing: border-box;           
 }
 
 .container-contact-social {
     display: flex;
     width: auto;
-    padding: 1.5rem;    
+    padding: 1.5em 2em 0 2em;    
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;           
@@ -47,21 +49,23 @@ footer {
 
 .about-us, .policy {
     padding: 0;   
-    margin-right: 6rem; 
-}
-
-.contact-info {
-    padding: 0;   
-    margin-right: 1.5rem; 
+    margin-right: 6em; 
 }
 
 .container-contact-social {
     background: var(--primaryYellow);
     color: var(--primaryBlack);
+    font-size: 14px;
+}
+
+.contact-info {
+    padding: 0;   
+    margin-right: 1.5em;
+    font-size: 14px; 
 }
 
 .container-contact-social img {
-    height: 1.7rem;
+    height: 30px;
 }
 
 footer a {
@@ -90,15 +94,15 @@ footer li {
 }
 
 .container-about-policy-guideline ul li {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5em 0;
 } 
 
 .container-contact-social ul li {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.5em 0;
 }
 
 .hotline ul {
-    margin-left: 0.8rem;
+    margin-left: 0.8em;
 }
 
 .hotline ul li {
@@ -106,7 +110,7 @@ footer li {
 }
 
 .email ul {
-    margin-left: 0.8rem;
+    margin-left: 0.8em;
 }
 
 .email ul li {
