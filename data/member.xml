@@ -15,21 +15,21 @@
         <mssv>K194111548</mssv>
         <ten>Hồ Kim Ngân - Leader</ten>
         <image>./assets/images/aboutus/member_ngan.png</image>
-        <soThich>Xem phim, lướt Facebook, chơi cầu lông</soThich>
+        <soThich>Xem phim, lướt Facebook</soThich>
         <cungHoangDao>Bạch Dương</cungHoangDao>
         <nhiemVu>Trang chủ - Giới thiệu - Liên hệ - Khuyến mãi</nhiemVu>
         <mauYeuThich>Vàng</mauYeuThich>
         <ngaySinh>26/03/2001</ngaySinh>
-        <queQuan>Thành phố Hồ Chí Minh</queQuan>
+        <queQuan>TPHCM</queQuan>
 
     </member>
     <member>
         <mssv>K194111570</mssv>
         <ten>Nguyễn Mai Phương Thảo</ten>
         <image>./assets/images/aboutus/member_pthao.png</image>
-        <soThich>Xem phim, nghe nhạc, chơi game</soThich>
+        <soThich>Xem phim, chơi game</soThich>
         <cungHoangDao>Song Tử</cungHoangDao>
-        <nhiemVu>Header - Footer - Blog - Chính sách - Hướng dẫn</nhiemVu>
+        <nhiemVu>Header Footer - Blog - Chính sách</nhiemVu>
         <mauYeuThich>Đen</mauYeuThich>
         <ngaySinh>14/06/2001</ngaySinh>
         <queQuan>Bà Rịa Vũng Tàu</queQuan>
@@ -40,7 +40,7 @@
         <image>./assets/images/aboutus/member_mthao.png</image>
         <soThich>Xem phim, nghe nhạc</soThich>
         <cungHoangDao>Sư Tử</cungHoangDao>
-        <nhiemVu>Đăng nhập - Đăng kí - Tài khoản - Đưa lên host - Thẻ thành viên</nhiemVu>
+        <nhiemVu>Tài khoản - Đưa lên host - Thẻ thành viên</nhiemVu>
         <mauYeuThich>Xanh mint</mauYeuThich>
         <ngaySinh>22/08/2001</ngaySinh>
         <queQuan>Sóc Trăng</queQuan>
@@ -51,7 +51,7 @@
         <image>./assets/images/aboutus/member_yen.png</image>
         <soThich>Ngủ, đọc truyện</soThich>
         <cungHoangDao>Kim Ngưu</cungHoangDao>
-        <nhiemVu>Trang sản phẩm</nhiemVu>
+        <nhiemVu>Trang sản phẩm - Chi tiết sản phẩm - Đưa lên Github</nhiemVu>
         <mauYeuThich>Trắng</mauYeuThich>
         <ngaySinh>13/05/2001</ngaySinh>
         <queQuan>Bạc Liêu</queQuan>

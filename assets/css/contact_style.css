@@ -7,18 +7,30 @@ body {
     text-align: center;
     
 }
+.fb-page{
+    text-align: center;
+    margin: 20px;
+}
 
 .contact-banner img{
-    box-shadow: 0px 0px 5px 0px grey;
-    margin-top: 70px;
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    margin-top: 10px;
     border-radius: 40px; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+
+.contact-map{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 .contact-content{
     display: flex;
-    width: 100%;
-    margin: 40px;
+    width: 90%;
+    margin-left: 30px;
     line-height: 40px;
 
 }
@@ -32,7 +44,7 @@ body {
     text-align: center;
 }
 .contact-layout2 a{
-    margin: 40px;
+    margin: 30px;
 }
 .contact-info{
     font-size: 18px;
@@ -48,19 +60,41 @@ body {
 
 /* RESPONSIVE */
 @media screen and (max-width: 991px){
+    .contact-map{
+        width: 100%;
+        text-align: center;
+
+    }
+    .contact-map iframe{
+        width: 80%;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .contact-banner img{
+        border-radius: 10px;
+    }
     .contact-content{
         display: block;
-        margin: 0;
+        margin: 0px;
 
     }
     .contact-layout{
-        margin: 20px;
+        margin-left: 20px;
         width: 100%;
         justify-content: center;
     }
     .contact-layout2{
         width: 100%;
         justify-content: center;
+    }
+    .f-social-icon{
+        width: 20px;
+        height: 30px;
+    }
+    .i-social-icon{
+        width: 30px;
+        height: 30px;
     }
     
 

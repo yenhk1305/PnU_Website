@@ -10,14 +10,14 @@ body {
   }
 
   .aboutus-banner img{
-    box-shadow: 0px 0px 5px 0px grey;
-    margin-top: 70px;
+    box-shadow: 0px 0px 5px 0px whitesmoke;
+    margin-top: 10px;
     border-radius: 40px; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .aboutus-content{
-    margin: 40px;
+    margin: 0 30px;
     
   }
   .aboutus-content h2{
@@ -119,9 +119,32 @@ body {
 
   /* RESPONSIVE */
   @media screen and (max-width: 589px){
+    .aboutus-banner{
+      margin-top: 0;
+      text-align: center;
+      
+    }
+    .aboutus-banner img{
+      border-radius: 10px;
+    }
+    .aboutus-content{
+      line-height: 10px;
+    }
     .aboutus-content h2{
       font-size: 18px;
 
+    }
+    .aboutus-content h3{
+      font-size: 16px;
+
+    }
+    .aboutus-content ul li{
+      font-size: 16px;
+    }
+    .aboutus-content p{
+      text-align: justify;
+      line-height: 30px;
+      font-size: 16px;
     }
     .flip-card {
       background-color: transparent;
@@ -157,6 +180,9 @@ body {
 
   }
   @media only screen and (min-width: 590px) and (max-width: 767px){
+    .aboutus-banner img{
+      border-radius: 10px;
+    }
     .flip-card {
       background-color: transparent;
       width: 40%;
@@ -172,7 +198,7 @@ body {
       font-size: 18px;
     }
     .flip-card-back{
-      line-height: 16px;
+      line-height: 18px;
     }
     .flip-card-back h2{
       font-size: 18px;
@@ -191,6 +217,9 @@ body {
 
   }
   @media only screen and (min-width: 768px) and (max-width: 991px){
+    .aboutus-banner img{
+      border-radius: 20px;
+    }
     .flip-card {
       background-color: transparent;
       width: 40%;
