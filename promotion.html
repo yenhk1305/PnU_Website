@@ -21,6 +21,7 @@
         }
         .promo-banner img{
             width: 80%;
+            border-radius: 20px;
         }
         .promo-title {
             text-align: center;
@@ -30,8 +31,6 @@
             width: 100%;
             text-align: center;
             justify-content: center;
-            margin-left: 20px;
-            margin-right: 20px;
         }
         .promo-chitiet{
             width: 80%;
@@ -58,6 +57,36 @@
             background-color: red;
             color: white;
         }
+
+        /* RESPONSIVE */
+        @media screen and (max-width: 991px){
+            .promo-banner{
+            margin-top: 10px;
+            }
+            .promo-banner img{
+                width: 90%;
+            }
+            .promo-content p{
+                width: 95%;
+                margin: 20px;
+                text-align: center;
+                line-height: 30px;
+            }
+            .promo-chitiet td{
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .promo-button th{
+                font-size: 18px;
+            }
+            .promo-button{
+                font-size: 16px;
+            }.promo-chitiet{
+                width: 95%;
+            }
+        }
+
+
 
     </style>
     
@@ -115,7 +144,7 @@
                 <th colspan="2">MÃ GIẢM GIÁ ĐẶC BIỆT TRI ÂN KHÁCH HÀNG</th>
             </tr>
             <tr>
-                <th>Mã giảm</th>
+                <th>Mã giảm giá</th>
                 <th>Chi tiết khuyến mãi</th>
             </tr>
             <tr>
@@ -129,7 +158,8 @@
                     <p>Khi nhập mã, nhận ngay khuyến mãi cực sốc FREESHIP cho mọi đơn hàng từ 0đ</p>
                     <p>
                         <b>ĐẶC BIỆT</b>
-                        Giảm ngay thêm 20% trên tổng giá trị đơn hàng
+                        Giảm ngay thêm 20% trên tổng giá trị đơn hàng, tối đa
+                        <b style="color:red; font-size: 20px;">50.000đ</b> 
                     </p>
                     <p>
                         <b>SỐ LƯỢNG CÓ HẠN LƯU NGAY KẺO LỠ</b>
