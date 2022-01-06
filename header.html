@@ -8,16 +8,21 @@
     <body>
         <header id="top-header">
             <!-- Menu thu gọn -->
-            <img class="menu_icon" src="./assets/images/menu_icon.png" style="height: 1.2em; cursor: pointer;">            
+            <div id="btnMenu" class="menu-top-nav">
+                <img class="menu_icon" src="./assets/images/menu_icon.png">
+            </div>  
+
             <div class="logo">
                 <a href="index.html"><img class="pnu-logo" src="./assets/images/logo.png"></a>
             </div>
             <!-- Start - Thanh điều hướng -->
-            <nav class="nav-top-header">
+            <nav id="navList" class="nav-top-header">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="index.html">Trang chủ</a></li>
                     <li class="nav-list-item"><a href="aboutus.html">Giới thiệu</a></li>
-                    <li class="nav-list-item"><a href="product_page1.html">Sản phẩm <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <li class="nav-list-item dropdown-item"><a href="product_page1.html">Sản phẩm&nbsp;
+                        <img class="dropdown-icon" src="./assets/images/dropdown_icon.png">
+                        <img class="dropdown-icon-white" src="./assets/images/ic_down.png">                        
                         <ul class="nav-item-dropdown">
                             <li><a href="#1">Sản phẩm cho Chó</a></li>
                             <li><a href="#2">Sản phẩm cho Mèo</a></li>
@@ -25,7 +30,9 @@
                             <li><a href="#4">Thời trang Chó Mèo</a></li>
                         </ul>
                     </li>
-                    <li class="nav-list-item"><a href="blog.html">Blog <img class="dropdown-icon" src="./assets/images/dropdown_icon.png"></a>
+                    <li class="nav-list-item dropdown-item"><a href="blog.html">Blog&nbsp;
+                        <img class="dropdown-icon" src="./assets/images/dropdown_icon.png">
+                        <img class="dropdown-icon-white" src="./assets/images/ic_down.png">                        
                         <ul class="nav-item-dropdown">
                             <li><a href="blog_dog.html">Blog về Chó</a></li>
                             <li><a href="blog_cat.html">Blog về Mèo</a></li>                            
@@ -61,6 +68,16 @@
             <!-- End - Tài khoản & Giỏ hàng -->                
         </header>
     </body>
+    <script>          
+        
+        const btnMenu = document.getElementById("btnMenu");
+        const navList = document.getElementById("navList");
+
+        btnMenu.addEventListener("click", () => {
+            navList.classList.toggle("active");
+        })
+
+    </script>
 </html>
 
 

@@ -78,8 +78,7 @@ body{
 
 .nav-item-dropdown li {        
     clear: both;
-    width: 100%;    
-    /* min-width: 100%;*/
+    width: 100%;
 }
 
 .nav-item-dropdown li a {    
@@ -109,6 +108,11 @@ body{
 
 .dropdown-icon {
     height: 0.45em;
+}
+
+.dropdown-icon-white {
+    height: 0.45em;
+    display: none;
 }
 
 /* Thanh tìm kiếm */
@@ -231,10 +235,169 @@ body{
 }
 
 /* RESPONSIVE */
-.menu_icon {
+.menu-top-nav {
     display: none;
 }
+.menu_icon {
+    height: 1.5em;
+    cursor: pointer;    
+}
 
-@media screen and (max-width: 1235px) {
+@media screen and (max-width: 1200px) {
+
+    #top-header {
+        height: 100px;        
+    }
     
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .pnu-logo {
+        height: 1.5em;
+    }
+
+    .account-cart {
+        margin-left: 1em;
+    }
+
+    #countsp {  
+        top: 50px;
+        right: 88px;
+    }  
+
+}
+
+@media screen and (max-width: 1130px) {
+
+    .search-from {        
+        background: none;
+    }
+
+    .search {
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .search-bar-container {
+        display: none;
+    }
+    #top-header {
+        width: 100%;
+        padding: 0;
+        height: 51px;
+    }
+    .menu-top-nav {
+        display: block;
+        position: absolute;        
+        text-align: left;
+        /* width: 100%; */
+        left: 25px;
+        top: 15px;
+        z-index: 3;                                      
+    }       
+    .logo {
+        position: absolute;
+        /* display: none; */
+        /* width: 100%;         */
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 0px;        
+        padding: 0;
+        z-index: 2;                
+    }
+    .pnu-logo {
+        height: 1.5em;
+    }    
+    .account-cart {
+        position: absolute;
+        /* width: 100%; */
+        text-align: right;
+        right: 25px;
+        top: 15px;
+        z-index: 4;               
+    }
+    .search-bar-container {
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 60px;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+    }
+    .search-icon {
+        padding: 0;
+        margin: 0;
+    }
+    .search-icon img {
+        height: 1.5em;
+    }  
+    .nav-top-header {
+        position: relative;
+        display: none;
+        width: 50%;                
+        left: 0;
+        top: 3.2em;     
+        padding: 0;
+        margin: 0;
+        background: var(--primaryBlack);
+        color: var(--primaryWhite);                
+    }
+    .nav-list {        
+        margin: 0;
+        padding: 0;        
+    }  
+    .nav-list li a {        
+        left: 0;
+        width: 100%;
+        color: var(--primaryWhite);        
+        margin: 0;        
+    }
+    .nav-list-item:hover a {
+        color: var(--primaryBlack);
+    }
+    .nav-list-item{        
+        float: none;
+        text-align: left;
+        left: 0;
+        height: auto;        
+        color: var(--primaryWhite);
+        padding-left: 25px;        
+    }
+    .dropdown-icon {
+        display: none;
+    }
+    .dropdown-icon-white {
+        display: inline;
+    }
+    .nav-item-dropdown {
+        position: relative;        
+        background: none;
+    }
+    .dropdown-item:hover a {
+        color: var(--primaryBlack);
+    }
+    .dropdown-item:hover .dropdown-icon-white {
+        display: none;
+    }    
+    .dropdown-item:hover .dropdown-icon {
+        display: inline;
+    }
+    .nav-item-dropdown a:hover {
+        font-weight: bold;
+    }     
+    #countsp {
+        top: -10px;
+        right: -10px;
+    }
+
+    .active {
+        display: block;
+    }
 }
