@@ -12,7 +12,7 @@ footer {
 }
 
 .footer-container {    
-    padding: 0 100px;    
+    padding: 0 5%;    
     display: flex;
     flex-wrap: wrap;
     outline: none;
@@ -26,7 +26,7 @@ footer {
 
 .container-about-policy-guideline {
     display: flex;
-    width: auto;
+    width: 60%;
     padding-top: 1.5em;        
     justify-content: space-between;
     flex-wrap: wrap;   
@@ -39,7 +39,10 @@ footer {
     padding: 1.5em 2em 0 2em;    
     justify-content: space-between;
     flex-wrap: wrap;
-    box-sizing: border-box;           
+    box-sizing: border-box;
+    background: var(--primaryYellow);
+    color: var(--primaryBlack);
+    font-size: 14px;        
 }
 
 .footer-title {
@@ -47,16 +50,15 @@ footer {
     font-weight: 600;
 }
 
-.about-us, .policy {
-    padding: 0;   
-    margin-right: 6em; 
+.about-us, .policy, .guideline {
+    padding: 0;    
 }
 
-.container-contact-social {
+/* .container-contact-social {
     background: var(--primaryYellow);
     color: var(--primaryBlack);
     font-size: 14px;
-}
+} */
 
 .contact-info {
     padding: 0;   
@@ -115,5 +117,99 @@ footer li {
 
 .email ul li {
     margin: 0;
+}
+.ic-arrow {
+    display: none;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1200px) {
+
+    .footer-container {
+        padding: 0;
+    }
+
+    .container-about-policy-guideline {
+        width: 100%;
+        padding: 1.5em 5% 0 5%;
+    }
+    .container-contact-social {
+        display: block;        
+        width: 100%;
+    }
+    .contact-info {        
+        width: 100%;                    
+    }    
+    .container-contact-social .footer-title {
+        text-align: center;
+    }
+    .hotline, .email {
+        width: 20%;        
+        margin: auto;        
+    }
+
+    .email {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .connect-icon {
+        text-align: center;
+    }
+    .contact-content {
+        margin-top: 1.5em;
+    }
+    .connect-icon {
+        margin-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container-about-policy-guideline {
+        display: block;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    #aboutUs, #policy, #guideLine{
+        display: none;
+    }
+    .ic-arrow {
+        display: inline-block;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .footer-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+    .container-about-policy-guideline .footer-title:hover {
+    /* cursor: pointer;         */
+    }    
+
+    .container-contact-social {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .container-contact-social .footer-title {
+        text-align: left;
+        margin-bottom: 1.5em;        
+    }
+    .hotline, .email {
+        width: 100%;        
+        margin: auto;        
+    }
+    .email {
+        margin-top: 1em;
+        margin-bottom: 1.5em;
+    }
+    .connect-icon {
+        text-align: left;
+    }
+    .active {
+        display: block;
+    }
 }
 
