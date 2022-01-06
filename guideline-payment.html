@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chính sách vận chuyển</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./assets/css/color.css"/>
+        <link rel="stylesheet" href="./assets/css/quick-links.css">
+        <link rel="stylesheet" href="./assets/css/breadcrumb.css">                        
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="G4UBFKC1"></script>
+        <!-- Header-Start -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+            });
+        </script>
+        <div id="header"></div>
+        <!-- Header-End -->
+
+        <!-- Breadcrumb - Start -->
+        <div class="breadcrumb">
+            <div style="margin-right: 5px;">
+                <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='index.html'">Trang chủ</span>
+                <span style="color: var(--primaryWhite);">&#10095;</span>
+            </div>                       
+            <span style="color: var(--primaryYellow); font-weight: bold;">Hướng dẫn thanh toán</span>
+        </div>
+        <!-- Breadcrumb - End -->
+
+        <main>
+            <div class="title">
+                <h1>Hướng dẫn thanh toán</h1>
+            </div>
+            <div class="content">
+                <h2>Quy trình thanh toán tại website PnU gồm có 3 bước</h2>                
+                <p><strong>Bước 1:</strong> Khi điền thông tin, người dùng sẽ chọn phương thức thanh toán, hệ thống ghi nhận thông tin về phương thức thanh toán mà người dùng đã chọn.</p>
+                <p><strong>Bước 2:</strong> Khi khách hàng chọn nút Thanh toán:</p>
+                <ul>
+                    <li>Nếu khách hàng chọn Thanh toán sau khi giao hàng (COD) hệ thống sẽ hiện lên hóa đơn điện tử bao gồm: Mã vận đơn, thông tin khách hàng và thông tin đơn hàng.</li>
+                    <li>Nếu khách hàng chọn Thanh toán trước như Thanh toán bằng thẻ ATM hoặc Thẻ thanh toán quốc tế, tiền sẽ được trừ trực tiếp vào tài khoản ngân hàng tương ứng của khách hàng (NH phải là đối tác của Napas và người dùng cần đăng ký sử dụng dịch vụ ngân hàng trực tuyến (Internet Banking) mới có thể thực hiện thanh toán qua hình thức này). Người dùng sẽ nhập thông tin bao gồm: số thẻ, họ và tên, ngày hiệu lực, OTP trên cổng thanh toán Napas. Sau khi xác thực được tính chính xác của thông tin, hệ thống sẽ gửi trị giá đơn hàng của khách hàng cho Napas và Napas sẽ tiến hành nhiệm vụ trung gian thanh toán.</li>
+                    <li>Nếu khách hàng chọn Thanh toán trước bằng Ví điện tử như Momo hay Zalopay, tiền sẽ được trừ trực tiếp vào ví MoMo/ZaloPay hoặc vào tài khoản ngân hàng tương ứng của khách hàng. Với phương thức thanh toán này, hệ thống sẽ hiển thị QR code để khách hàng quét mã và thanh toán.</li>
+                </ul>
+                <p><strong>Bước 3:</strong> Với hình thức thanh toán trước, hệ thống sẽ tiếp nhận kết quả thanh toán từ bên thứ ba và hiển thị kết quả cho khách hàng.</p>
+                <ul>
+                    <li>Thanh toán không thành công, hệ thống sẽ hiển thị thông báo lỗi và trở về màn hình giỏ hàng</li>
+                    <li>Thanh toán thành công, hệ thống sẽ hiện lên hóa đơn điện tử bao gồm: Mã vận đơn, thông tin khách hàng và thông tin và tình trạng thanh toán thành công của đơn hàng.</li>
+                </ul>
+                
+                <img src="./assets/images/quick-links/guideline-payment.jpg">
+            </div>            
+        </main>
+        <!-- Footer-Start -->    
+        <script>
+            $(function(){
+                $("#footer").load("footer.html");
+            });
+        </script>
+        <span id="footer"></span>
+        <!-- Footer-End -->        
+        
+    </body>
+</html>
