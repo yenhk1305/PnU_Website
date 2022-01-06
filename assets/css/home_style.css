@@ -334,7 +334,7 @@ h2{
     margin: 15px;
     text-align: left;
     line-height: 25px;
-    font-size: 13px;
+    font-size: 14px;
 
 }
 
@@ -428,10 +428,10 @@ h2{
     
     
     .p-column-item p{
-        font-size: 11px;
+        font-size: 13px;
     }
     .p-column-item h4{
-        font-size: 13px;
+        font-size: 15px;
         margin-top: -5px;
     }
 
@@ -452,6 +452,7 @@ h2{
         margin-top: 10;
         margin-bottom: 10;
         align-items: center;
+        line-height: 1;
 
     }
     .feedback-customer img{
@@ -461,7 +462,7 @@ h2{
 
     }
     .feedback-content h3{
-        font-size: 14px;
+        font-size: 15px;
     }
     .feedback-content p{
         font-size: 12px;
@@ -590,12 +591,12 @@ h2{
         height: 850px;
     }
     .feedback-item{
-        height: 180px;
-        width: 60%;
+        height: 160px;
+        width: 80%;
 
     }
     .feedback-customer img{
-        width: 180px;
+        width: 160px;
 
     }
     .feedback-content h3{
@@ -645,6 +646,7 @@ h2{
     }
     .feedback-item{
         height: 180px;
+        
 
     }
     .feedback-customer img{

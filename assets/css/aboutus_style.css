@@ -24,6 +24,9 @@ body {
     text-align: center;
     line-height: 40px;
   }
+  .aboutus-content div{
+    text-align: center;
+  }
   .aboutus-content p{
     text-align: justify;
     line-height: 40px;

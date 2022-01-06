@@ -95,3 +95,51 @@ function loadingHotProduct() {
        return data;
     }
 }
+
+var data = [], xmlObject,xmlDoc;
+
+  
+function loadingFeedback() {
+    
+    var i;
+    var xmlObject = new XMLHttpRequest();
+    xmlObject.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            data = changeXmlToData(this)
+        }
+    };
+    xmlObject.open("GET", "../data/feedback.xml", true);
+    xmlObject.send();
+
+    
+    function changeXmlToData(xml) {
+
+        xmlDoc = xml.responseXML;
+
+        var lstcustomer;
+        var  name,content,srcImage;
+        var  nameArray,contentArray, imgArray;
+
+        lstcustomer = xmlDoc.getElementsByTagName("customer");
+        
+        
+        
+        nameArray = document.getElementsByClassName("feedback-name");
+        contentArray=document.getElementsByClassName("feedback-text");
+        imgArray=document.getElementsByClassName("feedback-image");
+
+        for(i=0;i<lstcustomer.length;i++){
+            name= lstcustomer[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            nameArray [i].innerText = name;
+
+            content=lstcustomer[i].getElementsByTagName("text")[0].childNodes[0].nodeValue;
+            contentArray[i].innerText=content;
+            
+            srcImage =lstcustomer[i].getElementsByTagName("avatar")[0].childNodes[0].nodeValue;
+            imgArray [i].src = srcImage;   
+
+
+        }
+       return data;
+    }
+}

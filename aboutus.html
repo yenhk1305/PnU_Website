@@ -5,6 +5,8 @@
     <script src="assets/script/aboutus.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/aboutus_style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/home_style.css" type="text/css" />
+    <script src="assets/script/home.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/color.css"/>
     <title>PnU - About Us</title>
@@ -13,7 +15,10 @@
 
     
 </head>
-<body onload="loadingMember()">
+<body onload="loadingMember(), loadingFeedback()">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="q08Vudfd"></script>
     <!-- Header-Start -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -34,12 +39,27 @@
     </div>
     <!-- Breadcrumb - End -->
 
+
     <div class="aboutus-banner">
         <img src="assets/images/home/aboutus.png" alt="aboutus" width="97%" >
     </div>
 
+    
+
     <div class="aboutus-content">
         <h2>VỀ PET AND YOU</h2>
+        <div>
+            <div class="fb-page" style="text-align: center;"
+            data-href="https://www.facebook.com/pnu.petandyou"
+            data-width="380" 
+            data-hide-cover="false"
+            data-show-facepile="false">
+            </div>
+
+        </div>
+
+        
+        
         <h3>TẦM NHÌN</h3>
         <p>
             PnU sẽ là người bạn đồng hành thân thiết của thú cưng và những người yêu thú cưng. Chúng tôi mong muốn cung cấp những sản phẩm tốt nhất cho thú cưng của bạn.
@@ -63,6 +83,9 @@
         </ul>
 
     </div>
+
+    
+    
 
     <div>
         <div style="text-align: center;" class="aboutus-content">
@@ -299,6 +322,63 @@
                 </div>
               </div>
         </div>
+    </div>
+    <div style="background-color: var(--primaryYellow); text-align: center; padding-top: 20px; margin-top: 20px;">
+        <h2>PHẢN HỒI CỦA KHÁCH HÀNG</h2>
+    </div>
+
+    <div class="feedback" style="margin-top: 0; padding-top: 0;">
+        
+        <div class="feedback-item" align="center">
+            <div class="feedback-customer">
+                <img src="assets/images/home/feedback1.png" alt="" class="feedback-image">
+            </div>
+            <div class="feedback-content">
+                <h3 class="feedback-name">Bạn Minh - Học sinh</h3>
+                <p class="feedback-text">Mua đồ cho thú cưng nhà mình ở website của PnU làm mình rất thích, chất lượng tốt mà giá cũng rẻ, canh được đợt giảm giá thì đúng là hời nha!</p>
+
+            </div>
+
+        </div>
+
+        <div class="feedback-item" align="center">
+            <div class="feedback-customer">
+                <img src="assets/images/home/feedback1.png" alt="" class="feedback-image">
+            </div>
+            <div class="feedback-content">
+                <h3 class="feedback-name">Bạn Minh - Học sinh</h3>
+                <p class="feedback-text">Mua đồ cho thú cưng nhà mình ở website của PnU làm mình rất thích, chất lượng tốt mà giá cũng rẻ, canh được đợt giảm giá thì đúng là hời nha!</p>
+
+            </div>
+
+        </div>
+
+        <div class="feedback-item" align="center">
+            <div class="feedback-customer">
+                <img src="assets/images/home/feedback1.png" alt="" class="feedback-image">
+            </div>
+            <div class="feedback-content">
+                <h3 class="feedback-name">Bạn Minh - Học sinh</h3>
+                <p class="feedback-text">Mua đồ cho thú cưng nhà mình ở website của PnU làm mình rất thích, chất lượng tốt mà giá cũng rẻ, canh được đợt giảm giá thì đúng là hời nha!</p>
+
+            </div>
+
+        </div>
+
+        <div class="feedback-item" align="center">
+            <div class="feedback-customer">
+                <img src="assets/images/home/feedback1.png" alt="" class="feedback-image">
+            </div>
+            <div class="feedback-content">
+                <h3 class="feedback-name">Bạn Minh - Học sinh</h3>
+                <p class="feedback-text">Mua đồ cho thú cưng nhà mình ở website của PnU làm mình rất thích, chất lượng tốt mà giá cũng rẻ, canh được đợt giảm giá thì đúng là hời nha!</p>
+
+            </div>
+
+        </div>
+
+        
+
     </div>
 
     <!-- Footer-Start -->    

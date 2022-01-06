@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<feedback>
+    <customer>
+        <avatar>./assets/images/home/feedback1.png</avatar>
+        <name>Bạn Minh - Học sinh</name>
+        <text>Mua đồ cho thú cưng nhà mình ở website của PnU làm mình rất thích, chất lượng tốt mà giá cũng rẻ, canh được đợt giảm giá thì đúng là hời nha!</text>
+    </customer>
+
+    <customer>
+        <avatar>./assets/images/home/feedback2.png</avatar>
+        <name>Chị Lía - Vũ công</name>
+        <text>Nhà mình có nuôi rất nhiều bé mèo đáng yêu mà tụi mình lại không biết cách chăm sóc cho lắm, tìm được PnU đúng là chân ái luôn, shop rất tận tâm ạ</text>
+    </customer>
+
+    <customer>
+        <avatar>./assets/images/home/feedback3.png</avatar>
+        <name>Anh Long - Công nhân</name>
+        <text>Mình đi làm suốt cả ngày cũng không có nhiều thời gian lắm, nhưng mỗi cuối tuần đều cố gắng dắt boss nhà mình đi dạo sau khi được các bạn ở PnU khuyên</text>
+    </customer>
+
+    <customer>
+        <avatar>./assets/images/home/feedback4.png</avatar>
+        <name>Anh Luân - Bán lẩu</name>
+        <text>Ban đầu mình đều cho các bé ăn thịt ở quán nhưng sau này biết ăn nhiều gia vị sẽ không tốt nên mình đã chuyển sang các loại hạt ở PnU bán, giá rẻ mà rất tốt</text>
+    </customer>
+</feedback>
