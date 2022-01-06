@@ -151,7 +151,7 @@ body {
     }
     .flip-card {
       background-color: transparent;
-      width: 70%;
+      width: 90%;
       height: 400px;
       perspective: 1000px;
       border-radius: 40px;
@@ -165,6 +165,8 @@ body {
     }
     .flip-card-back{
       line-height: 18px;
+      align-items: center;
+      justify-content: center;
     }
     .flip-card-back h2{
       font-size: 18px;
