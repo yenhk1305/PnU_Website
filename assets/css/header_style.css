@@ -10,7 +10,7 @@ body{
     width: 100%;    
     height: 51px;
     background: var(--primaryYellow);    
-    padding: 0 100px;
+    padding: 0 5%;
     display: flex;
     outline: none;    
     align-items: center;
@@ -148,8 +148,8 @@ body{
     background-color: red;
     color: white;
     position: absolute; 
-    top: 3px;
-    right: 88px;
+    top: 2.3%;
+    right: 4.5%;
 }
 
 #top-header .cart-icon {
@@ -264,8 +264,8 @@ body{
     }
 
     #countsp {  
-        top: 50px;
-        right: 88px;
+        top: 50%;
+        right: 3.8%;
     }  
 
 }
@@ -282,7 +282,7 @@ body{
    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .search-bar-container {
         display: none;
     }
@@ -293,17 +293,14 @@ body{
     }
     .menu-top-nav {
         display: block;
-        position: absolute;        
-        text-align: left;
-        /* width: 100%; */
-        left: 25px;
+        position: absolute;  
+        text-align: left;        
+        left: 5%;
         top: 15px;
         z-index: 3;                                      
     }       
     .logo {
-        position: absolute;
-        /* display: none; */
-        /* width: 100%;         */
+        position: absolute;  
         text-align: center;
         left: 0;
         right: 0;
@@ -316,9 +313,8 @@ body{
     }    
     .account-cart {
         position: absolute;
-        /* width: 100%; */
         text-align: right;
-        right: 25px;
+        right: 5%;
         top: 15px;
         z-index: 4;               
     }
@@ -393,8 +389,8 @@ body{
         font-weight: bold;
     }     
     #countsp {
-        top: -10px;
-        right: -10px;
+        top: -35%;
+        right: -15%;
     }
 
     .active {
