@@ -156,17 +156,15 @@ html {
         padding: 5px 3px;
 
     }
-
-
     .mobile-category__item:nth-of-type(3n+1) {
-        background-color: rgba(0,0,0, 0.6);
+        background-color: var(--ink02);
     }
     .mobile-category__item:nth-of-type(3n+2) {
         background-color: var(--p-btnGreen);
     
     }
     .mobile-category__item:nth-of-type(3n+3) {
-        background-color: var(--V1);
+        background-color: var(--p-btnBlue);
     }
 
     .mobile-category__link {
@@ -651,7 +649,12 @@ html {
         padding-left: 2px;
         padding-right: 2px;
     }
+
     
+    .product__container {
+        margin-top: 0px;
+        margin-bottom:30px;
+    }
     .grid__column-10 {
         width: 100%;
         flex: 1;
