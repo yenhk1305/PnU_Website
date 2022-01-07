@@ -273,8 +273,8 @@ html {
   display: block;
 }
 .tab-pane__text {
-    font-size: 1.6rem;
-    line-height: 2.6rem;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
     padding: 2.5rem 1.5rem;
     text-align: justify;
     border: 1px solid var(--ink03);
@@ -425,3 +425,80 @@ html {
     color: #031BED;
 }
 
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+     /* mainstyle */
+ .page-container {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.grid__row {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.grid__column-6--5 {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.grid__column-5--5 {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.part1 .grid__row {
+   
+}
+/* Image */
+.p-detail__image {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+
+}
+.full_image_box {
+   width: 98%;
+   height:91.6667%;
+   margin-left: 3px;
+   margin-right: 6px;
+   margin-bottom: 6px;
+}
+
+.small-img__group {
+   text-align: center;
+    height: 8.3333%;
+    flex-direction: row;
+    width: 100%;
+}
+
+.small-img__col-3{
+   margin-left: 3px;
+   margin-right: 3px;
+   border: 1px solid var(--ink02);
+   width: 33.3333%;
+}
+
+/* Info */
+.p-detail__info {
+   padding-left: 1.2rem;
+}
+.detail-info__name {
+       font-size: 3.1rem;
+       font-weight: 500;
+       color: rgb(22, 20, 20);
+       line-height: 4.5rem;
+       height: 9rem;
+       margin: 0;
+       overflow: hidden;
+       display: block;
+       display: -webkit-box;
+       -webkit-box-orient: vertical;
+       -webkit-line-clamp: 2;
+       text-overflow: ellipsis;
+
+}
+}

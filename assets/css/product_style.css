@@ -152,8 +152,9 @@ html {
     .mobile-category__item {
         flex-shrink: 0;
         margin-right: 10px;
+        margin-top: 4px;
         border-radius: 5px;
-        padding: 5px 3px;
+        padding: 6px 4px;
 
     }
     .mobile-category__item:nth-of-type(3n+1) {
@@ -170,8 +171,8 @@ html {
     .mobile-category__link {
         text-decoration: none;
         color: var(--primaryWhite);
-        font-size: 1.35rem;
-        line-height: 1.65rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
         text-align: center;
         font-weight: 300;
         display: block;
@@ -183,7 +184,7 @@ html {
         -webkit-user-select: none;
         -webkit-tap-highlight-color: transparents;
         width: 100px;
-        height: 33px;
+        height: 38px;
         top: 50%;
     
     }
@@ -194,7 +195,7 @@ html {
     top: var (--header-height);
     left:0;
     right:0;
-    height: 3.5rem;
+    height: 4rem;
     background-color: white;
     display: none;
     list-style: none;
@@ -211,10 +212,10 @@ html {
     
         text-decoration: none;
         color: var(--ink01);
-        font-size: 1.35rem;
+        font-size: 1.4rem;
         display: block;
         height: 100%;
-        line-height: 3.5rem;
+        line-height: 4rem;
         text-align: center;
         position: relative;
     }
@@ -596,6 +597,10 @@ html {
 /* Reponsive */
 /* Table/ PC low resolution: width >= 740px and width < 1024px */
 @media  (min-width: 740px) and (max-width: 1023px) {
+    .product__container {
+        margin-top: 10px;
+        margin-bottom:30px;
+    }
     .wide {
         width:  644px;
     }
@@ -652,7 +657,7 @@ html {
 
     
     .product__container {
-        margin-top: 0px;
+        margin-top: 50px;
         margin-bottom:30px;
     }
     .grid__column-10 {

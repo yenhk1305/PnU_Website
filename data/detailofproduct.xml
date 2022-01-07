@@ -300,7 +300,7 @@
 
       <productDetail>
         <id>TAM05</id>
-        <name>Thức ăn cho mèo ME-O thơm ngon</name>
+        <name>Thức ăn cho mèo ME-O vị cá ngừ thơm ngon</name>
         <price>124000</price>
         <imageFirst>./assets/images/product/cat_food_05.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_05_small-1.png</imageSecond>  
@@ -315,7 +315,18 @@
         <imageFirst>./assets/images/product/cat_food_06.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_06_small-1.png</imageSecond>   
         <imageThird>./assets/images/product/cat_food_06_small-2.png</imageThird> 
-        <description></description>  
+        <description>
+        Giúp bạn bổ sung các dưỡng chất cần thiết cho mèo nhà bạn ăn thật ngon và phát triển hài hòa. Với vị cá thu thơm ngon, sản phẩm sẽ kích thích vị giác của những chú mèo, giúp chúng ăn được nhiều hơn, thuận lợi cho các cô cậu chủ khi không phải vất vả trong việc cho thú cưng ăn.
+        &lt;br&gt; &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt; Thương hiệu: Whiskas
+        &lt;br&gt; Xuất xứ thương hiệu: Mỹ
+        &lt;br&gt; Sản xuất tại: Thái Lan
+        &lt;br&gt; &lt;b&gt; Thành phần &lt;/b&gt;&lt;br&gt;
+        Bánh gạo, tinh bột bắp, thịt gia cầm và các sản phẩm từ thịt gia cầm, cá biển, chất béo từ cọ, dầu đậu nành, muối Iốt, Taurine, các Vitamin và khoáng chất.
+        &lt;br&gt; &lt;b&gt; Công dụng &lt;/b&gt;&lt;br&gt;
+        Đồ Ăn cho mèo được làm từ bánh gạo, tinh bột bắp, thịt gia cầm và các sản phẩm từ thịt gia cầm, cá biển, chất béo từ cọ, dầu đậu nành, muối Iốt, Taurine, các Vitamin và khoáng chất nên rất an toàn cho mèo.
+        Cùng với đó, hương vị cá ngừ đặc trưng sẽ khiến mèo thích ăn và ăn ngon hơn. Giảm được nỗi lo cho các cô cậu chủ khi tránh được tình trạng biếng ăn của thú cưng.
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -325,7 +336,18 @@
         <imageFirst>./assets/images/product/cat_food_07.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_07_small-1.png</imageSecond>   
         <imageThird>./assets/images/product/cat_food_07_small-2.png</imageThird>  
-        <description></description>   
+        <description>
+        Thức ăn cho mèo con REFLEX KITTEN vị thịt gà là thức ăn cho mèo con với hương vị thịt gà thơm ngon, được làm từ hỗn hợp hoàn chỉnh cao cấp.
+        &lt;br&gt; Xuất xứ: Thổ Nhĩ Kỳ.
+        &lt;br&gt; &lt;b&gt; Thành phần &lt;/b&gt;&lt;br&gt;
+        Thành phần nguyên liệu Thức ăn cho mèo con REFLEX KITTEN vị thịt gà: Bắp, gạo, mỡ gà, vỏ hạt mã đề, xơ mía, bã củ dền, hương gan, vitamin và khoáng chất, di-methionine, men bia, hạt lanh, xylo-oligosaccharides, muối, l-carnitine, chiết xuất cây yucca schidigera, chất bảo quản chống oxy hoá.
+        &lt;br&gt; &lt;b&gt;Công dụng: &lt;/b&gt;
+        &lt;br&gt; Thức ăn cho mèo con REFLEX KITTEN vị thịt gà dành cho mèo con có thể trọng từ 0.5 – 5kg. Sản phẩm chức năng đặc biệt sau:
+        &lt;br&gt; Công thức đặc biệt cao cấp dành cho các giống mèo con.
+        &lt;br&gt; Bổ sung Vitamin A, D3, E, C và khoáng chất.
+        &lt;br&gt; Sự cân bằng của Omega 3 và Omega 6 đã đạt được bằng cách sử dụng hạt lanh giúp lông bóng mượt.
+        &lt;br&gt; Chiết xuất cây Yucca giúp tăng khả năng hấp thụ dinh dưỡng, kiểm soát mùi. Men bia giúp hệ thống miễn dịch được tăng cường và năng suất vật nuôi được cải thiện.
+        </description>   
       </productDetail>
 
       <productDetail>
@@ -335,7 +357,20 @@
         <imageFirst>./assets/images/product/cat_food_08.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_08_small-1.png</imageSecond>    
         <imageThird>./assets/images/product/cat_food_08_small-2.png</imageThird>
-        <description></description>  
+        <description>
+        Thức ăn cho mèo nhập khẩu từ Hàn Quốc được chế biến đặc biệt dành cho mèo ở mọi độ tuổi. Sản phẩm sử dụng nguyên liệu cao cấp dễ dàng tiêu hóa mang đến hương vị thơm ngon nhất cho các boss
+        &lt;br&gt; &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt; Trọng lượng: 1,5 Kg
+        &lt;br&gt; Xuất xứ: Hàn Quốc
+        &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+        &lt;br&gt; Thức ăn CATSRANG KITTEN là thức ăn khô dành cho mèo con từ 2-10 tháng tuổi.
+        &lt;br&gt; Giàu canxi và vitamin giúp xương phát triển chắc khỏe.
+        &lt;br&gt; Giàu chất khoáng kẽm (Zn) giúp hỗ trợ cải thiện sức khoẻ não bộ, giúp cơ bắp mạnh mẽ, tố cho mắt, cân bằng nội tiết tố,... 
+        &lt;br&gt; Ngăn ngừa búi lông 
+        &lt;br&gt; Giúp lông mềm mượt, ngăn ngừa rụng lông.
+        &lt;br&gt; Tăng cường hệ miễn dịch và tốt cho hệ tiêu hóa.
+        &lt;br&gt; Không sử dụng chất kháng sinh, chất bảo quản, phẩm màu hay hương liệu hóa học.
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -345,7 +380,23 @@
         <imageFirst>./assets/images/product/cat_food_09.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_09_small-1.png</imageSecond> 
         <imageThird>./assets/images/product/cat_food_09_small-2.png</imageThird>  
-        <description></description>     
+        <description>
+        Pate whiskas cho mèo hộp lớn 400g là thức ăn dạng ướt với khả năng cung cấp đầy đủ và cân đối giúp cho sự phát triển của mèo. Đa dạng trong mùi vị giúp cho việc lựa chọn dễ dàng hơn như : pate vị cá ngừ, pate vị cá biển
+        &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+        &lt;br&gt;  Bổ sung dưỡng chất đạm, Vitamin và khoáng chất từ cá tươi tốt cho hệ phát triển tối ưu, giúp mèo có cơ thể năng động và tràn đầy sức sống.
+        Nhanh chóng, tiện lợi, không tốn nhiều thời gian chuẩn bị.
+        &lt;br&gt; &lt;b&gt;Thành phần:&lt;/b&gt;
+        &lt;br&gt;  Cá ngừ: 41.82%
+        Chất tạo gel - Khoáng chất - Dầu đậu nành - Vitamin - Nước - Chất tạo màu Natri nitrit - Acid amin THÀNH PHẦN DINH DƯỠNG
+        Độ ẩm (tối đa): 83%
+        Protein thô (tối thiểu): 9.0%
+        ME (tối thiểu): 700kcal/kg
+        Xơ thô (tối đa): 1% - Canxi: 0.09-2.0%
+        Phốt pho tổng số: 0.07-2.0%
+        Lysine tổng số (tối thiểu): 0.14%
+        Methionine + Cystine tổng số (tối thiểu): 0.13%
+        Threonine tổng số (tối thiểu): 0.08%
+        </description>     
       </productDetail>
 
       <productDetail>
@@ -353,9 +404,26 @@
         <name>Sữa tươi cho mèo Gimcat Latte 150g - Bổ sung Canxi, Vitamin</name>
         <price>75000</price>
         <imageFirst>./assets/images/product/cat_food_10.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond> 
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
-        <description></description>    
+        <imageSecond>./assets/images/product/cat_food_10_small-1.png</imageSecond> 
+        <imageThird>./assets/images/product/cat_food_10_small-2.png</imageThird>  
+        <description>
+        &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt; Xuất xứ : Đức
+        &lt;br&gt; Quy cách đóng gói: Túi
+        &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+        &lt;br&gt; Sữa GimCat - sữa cho mèo được làm từ sữa nguyên chất với công thức giảm đường và bổ sung thêm Canxi.
+        &lt;br&gt; Sữa tươi Gimcat Latte có hàm lượng lactose thấp, vì thế mèo uống sẽ không lo bị tiêu chảy hay các vấn đề về đường ruột.
+        &lt;br&gt; Sữa tươi được kiểm tra chất lượng, sản xuất và nhập khẩu 100% từ Đức, với công nghệ sản xuất hiện đại và đạt chuẩn về vệ sinh an toàn thực phẩm.
+        &lt;br&gt; Sản phẩm của Gimcat đảm bảo được tiêu chí 5 không, bao gồm:
+        &lt;br&gt;KHÔNG thêm đường
+        &lt;br&gt;KHÔNG chất bảo quản
+        &lt;br&gt;KHÔNG phẩm màu
+        &lt;br&gt;KHÔNG chất biến đổi gen
+        &lt;br&gt;KHÔNG có hương tổng hợp, nhân tạo
+        &lt;br&gt; &lt;b&gt; Liều lượng sử dụng:&lt;/b&gt;
+        &lt;br&gt; Cho ăn tối đa 1/3 túi mỗi ngày - nguyên chất hoặc pha với nước.
+        &lt;br&gt; Sau khi sử dụng đóng nắp chặt, bảo quản ở nhiệt độ phòng hoặc ngăn mát tủ lạnh trong 7 ngày.
+        </description>    
       </productDetail>
     </TAM>
   </TA>
@@ -379,10 +447,12 @@
         <imageFirst>./assets/images/product/dog_hygiene_02.png</imageFirst>
         <imageSecond>./assets/images/product/dog_hygiene_02_small-1.png</imageSecond>  
         <imageThird>./assets/images/product/dog_hygiene_02_small-2.png</imageThird>    
-        <description>Công dụng của SOS: làm sáng màu lông, loại bỏ bụi bẩn, khử mùi, diệt khuẩn, lưu giữ lại hương thơm lâu, đặc biệt không gây hại da. 
-        &lt;br&gt; ✔️ SOS màu xanh lá: làm mềm và mượt lông dành cho chó. Loại chuyên khử mùi cho tất cả các giống chó, với tính năng thơm lâu, giữ được mùi thơm và độ ẩm cho da, giúp cho các bé luôn thoải mái và không có mùi hôi.
-        &lt;br&gt; ✔️  Khi sử dụng SOS cho các bé yêu, các cô cậu chủ không cần lo ngại dùng loại sữa tắm nào cho bé để luôn giữ được mùi thơm lâu mà lông lại mềm muợt và bóng sáng. So với các loại sữa tắm chuyên dành cho chó mèo sản xuất tại Việt Nam hay một số loại nhập khẩu khác, sữa tắm SOS có nhiều ưu điểm hơn hẳn về cả công dụng lẫn giá thành. 
-        &lt;br&gt; ✔️ Ngoài việc giúp lông bóng mượt, sữa tắm SOS còn lưu giữ hương thơm tới 10 ngày, hạn chế việc phải tắm cho thú cưng nhiều lần.</description>  
+        <description>
+         Công dụng của SOS: làm sáng màu lông, loại bỏ bụi bẩn, khử mùi, diệt khuẩn, lưu giữ lại hương thơm lâu, đặc biệt không gây hại da. 
+         &lt;br&gt; ✔️ SOS màu xanh lá: làm mềm và mượt lông dành cho chó. Loại chuyên khử mùi cho tất cả các giống chó, với tính năng thơm lâu, giữ được mùi thơm và độ ẩm cho da, giúp cho các bé luôn thoải mái và không có mùi hôi.
+         &lt;br&gt; ✔️  Khi sử dụng SOS cho các bé yêu, các cô cậu chủ không cần lo ngại dùng loại sữa tắm nào cho bé để luôn giữ được mùi thơm lâu mà lông lại mềm muợt và bóng sáng. So với các loại sữa tắm chuyên dành cho chó mèo sản xuất tại Việt Nam hay một số loại nhập khẩu khác, sữa tắm SOS có nhiều ưu điểm hơn hẳn về cả công dụng lẫn giá thành. 
+         &lt;br&gt; ✔️ Ngoài việc giúp lông bóng mượt, sữa tắm SOS còn lưu giữ hương thơm tới 10 ngày, hạn chế việc phải tắm cho thú cưng nhiều lần.
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -426,7 +496,6 @@
         Sữa Tắm Cho Mèo SOS Màu Trắng 530ml 
         Giúp làm sáng màu lông Loại bỏ bụi bẩn, khử mùi, diệt khuẩn Lưu giữ lại hương thơm lâu. Đặc biệt không hại da.
         Sữa Tắm SOS Dành Cho Mèo 530ml giúp làm sáng màu lông, loại bỏ bụi bẩn, khử mùi, diệt khuẩn, lưu giữ lại hương thơm lâu, đặc biệt không hại da.
-
         – Loại dành cho chó lông trắng, giữ màu lông trắng không bị ngả vàng, quý khách chỉ cần tắm 1 lần là có thể giúp bộ lông cải thiện độ trắng sáng, đặc biệt giúp lông mềm mượt, mịn và thơm lâu.
         – Loại dành cho chó màu lông nâu đỏ luôn giữ màu lông, đặc biệt sau khi tắm sẽ có màu đỏ đồng  ánh kim.
         – Loại chuyên khử mùi cho tất cả các giống chó: với tính năng thơm lâu, giữ được mùi thơm và độ ẩm cho da,giúp cho các bé luôn thoải mái và không hôi
@@ -527,9 +596,29 @@
         <name>Thời trang cho mèo - bộ quần áo nhện Halloween</name>
         <price>130000</price>
         <imageFirst>./assets/images/product/pet_fashion_04.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>  
-        <description></description>  
+        <imageSecond>./assets/images/product/pet_fashion_04.png</imageSecond>   
+        <imageThird>./assets/images/product/pet_fashion_04.png</imageThird>  
+        <description>
+        Lễ hội haloween đang đến gần rồi, với những bạn thú cưng thì đây cũng là lúc để "diện" những bộ cánh đẹp đẽ! Không chỉ giúp các bé thêm phần lộng lẫy mà thời trang cho chó mèo nhện nước amazon gây thích thú cho trẻ con và người xung quanh .Chính vì vậy, chọn cho thú cưng 1 bộ nhện nước amazon siêu hót nè.
+        Đây sẽ là sản phẩm hot nhất trong mọi mùa! Còn chờ gì mà không sắm ngay cho thú cưng nhà mình Thời trang nhện nước amazon Cho Chó Mèo đi nào!! Sản phẩm có sẵn và được bán với giá tốt nhất tại PnU PetShop.
+        &lt;br&gt; &lt;b&gt; Thông tin sản phẩm &lt;/b&gt;
+        &lt;br&gt; Màu sắc: đen, đỏ
+        &lt;br&gt; Chiều dài dây: 120 cm, đường kính 1 cm
+        &lt;br&gt; Chu vi cổ: khoảng 20 - 30cm
+        &lt;br&gt; Vòng ngực: khoảng 24 - 41 cm
+        &lt;br&gt; Chất liệu: Nhung lông, kẹp tôm hùm, Nylon
+        &lt;br&gt; Trọng lượng: 50 gam
+        Bảng Size:
+        S: 50cm
+        M: 53cm
+        L: 60cm
+        &lt;br&gt; &lt;b&gt;Các tính năng:&lt;/b&gt;
+        &lt;br&gt;Chất lượng tốt: nó được làm bằng nylon và có độ dày 5mm, rất thoải mái và bền khi mặc.
+        &lt;br&gt;Thoải mái và phù hợp cho thú cưng mặc.
+        &lt;br&gt;Tiệc trang phục cho ngày lễ Halloween hoàn hảo, hóa trang, tiệc hóa trang, v. v.
+        &lt;br&gt;Đây là một phụ kiện Cosplay tuyệt vời, có thể làm cho chú chó của bạn và mèo trông rất Buồn Cười, và nó chắc chắn sẽ thu hút sự chú ý của người khác.
+        &lt;br&gt; Thích hợp cho trang phục hàng ngày, tiệc cuối tuần, Halloween, Giáng sinh, tiệc tùng, bắn súng hoặc chơi ngày.
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -584,7 +673,16 @@
         <imageFirst>./assets/images/product/pet_toy_04.png</imageFirst>
         <imageSecond>./assets/images/product/pet_toy_04_small-1.png</imageSecond>   
         <imageThird>./assets/images/product/pet_toy_04_small-2.png</imageThird>  
-        <description></description>     
+        <description>
+        &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt;Kiểu dáng: Kem ốc quế, Que kem vàng, Bánh mì kẹp xúc xích, Bánh donut
+        &lt;br&gt;Chất liệu: Vinyl
+        &lt;br&gt;Trọng lượng: 47-50 gram
+        &lt;br&gt;Phù hợp cho: Chó cưng
+        &lt;br&gt;Mùa phù hợp: Tất cả các mùa
+        &lt;br&gt;Chức năng: Giải tỏa căng thẳng và chán nản, Đồng hành, Đào tạo
+        &lt;br&gt; Các đặc điểm: Chống mài mòn, bền và chống cắn
+        </description>     
       </productDetail>
     </DCC>
 
