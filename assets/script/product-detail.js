@@ -27,11 +27,16 @@ linkArray = document.getElementsByClassName("product-item");
 
 
 function loadingData(cate) {
+
  
 var lstproduct = xmlDoc.getElementsByTagName(cate)[0].getElementsByTagName("productDetail");
-
+ 
+var lstproductShuffled = Array.prototype.slice.call(lstproduct).sort( function () {
+         return 0.5 - Math.random();
+} );
+ 
 for (i = 0; i < 6; i++) {
-    product =   lstproduct[i];
+    product =   lstproductShuffled[i];
     name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
     price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
     srcImg =product.getElementsByTagName("imageFirst")[0].childNodes[0].nodeValue;
@@ -49,7 +54,8 @@ for (i = 0; i < 6; i++) {
 function loadingProductDetailPage() {
   
   var id=localStorage.getItem("idP");
-  var cate =id.substr(0, 3)+"";
+
+  var cate =id.substr(0, 2)+"";
   loadingData(cate)
   var info=[];
   path = "//productDetail[id='" + id +"']/*";

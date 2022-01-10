@@ -1,66 +1,55 @@
 
-var data = [], xmlObject,xmlDoc;
+function loadingProductOnPage(n) {
+    
+    var xmlObject = new XMLHttpRequest();
+    xmlObject.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            data = changeXmlToData(this)
+        }
+    };
+    xmlObject.open("GET", "../data/product.xml", true);
+    xmlObject.send();
+    
+    function changeXmlToData(xml) {
 
-if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-xmlhttp = new XMLHttpRequest();
-}
-else {// code for IE6, IE5
-xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-}
+        xmlDoc = xml.responseXML;
 
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        xmlDoc = xmlhttp.responseXML;
+            // số sản phẩm trên một trang
+        var  slsp=20;
+        var  name,price, srcImg,id;
+        var nameArray, priceArray, imgArray,linkArray;
+
+        lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
+        
+
+        nameArray = document.getElementsByClassName("product-item__name");
+        priceArray = document.getElementsByClassName("product-item__price-current");
+        imgArray = document.getElementsByClassName("product-item__img");
+        linkArray = document.getElementsByClassName("product-item");
+
+        var index_h;
+        //vi tri trong page html
+        for (i = 0+20*n; i < 20*(n+1); i++) {
+            product =   lstproduct[i];
+            name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+            srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
+            id= product.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+            index_h=i-slsp*n;
+        
+            linkArray[index_h].href="./product_detail.html"
+            linkArray[index_h].id=id;
+            linkArray[index_h].setAttribute("onclick","getID(this.id)");
+        
+            nameArray [index_h].innerText = name;                   
+            priceArray [index_h].innerText = Intl.NumberFormat().format(price) + " đ";      
+            imgArray [index_h].src = srcImg;   
+        
+        }
+
+       return data;
     }
-};
-xmlhttp.open("GET","../data/product.xml" , true);
-xmlhttp.send();
 
-
-
-// số sản phẩm trên một trang
-var  slsp=20;
-var  name,price, srcImg,id;
-var nameArray, priceArray, imgArray,linkArray;
-
-
-nameArray = document.getElementsByClassName("product-item__name");
-priceArray = document.getElementsByClassName("product-item__price-current");
-imgArray = document.getElementsByClassName("product-item__img");
-linkArray = document.getElementsByClassName("product-item");
-
-
-function loadingProductOnPage(numberPage) {
-
-var n=numberPage;
- 
-var lstproduct = xmlDoc.getElementsByTagName('PnU')[0].getElementsByTagName("product");
-
-   // Sắp xếp mảng để thể hiện ngẫu nhiên
-var   lstproductShuffled = Array.prototype.slice.call(lstproduct).sort( function () {
-    return 0;
-} );
-
-var index_h;
-//vi tri trong page html
-
-for (i = 0+20*n; i < 20*(n+1); i++) {
-    product =   lstproductShuffled[i];
-    name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
-    price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
-    srcImg =product.getElementsByTagName("image")[0].childNodes[0].nodeValue;
-    id= product.getElementsByTagName("id")[0].childNodes[0].nodeValue;
-    index_h=i-slsp*n;
-
-    linkArray[index_h].href="./product_detail.html"
-    linkArray[index_h].id=id;
-    linkArray[index_h].setAttribute("onclick","getID(this.id)");
-
-    nameArray [index_h].innerText = name;                   
-    priceArray [index_h].innerText = Intl.NumberFormat().format(price) + " đ";      
-    imgArray [index_h].src = srcImg;   
-
-}
 
 }
 function getID(id){
