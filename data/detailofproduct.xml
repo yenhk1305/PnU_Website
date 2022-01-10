@@ -207,7 +207,19 @@
         <imageFirst>./assets/images/product/dog_food_09.png</imageFirst>
         <imageSecond>./assets/images/product/dog_food_09_small-1.png</imageSecond>   
         <imageThird>./assets/images/product/dog_food_09_small-2.png</imageThird> 
-        <description></description>    
+        <description>
+        Xúc xích Phô mai Bắp Bowwow là món ăn nhẹ giàu dinh dưỡng dành cho chó với sự kết hợp của thịt, cá, phô mai giàu canxi và bắp thơm ngon.
+         &lt;br&gt; &lt;b&gt;Thành phần:&lt;/b&gt;
+         &lt;br&gt;Thành phần chính: thịt, cá, phô mai, bắp  
+         &lt;br&gt; &lt;b&gt;Công dụng: &lt;/b&gt;
+         &lt;br&gt;- Dành cho mọi giống chó thuộc mọi lứa tuổi, cân nặng
+         &lt;br&gt;- Hỗ trợ tiêu hóa, hạn chế mùi hôi phân, làm đẹp da và lông 
+         &lt;br&gt;- Cung cấp dưỡng chất đáng kể mà trong khẩu phần ăn hàng ngày có thể thiếu
+         &lt;br&gt;- Hàm lượng axit lactic giúp hỗ trợ hệ tiêu hóa hoạt động tốt
+         &lt;br&gt;- Sản phẩm được diệt khuẩn bằng nhiệt độ cao, rất vệ sinh và an toàn
+         &lt;br&gt;- Que xúc xích nhỏ tiện dụng, dễ dàng bảo quản và mang theo 
+         &lt;br&gt;- Không chứa màu nhân tạo, không chứa các chất bảo quản
+        </description>    
       </productDetail>
 
       <productDetail>
@@ -217,14 +229,28 @@
         <imageFirst>./assets/images/product/dog_food_10.png</imageFirst>
         <imageSecond>./assets/images/product/dog_food_10_small-01.png</imageSecond>   
         <imageThird>./assets/images/product/dog_food_10_small-2.png</imageThird> 
-        <description></description>    
+        <description>
+        Phô mai thịt cừu Bowwow làm từ thịt cừu tươi New Zealand giàu protein và can-xi, không những là món bánh thưởng hấp dẫn thường dùng trong huấn luyện, mà còn là món ăn nhẹ bổ dưỡng cho chó con và chó miệng biếng ăn sau khi sinh con.
+        &lt;br&gt;&lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt; Xuất xứ : Hàn Quốc
+        &lt;br&gt; Quy cách đóng gói: gói x 100g
+        &lt;br&gt;&lt;b&gt;Thành phần&lt;/b&gt;
+        &lt;br&gt;Phô mai thịt cừu Bowwow làm từ thịt cừu tươi New Zealand giàu protein kết hợp với phô mai bổ sung can-xi cùng các vitamin và chất khoáng...
+        &lt;br&gt; &lt;b&gt;Công dụng &lt;/b&gt;
+        &lt;br&gt;- Dành cho mọi giống chó thuộc mọi lứa tuổi, cân nặng
+        &lt;br&gt;- Thịt cừu tốt cho tim mạch, duy trì làn da khoẻ mạnh
+        &lt;br&gt;- Hỗ trợ hệ tiêu hóa và hấp thụ dưỡng chất
+        &lt;br&gt;- Giảm tỷ lệ cholesterol xấu trong huyết thanh, ngăn ngừa béo phì
+        &lt;br&gt;- Là món ăn nhẹ bổ dưỡng thiết yếu cho sự phát triển của chó con và chó mẹ bị biếng ăn sau khi sinh con
+        &lt;br&gt;- Thích hợp trong việc huấn luyện và làm bánh thưởng cho chó
+        &lt;br&gt;- Không có hại cho tim và thận nhờ lượng muối thấp
+        </description>    
       </productDetail>
       
     </TAC>
 
   <!--Thức ăn mèo-->
     <TAM>
-
       <productDetail>
         <id>TAM01</id>
         <name>Hạt thức ăn khô cho mèo con Royal Canin Kitten</name>
@@ -480,9 +506,18 @@
         <name>Sữa tắm cho mèo Bioline 250ml - Dịu nhẹ</name>
         <price>100000</price>
         <imageFirst>./assets/images/product/cat_hygiene_01.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>   
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
-        <description></description>  
+        <imageSecond>./assets/images/product/cat_hygiene_01_small-1.png</imageSecond>   
+        <imageThird>./assets/images/product/cat_hygiene_01_small-2.png</imageThird>   
+        <description>
+        &lt;b&gt;Công Dụng &lt;/b&gt;
+         &lt;br&gt; Sữa tắm cho mèo Bioline có chiết xuất thảo mộc từ thiên nhiên giúp cho lông của mèo luôn sáng bóng và đặc biệt làm giảm tình trạng rụng lông thường thấy ở mèo.
+         &lt;br&gt;Sản phẩm dịu nhẹ nên phù hợp với làn da mỏng của mèo. Nếu vô tình sữa tắm có vào mắt thì cũng vẫn an toàn với mèo vì công thức sữa tắm được thiết kế vô cùng đặc biệt.
+         &lt;br&gt;Sữa tắm có hương thơm dịu nhẹ, không gây khó chịu cho cả mèo lẫn người nuôi.
+         &lt;br&gt;Mùi hương sữa tắm được lưu giữ lâu nên bạn có thể yên tâm tắm 1 tuần 1 lần mà mèo vẫn sạch sẽ và thơm tho.
+         &lt;br&gt;Một chai sữa tắm dung tích 250ml có thể sử dụng cho mèo trong thời gian từ 3 - 4 tháng liên tục.
+         &lt;br&gt;Nếu bạn thích các loại sản phẩm có hương thơm thoang thoảng và an toàn thì đây chính là sự lựa chọn phù hợp nhất của bạn.
+         &lt;br&gt;Sản phẩm phù hợp cho mọi giống mèo và ở mọi lứa tuổi khác nhau.
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -519,9 +554,25 @@
         <name>Cát vệ sinh cho mèo cát Nhật thần thánh 10L</name>
         <price>230000</price>
         <imageFirst>./assets/images/product/cat_hygiene_04.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
-        <description></description>   
+        <imageSecond>./assets/images/product/cat_hygiene_04_small-1.png</imageSecond>  
+        <imageThird>./assets/images/product/cat_hygiene_04_small-2.png</imageThird>   
+        <description>
+        Cát Nhật được làm từ 100% Bentonite tự nhiên và thêm dược liệu thiên nhiên các mùi thơm dễ chịu.
+        Xóa tan đi mùi hôi khó chịu của Chó Mèo, mang đến cho bạn một không gian Sạch Sẽ.
+        Được sản xuất trên quy trình tiêu chuẩn nghiêm ngặt của Nhật Bản. Bạn dùng có thể yên tâm về chất lượng và tiêu chuẩn. 
+        &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+        &lt;br&gt;- Khử mùi đặc biệt hiệu quả
+        &lt;br&gt;- Hút nước hoàn toàn chất thải phân và nước tiểu
+        &lt;br&gt;- Siêu vón cục dễ dàng dọn dẹp
+        &lt;br&gt;- Không bụi bẩn và dính chân Thú Cưng
+        &lt;br&gt;- Kháng khuẩn cực mạnh an toàn cho Bạn và Thú Cưng
+        &lt;br&gt;- Có các mùi hương thơm tự nhiên: coffee và mùi phấn thơm
+        &lt;br&gt; &lt;b&gt;Hướng dẫn sử dụng:&lt;/b&gt;
+        &lt;br&gt;- Đổ Cát Vệ Sinh vào khay, chậu với độ dày khoảng 5cm
+        &lt;br&gt;- Khi gặp chất thải của Chó hoặc Mèo. Cát vón thành cục không bị vỡ và bết
+        &lt;br&gt;- Dùng Xẻng dọn phần vón cục cho vào thùng rác
+        &lt;br&gt;- Bổ xung thêm Cát Vệ Sinh vào khay, chậu để duy trì lượng Cát trong khay 5cm
+        </description>   
       </productDetail>
     
   </VS>
@@ -586,9 +637,21 @@
         <name>Mũ len thời trang dễ thương cho mèo</name>
         <price>119000</price>
         <imageFirst>./assets/images/product/pet_fashion_03.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>   
-        <description></description>  
+        <imageSecond>./assets/images/product/pet_fashion_03_small-1.png</imageSecond>
+        <imageThird>./assets/images/product/pet_fashion_03_small-2.png</imageThird>   
+        <description>
+         Bạn có thể Giữ Ấm đầu bé khi trời trở lạnh. Thời tiết sài gòn cũng sấp chuyển sang trời lạnh rồi vì vậy hãy sấm ngay một chiếc mũ cho bé nhà mình đi nào.
+         &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+         &lt;br&gt;Chất liệu: Len đan.
+         &lt;br&gt;Kích thước: free size.
+         &lt;br&gt;Màu sắc:Xanh lá.
+          &lt;br&gt;&lt;b&gt; Đặc điểm nổi bật:&lt;/b&gt;
+              &lt;br&gt;Rất thích hợp cho bé cỡ nhỏ và những bé cỡ trung. Khi đội vào nhìn bé cực đáng yêu lun khi ba mẹ ôm bé cũng sẽ cực kì thích luôn đó nha!
+              &lt;br&gt;Bạn có thể Giữ Ấm đầu bé khi trời trở lạnh. Thời tiết sài gòn cũng sấp chuyển sang trời lạnh rồi vì vậy hãy sấm ngay một chiếc mũ cho bé nhà mình đi nào.
+              &lt;br&gt;Mũ cũng rất thích hợp để cho bé đi du lịch, ra ngoài đường ai nhìn cũng sẽ thích.
+              &lt;br&gt; Kích cỡ: free size, thích hợp cho mèo nhỏ và vừa.
+        
+        </description>  
       </productDetail>
 
       <productDetail>
@@ -596,8 +659,8 @@
         <name>Thời trang cho mèo - bộ quần áo nhện Halloween</name>
         <price>130000</price>
         <imageFirst>./assets/images/product/pet_fashion_04.png</imageFirst>
-        <imageSecond>./assets/images/product/pet_fashion_04.png</imageSecond>   
-        <imageThird>./assets/images/product/pet_fashion_04.png</imageThird>  
+        <imageSecond>./assets/images/product/pet_fashion_04_small-1.png</imageSecond>   
+        <imageThird>./assets/images/product/pet_fashion_04_small-2.png</imageThird>  
         <description>
         Lễ hội haloween đang đến gần rồi, với những bạn thú cưng thì đây cũng là lúc để "diện" những bộ cánh đẹp đẽ! Không chỉ giúp các bé thêm phần lộng lẫy mà thời trang cho chó mèo nhện nước amazon gây thích thú cho trẻ con và người xung quanh .Chính vì vậy, chọn cho thú cưng 1 bộ nhện nước amazon siêu hót nè.
         Đây sẽ là sản phẩm hot nhất trong mọi mùa! Còn chờ gì mà không sắm ngay cho thú cưng nhà mình Thời trang nhện nước amazon Cho Chó Mèo đi nào!! Sản phẩm có sẵn và được bán với giá tốt nhất tại PnU PetShop.
@@ -651,13 +714,32 @@
         <name>Con gà đồ chơi cho chó phát ra tiếng</name>
         <price>20000</price>
         <imageFirst>./assets/images/product/pet_toy_02.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>    
-        <description></description>  
+        <imageSecond>./assets/images/product/pet_toy_02_small-1.png</imageSecond>  
+        <imageThird>./assets/images/product/pet_toy_02_small-2.png</imageThird>    
+        <description>
+          Đồ chơi con gà huyền thoại cho chó không chỉ dành cho vật nuôi, mà kể cả người lớn hay trẻ con trong gia đình cũng đều có thể chơi được, tiếng kêu này sẽ khiến cho bạn càng chơi càng muốn chơi thêm nữa. Hãy đem đến cho thú cưng nhà bạn phát minh này. Những chú chó sẽ rất thích chơi một chú gà có kích thước lớn, bởi vì gà càng to, âm thanh nghe càng thảm, các chú chó sẽ càng hưng phấn, càng thích thú hơn.
+          &lt;br&gt; &lt;b&gt; Thông tin sản phẩm &lt;/b&gt;  
+          &lt;br&gt;Có 3 Size , bạn hãy lựa kích thước phù hợp:
+          &lt;br&gt;Size S 17cm
+          &lt;br&gt;Size M 32cm
+          &lt;br&gt;Size L 40cm
+          &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+          &lt;br&gt; Đồ chơi cho chó mèo Paw hình con gà có một tiếng kêu rất đặc biệt, họ nói tiếng kêu của sản phẩm nghe rất khổ sở nên họ đều gọi sản phẩm này là chú gà có tiếng kêu thảm thiết.
+          &lt;br&gt; Sản phẩm được làm từ nhựa dẻo, rất an toàn với môi trường, khỏe mạnh, không hề có độc tố, không làm lọt hơi ra ngoài… chắc chắn thú cưng của bạn sẽ thích khi nghe tiếng kêu của sản phẩm này đấy
+          &lt;br&gt; Đồ chơi con gà huyền thoại cho chó không chỉ dành cho vật nuôi, mà kể cả người lớn hay trẻ con trong gia đình cũng đều có thể chơi được
+          &lt;br&gt; Tiếng kêu này sẽ khiến cho bạn càng chơi càng muốn chơi thêm nữa
+          &lt;br&gt; Hãy đem đến cho thú cưng nhà bạn phát minh này
+          &lt;br&gt; Những chú chó sẽ rất thích chơi một chú gà có kích thước lớn, bởi vì gà càng to, âm thanh nghe càng thảm, các chú chó sẽ càng hưng phấn, càng thích thú hơn.
+          &lt;br&gt; La hét giúp vui nhộn, thú cưng rất thích chơi, ôm cả ngày không chán
+          &lt;br&gt; Cao su rất dai và bền, sẽ chơi được lâu  
+          &lt;br&gt;Có thể dùng để huấn luyện, vui đùa cùng thú cưng
+          &lt;br&gt; Tiện dụng, tận hưởng niềm vui.
+
+        </description>  
       </productDetail>
 
       <productDetail>
-        <id>DDC03</id>
+        <id>DCC03</id>
         <name>Đồ chơi xương nhựa giúp giảm stress cho chó</name>
         <price>20000</price>
         <imageFirst>./assets/images/product/pet_toy_03.png</imageFirst>
@@ -667,7 +749,7 @@
       </productDetail>
 
       <productDetail>
-        <id>DDC04</id>
+        <id>DCC04</id>
         <name>Đồ chơi cho chó cưng mô phỏng món ăn vui nhộn độc đáo</name>
         <price>55000</price>
         <imageFirst>./assets/images/product/pet_toy_04.png</imageFirst>
@@ -734,8 +816,8 @@
         <name>Đồ chơi đùi gà bông cho mèo</name>
         <price>20000</price>
         <imageFirst>./assets/images/product/pet_toy_08.png</imageFirst>
-        <imageSecond>./assets/images/product/dog_food_01.png</imageSecond>  
-        <imageThird>./assets/images/product/dog_food_01_small-1.png</imageThird>    
+        <imageSecond>./assets/images/product/pet_toy_08_small-1.png.png</imageSecond>  
+        <imageThird>./assets/images/product/pet_toy_08_small-2.png</imageThird>    
         <description></description>     
       </productDetail>
     </DCM>

@@ -68,7 +68,7 @@ function loadingProductDetailPage() {
         thisNode = nodes.iterateNext();
       }
 
-    document.getElementById("infoName").innerHTML=info[1] + cate;  
+    document.getElementById("infoName").innerHTML=info[1];  
     document.getElementById("infoPrice").innerHTML=Intl.NumberFormat().format(info[2]) + " đ"; ;  
     document.getElementById("mainImg").src=info[3];  
     document.getElementById("small-img1").src=info[3];  
@@ -82,5 +82,10 @@ function loadingProductDetailPage() {
 
 }
 
-
+function getID(id){
+    if (typeof(Storage) !== "undefined") {
+        // Lưu trữ
+        localStorage.idP = id;
+    }
+    }
 
