@@ -16,13 +16,41 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET","../data/detailofproduct.xml" , true);
 xmlhttp.send();
 
+var  name,price, srcImg,idt;
+var nameArray, priceArray, imgArray,linkArray;
 
 
+nameArray = document.getElementsByClassName("product-item__name");
+priceArray = document.getElementsByClassName("product-item__price-current");
+imgArray = document.getElementsByClassName("product-item__img");
+linkArray = document.getElementsByClassName("product-item");
+
+
+function loadingData(cate) {
+ 
+var lstproduct = xmlDoc.getElementsByTagName(cate)[0].getElementsByTagName("productDetail");
+
+for (i = 0; i < 6; i++) {
+    product =   lstproduct[i];
+    name= product.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+    price =product.getElementsByTagName("price")[0].childNodes[0].nodeValue;
+    srcImg =product.getElementsByTagName("imageFirst")[0].childNodes[0].nodeValue;
+    idt= product.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+
+    linkArray[i].href="./product_detail.html"
+    linkArray[i].id=idt;
+    linkArray[i].setAttribute("onclick","getID(this.id)");
+
+    nameArray [i].innerText = name;                   
+    priceArray [i].innerText = Intl.NumberFormat().format(price) + " đ";      
+    imgArray [i].src = srcImg;   
+}}
 
 function loadingProductDetailPage() {
-
+  
   var id=localStorage.getItem("idP");
-
+  var cate =id.substr(0, 3)+"";
+  loadingData(cate)
   var info=[];
   path = "//productDetail[id='" + id +"']/*";
   if (xmlDoc.evaluate) {
@@ -34,7 +62,7 @@ function loadingProductDetailPage() {
         thisNode = nodes.iterateNext();
       }
 
-    document.getElementById("infoName").innerHTML=info[1];  
+    document.getElementById("infoName").innerHTML=info[1] + cate;  
     document.getElementById("infoPrice").innerHTML=Intl.NumberFormat().format(info[2]) + " đ"; ;  
     document.getElementById("mainImg").src=info[3];  
     document.getElementById("small-img1").src=info[3];  

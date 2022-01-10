@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="stylesheet" href="./assets/css/product_style.css"/>
+    <link rel="stylesheet" href="./assets/css/breadcrumb.css">
+    <title>Vệ sinh chó mèo</title>
+    <script src="./assets/script/category-product.js"></script>
+    <!--[if lt IE 9]>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js"></script>
+    <![endif]-->
+  
+</head>
+<body onload="loadingHegieneProduct()">
+      <!-- Header-Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+          $(function(){
+              $("#header").load("header.html");
+          });
+      </script>
+    <span id="header"></span>
+    <!-- Header-End -->
+        <!-- Breadcrumb - Start -->
+        <div class="breadcrumb">
+            <div style="margin-right: 5px;">
+                <span style="color: var(--primaryWhite); font-weight: bold; cursor: pointer;" onclick="window.location.href='index.html'">Trang chủ</span>
+                <span style="color: var(--primaryWhite);">&#10095;</span>
+            </div>            
+            <span style="color: var(--primaryYellow); font-weight: bold;">Sản phẩm</span>
+        </div>
+        <!-- Breadcrumb - End -->
+
+    <!-- Page Container -->
+    <div class="product__container">
+        <div class="grid wide">
+            <ul class="mobile__sort-bar">
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Bán chạy</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Mới nhất</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Giá thấp</a>
+                </li>
+                <li class="sort-bar__item">
+                    <a href="#" class="sort-bar__link">Giá cao</a>
+                </li>
+            </ul>
+            <!--Banner-->
+            <div class="banner">
+                <img class="banner__img" src="./assets/images/product-banner.png" />
+            </div>
+            <!-- Page-main-content -->
+            <div class="grid__row product__content">
+               <!-- danh mục -->
+                <div class="grid__column-2 m-0">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                            Danh mục
+                        </h3>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Sản phẩm</a>
+                            </li>
+                        
+                            <li class="category-item">
+                                <a href="product_category_for-dog.html" class="category-item__link">Sản phẩm cho chó</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="product_category_for-cag.html" class="category-item__link">Sản phẩm cho mèo</a>
+                            </li>
+                        </ul>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Tuỳ chọn</a>
+                            </li>
+                        
+                            <li class="category-item">
+                                <a href="product_category_food.html" class="category-item__link">Thức ăn chó mèo</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="product_category_hegiene.html" class="category-item__link">Vệ sinh chó mèo</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="product_category_fashion.html" class="category-item__link">Thời trang chó mèo</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="product_category_toy.html" class="category-item__link">Đồ chơi chó mèo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="mobile-category">
+                    <ul class="mobile-category__list">
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_for-dog.html" class="mobile-category__link">Sản phẩm <br> cho chó</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_for-cat.html" class="mobile-category__link">Sản phẩm <br> cho mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_food.html" class="mobile-category__link">Thức ăn <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_hegiene.html" class="mobile-category__link">Vệ sinh <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_toy.html" class="mobile-category__link">Đồ chơi <br> chó mèo</a>
+                        </li>
+
+                        <li class="mobile-category__item">
+                            <a href="product_category_fashion.html" class="mobile-category__link">Thời trang <br> chó mèo</a>
+                        </li>
+
+                    </ul>
+                </nav>
+               <!-- bộ lọc + sản phẩm + phân trang -->
+               <div class="grid__column-10">
+                   <!-- filter -->
+                   <div class="filter">
+                        <!-- paginate -->
+                        <div class="page-filter">
+                            <span class="page-filter__number">
+                                <span class="page-filter__number--lable">Trang </span>
+                                <span class="pagefilter__number--current">1 &nbsp </span>
+                                <span class="page-filter__number--total">2  &nbsp 3........20</span>
+                            </span>                           
+                            <a href="" class="page-filter__btn">
+                                    <img src="./assets/images/ic_page.png"/>
+                            </a>
+                        </div>
+                        <!--product arrange -->
+                        <div class="product-filter">
+                            <span class="product-filter__label">Sắp xếp</span>
+                            <div class="product-filter__select">
+                                <span class="product-filter__select--label">Mặc định</span>
+                                <i class="product-filter__select--icon fas fa-chevron-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Bán chạy</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Mới nhất</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link" onclick="sortDes()">Giá thấp</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá cao</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
+                    <!-- product -->
+                   <div class="product ">
+                       <div class="grid__row" id="divProduct">
+                        </div>
+                          
+                    </div>            
+                   <!-- pagination-->
+                   <div class="product__pagination">
+                    <ul class="pagination">
+ 
+                        <li class="pagination-item pagination-item--active">
+                         <a href="#" class="pagination-item__link">1</a>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="product_page2.html" class="pagination-item__link">2</a>
+                         </li>
+ 
+                         <li class="pagination-item  ">
+                           <p class="pagination-item__space">
+                             .........
+                           </p>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="#" class="pagination-item__link">20</a>
+                         </li>
+ 
+                         <li class="pagination-item">
+                             <a href="product_page2.html" class="pagination-item__link">
+                                 <i class="pagination-item__icon fas fa-chevron-right"></i>
+                             </a>
+                            
+                         </li>
+ 
+                    </ul>
+                   </div>
+               
+
+               </div>
+            </div>
+        </div>     
+    </div>   
+
+    <!-- Footer-Start -->    
+      <script>
+        $(function(){
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <span id="footer"></span>
+    <!-- Footer-End -->
+</body>
+</html>

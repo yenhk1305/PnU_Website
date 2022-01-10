@@ -165,6 +165,7 @@
 
 <!--Vệ sinh-->
   <VS>
+   <VSC>
       <product>
         <id>VSC01</id>
         <name>Sữa tắm cho chó con Bioline 250ml - Dịu nhẹ cho da nhạy cảm</name>
@@ -192,7 +193,8 @@
         <price>90000</price>
         <image>./assets/images/product/dog_hygiene_04.png</image>
       </product>
-
+  </VSC>    
+  <VSM>
       <product>
         <id>VSM01</id>
         <name>Sữa tắm cho mèo Bioline 250ml - Dịu nhẹ</name>
@@ -220,7 +222,7 @@
         <price>230000</price>
         <image>./assets/images/product/cat_hygiene_04.png</image>
       </product>
-    
+      </VSM>
   </VS>
 
 <!--Thời trang-->

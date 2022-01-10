@@ -22,7 +22,7 @@ xmlhttp.send();
 var  slsp=20;
 var  name,price, srcImg,id;
 var nameArray, priceArray, imgArray,linkArray;
-var btnCart=document.getElementsByClassName("product-item__add-cart");
+
 
 nameArray = document.getElementsByClassName("product-item__name");
 priceArray = document.getElementsByClassName("product-item__price-current");

@@ -14,3 +14,8 @@
         margin-top: 100px;
     }
 }
+@media only screen and (max-width: 739px) {
+    .breadcrumb {
+        display: none;
+    }
+}
