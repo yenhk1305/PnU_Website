@@ -309,7 +309,6 @@
         Đối tượng sử dụng là mèo con, mèo sơ sinh từ 2 - 12 tháng tuổi. Các thành phần có trong sản phẩm sẽ giúp mèo lớn nhanh, hấp thu đầy đủ dinh dưỡng. Ngoài ra, sản phẩm còn có thể dùng cho mèo mẹ mang thai và cho con bú.
         &lt;br&gt; &lt;b&gt;Thành phần:&lt;/b&gt;
         &lt;br&gt; Mỗi túi Thức Ăn Cho Mèo Con Whiskas Vị Cá Biển Và Sữa có khối lượng 1,1kg. Tất cả đều chứa những thành phần chất lượng cao, đảm bảo những bé mèo con sẽ khoẻ mạnh, lớn nhanh.
-        &lt;br&gt; Thành phần: Thịt, cá tươi, sữa, các khoáng chất, vitamin tổng hợp.
         &lt;br&gt; Với những nguyên liệu được chọn loc kỹ lưỡng, đảm bảo an toàn vệ sinh thực phẩm, Thức Ăn Cho Mèo Con Whiskas Vị Cá Biển Và Sữa 1,1kg chắc chắn sẽ đem đến cho mèo những chất dinh dưỡng cần thiết.
         </description>
       </productDetail>
@@ -321,7 +320,27 @@
         <imageFirst>./assets/images/product/cat_food_04.png</imageFirst>
         <imageSecond>./assets/images/product/cat_food_04_small-1.png</imageSecond>  
         <imageThird>./assets/images/product/cat_food_04_small-2.png</imageThird> 
-        <description></description>     
+        <description>
+         Từ lâu chúng ta đã biết đến nhiều thức ăn cho Mèo nhãn hàng của Pháp. Thức ăn cho Mèo Minino là sản phẩm mới của Pháp.
+
+        Thức ăn cho Mèo Minino cung cấp đầy đủ các dưỡng chất dành cho Mèo.
+        Thức ăn giành cho Mèo Minino dành cho cả Mèo nhỏ và Mèo lớn
+        &lt;br&gt; &lt;b&gt; Chi tiết sản phẩm &lt;/b&gt;
+        &lt;br&gt; Khối lượng: 1.3kg 
+        &lt;br&gt; Xuất xứ: PHÁP, 
+        &lt;br&gt; Dành cho mèo mọi lứa tuổi - VỊ CÁ NGỪ
+        &lt;br&gt; &lt;b&gt;Thành phần:&lt;/b&gt;
+        &lt;br&gt;+ Với hàm lượng dinh dưỡng vừa đủ giúp mèo cưng phát triển hoàn thiện
+        &lt;br&gt;+ Sản phẩm từ thịt cá ngừ.
+        &lt;br&gt;+ Lượng vitamin thiết yếu.
+        &lt;br&gt;+ Lúa mì, rau củ sấy khô,
+        &lt;br&gt; &lt;b&gt;Công Dụng &lt;/b&gt;
+        &lt;br&gt;  Giúp kích thích ăn và hấp thụ dinh dưỡng tốt
+        &lt;br&gt; Hình dáng thức ăn có hình tròn trụ giống hạt Canin Fit 32 phù hợp với các giống Mèo
+        &lt;br&gt; Làm giảm lông vón cục trong hệ tiêu hóa
+        &lt;br&gt; Tăng cường dưỡng chất bảo vệ cơ thể
+        &lt;br&gt; Giảm hiện tượng bị giảm thị lực và thính lực của Mèo
+        </description>     
       </productDetail>
 
       <productDetail>
@@ -816,7 +835,7 @@
         <name>Đồ chơi đùi gà bông cho mèo</name>
         <price>20000</price>
         <imageFirst>./assets/images/product/pet_toy_08.png</imageFirst>
-        <imageSecond>./assets/images/product/pet_toy_08_small-1.png.png</imageSecond>  
+        <imageSecond>./assets/images/product/pet_toy_08_small-1.png</imageSecond>  
         <imageThird>./assets/images/product/pet_toy_08_small-2.png</imageThird>    
         <description></description>     
       </productDetail>
