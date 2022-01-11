@@ -24,7 +24,7 @@ var shoppingCart = (function() {
   }
 
   // Public methods and properties
-  // =============================
+  
   // Create object
   var obj = {};
   

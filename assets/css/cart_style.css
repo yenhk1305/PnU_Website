@@ -1,6 +1,10 @@
-﻿.main-container {
+﻿main {
+    margin-top: 15px; 
+    margin-bottom: 40px; 
+    min-height: calc(70vh - 40px);
+}
+.main-container {
     font-family: 'Montserrat', sans-serif;
-    /* padding-top: 100px; */
 }
 
 .container .back-to-product {
@@ -274,9 +278,15 @@
         cursor: pointer;
         text-decoration: none
     }
-    
+
+/*------------- RESPONSIVE -------------*/
 @media screen and (max-width: 309px) {
-    /* .main-container {background: blueviolet;} */
+    main {
+        margin-top: 65px; 
+        margin-bottom: 30px;
+        min-height: calc(60vh - 40px);
+    }
+
     .main-container .container{
         margin: 0px;
         max-width: 100%;
@@ -361,15 +371,19 @@
                 text-align: right;
             }
 
+            .cart-table .cart-tbody .item .mobile-tbody-name-price .product-name {
+                margin-top: 0px
+            }
+
             .cart-table .cart-tbody .item .mobile-tbody-name-price .price {
                 font-size: 11px;
                 line-height: 3.5;
             }
 
             .cart-table .cart-tbody .item .mobile-tbody-quantity-delete .product-quantity {
-                margin-top: 0;
+                margin-top: 10px;
                 margin-left: 15px;
-                height: 40px;
+                height: 35px;
             }
 
             .cart-table .cart-tbody .item .mobile-tbody-quantity-delete .product-quantity .number-sidebar {
@@ -415,7 +429,16 @@
 }
 
 @media (min-width: 310px) and (max-width: 767px) {
-    /* .main-container {background: blueviolet;} */
+    main {
+        margin-bottom: 30px; 
+        min-height: calc(60vh - 40px);
+    }
+
+    @media only screen and (max-width: 739px) {
+        main {
+            margin-top: 65px; 
+        }
+    }
     .main-container .container{
         margin: 0px;
         max-width: 100%;
@@ -553,7 +576,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    /* .main-container {background: red}     */
     .cart-header h1 {
         font-size: 15px;
         margin-bottom: 0;
