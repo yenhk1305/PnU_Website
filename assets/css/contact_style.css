@@ -60,6 +60,11 @@ body {
 
 /* RESPONSIVE */
 @media screen and (max-width: 991px){
+    .contact-banner{
+        margin-top: 60px;
+        text-align: center;
+        
+    }
     .contact-map{
         width: 100%;
         text-align: center;
