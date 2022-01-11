@@ -157,10 +157,10 @@
                                         <a href="#" class="select-input__link">Mới nhất</a>
                                     </li>
                                     <li class="select-input__item">
-                                        <a href="#" class="select-input__link" onclick="sortDes()">Giá thấp</a>
+                                        <div href="#" class="select-input__link" onclick="sortDes()">Giá thấp</div>
                                     </li>
                                     <li class="select-input__item">
-                                        <a href="#" class="select-input__link">Giá cao</a>
+                                        <div href="#" class="select-input__link"  onclick="sortAsc()">Giá cao</div>
                                     </li>
                                 </ul>
                             </div>
@@ -168,7 +168,7 @@
                    </div>
                     <!-- product -->
                    <div class="product ">
-                       <div class="grid__row">
+                       <div class="grid__row" id ="productx">
 
                             <!--SP1-->
                             <div class="grid__column-2-4 ">
@@ -207,7 +207,7 @@
                                 </div>
                                 <h5 class="product-item__name  "></h5>
                                 <div class="product-item__price">
-                                    <span class="product-item__price-old">500.000 đ</span>
+                                    <span class="product-item__price-old">374,000 đ</span>
                                     <span class="product-item__price-current"></span>
                                 </div>
                                 <div class="product-item__action">
@@ -528,9 +528,9 @@
                                     <div class="product-item__picture">
                                         <img src="" alt="" class="product-item__img">
                                     </div>
-                                    <h5 class="product-item__name">Hạt thức ăn khô cho chó Royal Canin Poodle Puppy</h5>
+                                    <h5 class="product-item__name"></h5>
                                     <div class="product-item__price">
-                                        <span class="product-item__price-current">450.000 đ</span>
+                                        <span class="product-item__price-current"></span>
                                     </div>
                                     <div class="product-item__action">
                                         <span class="product-item__add-cart">
@@ -618,7 +618,7 @@
                                     </div>
                                     <h5 class="product-item__name"></h5>
                                     <div class="product-item__price">
-                                        <span class="product-item__price-old">500.000 đ</span>
+                                        <span class="product-item__price-old">110,000 đ</span>
                                         <span class="product-item__price-current"></span>
                                     </div>
                                     <div class="product-item__action">
@@ -796,6 +796,49 @@
         $(function(){
             $("#footer").load("footer.html");
         });
+       
+
+        function sortDes() {
+            var  switching, i, shouldSwitch;
+        list = document.getElementById("productx");
+        switching = true;
+        while (switching) {
+            switching = false;
+            b = list.getElementsByClassName("grid__column-2-4");
+            for (i = 0; i < (b.length - 1); i++) {
+            shouldSwitch = false;
+            if (parseInt(b[i].getElementsByClassName("product-item__price-current")[0].innerHTML) > parseInt(b[i + 1].getElementsByClassName("product-item__price-current")[0].innerHTML )) {
+                shouldSwitch = true;
+                break;
+            }
+            }
+            if (shouldSwitch) {
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+            }
+        }
+
+        function sortAsc() {
+            var  switching, i, shouldSwitch;
+        list = document.getElementById("productx");
+        switching = true;
+        while (switching) {
+            switching = false;
+            b = list.getElementsByClassName("grid__column-2-4");
+            for (i = 0; i < (b.length - 1); i++) {
+            shouldSwitch = false;
+            if (parseInt(b[i].getElementsByClassName("product-item__price-current")[0].innerHTML) < parseInt(b[i + 1].getElementsByClassName("product-item__price-current")[0].innerHTML )) {
+                shouldSwitch = true;
+                break;
+            }
+            }
+            if (shouldSwitch) {
+            b[i].parentNode.insertBefore(b[i + 1], b[i]);
+            switching = true;
+            }
+        }}
+}
+
     </script>
     <span id="footer"></span>
     <!-- Footer-End -->
