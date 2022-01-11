@@ -5,6 +5,7 @@ body {
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
 }
+
 #all div p {
     line-height: 30px;
     width: 70%;
@@ -47,6 +48,7 @@ body {
 }
 .imgcontent {
     margin: 10px 50px 10px 0px;
+    /* align:left; */
 }
 
 #all{
@@ -57,7 +59,19 @@ body {
     text-decoration: none;
     color: white;
 }
+
 .login a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width: 739px) {
+    main{
+        margin-top: 51px;
+    }
+    main .imgcontent{
+        height: 40%;
+        width: 40%;
+        display: none;
+    }
 }
