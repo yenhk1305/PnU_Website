@@ -17,7 +17,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 999;
     font-size: 16px;
 }
 
@@ -324,7 +324,7 @@ body{
         position: absolute;
         display: block;
         top: 10px;
-        left: 60px;
+        left: 10%;
         padding: 0;
         margin: 0;
         z-index: 2;
