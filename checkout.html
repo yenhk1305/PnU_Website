@@ -28,8 +28,8 @@
                                 <div class="field"><input placeholder="Số điện thoại" type="tel" id="edtSdt" name="edtSdt" required /></div>
                                 <div class="field"><input placeholder="Địa chỉ" type="text" id="edtDiachi" name="edtDiachi" required /></div>
                                 <div class="field">
-                                    <select name="tinhthanh" id="cboTinhthanh" tabindex="-1" aria-hidden="true" onchange="chonquan(this.value)">
-                                            <option selected="selected">Chọn tỉnh thành</option>"+
+                                    <select name="tinhthanh" id="cboTinhthanh" onchange="chonquan(this.value)">
+                                            <option selected="selected" value="">Chọn tỉnh thành</option>"+
                                             <option value="1">Hồ Chí Minh</option>"+
                                             <option value="71">Thái Nguyên</option>"+
                                             <option value="78">Hải Phòng</option>"+
@@ -96,8 +96,8 @@
                                     </select>
                                 </div>
                                 <div class="field">
-                                    <select name="quanhuyen" id="cboQuanhuyen" tabindex="-1" aria-hidden="true">
-                                        <option selected="selected">Chọn quận huyện</option>"+
+                                    <select name="quanhuyen" id="cboQuanhuyen">
+                                        <option value="" selected="selected">Chọn quận huyện</option>
                                     </select>
                                 </div>
                                 <div class="field">

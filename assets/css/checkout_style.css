@@ -59,7 +59,7 @@
 }
 
     .main-checkout-page .checkout-infor input:focus {
-        outline-color: orange;
+        outline-color: var(--primaryYellow);
     }
 
 .main-checkout-page .checkout-infor select {
@@ -76,7 +76,7 @@
 }
 
     .main-checkout-page .checkout-infor select:focus {
-        outline-color: orange;
+        outline-color: var(--primaryYellow);
     }
 
 .checkout-infor .field {
@@ -215,7 +215,7 @@
     }
 
         .aside-checkout .aside-content .aside-group .gio-hang:hover {
-            color: yellow;
+            color: var(--primaryYellow);
             text-decoration: none
         }
 
@@ -284,7 +284,7 @@
     }
 
         .aside-checkout .aside-content .aside-group .input-discount:focus {
-            outline-color: orange;
+            outline-color: var(--primaryYellow);
         }
 
     .aside-checkout .aside-content .aside-group .btn-discount {
