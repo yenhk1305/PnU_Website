@@ -24,7 +24,7 @@ var shoppingCart = (function() {
   }
 
   // Public methods and properties
-  
+
   // Create object
   var obj = {};
   
@@ -262,24 +262,26 @@ function displayInShowCart(){
   }
   else {
     var tong = 0;
-  for (i = 0; i < giohang.length; i++ ){
-    var tt = parseFloat(giohang[i].price*giohang[i].count);
-    tong += tt;
-    ttgh += '<tr>'+
-      '<td rowspan="2" class="mycartImage">'+
-          '<img src="'+giohang[i].thumb+'">'+
-      '</td>'+
-      '<td class="mycartName">'+giohang[i].name+'</td>'+
-      '<td class="mycartQty">'+giohang[i].count+'</td>'+
-      '</tr>'+
-      '<tr>'+
-        '<td colspan="2" class="mycartPrice">'+ Intl.NumberFormat().format(giohang[i].price) + " đ" +'</td>'+
+    for (i = 0; i < giohang.length; i++ ){
+      var tt = parseFloat(giohang[i].price*giohang[i].count);
+      tong += tt;
+      }
+      ttgh+='<tr>'+
+          '<td colspan="2" class="mycartTotalLabel">Thành tiền:</td>'+
+          '<td class="mycartTotal">'+Intl.NumberFormat().format(tong) + " đ"+'</td>'+
       '</tr>'
+      for (i = 0; i < giohang.length; i++ ){
+      ttgh += '<tr>'+
+        '<td rowspan="2" class="mycartImage">'+
+            '<img src="'+giohang[i].thumb+'">'+
+        '</td>'+
+        '<td class="mycartName">'+giohang[i].name+'</td>'+
+        '<td class="mycartQty">'+giohang[i].count+'</td>'+
+        '</tr>'+
+        '<tr>'+
+          '<td colspan="2" class="mycartPrice">'+ Intl.NumberFormat().format(giohang[i].price) + " đ" +'</td>'+
+        '</tr>'
     }
-    ttgh+='<tr>'+
-        '<td colspan="2" class="mycartTotalLabel">Thành tiền:</td>'+
-       '<td class="mycartTotal">'+Intl.NumberFormat().format(tong) + " đ"+'</td>'+
-     '</tr>'
   }
   document.getElementById("mycart").innerHTML = ttgh;
 }

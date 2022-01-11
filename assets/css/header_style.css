@@ -170,7 +170,7 @@ body{
 }
 
 #top-header .showcart {
-    width: 22%;
+    width: 25%;
     position: fixed;
     border-collapse: collapse;
     border-radius: 5px;
@@ -183,7 +183,7 @@ body{
     display: none;
     border: none;
     max-height: 410px;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 #top-header .showcart .mycartImage img {
@@ -198,14 +198,14 @@ body{
 
 #top-header .showcart .mycartName {
     font-size: 13px;
-    width: 45%;
+    width: 46%;
     color: black;
     font-weight: 100;
     padding: 8px 0px 0px 10px;
 }
 
 #top-header .showcart .mycartQty {
-    width: 32%;
+    width: 31%;
     text-align: center;
     color: var(--ink03);
     font-weight: 100;
