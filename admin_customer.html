@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Khách hàng</title>
+    <link rel="stylesheet" href="./assets/css/admin_style.css">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="./assets/script/admin.js"></script>
+    <script src="./assets/script/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="./assets/images/Logo-Slogan_03.png" alt="">
+            <h2>Pet and You</h2>
+        </div>
+        <div class="items">
+            <li><i class="fas fa-chart-line"></i><a href="admin.html">Tổng quan</a></li>
+            <li><i class="fas fa-shopping-cart"></i><a href="admin_order.html">Đơn hàng</a></li>
+            <li><i class="fas fa-tags"></i></i><a href="admin_product.html">Sản phẩm</a></li>
+            <li><i class="fas fa-shipping-fast"></i><a href="#">Vận chuyển</a></li>
+            <li style="border-left: 4px solid #fff" ><i class="fas fa-universal-access"></i></i><a href="admin_customer.html">Khách hàng</a></li>
+            <li><i class="fas fa-percent"></i><a href="admin_promotion.html">Khuyến mãi</a></li>
+            <li><i class="fas fa-clipboard-list"></i><a href="#">Báo cáo</a></li>
+            <li><i class="fas fa-cog"></i><a href="#">Cấu hình</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <img src="/assets/images/nguoi1.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Khách hàng
+        </h3>
+
+       <div class="board-product">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>Khách hàng</td>
+                        <td>Mã thẻ</td>
+                        <td>Mật khẩu</td>
+                        <td>Ngày đăng ký</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="product">
+                            <h5>Lưu Nguyễn Huỳnh Lê</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111541</p>
+                        </td>
+                        <td class="pass">huynhle123</td>
+                        <td class="pass">20/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="product">
+                            <h5>Hồ Kim Ngân</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111548</p>
+                        </td>
+                        <td class="pass">kimnganuel456</td>
+                        <td class="pass">21/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="product">
+                            <h5>Nguyễn Mai Phương Thảo</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111570</p>
+                        </td>
+                        <td class="pass">phuongthao111</td>
+                        <td class="pass">24/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="product">
+                            <h5>Trần Thị Mỹ Thảo</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111571</p>
+                        </td>
+                        <td class="pass">thaottm900</td>
+                        <td class="pass">25/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="product">
+                            <h5>Hoàng Kim Yến</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111594</p>
+                        </td>
+                        <td class="pass">yenhk19411</td>
+                        <td class="pass">29/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="product">
+                            <h5>Trần Hòa An</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111901</p>
+                        </td>
+                        <td class="pass">hoanan1293</td>
+                        <td class="pass">30/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="product">
+                            <h5>Nguyễn Vĩnh Phúc</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111902</p>
+                        </td>
+                        <td class="pass">phucnv381</td>
+                        <td class="pass">02/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="product">
+                            <h5>Lê Đặng Phương Nghi</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111903</p>
+                        </td>
+                        <td class="pass">nghildp272</td>
+                        <td class="pass">04/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="product">
+                            <h5>Trịnh Chí Nguyên</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111904</p>
+                        </td>
+                        <td class="pass">nguyenchi1923</td>
+                        <td class="pass">06/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="product">
+                            <h5>Mai Phương Thảo</h5>
+                        </td>
+                        <td class="price">
+                            <p>194111919</p>
+                        </td>
+                        <td class="pass">phuongthao203</td>
+                        <td class="pass">07/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+       </div>
+
+    </section>
+
+    <!-- Bấm vào menu-btn thì hiện menu -->
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+    </script>   
+</body>
+<script>displayOrder()</script>
+</html>

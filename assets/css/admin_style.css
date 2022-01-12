@@ -128,6 +128,68 @@ body {
     border-radius: 50%;
 }
 
+.i-name {
+    color: #444a53;
+    padding: 30px 30px 0px 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.values {
+    padding: 30px 40px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box{
+    background: #fff;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) i{
+    background: coral;
+}
+
+.values .val-box:nth-child(2) i{
+    background:goldenrod
+}
+
+.values .val-box:nth-child(3) i{
+    background:lightskyblue
+}
+
+.values .val-box:nth-child(4) i{
+    background:turquoise
+}
+
+.values .val-box h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span{
+    font-size: 15px;
+    color: #828997;
+}
+
 .n1 {
     display: flex;
     justify-content: flex-start;
@@ -224,6 +286,27 @@ tbody tr td {
     font-weight: 600;
 }
 
+.delete a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #eb4f33;
+    font-weight: 600;
+}
+
+.warehouse {
+    text-align: center;
+    font-size: 14px;
+}
+
+.pass {
+    font-size: 13px;
+}
+
+.date {
+    font-size: 13px;
+    text-align: center;
+}
+
 .board .price p, .board-product .price p {
     font-weight: 600;
     color:tomato
@@ -271,10 +354,20 @@ tbody tr td {
         width: 100%;
     }
 
+    .values {
+        padding: 30px 40px 0px 30px;
+        justify-content: flex-start;
+    }
+    
+    .values .val-box{
+        margin: 10px 20px 10px 0;
+        padding: 16px 20px;
+    }
+
     .board, .board-product {
         width: 92%;
         padding: 0;
-        overflow-x: auto;
+        overflow: auto;
     }
 
     table{
@@ -294,6 +387,15 @@ tbody tr td {
 
     .i-name {
         padding: 30px 15px 0 15px;
+    }
+
+    .values {
+        padding: 15px 15px 0 15px;
+    }
+
+    .values .val-box {
+        width: 100%;
+        margin: 8px 0;
     }
 
     .board, .board-product {

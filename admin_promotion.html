@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Khuyến mãi</title>
+    <link rel="stylesheet" href="./assets/css/admin_style.css">
+    <link rel="stylesheet" href="./assets/css/color.css"/>
+    <link rel="icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="./assets/script/admin.js"></script>
+    <script src="./assets/script/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="./assets/images/Logo-Slogan_03.png" alt="">
+            <h2>Pet and You</h2>
+        </div>
+        <div class="items">
+            <li><i class="fas fa-chart-line"></i><a href="admin.html">Tổng quan</a></li>
+            <li><i class="fas fa-shopping-cart"></i><a href="admin_order.html">Đơn hàng</a></li>
+            <li><i class="fas fa-tags"></i></i><a href="admin_product.html">Sản phẩm</a></li>
+            <li><i class="fas fa-shipping-fast"></i><a href="#">Vận chuyển</a></li>
+            <li><i class="fas fa-universal-access"></i></i><a href="admin_customer.html">Khách hàng</a></li>
+            <li style="border-left: 4px solid #fff" ><i class="fas fa-percent"></i><a href="admin_promotion.html">Khuyến mãi</a></li>
+            <li><i class="fas fa-clipboard-list"></i><a href="#">Báo cáo</a></li>
+            <li><i class="fas fa-cog"></i><a href="#">Cấu hình</a></li>
+        </div>
+    </section>
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+                <div>
+                    <i id="menu-btn" class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+                <i class="fas fa-bell"></i>
+                <img src="/assets/images/nguoi1.png" alt="">
+            </div>
+        </div>
+
+        <h3 class="i-name">
+            Khuyến mãi
+        </h3>
+
+       <div class="board-product">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>STT</td>
+                        <td>Mã giảm giá</td>
+                        <td>Mô tả</td>
+                        <td>Ngày áp dụng</td>
+                        <td>Ngày kết thúc</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="product">
+                            <h5>christmaswithpnu</h5>
+                        </td>
+                        <td class="pass">
+                            <p>Giảm giá 20% phí vận chuyển tối đa 30000 đồng</p>
+                        </td>
+                        <td class="date">20/12/2021</td>
+                        <td class="date">26/12/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="product">
+                            <h5>2022withpet</h5>
+                        </td>
+                        <td class="pass">
+                            <p>Freeship cho đơn hàng từ 500000 đồng. Giảm giá 25% tối đa 50000 đồng</p>
+                        </td>
+                        <td class="date">30/12/2021</td>
+                        <td class="date">07/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="product">
+                            <h5>lovepnulovepet</h5>
+                        </td>
+                        <td class="pass">
+                            <p>Freeship cho đơn hàng từ 500000 đồng. Giảm giá 20% tối đa 50000 đồng</p>
+                        </td>
+                        <td class="date">20/12/2021</td>
+                        <td class="date">14/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="product">
+                            <h5>welcometopnu</h5>
+                        </td>
+                        <td class="pass">
+                            <p>Freeship cho đơn hàng từ 400000 đồng</p>
+                        </td>
+                        <td class="date">01/12/2021</td>
+                        <td class="date">31/01/2021</td>
+                        <td class="edit">
+                            <a href="#">Edit</a>
+                        </td>
+                        <td class="delete">
+                            <a href="#">Xóa</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+       </div>
+    </section>
+
+    <!-- Bấm vào menu-btn thì hiện menu -->
+    <script>
+        $('#menu-btn').click(function(){
+            $('#menu').toggleClass("active");
+        })
+    </script>   
+</body>
+<script>displayOrder()</script>
+</html>
